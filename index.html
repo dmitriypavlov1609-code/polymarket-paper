@@ -3,34 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>🐋 Paper Trading — Polymarket</title>
+<title>🐋 Whale Paper Trading</title>
 <style>
-  :root{--bg:#0b0e14;--card:#141924;--line:#232a38;--txt:#e6edf3;--dim:#8b98a9;--grn:#3fb950;--red:#f85149;--acc:#58a6ff;}
+  :root{--bg:#0b0e14;--card:#141924;--line:#232a38;--txt:#e6edf3;--dim:#8b98a9;--grn:#3fb950;--red:#f85149;--acc:#58a6ff;--pur:#a371f7;}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:16px;max-width:900px;margin:0 auto}
-  h1{font-size:20px;margin-bottom:4px}
-  .sub{color:var(--dim);font-size:13px;margin-bottom:16px}
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:20px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
-  .card .lbl{color:var(--dim);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
-  .card .val{font-size:26px;font-weight:700;margin-top:6px}
-  .grn{color:var(--grn)} .red{color:var(--red)} .acc{color:var(--acc)}
-  h2{font-size:15px;margin:20px 0 10px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
-  table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;border:1px solid var(--line)}
-  th,td{text-align:left;padding:10px 12px;font-size:13px;border-bottom:1px solid var(--line)}
-  th{color:var(--dim);font-weight:600;text-transform:uppercase;font-size:11px;letter-spacing:.5px}
-  tr:last-child td{border-bottom:none}
-  .side-no{color:var(--red);font-weight:600} .side-yes{color:var(--grn);font-weight:600}
-  .empty{color:var(--dim);padding:20px;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:12px}
-  .log{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;font-size:13px;color:var(--dim);line-height:1.7}
-  .foot{color:var(--dim);font-size:12px;margin-top:16px;text-align:center}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:16px;max-width:960px;margin:0 auto}
+  h1{font-size:20px} .sub{color:var(--dim);font-size:13px;margin:4px 0 16px}
   .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--grn);margin-right:6px;animation:pulse 2s infinite}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+  .card .lbl{color:var(--dim);font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+  .card .val{font-size:23px;font-weight:700;margin-top:5px}
+  .grn{color:var(--grn)} .red{color:var(--red)} .acc{color:var(--acc)} .pur{color:var(--pur)}
+  .stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-size:13px}
+  .stat b{font-size:15px;display:block;margin-top:2px}
+  h2{font-size:14px;margin:22px 0 10px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+  .tab{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:5px 14px;font-size:13px;cursor:pointer;color:var(--dim)}
+  .tab.on{background:var(--acc);color:#04101f;border-color:var(--acc);font-weight:600}
+  table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+  th,td{text-align:left;padding:9px 12px;font-size:13px;border-bottom:1px solid var(--line)}
+  th{color:var(--dim);font-weight:600;text-transform:uppercase;font-size:10px;letter-spacing:.5px}
+  tr:last-child td{border-bottom:none}
+  .side-no{color:var(--red);font-weight:600} .side-yes{color:var(--grn);font-weight:600}
+  .badge{font-size:10px;padding:2px 7px;border-radius:10px;background:#1c2430;color:var(--dim);border:1px solid var(--line)}
+  .empty{color:var(--dim);padding:18px;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:12px;font-size:13px}
+  .log{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;font-size:13px;color:var(--dim);line-height:1.7}
+  .foot{color:var(--dim);font-size:12px;margin-top:18px;text-align:center}
+  .grid2{display:grid;grid-template-columns:1fr;gap:10px}
 </style>
 </head>
 <body>
-  <h1>🐋 Paper Trading — Polymarket</h1>
-  <div class="sub"><span class="dot"></span>Стратегия: конвикция китов (нетто-книга) + VSA · бумажный счёт $100 · управляет Claude (Opus)</div>
+  <h1>🐋 Whale Paper Trading</h1>
+  <div class="sub"><span class="dot"></span>Копируем конвикцию китов (нетто-книга) + VSA · бумажный счёт $100 · мозг: Claude Opus</div>
 
   <div class="cards">
     <div class="card"><div class="lbl">Эквити</div><div class="val" id="equity">—</div></div>
@@ -39,11 +46,23 @@
     <div class="card"><div class="lbl">Открытых</div><div class="val" id="opencnt">—</div></div>
   </div>
 
+  <div class="stats">
+    <div class="stat">День<b id="s_day">—</b></div>
+    <div class="stat">Неделя<b id="s_week">—</b></div>
+    <div class="stat">Месяц<b id="s_month">—</b></div>
+    <div class="stat">Сделок<b id="s_trades">—</b></div>
+    <div class="stat">Winrate<b id="s_wr">—</b></div>
+  </div>
+
   <h2>📈 Открытые позиции</h2>
+  <div class="tabs" id="tabs"></div>
   <div id="open"></div>
 
-  <h2>🐋 Киты, за которыми следим</h2>
-  <div id="whales"></div>
+  <h2>🐋 Наши киты (за кем идём)</h2>
+  <div class="grid2" id="whales"></div>
+
+  <h2>🏆 Топы с лидерборда (polycop.fun)</h2>
+  <div id="tops"></div>
 
   <h2>✅ Закрытые сделки</h2>
   <div id="closed"></div>
@@ -51,18 +70,28 @@
   <h2>📝 Журнал решений</h2>
   <div class="log" id="log">Загрузка…</div>
 
-  <div class="foot">Обновлено: <span id="updated">—</span> · автообновление 20с</div>
+  <div class="foot">Обновлено: <span id="updated">—</span> · автообновление 20с · <a href="https://github.com/dmitriypavlov1609-code/polymarket-paper" style="color:var(--acc)">данные</a></div>
 
 <script>
 const SRC="https://raw.githubusercontent.com/dmitriypavlov1609-code/polymarket-paper/main/paper-state.json";
 const $=id=>document.getElementById(id);
 const money=n=>(n>=0?"$":"-$")+Math.abs(n).toFixed(2);
 const cls=n=>n>0?"grn":n<0?"red":"";
+let STATE=null, FILTER="Все";
+
+function renderOpen(){
+  const s=STATE; const list=(s.open||[]).filter(p=>FILTER==="Все"||p.cat===FILTER);
+  if(!list.length){ $("open").innerHTML='<div class="empty">Нет позиций'+(FILTER!=="Все"?" в разделе «"+FILTER+"»":" — жду сигнал кита")+'</div>'; return; }
+  let h='<table><tr><th>Рынок</th><th>Разд.</th><th>Сторона</th><th>Вход→Тек.</th><th>Разм.</th><th>PnL</th></tr>';
+  for(const p of list){
+    h+='<tr><td>'+p.title+'</td><td><span class="badge">'+(p.cat||"—")+'</span></td><td class="side-'+(/yes/i.test(p.side)?"yes":"no")+'">'+p.side+'</td><td>$'+p.entry.toFixed(3)+'→$'+(p.bid||p.entry).toFixed(3)+'</td><td>'+p.size+'</td><td class="'+cls(p.pnl||0)+'">'+money(p.pnl||0)+'</td></tr>';
+  }
+  $("open").innerHTML=h+'</table>';
+}
 
 async function load(){
   try{
-    const r=await fetch(SRC+"?t="+Date.now());
-    const s=await r.json();
+    const s=await (await fetch(SRC+"?t="+Date.now())).json(); STATE=s;
     const eqPnl=s.equity-s.startBalance;
     $("equity").innerHTML='<span class="'+cls(eqPnl)+'">'+money(s.equity)+'</span>';
     $("cash").textContent=money(s.cash);
@@ -70,43 +99,45 @@ async function load(){
     $("pnl").innerHTML='<span class="'+cls(eqPnl)+'">'+money(eqPnl)+' ('+(eqPnl>=0?"+":"")+pct+'%)</span>';
     $("opencnt").textContent=(s.open||[]).length;
 
-    // open
-    if((s.open||[]).length){
-      let h='<table><tr><th>Рынок</th><th>Сторона</th><th>Вход</th><th>Тек.</th><th>Размер</th><th>PnL</th></tr>';
-      for(const p of s.open){
-        h+='<tr><td>'+p.title+'</td><td class="side-'+(/yes/i.test(p.side)?"yes":"no")+'">'+p.side+'</td><td>$'+p.entry.toFixed(3)+'</td><td>$'+(p.bid||p.entry).toFixed(3)+'</td><td>'+p.size+'</td><td class="'+cls(p.pnl||0)+'">'+money(p.pnl||0)+'</td></tr>';
-      }
-      $("open").innerHTML=h+'</table>';
-    } else $("open").innerHTML='<div class="empty">Нет открытых позиций — жду сигнал кита</div>';
+    const st=s.stats||{};
+    $("s_day").innerHTML='<span class="'+cls(st.day)+'">'+money(st.day||0)+'</span>';
+    $("s_week").innerHTML='<span class="'+cls(st.week)+'">'+money(st.week||0)+'</span>';
+    $("s_month").innerHTML='<span class="'+cls(st.month)+'">'+money(st.month||0)+'</span>';
+    $("s_trades").textContent=st.trades||0;
+    $("s_wr").textContent=(st.winrate||0)+"%";
+
+    // tabs
+    const cats=["Все",...new Set((s.open||[]).map(p=>p.cat).filter(Boolean))];
+    if(!(s.open||[]).length) FILTER="Все";
+    $("tabs").innerHTML=cats.map(c=>'<span class="tab'+(c===FILTER?' on':'')+'" onclick="setFilter(\''+c+'\')">'+c+'</span>').join('');
+    renderOpen();
 
     // whales
-    if((s.whales||[]).length){
-      let h='';
-      for(const w of s.whales){
-        h+='<div class="card" style="margin-bottom:10px"><div style="display:flex;justify-content:space-between;align-items:baseline"><div><b>'+w.label+'</b> <span style="color:var(--dim);font-size:12px">'+w.addr+'</span></div><div class="acc" style="font-weight:700">крипто-книга $'+(w.cryptoBook/1000).toFixed(0)+'k</div></div>';
-        h+='<div style="color:var(--dim);font-size:12px;margin:2px 0 8px">'+w.stat+'</div>';
-        for(const t of (w.top||[])){
-          h+='<div style="font-size:13px;margin:3px 0"><span class="side-'+(t.side==="YES"?"yes":"no")+'">'+t.side+'</span> <b>$'+(t.usd>=1000?(t.usd/1000).toFixed(0)+'k':t.usd)+'</b> <span style="color:var(--dim)">'+t.m+'</span></div>';
-        }
-        h+='</div>';
-      }
-      $("whales").innerHTML=h;
-    } else $("whales").innerHTML='<div class="empty">Загрузка китов…</div>';
+    $("whales").innerHTML=(s.whales||[]).map(w=>{
+      let t='<div class="card"><div style="display:flex;justify-content:space-between;align-items:baseline"><div><b>'+w.label+'</b> <span style="color:var(--dim);font-size:12px">'+w.addr+'</span></div><div class="acc" style="font-weight:700">$'+(w.book/1000).toFixed(0)+'k</div></div><div style="color:var(--dim);font-size:12px;margin:2px 0 8px">'+w.stat+'</div>';
+      for(const x of (w.top||[])) t+='<div style="font-size:13px;margin:3px 0"><span class="side-'+(x.side==="YES"?"yes":"no")+'">'+x.side+'</span> <b>$'+(x.usd>=1000?(x.usd/1000).toFixed(0)+'k':x.usd)+'</b> <span class="badge">'+x.cat+'</span> <span style="color:var(--dim)">'+x.m+'</span></div>';
+      return t+'</div>';
+    }).join('') || '<div class="empty">—</div>';
+
+    // tops from leaderboard
+    if((s.tops||[]).length){
+      let h='<table><tr><th>Трейдер</th><th>Copy PnL</th><th>Real PnL</th><th>Loss%</th><th>ROI</th><th>Hedge%</th></tr>';
+      for(const t of s.tops) h+='<tr><td>'+t.addr+'</td><td class="grn">$'+t.copyPnl+'k</td><td>$'+t.realPnl+'k</td><td>'+t.loss+'%</td><td class="acc">'+(t.roi!=null?t.roi+'%':'—')+'</td><td>'+t.hedged+'%</td></tr>';
+      $("tops").innerHTML=h+'</table>';
+    } else $("tops").innerHTML='<div class="empty">Загрузка топов…</div>';
 
     // closed
     if((s.closed||[]).length){
-      let h='<table><tr><th>Рынок</th><th>Сторона</th><th>Вход→Выход</th><th>Размер</th><th>PnL</th></tr>';
-      for(const p of [...s.closed].reverse()){
-        h+='<tr><td>'+p.title+'</td><td class="side-'+(/yes/i.test(p.side)?"yes":"no")+'">'+p.side+'</td><td>$'+p.entry.toFixed(3)+'→$'+p.exit.toFixed(3)+'</td><td>'+p.size+'</td><td class="'+cls(p.pnl)+'">'+money(p.pnl)+'</td></tr>';
-      }
+      let h='<table><tr><th>Рынок</th><th>Сторона</th><th>Вход→Выход</th><th>PnL</th></tr>';
+      for(const p of [...s.closed].reverse()) h+='<tr><td>'+p.title+'</td><td class="side-'+(/yes/i.test(p.side)?"yes":"no")+'">'+p.side+'</td><td>$'+p.entry.toFixed(3)+'→$'+p.exit.toFixed(3)+'</td><td class="'+cls(p.pnl)+'">'+money(p.pnl)+'</td></tr>';
       $("closed").innerHTML=h+'</table>';
     } else $("closed").innerHTML='<div class="empty">Пока нет закрытых сделок</div>';
 
-    // log
-    $("log").innerHTML=(s.log||[]).slice(-12).reverse().map(l=>"• "+l).join("<br>");
+    $("log").innerHTML=(s.log||[]).slice(-14).reverse().map(l=>"• "+l).join("<br>");
     $("updated").textContent=new Date(s.updated).toLocaleString("ru-RU");
-  }catch(e){ $("log").textContent="Ошибка загрузки данных: "+e.message; }
+  }catch(e){ $("log").textContent="Ошибка: "+e.message; }
 }
+function setFilter(c){ FILTER=c; document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.textContent===c)); renderOpen(); }
 load(); setInterval(load,20000);
 </script>
 </body>
