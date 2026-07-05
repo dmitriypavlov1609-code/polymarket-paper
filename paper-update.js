@@ -98,7 +98,7 @@ for (const [a, label, stat] of TRACKED) {
 st.whales = whales;
 
 // 4) НОВЫЕ ТОПЫ с polycop.fun лидерборда
-const lb = await jget("https://polycop.fun/api/leaderboard");
+const lb = lb0 || await jget("https://polycop.fun/api/leaderboard");
 const tops = [];
 if (lb && lb.data) {
   const ranked = lb.data.filter(t => (t.copy_backtest_pnl || 0) > 100000).sort((a, b) => (b.copy_backtest_pnl || 0) - (a.copy_backtest_pnl || 0)).slice(0, 8);

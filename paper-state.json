@@ -1,9 +1,9 @@
 {
   "startBalance": 100,
   "cash": 53.21,
-  "equity": 97.32,
-  "totalPnl": -2.68,
-  "updated": "2026-07-05T20:21:51.411Z",
+  "equity": 97.21,
+  "totalPnl": -2.79,
+  "updated": "2026-07-05T20:24:02.144Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
     {
@@ -26,7 +26,7 @@
         "label": "ETH-whale",
         "addr": "0x06dc…4524",
         "entry": 0.722,
-        "book": 570703,
+        "book": 570652,
         "wr": 73,
         "overallPnl": null,
         "posPnl": 591
@@ -52,7 +52,7 @@
         "label": "ETH-whale",
         "addr": "0x06dc…4524",
         "entry": 0.824,
-        "book": 570703,
+        "book": 570652,
         "wr": 73,
         "overallPnl": null,
         "posPnl": -3354
@@ -78,10 +78,10 @@
         "label": "floor-whale",
         "addr": "0xcc50…4c82",
         "entry": 0.649,
-        "book": 209143,
-        "wr": 52,
-        "overallPnl": 627580,
-        "posPnl": 1663
+        "book": 209085,
+        "wr": null,
+        "overallPnl": null,
+        "posPnl": 1597
       }
     },
     {
@@ -91,9 +91,9 @@
       "entry": 0.71,
       "size": 11,
       "cost": 7.81,
-      "bid": 0.54,
-      "value": 5.94,
-      "pnl": -1.87,
+      "bid": 0.53,
+      "value": 5.83,
+      "pnl": -1.98,
       "ts": "2026-07-05T20:13:34.004Z",
       "whale": "top-sport",
       "reason": "FOLLOW-TOPS (спорт): топ 0x7c1ee8 copyPnL $1.7M, YES $328k, вход @0.71 (лаг с 0.51)",
@@ -104,10 +104,10 @@
         "label": "sport-top",
         "addr": "0x7c1e…bab3",
         "entry": 0.55,
-        "book": 592656,
-        "wr": 50,
-        "overallPnl": 1908881,
-        "posPnl": -3250
+        "book": 600759,
+        "wr": null,
+        "overallPnl": null,
+        "posPnl": 3250
       }
     }
   ],
@@ -124,12 +124,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 46889,
+      "book": 46819,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 6787,
+          "usd": 6791,
           "cat": "Крипта"
         },
         {
@@ -150,7 +150,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 570703,
+      "book": 570801,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -176,7 +176,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 209143,
+      "book": 209085,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -206,5 +206,70 @@
     "trades": 0,
     "winrate": 0
   },
-  "tops": []
+  "tops": [
+    {
+      "addr": "0x7225…659a",
+      "copyPnl": 4629,
+      "realPnl": 4967,
+      "loss": 7,
+      "roi": 1283,
+      "hedged": 0
+    },
+    {
+      "addr": "0x095f…90b2",
+      "copyPnl": 3872,
+      "realPnl": 3983,
+      "loss": 3,
+      "roi": 2641,
+      "hedged": 0
+    },
+    {
+      "addr": "0x7c1e…bab3",
+      "copyPnl": 1687,
+      "realPnl": 1909,
+      "loss": 12,
+      "roi": 794,
+      "hedged": 0
+    },
+    {
+      "addr": "0xb61b…8a06",
+      "copyPnl": 1436,
+      "realPnl": 1536,
+      "loss": 7,
+      "roi": 1387,
+      "hedged": 0
+    },
+    {
+      "addr": "0x6501…1220",
+      "copyPnl": 895,
+      "realPnl": 977,
+      "loss": 8,
+      "roi": 1330,
+      "hedged": 0
+    },
+    {
+      "addr": "0x34f6…4535",
+      "copyPnl": 533,
+      "realPnl": 589,
+      "loss": 10,
+      "roi": 1480,
+      "hedged": 0
+    },
+    {
+      "addr": "0xcc50…4c82",
+      "copyPnl": 514,
+      "realPnl": 628,
+      "loss": 18,
+      "roi": 553,
+      "hedged": 0
+    },
+    {
+      "addr": "0xc57f…c909",
+      "copyPnl": 381,
+      "realPnl": 415,
+      "loss": 8,
+      "roi": 1090,
+      "hedged": 0
+    }
+  ]
 }
