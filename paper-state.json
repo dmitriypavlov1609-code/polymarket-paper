@@ -1,9 +1,9 @@
 {
   "startBalance": 100,
   "cash": 20.27,
-  "equity": 98.1,
-  "totalPnl": -1.9,
-  "updated": "2026-07-05T20:38:47.854Z",
+  "equity": 98.28,
+  "totalPnl": -1.72,
+  "updated": "2026-07-05T20:39:50.082Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
     {
@@ -13,9 +13,9 @@
       "entry": 0.81,
       "size": 12,
       "cost": 9.72,
-      "bid": 0.78,
-      "value": 9.36,
-      "pnl": -0.36,
+      "bid": 0.79,
+      "value": 9.48,
+      "pnl": -0.24,
       "ts": "2026-07-05T19:15:10.153Z",
       "whale": "ETH-whale",
       "reason": "ETH-whale направленно NO @0.81, BTC +1.4% выше $62k, yield 23%",
@@ -39,9 +39,9 @@
       "entry": 0.77,
       "size": 19,
       "cost": 14.63,
-      "bid": 0.76,
-      "value": 14.44,
-      "pnl": -0.19,
+      "bid": 0.75,
+      "value": 14.25,
+      "pnl": -0.38,
       "ts": "2026-07-05T20:05:48.974Z",
       "whale": "tops",
       "reason": "FOLLOW-TOPS: топы нетто $41k NO, вход @0.77, yield ~30%",
@@ -79,8 +79,8 @@
         "addr": "0xcc50…4c82",
         "entry": 0.649,
         "book": 209088,
-        "wr": null,
-        "overallPnl": null,
+        "wr": 52,
+        "overallPnl": 627580,
         "posPnl": 1663
       }
     },
@@ -104,9 +104,9 @@
         "label": "sport-top",
         "addr": "0x7c1e…bab3",
         "entry": 0.55,
-        "book": 525886,
-        "wr": null,
-        "overallPnl": null,
+        "book": 521244,
+        "wr": 50,
+        "overallPnl": 1908881,
         "posPnl": -16250
       }
     },
@@ -117,9 +117,9 @@
       "entry": 0.6,
       "size": 25,
       "cost": 15,
-      "bid": 0.64,
-      "value": 16,
-      "pnl": 1,
+      "bid": 0.65,
+      "value": 16.25,
+      "pnl": 1.25,
       "ts": "2026-07-05T20:30:08.185Z",
       "followAddr": "0x72254fe1a79fc8fd37de0168be735e6af4bd659a",
       "followLabel": "top #1",
@@ -130,8 +130,8 @@
         "addr": "0x7225…659a",
         "entry": 0.471,
         "book": 812448,
-        "wr": null,
-        "overallPnl": null,
+        "wr": 57,
+        "overallPnl": 4966589,
         "posPnl": 209633
       }
     },
@@ -155,8 +155,8 @@
         "addr": "0x7ddd…c933",
         "entry": 0.693,
         "book": 326681,
-        "wr": null,
-        "overallPnl": null,
+        "wr": 62,
+        "overallPnl": 357883,
         "posPnl": -3960
       }
     }
@@ -202,7 +202,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 571779,
+      "book": 571947,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
