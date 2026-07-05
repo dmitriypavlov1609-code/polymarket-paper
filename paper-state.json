@@ -1,0 +1,11 @@
+{
+  "startBalance": 100,
+  "cash": 100,
+  "equity": 100,
+  "totalPnl": 0,
+  "updated": "2026-07-06T03:45:00Z",
+  "strategy": "Whale net-book directional + VSA confluence (paper $100)",
+  "open": [],
+  "closed": [],
+  "log": ["Бумажный счёт открыт: $100. Жду направленный сигнал кита + VSA."]
+}
