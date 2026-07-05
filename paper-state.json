@@ -1,9 +1,9 @@
 {
   "startBalance": 100,
   "cash": 53.21,
-  "equity": 97.56,
-  "totalPnl": -2.44,
-  "updated": "2026-07-05T20:17:15.779Z",
+  "equity": 97.32,
+  "totalPnl": -2.68,
+  "updated": "2026-07-05T20:21:51.411Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
     {
@@ -13,13 +13,24 @@
       "entry": 0.81,
       "size": 12,
       "cost": 9.72,
-      "bid": 0.81,
-      "value": 9.72,
-      "pnl": 0,
+      "bid": 0.79,
+      "value": 9.48,
+      "pnl": -0.24,
       "ts": "2026-07-05T19:15:10.153Z",
       "whale": "ETH-whale",
       "reason": "ETH-whale направленно NO @0.81, BTC +1.4% выше $62k, yield 23%",
-      "cat": "Крипта"
+      "cat": "Крипта",
+      "followAddr": "0x06dc51826bc524d9a83770e7de9dd7e005b04524",
+      "followLabel": "ETH-whale",
+      "follow": {
+        "label": "ETH-whale",
+        "addr": "0x06dc…4524",
+        "entry": 0.722,
+        "book": 570703,
+        "wr": 73,
+        "overallPnl": null,
+        "posPnl": 591
+      }
     },
     {
       "asset": "92816915429998265485709440266340158621084369220656661191529847288128743404723",
@@ -34,7 +45,18 @@
       "ts": "2026-07-05T20:05:48.974Z",
       "whale": "tops",
       "reason": "FOLLOW-TOPS: топы нетто $41k NO, вход @0.77, yield ~30%",
-      "cat": "Крипта"
+      "cat": "Крипта",
+      "followAddr": "0x06dc51826bc524d9a83770e7de9dd7e005b04524",
+      "followLabel": "ETH-whale",
+      "follow": {
+        "label": "ETH-whale",
+        "addr": "0x06dc…4524",
+        "entry": 0.824,
+        "book": 570703,
+        "wr": 73,
+        "overallPnl": null,
+        "posPnl": -3354
+      }
     },
     {
       "asset": "113384909315286427895253075840936333609056140759702064505761399190279923771325",
@@ -49,7 +71,18 @@
       "ts": "2026-07-05T20:05:48.974Z",
       "whale": "tops",
       "reason": "FOLLOW-TOPS: топы нетто $32k NO, вход @0.77, yield ~30%",
-      "cat": "Крипта"
+      "cat": "Крипта",
+      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "followLabel": "floor-whale",
+      "follow": {
+        "label": "floor-whale",
+        "addr": "0xcc50…4c82",
+        "entry": 0.649,
+        "book": 209143,
+        "wr": 52,
+        "overallPnl": 627580,
+        "posPnl": 1663
+      }
     },
     {
       "asset": "105654713241167797590254709131417748215287316658191010694033065067279349239377",
@@ -64,7 +97,18 @@
       "ts": "2026-07-05T20:13:34.004Z",
       "whale": "top-sport",
       "reason": "FOLLOW-TOPS (спорт): топ 0x7c1ee8 copyPnL $1.7M, YES $328k, вход @0.71 (лаг с 0.51)",
-      "cat": "Прочее"
+      "cat": "Прочее",
+      "followAddr": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
+      "followLabel": "sport-top",
+      "follow": {
+        "label": "sport-top",
+        "addr": "0x7c1e…bab3",
+        "entry": 0.55,
+        "book": 592656,
+        "wr": 50,
+        "overallPnl": 1908881,
+        "posPnl": -3250
+      }
     }
   ],
   "closed": [],
@@ -80,12 +124,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 46878,
+      "book": 46889,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 6798,
+          "usd": 6787,
           "cat": "Крипта"
         },
         {
@@ -106,7 +150,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 570578,
+      "book": 570703,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -132,7 +176,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 209076,
+      "book": 209143,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -162,70 +206,5 @@
     "trades": 0,
     "winrate": 0
   },
-  "tops": [
-    {
-      "addr": "0x7225…659a",
-      "copyPnl": 4629,
-      "realPnl": 4967,
-      "loss": 7,
-      "roi": 1283,
-      "hedged": 0
-    },
-    {
-      "addr": "0x095f…90b2",
-      "copyPnl": 3872,
-      "realPnl": 3983,
-      "loss": 3,
-      "roi": 2641,
-      "hedged": 0
-    },
-    {
-      "addr": "0x7c1e…bab3",
-      "copyPnl": 1687,
-      "realPnl": 1909,
-      "loss": 12,
-      "roi": 794,
-      "hedged": 0
-    },
-    {
-      "addr": "0xb61b…8a06",
-      "copyPnl": 1436,
-      "realPnl": 1536,
-      "loss": 7,
-      "roi": 1387,
-      "hedged": 0
-    },
-    {
-      "addr": "0x6501…1220",
-      "copyPnl": 895,
-      "realPnl": 977,
-      "loss": 8,
-      "roi": 1330,
-      "hedged": 0
-    },
-    {
-      "addr": "0x34f6…4535",
-      "copyPnl": 533,
-      "realPnl": 589,
-      "loss": 10,
-      "roi": 1480,
-      "hedged": 0
-    },
-    {
-      "addr": "0xcc50…4c82",
-      "copyPnl": 514,
-      "realPnl": 628,
-      "loss": 18,
-      "roi": 553,
-      "hedged": 0
-    },
-    {
-      "addr": "0xc57f…c909",
-      "copyPnl": 381,
-      "realPnl": 415,
-      "loss": 8,
-      "roi": 1090,
-      "hedged": 0
-    }
-  ]
+  "tops": []
 }

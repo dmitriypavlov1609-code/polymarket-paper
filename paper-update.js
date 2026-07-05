@@ -35,6 +35,35 @@ st.cash = +(st.startBalance - spent + proceeds).toFixed(2);
 st.equity = +(st.cash + (st.open || []).reduce((a, x) => a + x.value, 0)).toFixed(2);
 st.totalPnl = +(st.equity - st.startBalance).toFixed(2);
 
+// обогащение: за каким КИТОМ идём (его вход, капитал, WR, общий PnL, его +/- на позиции)
+const lb0 = await jget("https://polycop.fun/api/leaderboard");
+const lbMap = {}; if (lb0 && lb0.data) for (const t of lb0.data) lbMap[t.address.toLowerCase()] = t;
+const WR_FB = {
+  "0x06dc51826bc524d9a83770e7de9dd7e005b04524": { wr: 73, label: "ETH-whale" },
+  "0x72a0d79b4325638bc2bcfc9a2b8a380c2d81c059": { wr: 77, label: "BTC-NO" },
+  "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82": { wr: null, label: "floor-whale" },
+};
+for (const p of st.open || []) {
+  if (!p.followAddr) { p.follow = null; continue; }
+  const wp = await jget(`https://data-api.polymarket.com/positions?user=${p.followAddr}&sizeThreshold=1`);
+  let book = 0, entry = null, posPnl = null;
+  for (const x of (Array.isArray(wp) ? wp : [])) {
+    book += Number(x.currentValue || 0);
+    if (x.asset === p.asset) { entry = Number(x.avgPrice || 0); posPnl = Number(x.currentValue || 0) - Number(x.initialValue || 0); }
+  }
+  const lbt = lbMap[p.followAddr.toLowerCase()];
+  const wr = lbt ? Math.round(lbt.win_rate > 1 ? lbt.win_rate : lbt.win_rate * 100) : (WR_FB[p.followAddr.toLowerCase()] ? WR_FB[p.followAddr.toLowerCase()].wr : null);
+  p.follow = {
+    label: p.followLabel || (WR_FB[p.followAddr.toLowerCase()] && WR_FB[p.followAddr.toLowerCase()].label) || "top",
+    addr: p.followAddr.slice(0, 6) + "…" + p.followAddr.slice(-4),
+    entry: entry != null ? +entry.toFixed(3) : null,
+    book: Math.round(book),
+    wr,
+    overallPnl: lbt ? Math.round(lbt.actual_pnl || 0) : null,
+    posPnl: posPnl != null ? Math.round(posPnl) : null,
+  };
+}
+
 // 2) тайм-статистика по закрытым (по exitTs)
 const nowMs = Date.now();
 const since = (h) => nowMs - h * 3600e3;
