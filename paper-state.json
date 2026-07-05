@@ -1,9 +1,9 @@
 {
   "startBalance": 100,
   "cash": 90.28,
-  "equity": 99.76,
-  "totalPnl": -0.24,
-  "updated": "2026-07-05T19:43:50.925Z",
+  "equity": 100,
+  "totalPnl": 0,
+  "updated": "2026-07-05T19:49:45.620Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
     {
@@ -13,9 +13,9 @@
       "entry": 0.81,
       "size": 12,
       "cost": 9.72,
-      "bid": 0.79,
-      "value": 9.48,
-      "pnl": -0.24,
+      "bid": 0.81,
+      "value": 9.72,
+      "pnl": 0,
       "ts": "2026-07-05T19:15:10.153Z",
       "whale": "ETH-whale",
       "reason": "ETH-whale направленно NO @0.81, BTC +1.4% выше $62k, yield 23%",
@@ -32,7 +32,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 46705,
+      "book": 46789,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -58,7 +58,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 591237,
+      "book": 591131,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -84,7 +84,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 208976,
+      "book": 208921,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
