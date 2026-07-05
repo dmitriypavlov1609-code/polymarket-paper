@@ -1,9 +1,9 @@
 {
   "startBalance": 100,
   "cash": 53.21,
-  "equity": 97.42,
-  "totalPnl": -2.58,
-  "updated": "2026-07-05T20:13:36.665Z",
+  "equity": 97.56,
+  "totalPnl": -2.44,
+  "updated": "2026-07-05T20:17:15.779Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
     {
@@ -43,9 +43,9 @@
       "entry": 0.77,
       "size": 19,
       "cost": 14.63,
-      "bid": 0.77,
-      "value": 14.63,
-      "pnl": 0,
+      "bid": 0.76,
+      "value": 14.44,
+      "pnl": -0.19,
       "ts": "2026-07-05T20:05:48.974Z",
       "whale": "tops",
       "reason": "FOLLOW-TOPS: топы нетто $32k NO, вход @0.77, yield ~30%",
@@ -58,9 +58,9 @@
       "entry": 0.71,
       "size": 11,
       "cost": 7.81,
-      "bid": 0.51,
-      "value": 5.61,
-      "pnl": -2.2,
+      "bid": 0.54,
+      "value": 5.94,
+      "pnl": -1.87,
       "ts": "2026-07-05T20:13:34.004Z",
       "whale": "top-sport",
       "reason": "FOLLOW-TOPS (спорт): топ 0x7c1ee8 copyPnL $1.7M, YES $328k, вход @0.71 (лаг с 0.51)",
@@ -80,12 +80,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 46875,
+      "book": 46878,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 6802,
+          "usd": 6798,
           "cat": "Крипта"
         },
         {
@@ -97,7 +97,7 @@
         {
           "m": "Bitcoin dip to $52,500 in July",
           "side": "NO",
-          "usd": 4777,
+          "usd": 4721,
           "cat": "Крипта"
         }
       ]
@@ -106,7 +106,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 570631,
+      "book": 570578,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -132,7 +132,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 208963,
+      "book": 209076,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
