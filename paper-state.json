@@ -1,9 +1,9 @@
 {
   "startBalance": 100,
-  "cash": 20.27,
-  "equity": 98.28,
-  "totalPnl": -1.72,
-  "updated": "2026-07-05T20:39:50.082Z",
+  "cash": 2.95,
+  "equity": 99.04,
+  "totalPnl": -0.96,
+  "updated": "2026-07-05T20:44:28.202Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
     {
@@ -26,7 +26,7 @@
         "label": "ETH-whale",
         "addr": "0x06dc…4524",
         "entry": 0.722,
-        "book": 571947,
+        "book": 572055,
         "wr": 73,
         "overallPnl": null,
         "posPnl": 401
@@ -39,9 +39,9 @@
       "entry": 0.77,
       "size": 19,
       "cost": 14.63,
-      "bid": 0.75,
-      "value": 14.25,
-      "pnl": -0.38,
+      "bid": 0.76,
+      "value": 14.44,
+      "pnl": -0.19,
       "ts": "2026-07-05T20:05:48.974Z",
       "whale": "tops",
       "reason": "FOLLOW-TOPS: топы нетто $41k NO, вход @0.77, yield ~30%",
@@ -52,10 +52,10 @@
         "label": "ETH-whale",
         "addr": "0x06dc…4524",
         "entry": 0.824,
-        "book": 571947,
+        "book": 572055,
         "wr": 73,
         "overallPnl": null,
-        "posPnl": -3111
+        "posPnl": -2867
       }
     },
     {
@@ -78,7 +78,7 @@
         "label": "floor-whale",
         "addr": "0xcc50…4c82",
         "entry": 0.649,
-        "book": 209088,
+        "book": 209083,
         "wr": 52,
         "overallPnl": 627580,
         "posPnl": 1663
@@ -91,9 +91,9 @@
       "entry": 0.71,
       "size": 11,
       "cost": 7.81,
-      "bid": 0.52,
-      "value": 5.72,
-      "pnl": -2.09,
+      "bid": 0.51,
+      "value": 5.61,
+      "pnl": -2.2,
       "ts": "2026-07-05T20:13:34.004Z",
       "whale": "top-sport",
       "reason": "FOLLOW-TOPS (спорт): топ 0x7c1ee8 copyPnL $1.7M, YES $328k, вход @0.71 (лаг с 0.51)",
@@ -104,10 +104,10 @@
         "label": "sport-top",
         "addr": "0x7c1e…bab3",
         "entry": 0.55,
-        "book": 521244,
+        "book": 502947,
         "wr": 50,
         "overallPnl": 1908881,
-        "posPnl": -16250
+        "posPnl": -22750
       }
     },
     {
@@ -117,9 +117,9 @@
       "entry": 0.6,
       "size": 25,
       "cost": 15,
-      "bid": 0.65,
-      "value": 16.25,
-      "pnl": 1.25,
+      "bid": 0.69,
+      "value": 17.25,
+      "pnl": 2.25,
       "ts": "2026-07-05T20:30:08.185Z",
       "followAddr": "0x72254fe1a79fc8fd37de0168be735e6af4bd659a",
       "followLabel": "top #1",
@@ -129,10 +129,10 @@
         "label": "top #1",
         "addr": "0x7225…659a",
         "entry": 0.471,
-        "book": 812448,
+        "book": 838037,
         "wr": 57,
         "overallPnl": 4966589,
-        "posPnl": 209633
+        "posPnl": 235222
       }
     },
     {
@@ -159,6 +159,56 @@
         "overallPnl": 357883,
         "posPnl": -3960
       }
+    },
+    {
+      "asset": "76141439386499692279040322719837529255735670745305640408917612006545881065962",
+      "title": "Бельгия победит (6 июл)",
+      "side": "Yes",
+      "entry": 0.37,
+      "size": 28,
+      "cost": 10.36,
+      "bid": 0.36,
+      "value": 10.08,
+      "pnl": -0.28,
+      "ts": "2026-07-05T20:44:23.329Z",
+      "followAddr": "0xb61b2079b95f6b7476fd3203e0274ffb93308a06",
+      "followLabel": "top-bel",
+      "reason": "FOLLOW топ, его вход 0.35, наш 0.37",
+      "cat": "Прочее",
+      "follow": {
+        "label": "top-bel",
+        "addr": "0xb61b…8a06",
+        "entry": 0.35,
+        "book": 194874,
+        "wr": 61,
+        "overallPnl": 1536205,
+        "posPnl": 2625
+      }
+    },
+    {
+      "asset": "18812649149814341758733697580460697418474693998558159483117100240528657629879",
+      "title": "Аргентина — чемпион ЧМ-2026",
+      "side": "Yes",
+      "entry": 0.174,
+      "size": 40,
+      "cost": 6.96,
+      "bid": 0.173,
+      "value": 6.92,
+      "pnl": -0.04,
+      "ts": "2026-07-05T20:44:23.329Z",
+      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
+      "followLabel": "top-arg",
+      "reason": "FOLLOW топ, его вход 0.157, наш 0.174",
+      "cat": "Прочее",
+      "follow": {
+        "label": "top-arg",
+        "addr": "0x6501…1220",
+        "entry": 0.157,
+        "book": 120166,
+        "wr": 65,
+        "overallPnl": 977120,
+        "posPnl": 6088
+      }
     }
   ],
   "closed": [],
@@ -169,14 +219,16 @@
     "СДЕЛКА: BUY «BTC не упадёт $55k (июль)» NO ×19 @ $0.77 = $14.63 (за топами: топы нетто $32k NO)",
     "СДЕЛКА: BUY «Бразилия победит (5 июл)» YES ×11 @ $0.71 = $7.81 — за топом 0x7c1ee8 ($1.7M copyPnL). Первая НЕ-крипто ставка!",
     "СДЕЛКА: BUY «Brazil-Norway: тотал меньше 2.5 (Under)» ×25 @ $0.6 = $15 — за топом #1 ($4.97M PnL), его вход $0.468, консенсус 2 топа $844k",
-    "СДЕЛКА: BUY «Мексика НЕ победит (5 июл)» NO ×26 @ $0.69 = $17.94 — за топом 0x7dddf1 ($358k, WR62%), его вход $0.693, лаг ~0%. Конвикция $327k"
+    "СДЕЛКА: BUY «Мексика НЕ победит (5 июл)» NO ×26 @ $0.69 = $17.94 — за топом 0x7dddf1 ($358k, WR62%), его вход $0.693, лаг ~0%. Конвикция $327k",
+    "СДЕЛКА: BUY «Бельгия победит (6 июл)» Yes ×28 @ $0.37 = $10.36 — за top-bel, его вход $0.35",
+    "СДЕЛКА: BUY «Аргентина — чемпион ЧМ-2026» Yes ×40 @ $0.174 = $6.96 — за top-arg, его вход $0.157"
   ],
   "whales": [
     {
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 46866,
+      "book": 46895,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -202,7 +254,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 571947,
+      "book": 572055,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -219,7 +271,7 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 37005,
+          "usd": 37248,
           "cat": "Крипта"
         }
       ]
@@ -228,7 +280,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 209088,
+      "book": 209083,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
