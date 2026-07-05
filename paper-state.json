@@ -1,9 +1,9 @@
 {
   "startBalance": 100,
   "cash": 2.95,
-  "equity": 99.04,
-  "totalPnl": -0.96,
-  "updated": "2026-07-05T20:44:28.202Z",
+  "equity": 99.44,
+  "totalPnl": -0.56,
+  "updated": "2026-07-05T20:48:40.192Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
     {
@@ -13,9 +13,9 @@
       "entry": 0.81,
       "size": 12,
       "cost": 9.72,
-      "bid": 0.79,
-      "value": 9.48,
-      "pnl": -0.24,
+      "bid": 0.8,
+      "value": 9.6,
+      "pnl": -0.12,
       "ts": "2026-07-05T19:15:10.153Z",
       "whale": "ETH-whale",
       "reason": "ETH-whale направленно NO @0.81, BTC +1.4% выше $62k, yield 23%",
@@ -26,10 +26,10 @@
         "label": "ETH-whale",
         "addr": "0x06dc…4524",
         "entry": 0.722,
-        "book": 572055,
+        "book": 571857,
         "wr": 73,
         "overallPnl": null,
-        "posPnl": 401
+        "posPnl": 528
       }
     },
     {
@@ -52,10 +52,10 @@
         "label": "ETH-whale",
         "addr": "0x06dc…4524",
         "entry": 0.824,
-        "book": 572055,
+        "book": 571857,
         "wr": 73,
         "overallPnl": null,
-        "posPnl": -2867
+        "posPnl": -3111
       }
     },
     {
@@ -78,7 +78,7 @@
         "label": "floor-whale",
         "addr": "0xcc50…4c82",
         "entry": 0.649,
-        "book": 209083,
+        "book": 209086,
         "wr": 52,
         "overallPnl": 627580,
         "posPnl": 1663
@@ -91,9 +91,9 @@
       "entry": 0.71,
       "size": 11,
       "cost": 7.81,
-      "bid": 0.51,
-      "value": 5.61,
-      "pnl": -2.2,
+      "bid": 0.49,
+      "value": 5.39,
+      "pnl": -2.42,
       "ts": "2026-07-05T20:13:34.004Z",
       "whale": "top-sport",
       "reason": "FOLLOW-TOPS (спорт): топ 0x7c1ee8 copyPnL $1.7M, YES $328k, вход @0.71 (лаг с 0.51)",
@@ -104,10 +104,10 @@
         "label": "sport-top",
         "addr": "0x7c1e…bab3",
         "entry": 0.55,
-        "book": 502947,
+        "book": 478393,
         "wr": 50,
         "overallPnl": 1908881,
-        "posPnl": -22750
+        "posPnl": -16250
       }
     },
     {
@@ -117,9 +117,9 @@
       "entry": 0.6,
       "size": 25,
       "cost": 15,
-      "bid": 0.69,
-      "value": 17.25,
-      "pnl": 2.25,
+      "bid": 0.71,
+      "value": 17.75,
+      "pnl": 2.75,
       "ts": "2026-07-05T20:30:08.185Z",
       "followAddr": "0x72254fe1a79fc8fd37de0168be735e6af4bd659a",
       "followLabel": "top #1",
@@ -129,10 +129,10 @@
         "label": "top #1",
         "addr": "0x7225…659a",
         "entry": 0.471,
-        "book": 838037,
+        "book": 902009,
         "wr": 57,
         "overallPnl": 4966589,
-        "posPnl": 235222
+        "posPnl": 299195
       }
     },
     {
@@ -179,7 +179,7 @@
         "label": "top-bel",
         "addr": "0xb61b…8a06",
         "entry": 0.35,
-        "book": 194874,
+        "book": 204874,
         "wr": 61,
         "overallPnl": 1536205,
         "posPnl": 2625
@@ -204,7 +204,7 @@
         "label": "top-arg",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 120166,
+        "book": 122359,
         "wr": 65,
         "overallPnl": 977120,
         "posPnl": 6088
@@ -228,7 +228,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 46895,
+      "book": 46873,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -254,7 +254,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 572055,
+      "book": 571857,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -271,7 +271,7 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 37248,
+          "usd": 37005,
           "cat": "Крипта"
         }
       ]
@@ -280,7 +280,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 209083,
+      "book": 209086,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
