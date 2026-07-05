@@ -28,7 +28,11 @@ for (const p of st.open || []) {
   p.pnl = +(p.value - p.cost).toFixed(2);
   p.cat = category(p.title);
 }
-st.equity = +((st.cash || 0) + (st.open || []).reduce((a, x) => a + x.value, 0)).toFixed(2);
+// кэш считаем от сделок (единый источник истины, как в браузере)
+const spent = (st.open || []).reduce((a, p) => a + p.cost, 0) + (st.closed || []).reduce((a, c) => a + c.cost, 0);
+const proceeds = (st.closed || []).reduce((a, c) => a + (c.exit * c.size), 0);
+st.cash = +(st.startBalance - spent + proceeds).toFixed(2);
+st.equity = +(st.cash + (st.open || []).reduce((a, x) => a + x.value, 0)).toFixed(2);
 st.totalPnl = +(st.equity - st.startBalance).toFixed(2);
 
 // 2) тайм-статистика по закрытым (по exitTs)

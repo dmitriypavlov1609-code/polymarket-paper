@@ -1,9 +1,9 @@
 {
   "startBalance": 100,
-  "cash": 90.28,
-  "equity": 128.45,
-  "totalPnl": 28.45,
-  "updated": "2026-07-05T20:05:52.267Z",
+  "cash": 61.02,
+  "equity": 99.38,
+  "totalPnl": -0.62,
+  "updated": "2026-07-05T20:06:38.270Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
     {
@@ -28,9 +28,9 @@
       "entry": 0.77,
       "size": 19,
       "cost": 14.63,
-      "bid": 0.75,
-      "value": 14.25,
-      "pnl": -0.38,
+      "bid": 0.76,
+      "value": 14.44,
+      "pnl": -0.19,
       "ts": "2026-07-05T20:05:48.974Z",
       "whale": "tops",
       "reason": "FOLLOW-TOPS: топы нетто $41k NO, вход @0.77, yield ~30%",
@@ -64,7 +64,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 46938,
+      "book": 46963,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
