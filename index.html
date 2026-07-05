@@ -42,6 +42,9 @@
   <h2>📈 Открытые позиции</h2>
   <div id="open"></div>
 
+  <h2>🐋 Киты, за которыми следим</h2>
+  <div id="whales"></div>
+
   <h2>✅ Закрытые сделки</h2>
   <div id="closed"></div>
 
@@ -75,6 +78,20 @@ async function load(){
       }
       $("open").innerHTML=h+'</table>';
     } else $("open").innerHTML='<div class="empty">Нет открытых позиций — жду сигнал кита</div>';
+
+    // whales
+    if((s.whales||[]).length){
+      let h='';
+      for(const w of s.whales){
+        h+='<div class="card" style="margin-bottom:10px"><div style="display:flex;justify-content:space-between;align-items:baseline"><div><b>'+w.label+'</b> <span style="color:var(--dim);font-size:12px">'+w.addr+'</span></div><div class="acc" style="font-weight:700">крипто-книга $'+(w.cryptoBook/1000).toFixed(0)+'k</div></div>';
+        h+='<div style="color:var(--dim);font-size:12px;margin:2px 0 8px">'+w.stat+'</div>';
+        for(const t of (w.top||[])){
+          h+='<div style="font-size:13px;margin:3px 0"><span class="side-'+(t.side==="YES"?"yes":"no")+'">'+t.side+'</span> <b>$'+(t.usd>=1000?(t.usd/1000).toFixed(0)+'k':t.usd)+'</b> <span style="color:var(--dim)">'+t.m+'</span></div>';
+        }
+        h+='</div>';
+      }
+      $("whales").innerHTML=h;
+    } else $("whales").innerHTML='<div class="empty">Загрузка китов…</div>';
 
     // closed
     if((s.closed||[]).length){

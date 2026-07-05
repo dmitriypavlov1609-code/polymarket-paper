@@ -3,7 +3,7 @@
   "cash": 90.28,
   "equity": 100,
   "totalPnl": 0,
-  "updated": "2026-07-05T19:17:31.973Z",
+  "updated": "2026-07-05T19:19:32.429Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
     {
@@ -25,5 +25,76 @@
   "log": [
     "Бумажный счёт открыт: $100.",
     "СДЕЛКА: BUY «BTC не упадёт до $62k» NO ×12 @ $0.81 = $9.72 (за ETH-whale, yield 23%). Кэш → $90.28."
+  ],
+  "whales": [
+    {
+      "label": "BTC-NO",
+      "addr": "0x72a0…c059",
+      "stat": "$332K book · WR77%",
+      "cryptoBook": 46803,
+      "top": [
+        {
+          "m": "Bitcoin reach $75,000 in July",
+          "side": "NO",
+          "usd": 6783
+        },
+        {
+          "m": "Bitcoin reach $72,500 in July",
+          "side": "NO",
+          "usd": 6748
+        },
+        {
+          "m": "Bitcoin dip to $52,500 in July",
+          "side": "NO",
+          "usd": 4777
+        }
+      ]
+    },
+    {
+      "label": "ETH-whale",
+      "addr": "0x06dc…4524",
+      "stat": "$762K book · WR73%",
+      "cryptoBook": 590038,
+      "top": [
+        {
+          "m": "Bitcoin reach $72,500 in July",
+          "side": "NO",
+          "usd": 38561
+        },
+        {
+          "m": "Bitcoin dip to $52,000 June 29-July 5",
+          "side": "NO",
+          "usd": 37591
+        },
+        {
+          "m": "Bitcoin reach $70,000 in July",
+          "side": "NO",
+          "usd": 36761
+        }
+      ]
+    },
+    {
+      "label": "floor-whale",
+      "addr": "0xcc50…4c82",
+      "stat": "copyPnL $514K · 0% hedge",
+      "cryptoBook": 209147,
+      "top": [
+        {
+          "m": "Bitcoin dip to $15,000 by December 31, 202",
+          "side": "NO",
+          "usd": 23249
+        },
+        {
+          "m": "Bitcoin dip to $45,000 by December 31, 202",
+          "side": "NO",
+          "usd": 16958
+        },
+        {
+          "m": "Bitcoin dip to $20,000 by December 31, 202",
+          "side": "NO",
+          "usd": 15869
+        }
+      ]
+    }
   ]
 }
