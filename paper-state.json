@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 248.89,
-  "equity": 299.35,
-  "totalPnl": -0.65,
+  "cash": 96.04,
+  "equity": 298.73,
+  "totalPnl": -1.27,
   "open": [
     {
       "title": "Portugal vs. Spain: Team to Advance",
@@ -22,7 +22,7 @@
         "label": "top$941k",
         "addr": "0x6501…1220",
         "entry": 0.673,
-        "book": 293563,
+        "book": 293781,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": -2610
@@ -59,9 +59,9 @@
       "entry": 0.685,
       "size": 14,
       "cost": 9.59,
-      "bid": 0.68,
-      "value": 9.52,
-      "pnl": -0.07,
+      "bid": 0.69,
+      "value": 9.66,
+      "pnl": 0.07,
       "cat": "Прочее",
       "followAddr": "0xf5fabdcdc6eb6d9765a228824f16cca9c91f62df",
       "followLabel": "top$969k",
@@ -94,7 +94,7 @@
         "label": "top$357k",
         "addr": "0x7ddd…c933",
         "entry": 0.72,
-        "book": 83636,
+        "book": 83648,
         "wr": 62,
         "overallPnl": 357049,
         "posPnl": 552
@@ -118,10 +118,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84701,
+        "book": 84739,
         "wr": 66,
         "overallPnl": 236707,
-        "posPnl": 980
+        "posPnl": 1105
       }
     },
     {
@@ -147,6 +147,198 @@
         "overallPnl": 416952,
         "posPnl": 288
       }
+    },
+    {
+      "title": "Jeffrey Epstein confirmed to be alive before 2027?",
+      "side": "No",
+      "asset": "69156743176103134736115123277705077910853098854566827417866113262179013876259",
+      "entry": 0.972,
+      "size": 26,
+      "cost": 25.26,
+      "bid": 0.971,
+      "value": 25.25,
+      "pnl": -0.01,
+      "cat": "Прочее",
+      "followAddr": "0x2d4bf8f846bf68f43b9157bf30810d334ac6ca7a",
+      "followLabel": "top$313k loss3%",
+      "ts": "2026-07-06T16:58:14.504Z",
+      "follow": {
+        "label": "top$313k loss3%",
+        "addr": "0x2d4b…ca7a",
+        "entry": 0.298,
+        "book": 42798,
+        "wr": 49,
+        "overallPnl": 313392,
+        "posPnl": 5283
+      }
+    },
+    {
+      "title": "Republicans win Trifecta with Senate Supermajority in midterms?",
+      "side": "No",
+      "asset": "37863525039538909486192841018078773640171929478619956615841214647648192070989",
+      "entry": 0.947,
+      "size": 26,
+      "cost": 24.62,
+      "bid": 0.946,
+      "value": 24.6,
+      "pnl": -0.02,
+      "cat": "Политика",
+      "followAddr": "0x2d4bf8f846bf68f43b9157bf30810d334ac6ca7a",
+      "followLabel": "top$313k loss3%",
+      "ts": "2026-07-06T16:58:14.505Z",
+      "follow": {
+        "label": "top$313k loss3%",
+        "addr": "0x2d4b…ca7a",
+        "entry": 0.305,
+        "book": 42798,
+        "wr": 49,
+        "overallPnl": 313392,
+        "posPnl": 5062
+      }
+    },
+    {
+      "title": "Will the Iranian regime fall before 2027?",
+      "side": "No",
+      "asset": "106181075047366745139197108801635573283215248045056329679360376976893016488727",
+      "entry": 0.935,
+      "size": 26,
+      "cost": 24.31,
+      "bid": 0.93,
+      "value": 24.18,
+      "pnl": -0.13,
+      "cat": "Прочее",
+      "followAddr": "0x2d4bf8f846bf68f43b9157bf30810d334ac6ca7a",
+      "followLabel": "top$313k loss3%",
+      "ts": "2026-07-06T16:58:14.505Z",
+      "follow": {
+        "label": "top$313k loss3%",
+        "addr": "0x2d4b…ca7a",
+        "entry": 0.134,
+        "book": 42798,
+        "wr": 49,
+        "overallPnl": 313392,
+        "posPnl": 4351
+      }
+    },
+    {
+      "title": "Will Keir Starmer be the next leader out before 2027?",
+      "side": "Yes",
+      "asset": "39343707438379131883527162296681742264187661695159387350978687807542512925353",
+      "entry": 0.965,
+      "size": 26,
+      "cost": 25.08,
+      "bid": 0.961,
+      "value": 24.99,
+      "pnl": -0.09,
+      "cat": "Прочее",
+      "followAddr": "0x2d4bf8f846bf68f43b9157bf30810d334ac6ca7a",
+      "followLabel": "top$313k loss3%",
+      "ts": "2026-07-06T16:58:14.505Z",
+      "follow": {
+        "label": "top$313k loss3%",
+        "addr": "0x2d4b…ca7a",
+        "entry": 0.304,
+        "book": 42798,
+        "wr": 49,
+        "overallPnl": 313392,
+        "posPnl": 1832
+      }
+    },
+    {
+      "title": "Will Alan Wilson win the South Carolina Republican Governor Primary Runoff by at least 15%?",
+      "side": "Yes",
+      "asset": "104379163117742629885145843254175370871602441338505544473119599328202544845485",
+      "entry": 0.989,
+      "size": 26,
+      "cost": 25.71,
+      "bid": 0.98,
+      "value": 25.48,
+      "pnl": -0.23,
+      "cat": "Политика",
+      "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
+      "followLabel": "top$237k loss12%",
+      "ts": "2026-07-06T16:58:14.738Z",
+      "follow": {
+        "label": "top$237k loss12%",
+        "addr": "0xc8b9…b836",
+        "entry": 0.938,
+        "book": 84739,
+        "wr": 66,
+        "overallPnl": 236707,
+        "posPnl": 606
+      }
+    },
+    {
+      "title": "Will Victor Marx win the 2026 Colorado Governor Republican primary election?",
+      "side": "Yes",
+      "asset": "5912633218482888328065257344647205648501215765833839997008626693303354194529",
+      "entry": 0.982,
+      "size": 26,
+      "cost": 25.52,
+      "bid": 0.971,
+      "value": 25.25,
+      "pnl": -0.27,
+      "cat": "Политика",
+      "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
+      "followLabel": "top$237k loss12%",
+      "ts": "2026-07-06T16:58:14.738Z",
+      "follow": {
+        "label": "top$237k loss12%",
+        "addr": "0xc8b9…b836",
+        "entry": 0.882,
+        "book": 84739,
+        "wr": 66,
+        "overallPnl": 236707,
+        "posPnl": 1121
+      }
+    },
+    {
+      "title": "Will Argentina win the 2026 FIFA World Cup?",
+      "side": "Yes",
+      "asset": "18812649149814341758733697580460697418474693998558159483117100240528657629879",
+      "entry": 0.167,
+      "size": 8,
+      "cost": 1.33,
+      "bid": 0.166,
+      "value": 1.33,
+      "pnl": 0,
+      "cat": "Спорт",
+      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
+      "followLabel": "top$941k loss10%",
+      "ts": "2026-07-06T16:58:15.079Z",
+      "follow": {
+        "label": "top$941k loss10%",
+        "addr": "0x6501…1220",
+        "entry": 0.157,
+        "book": 293781,
+        "wr": 60,
+        "overallPnl": 940546,
+        "posPnl": 3465
+      }
+    },
+    {
+      "title": "Will Spain win the 2026 FIFA World Cup?",
+      "side": "Yes",
+      "asset": "4394372887385518214471608448209527405727552777602031099972143344338178308080",
+      "entry": 0.127,
+      "size": 8,
+      "cost": 1.02,
+      "bid": 0.126,
+      "value": 1.01,
+      "pnl": -0.01,
+      "cat": "Спорт",
+      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
+      "followLabel": "top$941k loss10%",
+      "ts": "2026-07-06T16:58:15.079Z",
+      "follow": {
+        "label": "top$941k loss10%",
+        "addr": "0x6501…1220",
+        "entry": 0.103,
+        "book": 293781,
+        "wr": 60,
+        "overallPnl": 940546,
+        "posPnl": 2321
+      }
     }
   ],
   "closed": [],
@@ -157,7 +349,15 @@
     "ВХОД: «Wimbledon ATP: Taylor Fritz vs Alexander» Taylor Fritz @0.69 $14 за top$969k yield 46%",
     "ВХОД: «Will United States vs. Belgium end in a » No @0.72 $14 за top$357k yield 38%",
     "ВХОД: «Will Larry Rhoden win the 2026 South Dak» Yes @0.55 $16 за top$237k yield 83%",
-    "ВХОД лотерейка: «UFC 329: Max Holloway vs. Conor McGregor» Conor McGregor @0.34 $10 (независимое событие, конвикция топа $20k)"
+    "ВХОД лотерейка: «UFC 329: Max Holloway vs. Conor McGregor» Conor McGregor @0.34 $10 (независимое событие, конвикция топа $20k)",
+    "ВХОД: «Jeffrey Epstein confirmed to be alive befo» No @0.97 $26 за top$313k",
+    "ВХОД: «Republicans win Trifecta with Senate Super» No @0.95 $26 за top$313k",
+    "ВХОД: «Will the Iranian regime fall before 2027?» No @0.94 $26 за top$313k",
+    "ВХОД: «Will Keir Starmer be the next leader out b» Yes @0.96 $26 за top$313k",
+    "ВХОД: «Will Alan Wilson win the South Carolina Re» Yes @0.99 $26 за top$237k",
+    "ВХОД: «Will Victor Marx win the 2026 Colorado Gov» Yes @0.98 $26 за top$237k",
+    "ВХОД: «Will Argentina win the 2026 FIFA World Cup» Yes @0.17 $8 за top$941k",
+    "ВХОД: «Will Spain win the 2026 FIFA World Cup?» Yes @0.13 $8 за top$941k"
   ],
   "tops": [
     {
@@ -230,7 +430,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 87630,
+      "book": 87612,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -256,7 +456,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 575438,
+      "book": 575429,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -282,7 +482,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 248671,
+      "book": 248549,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -293,7 +493,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 18437,
+          "usd": 18361,
           "cat": "Крипта"
         },
         {
@@ -312,5 +512,5 @@
     "trades": 0,
     "winrate": 0
   },
-  "updated": "2026-07-06T16:55:57.890Z"
+  "updated": "2026-07-06T16:58:23.598Z"
 }
