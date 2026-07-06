@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 245.83,
-  "equity": 299.55,
-  "totalPnl": -0.45,
+  "equity": 299.41,
+  "totalPnl": -0.59,
   "open": [
     {
       "title": "Portugal vs. Spain: Team to Advance",
@@ -11,9 +11,9 @@
       "entry": 0.665,
       "size": 14,
       "cost": 9.31,
-      "bid": 0.64,
-      "value": 8.96,
-      "pnl": -0.35,
+      "bid": 0.65,
+      "value": 9.1,
+      "pnl": -0.21,
       "cat": "Политика",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k",
@@ -22,7 +22,7 @@
         "label": "top$941k",
         "addr": "0x6501…1220",
         "entry": 0.673,
-        "book": 293348,
+        "book": 293397,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": -8889
@@ -61,9 +61,9 @@
       "entry": 0.685,
       "size": 14,
       "cost": 9.59,
-      "bid": 0.76,
-      "value": 10.64,
-      "pnl": 1.05,
+      "bid": 0.74,
+      "value": 10.36,
+      "pnl": 0.77,
       "cat": "Прочее",
       "followAddr": "0xf5fabdcdc6eb6d9765a228824f16cca9c91f62df",
       "followLabel": "top$969k",
@@ -72,10 +72,10 @@
         "label": "top$969k",
         "addr": "0xf5fa…62df",
         "entry": 0.674,
-        "book": 105818,
+        "book": 104453,
         "wr": 82,
         "overallPnl": 969316,
-        "posPnl": 13736
+        "posPnl": 12371
       },
       "topPeak": 111266.4052
     },
@@ -97,12 +97,12 @@
         "label": "top$357k",
         "addr": "0x7ddd…c933",
         "entry": 0.72,
-        "book": 89127,
+        "book": 95756,
         "wr": 62,
         "overallPnl": 357049,
-        "posPnl": 600
+        "posPnl": 646
       },
-      "topPeak": 89126.8665
+      "topPeak": 95755.9755
     },
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -122,10 +122,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84825,
+        "book": 85024,
         "wr": 66,
         "overallPnl": 236707,
-        "posPnl": 1377
+        "posPnl": 1363
       },
       "topPeak": 12929.1109
     },
@@ -172,7 +172,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 293348,
+        "book": 293397,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 8788
@@ -197,10 +197,10 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 293348,
+        "book": 293397,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 2516
+        "posPnl": 2564
       },
       "topPeak": 12902.4989
     }
@@ -379,12 +379,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 87603,
+      "book": 87682,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8847,
+          "usd": 8857,
           "cat": "Крипта"
         },
         {
@@ -405,7 +405,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 557910,
+      "book": 557342,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -422,7 +422,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 22847,
+          "usd": 22872,
           "cat": "Крипта"
         }
       ]
@@ -431,7 +431,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 250954,
+      "book": 251528,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -442,7 +442,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 19163,
+          "usd": 19691,
           "cat": "Крипта"
         },
         {
@@ -461,5 +461,5 @@
     "trades": 6,
     "winrate": 0
   },
-  "updated": "2026-07-06T18:07:46.608Z"
+  "updated": "2026-07-06T18:13:45.607Z"
 }
