@@ -20,14 +20,26 @@ function category(title) {
   return "Прочее";
 }
 
-// 1) марки открытых позиций
+// 1) марки открытых позиций + АВТО-ЗАКРЫТИЕ резолвнувшихся (bid≈0 проигрыш / ≈1 выигрыш)
+const nowIso = new Date().toISOString();
+const stillOpen = [];
+st.closed = st.closed || [];
 for (const p of st.open || []) {
   const bid = await bidOf(p.asset);
+  if (bid <= 0.05 || bid >= 0.95) {
+    const exit = bid >= 0.95 ? 1 : 0;
+    const pnl = +((exit * p.size) - p.cost).toFixed(2);
+    st.closed.push({ title: p.title, side: p.side, entry: p.entry, exit, size: p.size, cost: p.cost, pnl, exitTs: nowIso, followLabel: p.followLabel || "" });
+    (st.log = st.log || []).push("РЕЗОЛВ: «" + p.title + "» " + (exit ? "🟢ВЫИГРЫШ" : "🔴ПРОИГРЫШ") + " " + (pnl >= 0 ? "+" : "") + "$" + pnl);
+    continue;
+  }
   p.bid = bid || p.bid || p.entry;
   p.value = +(p.bid * p.size).toFixed(2);
   p.pnl = +(p.value - p.cost).toFixed(2);
   p.cat = category(p.title);
+  stillOpen.push(p);
 }
+st.open = stillOpen;
 // кэш считаем от сделок (единый источник истины, как в браузере)
 const spent = (st.open || []).reduce((a, p) => a + p.cost, 0) + (st.closed || []).reduce((a, c) => a + c.cost, 0);
 const proceeds = (st.closed || []).reduce((a, c) => a + (c.exit * c.size), 0);

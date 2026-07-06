@@ -1,9 +1,9 @@
 {
   "startBalance": 100,
   "cash": 2.95,
-  "equity": 48.45,
-  "totalPnl": -51.55,
-  "updated": "2026-07-06T08:46:17.806Z",
+  "equity": 47.99,
+  "totalPnl": -52.01,
+  "updated": "2026-07-06T12:10:10.091Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
     {
@@ -13,9 +13,9 @@
       "entry": 0.77,
       "size": 19,
       "cost": 14.63,
-      "bid": 0.76,
-      "value": 14.44,
-      "pnl": -0.19,
+      "bid": 0.81,
+      "value": 15.39,
+      "pnl": 0.76,
       "ts": "2026-07-05T20:05:48.974Z",
       "whale": "tops",
       "reason": "FOLLOW-TOPS: топы нетто $41k NO, вход @0.77, yield ~30%",
@@ -26,10 +26,10 @@
         "label": "ETH-whale",
         "addr": "0x06dc…4524",
         "entry": 0.824,
-        "book": 438677,
+        "book": 499110,
         "wr": 73,
         "overallPnl": null,
-        "posPnl": -2867
+        "posPnl": -438
       }
     },
     {
@@ -39,9 +39,9 @@
       "entry": 0.77,
       "size": 19,
       "cost": 14.63,
-      "bid": 0.78,
-      "value": 14.82,
-      "pnl": 0.19,
+      "bid": 0.71,
+      "value": 13.49,
+      "pnl": -1.14,
       "ts": "2026-07-05T20:05:48.974Z",
       "whale": "tops",
       "reason": "FOLLOW-TOPS: топы нетто $32k NO, вход @0.77, yield ~30%",
@@ -52,10 +52,10 @@
         "label": "floor-whale",
         "addr": "0xcc50…4c82",
         "entry": 0.649,
-        "book": 204167,
+        "book": 208893,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 1755
+        "posPnl": 913
       }
     },
     {
@@ -90,9 +90,9 @@
       "entry": 0.174,
       "size": 40,
       "cost": 6.96,
-      "bid": 0.168,
-      "value": 6.72,
-      "pnl": -0.24,
+      "bid": 0.166,
+      "value": 6.64,
+      "pnl": -0.32,
       "ts": "2026-07-05T20:44:23.329Z",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top-arg",
@@ -102,10 +102,10 @@
         "label": "top-arg",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 299007,
+        "book": 293318,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 4225
+        "posPnl": 3465
       }
     }
   ],
@@ -175,24 +175,24 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 60929,
+      "book": 72582,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 7093,
+          "usd": 7195,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 5288,
+          "usd": 5400,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin dip to $52,500 in July",
           "side": "NO",
-          "usd": 4994,
+          "usd": 4824,
           "cat": "Крипта"
         }
       ]
@@ -201,24 +201,24 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 438837,
+      "book": 499110,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 39453,
+          "usd": 40344,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 37248,
+          "usd": 39678,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin dip to $52,500 in July",
           "side": "NO",
-          "usd": 23225,
+          "usd": 22437,
           "cat": "Крипта"
         }
       ]
@@ -227,7 +227,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 204167,
+      "book": 208893,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
