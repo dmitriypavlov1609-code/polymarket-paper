@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 269.36,
-  "equity": 308.22,
-  "totalPnl": 8.22,
+  "equity": 308.23,
+  "totalPnl": 8.23,
   "open": [
     {
       "title": "Portugal vs. Spain: Team to Advance",
@@ -22,7 +22,7 @@
         "label": "top$941k",
         "addr": "0x6501…1220",
         "entry": 0.652,
-        "book": 696732,
+        "book": 696052,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 210625
@@ -47,12 +47,12 @@
         "label": "top$357k",
         "addr": "0x7ddd…c933",
         "entry": 0.72,
-        "book": 139774,
+        "book": 160645,
         "wr": 62,
         "overallPnl": 357049,
-        "posPnl": 964
+        "posPnl": 1108
       },
-      "topPeak": 139425.2607
+      "topPeak": 160644.9976
     },
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -72,7 +72,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84879,
+        "book": 84875,
         "wr": 66,
         "overallPnl": 236707,
         "posPnl": 1363
@@ -122,7 +122,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 696732,
+        "book": 696052,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 4986
@@ -136,9 +136,9 @@
       "entry": 0.127,
       "size": 8,
       "cost": 1.02,
-      "bid": 0.178,
-      "value": 1.42,
-      "pnl": 0.4,
+      "bid": 0.179,
+      "value": 1.43,
+      "pnl": 0.41,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k loss10%",
@@ -147,10 +147,10 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 696732,
+        "book": 696052,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 7415
+        "posPnl": 7318
       },
       "topPeak": 17413.5229
     }
@@ -357,24 +357,24 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 89140,
+      "book": 90262,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8866,
+          "usd": 8856,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 5366,
+          "usd": 5238,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin dip to $52,500 in July",
           "side": "NO",
-          "usd": 4850,
+          "usd": 4959,
           "cat": "Крипта"
         }
       ]
@@ -383,24 +383,24 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 600883,
+      "book": 604206,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 38115,
+          "usd": 37224,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 34814,
+          "usd": 33835,
           "cat": "Крипта"
         },
         {
-          "m": "Bitcoin reach $75,000 in July",
-          "side": "NO",
-          "usd": 22896,
+          "m": "Bitcoin reach $64,000 on July 6",
+          "side": "YES",
+          "usd": 32682,
           "cat": "Крипта"
         }
       ]
@@ -409,18 +409,18 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 252366,
+      "book": 252527,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
           "side": "NO",
-          "usd": 23286,
+          "usd": 23322,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 20598,
+          "usd": 18109,
           "cat": "Крипта"
         },
         {
@@ -439,5 +439,5 @@
     "trades": 8,
     "winrate": 13
   },
-  "updated": "2026-07-06T21:07:44.800Z"
+  "updated": "2026-07-06T21:13:44.739Z"
 }
