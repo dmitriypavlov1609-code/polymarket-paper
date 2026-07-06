@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 245.83,
-  "equity": 302.82,
-  "totalPnl": 2.82,
+  "equity": 303.53,
+  "totalPnl": 3.53,
   "open": [
     {
       "title": "Portugal vs. Spain: Team to Advance",
@@ -11,9 +11,9 @@
       "entry": 0.665,
       "size": 14,
       "cost": 9.31,
-      "bid": 0.61,
-      "value": 8.54,
-      "pnl": -0.77,
+      "bid": 0.63,
+      "value": 8.82,
+      "pnl": -0.49,
       "cat": "Политика",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k",
@@ -22,7 +22,7 @@
         "label": "top$941k",
         "addr": "0x6501…1220",
         "entry": 0.673,
-        "book": 287593,
+        "book": 286543,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": -12028
@@ -36,9 +36,9 @@
       "entry": 0.705,
       "size": 14,
       "cost": 9.87,
-      "bid": 0.72,
-      "value": 10.08,
-      "pnl": 0.21,
+      "bid": 0.75,
+      "value": 10.5,
+      "pnl": 0.63,
       "cat": "Спорт",
       "followAddr": "0xa6a872ded6039c17a9e5c81b706c04e76fbeba32",
       "followLabel": "top$417k",
@@ -47,12 +47,12 @@
         "label": "top$417k",
         "addr": "0xa6a8…ba32",
         "entry": 0.707,
-        "book": 183745,
+        "book": 190700,
         "wr": 64,
         "overallPnl": 416952,
-        "posPnl": -443
+        "posPnl": 6512
       },
-      "topPeak": 163456.267
+      "topPeak": 168093.3242
     },
     {
       "title": "Wimbledon ATP: Taylor Fritz vs Alexander Bublik",
@@ -122,7 +122,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84771,
+        "book": 84810,
         "wr": 66,
         "overallPnl": 236707,
         "posPnl": 1363
@@ -147,7 +147,7 @@
         "label": "top-UFC $417k (лотерейка)",
         "addr": "0xa6a8…ba32",
         "entry": 0.34,
-        "book": 183745,
+        "book": 190700,
         "wr": 64,
         "overallPnl": 416952,
         "posPnl": 288
@@ -172,10 +172,10 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 287593,
+        "book": 286543,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 6088
+        "posPnl": 5366
       },
       "topPeak": 69769.0456
     },
@@ -186,9 +186,9 @@
       "entry": 0.127,
       "size": 8,
       "cost": 1.02,
-      "bid": 0.127,
-      "value": 1.02,
-      "pnl": 0,
+      "bid": 0.129,
+      "value": 1.03,
+      "pnl": 0.01,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k loss10%",
@@ -197,10 +197,10 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 287593,
+        "book": 286543,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 2564
+        "posPnl": 2273
       },
       "topPeak": 12902.4989
     }
@@ -379,12 +379,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 87833,
+      "book": 87864,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8886,
+          "usd": 8866,
           "cat": "Крипта"
         },
         {
@@ -405,7 +405,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 574489,
+      "book": 586733,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -422,7 +422,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 22946,
+          "usd": 22896,
           "cat": "Крипта"
         }
       ]
@@ -431,7 +431,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 251661,
+      "book": 251640,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -442,7 +442,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 19942,
+          "usd": 19909,
           "cat": "Крипта"
         },
         {
@@ -461,5 +461,5 @@
     "trades": 6,
     "winrate": 0
   },
-  "updated": "2026-07-06T19:13:45.573Z"
+  "updated": "2026-07-06T19:19:45.690Z"
 }
