@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 255.42,
-  "equity": 299.31,
-  "totalPnl": -0.69,
+  "equity": 299.87,
+  "totalPnl": -0.13,
   "open": [
     {
       "title": "Portugal vs. Spain: Team to Advance",
@@ -11,9 +11,9 @@
       "entry": 0.665,
       "size": 14,
       "cost": 9.31,
-      "bid": 0.63,
-      "value": 8.82,
-      "pnl": -0.49,
+      "bid": 0.64,
+      "value": 8.96,
+      "pnl": -0.35,
       "cat": "Политика",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k",
@@ -22,10 +22,10 @@
         "label": "top$941k",
         "addr": "0x6501…1220",
         "entry": 0.673,
-        "book": 287319,
+        "book": 290130,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": -12028
+        "posPnl": -8889
       },
       "topPeak": 208767.2595
     },
@@ -36,9 +36,9 @@
       "entry": 0.705,
       "size": 14,
       "cost": 9.87,
-      "bid": 0.76,
-      "value": 10.64,
-      "pnl": 0.77,
+      "bid": 0.79,
+      "value": 11.06,
+      "pnl": 1.19,
       "cat": "Спорт",
       "followAddr": "0xa6a872ded6039c17a9e5c81b706c04e76fbeba32",
       "followLabel": "top$417k",
@@ -47,12 +47,12 @@
         "label": "top$417k",
         "addr": "0xa6a8…ba32",
         "entry": 0.707,
-        "book": 195337,
+        "book": 204611,
         "wr": 64,
         "overallPnl": 416952,
-        "posPnl": 11149
+        "posPnl": 20423
       },
-      "topPeak": 175048.91
+      "topPeak": 184323.0245
     },
     {
       "title": "Will United States vs. Belgium end in a draw?",
@@ -72,12 +72,12 @@
         "label": "top$357k",
         "addr": "0x7ddd…c933",
         "entry": 0.72,
-        "book": 104516,
+        "book": 104841,
         "wr": 62,
         "overallPnl": 357049,
-        "posPnl": 717
+        "posPnl": 720
       },
-      "topPeak": 104492.7629
+      "topPeak": 104841.0219
     },
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -97,7 +97,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84779,
+        "book": 84758,
         "wr": 66,
         "overallPnl": 236707,
         "posPnl": 1363
@@ -122,7 +122,7 @@
         "label": "top-UFC $417k (лотерейка)",
         "addr": "0xa6a8…ba32",
         "entry": 0.34,
-        "book": 195337,
+        "book": 204611,
         "wr": 64,
         "overallPnl": 416952,
         "posPnl": 288
@@ -147,7 +147,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 287319,
+        "book": 290130,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 5366
@@ -172,7 +172,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 287319,
+        "book": 290130,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 3049
@@ -368,7 +368,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 88404,
+      "book": 87935,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -394,7 +394,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 593927,
+      "book": 594565,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -405,7 +405,7 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 34327,
+          "usd": 34814,
           "cat": "Крипта"
         },
         {
@@ -420,7 +420,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 251564,
+      "book": 251662,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -431,7 +431,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 19735,
+          "usd": 19866,
           "cat": "Крипта"
         },
         {
@@ -450,5 +450,5 @@
     "trades": 7,
     "winrate": 0
   },
-  "updated": "2026-07-06T19:25:49.408Z"
+  "updated": "2026-07-06T19:31:45.738Z"
 }
