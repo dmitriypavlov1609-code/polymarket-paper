@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 278.67,
-  "equity": 303.47,
-  "totalPnl": 3.47,
+  "equity": 303.51,
+  "totalPnl": 3.51,
   "open": [
     {
       "title": "Will United States vs. Belgium end in a draw?",
@@ -36,9 +36,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.534,
-      "value": 8.54,
-      "pnl": -0.2,
+      "bid": 0.536,
+      "value": 8.58,
+      "pnl": -0.16,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -47,10 +47,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85085,
+        "book": 85076,
         "wr": 66,
         "overallPnl": 236707,
-        "posPnl": 1354
+        "posPnl": 1377
       },
       "topPeak": 12929.1109
     },
@@ -97,7 +97,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 106291,
+        "book": 106170,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 4986
@@ -122,12 +122,12 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 106291,
+        "book": 106170,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 7706
+        "posPnl": 7803
       },
-      "topPeak": 17753.0624
+      "topPeak": 17801.568
     }
   ],
   "closed": [
@@ -346,7 +346,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 93037,
+      "book": 92709,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -372,7 +372,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 601458,
+      "book": 569891,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -398,12 +398,12 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 260763,
+      "book": 259444,
       "top": [
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 26875,
+          "usd": 25428,
           "cat": "Крипта"
         },
         {
@@ -428,5 +428,5 @@
     "trades": 9,
     "winrate": 11
   },
-  "updated": "2026-07-06T22:49:43.808Z"
+  "updated": "2026-07-06T22:55:43.769Z"
 }
