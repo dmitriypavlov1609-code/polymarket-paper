@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 269.36,
-  "equity": 308.23,
-  "totalPnl": 8.23,
+  "equity": 308.24,
+  "totalPnl": 8.24,
   "open": [
     {
       "title": "Portugal vs. Spain: Team to Advance",
@@ -22,12 +22,12 @@
         "label": "top$941k",
         "addr": "0x6501…1220",
         "entry": 0.652,
-        "book": 696052,
+        "book": 696438,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 210625
+        "posPnl": 210928
       },
-      "topPeak": 605687.7867
+      "topPeak": 605990.7821
     },
     {
       "title": "Will United States vs. Belgium end in a draw?",
@@ -47,12 +47,12 @@
         "label": "top$357k",
         "addr": "0x7ddd…c933",
         "entry": 0.72,
-        "book": 160645,
+        "book": 206567,
         "wr": 62,
         "overallPnl": 357049,
-        "posPnl": 1108
+        "posPnl": 1425
       },
-      "topPeak": 160644.9976
+      "topPeak": 206507.2961
     },
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -72,7 +72,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84875,
+        "book": 85522,
         "wr": 66,
         "overallPnl": 236707,
         "posPnl": 1363
@@ -122,7 +122,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 696052,
+        "book": 696438,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 4986
@@ -136,9 +136,9 @@
       "entry": 0.127,
       "size": 8,
       "cost": 1.02,
-      "bid": 0.179,
-      "value": 1.43,
-      "pnl": 0.41,
+      "bid": 0.18,
+      "value": 1.44,
+      "pnl": 0.42,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k loss10%",
@@ -147,12 +147,12 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 696052,
+        "book": 696438,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 7318
+        "posPnl": 7512
       },
-      "topPeak": 17413.5229
+      "topPeak": 17510.5342
     }
   ],
   "closed": [
@@ -357,18 +357,18 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 90262,
+      "book": 90195,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8856,
+          "usd": 8807,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 5238,
+          "usd": 5175,
           "cat": "Крипта"
         },
         {
@@ -383,24 +383,24 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 604206,
+      "book": 610201,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 37224,
-          "cat": "Крипта"
-        },
-        {
-          "m": "Bitcoin reach $70,000 in July",
-          "side": "NO",
-          "usd": 33835,
+          "usd": 36778,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $64,000 on July 6",
           "side": "YES",
-          "usd": 32682,
+          "usd": 32888,
+          "cat": "Крипта"
+        },
+        {
+          "m": "Bitcoin reach $70,000 in July",
+          "side": "NO",
+          "usd": 32379,
           "cat": "Крипта"
         }
       ]
@@ -409,7 +409,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 252527,
+      "book": 252395,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -420,13 +420,13 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 18109,
+          "usd": 18134,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin dip to $45,000 by December 31, 2",
           "side": "NO",
-          "usd": 17221,
+          "usd": 17484,
           "cat": "Крипта"
         }
       ]
@@ -439,5 +439,5 @@
     "trades": 8,
     "winrate": 13
   },
-  "updated": "2026-07-06T21:13:44.739Z"
+  "updated": "2026-07-06T21:19:45.622Z"
 }
