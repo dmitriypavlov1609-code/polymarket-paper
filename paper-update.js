@@ -25,15 +25,26 @@ const nowIso = new Date().toISOString();
 const stillOpen = [];
 st.closed = st.closed || [];
 for (const p of st.open || []) {
-  const bid = await bidOf(p.asset);
-  if (bid <= 0.05 || bid >= 0.95) {
-    const exit = bid >= 0.95 ? 1 : 0;
+  const bk = await jget(`${CLOB}/book?token_id=${p.asset}`);
+  const bids = bk ? (bk.bids || []).map(o => +o.price).filter(x => x > 0) : [];
+  const bid = bids.length ? Math.max(...bids) : null;
+  // РЕЗОЛВ только по авторитетному gamma-флагу closed (пустой стакан НЕ считается резолвом!)
+  const g = await jget(`https://gamma-api.polymarket.com/markets?clob_token_ids=${p.asset}`);
+  const m = Array.isArray(g) ? g[0] : g;
+  if (m && m.closed === true) {
+    let exit = 0;
+    try {
+      const outs = JSON.parse(m.outcomes || "[]"), pr = JSON.parse(m.outcomePrices || "[]");
+      const i = outs.findIndex(o => (o || "").toLowerCase() === (p.side || "").toLowerCase());
+      exit = (i >= 0 && +pr[i] >= 0.5) ? 1 : (i >= 0 ? 0 : (bid != null && bid >= 0.5 ? 1 : 0));
+    } catch { exit = (bid != null && bid >= 0.5) ? 1 : 0; }
     const pnl = +((exit * p.size) - p.cost).toFixed(2);
     st.closed.push({ title: p.title, side: p.side, entry: p.entry, exit, size: p.size, cost: p.cost, pnl, exitTs: nowIso, followLabel: p.followLabel || "" });
     (st.log = st.log || []).push("РЕЗОЛВ: «" + p.title + "» " + (exit ? "🟢ВЫИГРЫШ" : "🔴ПРОИГРЫШ") + " " + (pnl >= 0 ? "+" : "") + "$" + pnl);
     continue;
   }
-  p.bid = bid || p.bid || p.entry;
+  // не резолвнут — марка (глюк bid=null → держим прошлую цену, не обнуляем)
+  p.bid = bid != null ? bid : (p.bid || p.entry);
   p.value = +(p.bid * p.size).toFixed(2);
   p.pnl = +(p.value - p.cost).toFixed(2);
   p.cat = category(p.title);
