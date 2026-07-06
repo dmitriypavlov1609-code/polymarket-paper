@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 245.83,
-  "equity": 298.61,
-  "totalPnl": -1.39,
+  "equity": 298.47,
+  "totalPnl": -1.53,
   "open": [
     {
       "title": "Portugal vs. Spain: Team to Advance",
@@ -22,11 +22,12 @@
         "label": "top$941k",
         "addr": "0x6501…1220",
         "entry": 0.673,
-        "book": 300419,
+        "book": 300468,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": -2610
-      }
+      },
+      "topPeak": 208767.2595
     },
     {
       "title": "Portugal vs. Spain: O/U 3.5",
@@ -50,7 +51,8 @@
         "wr": 64,
         "overallPnl": 416952,
         "posPnl": -443
-      }
+      },
+      "topPeak": 163456.267
     },
     {
       "title": "Wimbledon ATP: Taylor Fritz vs Alexander Bublik",
@@ -59,9 +61,9 @@
       "entry": 0.685,
       "size": 14,
       "cost": 9.59,
-      "bid": 0.66,
-      "value": 9.24,
-      "pnl": -0.35,
+      "bid": 0.65,
+      "value": 9.1,
+      "pnl": -0.49,
       "cat": "Прочее",
       "followAddr": "0xf5fabdcdc6eb6d9765a228824f16cca9c91f62df",
       "followLabel": "top$969k",
@@ -70,11 +72,12 @@
         "label": "top$969k",
         "addr": "0xf5fa…62df",
         "entry": 0.674,
-        "book": 92164,
+        "book": 90799,
         "wr": 82,
         "overallPnl": 969316,
-        "posPnl": 82
-      }
+        "posPnl": -1283
+      },
+      "topPeak": 90799.0667
     },
     {
       "title": "Will United States vs. Belgium end in a draw?",
@@ -98,7 +101,8 @@
         "wr": 62,
         "overallPnl": 357049,
         "posPnl": 575
-      }
+      },
+      "topPeak": 86086.9322
     },
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -118,11 +122,12 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85245,
+        "book": 85100,
         "wr": 66,
         "overallPnl": 236707,
-        "posPnl": 1491
-      }
+        "posPnl": 1513
+      },
+      "topPeak": 12929.1109
     },
     {
       "title": "UFC 329: Max Holloway vs. Conor McGregor (Welterweight, Main Card)",
@@ -146,7 +151,8 @@
         "wr": 64,
         "overallPnl": 416952,
         "posPnl": 288
-      }
+      },
+      "topPeak": 20288.2352
     },
     {
       "title": "Will Argentina win the 2026 FIFA World Cup?",
@@ -166,11 +172,12 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 300419,
+        "book": 300468,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 9168
-      }
+      },
+      "topPeak": 69008.62
     },
     {
       "title": "Will Spain win the 2026 FIFA World Cup?",
@@ -190,11 +197,12 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 300419,
+        "book": 300468,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 2855
-      }
+        "posPnl": 2904
+      },
+      "topPeak": 12902.4989
     }
   ],
   "closed": [
@@ -371,12 +379,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 87540,
+      "book": 87317,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8847,
+          "usd": 8857,
           "cat": "Крипта"
         },
         {
@@ -397,7 +405,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 548766,
+      "book": 548316,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -414,7 +422,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 22847,
+          "usd": 22872,
           "cat": "Крипта"
         }
       ]
@@ -423,7 +431,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 249607,
+      "book": 249360,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -434,7 +442,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 18855,
+          "usd": 18660,
           "cat": "Крипта"
         },
         {
@@ -453,5 +461,5 @@
     "trades": 6,
     "winrate": 0
   },
-  "updated": "2026-07-06T17:40:02.570Z"
+  "updated": "2026-07-06T17:42:03.971Z"
 }
