@@ -3,7 +3,7 @@
   "cash": 2.95,
   "equity": 47.95,
   "totalPnl": -52.05,
-  "updated": "2026-07-06T13:12:55.781Z",
+  "updated": "2026-07-06T13:14:22.759Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
     {
@@ -101,7 +101,7 @@
         "label": "ETH-whale",
         "addr": "0x06dc…4524",
         "entry": 0.824,
-        "book": 521654,
+        "book": 522127,
         "wr": 73,
         "overallPnl": null,
         "posPnl": 54
@@ -176,7 +176,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 74817,
+      "book": 74575,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -193,7 +193,7 @@
         {
           "m": "Bitcoin be above $60,000 on July 6",
           "side": "YES",
-          "usd": 5336,
+          "usd": 5322,
           "cat": "Крипта"
         }
       ]
@@ -202,7 +202,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 521654,
+      "book": 522630,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -219,7 +219,7 @@
         {
           "m": "Bitcoin be above $64,000 on July 6",
           "side": "NO",
-          "usd": 26103,
+          "usd": 26056,
           "cat": "Крипта"
         }
       ]
@@ -228,7 +228,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 209152,
+      "book": 209275,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -239,7 +239,7 @@
         {
           "m": "Bitcoin dip to $45,000 by December 31, 2",
           "side": "NO",
-          "usd": 16695,
+          "usd": 16827,
           "cat": "Крипта"
         },
         {
