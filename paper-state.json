@@ -3,7 +3,7 @@
   "cash": 2.95,
   "equity": 47.95,
   "totalPnl": -52.05,
-  "updated": "2026-07-06T12:47:49.311Z",
+  "updated": "2026-07-06T12:49:05.597Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
     {
@@ -26,10 +26,10 @@
         "label": "floor-whale",
         "addr": "0xcc50…4c82",
         "entry": 0.649,
-        "book": 207998,
+        "book": 208031,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 849
+        "posPnl": 719
       }
     },
     {
@@ -101,10 +101,10 @@
         "label": "ETH-whale",
         "addr": "0x06dc…4524",
         "entry": 0.824,
-        "book": 494717,
+        "book": 494481,
         "wr": 73,
         "overallPnl": null,
-        "posPnl": -438
+        "posPnl": 54
       }
     }
   ],
@@ -176,12 +176,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 73747,
+      "book": 73064,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 7161,
+          "usd": 7176,
           "cat": "Крипта"
         },
         {
@@ -202,7 +202,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 494717,
+      "book": 494481,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -213,7 +213,7 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 39678,
+          "usd": 40170,
           "cat": "Крипта"
         },
         {
@@ -228,7 +228,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 207998,
+      "book": 208031,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
