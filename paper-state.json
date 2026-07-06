@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 255.42,
-  "equity": 302.17,
-  "totalPnl": 2.17,
+  "cash": 269.36,
+  "equity": 302.11,
+  "totalPnl": 2.11,
   "open": [
     {
       "title": "Portugal vs. Spain: Team to Advance",
@@ -11,9 +11,9 @@
       "entry": 0.665,
       "size": 14,
       "cost": 9.31,
-      "bid": 0.62,
-      "value": 8.68,
-      "pnl": -0.63,
+      "bid": 0.61,
+      "value": 8.54,
+      "pnl": -0.77,
       "cat": "Политика",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k",
@@ -22,37 +22,12 @@
         "label": "top$941k",
         "addr": "0x6501…1220",
         "entry": 0.652,
-        "book": 469251,
+        "book": 463652,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": -10258
+        "posPnl": -16318
       },
       "topPeak": 384804.1466
-    },
-    {
-      "title": "Portugal vs. Spain: O/U 3.5",
-      "side": "Under",
-      "asset": "54724650100209160699762168068113288901757029998648085496979949078180526867390",
-      "entry": 0.705,
-      "size": 14,
-      "cost": 9.87,
-      "bid": 0.988,
-      "value": 13.83,
-      "pnl": 3.96,
-      "cat": "Спорт",
-      "followAddr": "0xa6a872ded6039c17a9e5c81b706c04e76fbeba32",
-      "followLabel": "top$417k",
-      "ts": "2026-07-06T16:35:00.034Z",
-      "follow": {
-        "label": "top$417k",
-        "addr": "0xa6a8…ba32",
-        "entry": 0.707,
-        "book": 248450,
-        "wr": 64,
-        "overallPnl": 416952,
-        "posPnl": 64498
-      },
-      "topPeak": 228624.3914
     },
     {
       "title": "Will United States vs. Belgium end in a draw?",
@@ -72,12 +47,12 @@
         "label": "top$357k",
         "addr": "0x7ddd…c933",
         "entry": 0.72,
-        "book": 111450,
+        "book": 111608,
         "wr": 62,
         "overallPnl": 357049,
-        "posPnl": 769
+        "posPnl": 770
       },
-      "topPeak": 111450.2368
+      "topPeak": 111608.1832
     },
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -97,7 +72,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85232,
+        "book": 85018,
         "wr": 66,
         "overallPnl": 236707,
         "posPnl": 1363
@@ -122,7 +97,7 @@
         "label": "top-UFC $417k (лотерейка)",
         "addr": "0xa6a8…ba32",
         "entry": 0.34,
-        "book": 248450,
+        "book": 20288,
         "wr": 64,
         "overallPnl": 416952,
         "posPnl": 288
@@ -147,7 +122,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 469251,
+        "book": 463652,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 4986
@@ -161,9 +136,9 @@
       "entry": 0.127,
       "size": 8,
       "cost": 1.02,
-      "bid": 0.111,
-      "value": 0.89,
-      "pnl": -0.13,
+      "bid": 0.107,
+      "value": 0.86,
+      "pnl": -0.16,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k loss10%",
@@ -172,10 +147,10 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 469251,
+        "book": 463652,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 818
+        "posPnl": 1206
       },
       "topPeak": 13048.0158
     }
@@ -271,6 +246,19 @@
       "exitTs": "2026-07-06T19:25:39.800Z",
       "followLabel": "top$969k",
       "reason": "топ вышел"
+    },
+    {
+      "title": "Portugal vs. Spain: O/U 3.5",
+      "side": "Under",
+      "entry": 0.705,
+      "exit": 0.996,
+      "size": 14,
+      "cost": 9.87,
+      "pnl": 4.07,
+      "proceeds": 13.94,
+      "exitTs": "2026-07-06T20:43:35.901Z",
+      "followLabel": "top$417k",
+      "reason": "топ вышел"
     }
   ],
   "log": [
@@ -295,7 +283,8 @@
     "ЗАКРЫТО (плохая асимметрия, догон кита): «Will Keir Starmer be the next lead» @0.96 $-0.12",
     "ЗАКРЫТО (плохая асимметрия, догон кита): «Will Alan Wilson win the South Car» @0.98 $-0.23",
     "ЗАКРЫТО (плохая асимметрия, догон кита): «Will Victor Marx win the 2026 Colo» @0.97 $-0.2",
-    "ВЫХОД вслед за топом (топ вышел): «Wimbledon ATP: Taylor Fritz vs Alexa» @0.69 +$0"
+    "ВЫХОД вслед за топом (топ вышел): «Wimbledon ATP: Taylor Fritz vs Alexa» @0.69 +$0",
+    "ВЫХОД вслед за топом (топ вышел): «Portugal vs. Spain: O/U 3.5» @1.00 +$4.07"
   ],
   "tops": [
     {
@@ -368,12 +357,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 89077,
+      "book": 89276,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8866,
+          "usd": 8876,
           "cat": "Крипта"
         },
         {
@@ -394,7 +383,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 601742,
+      "book": 601709,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -411,7 +400,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 22896,
+          "usd": 22921,
           "cat": "Крипта"
         }
       ]
@@ -420,7 +409,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 252233,
+      "book": 252331,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -431,7 +420,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 20522,
+          "usd": 20620,
           "cat": "Крипта"
         },
         {
@@ -444,11 +433,11 @@
     }
   ],
   "stats": {
-    "day": -0.71,
-    "week": -0.71,
-    "month": -0.71,
-    "trades": 7,
-    "winrate": 0
+    "day": 3.36,
+    "week": 3.36,
+    "month": 3.36,
+    "trades": 8,
+    "winrate": 13
   },
-  "updated": "2026-07-06T20:37:44.978Z"
+  "updated": "2026-07-06T20:43:45.344Z"
 }
