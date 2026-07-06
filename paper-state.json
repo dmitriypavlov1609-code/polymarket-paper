@@ -1,9 +1,9 @@
 {
   "startBalance": 100,
   "cash": 2.95,
-  "equity": 99.08,
-  "totalPnl": -0.92,
-  "updated": "2026-07-05T21:08:40.296Z",
+  "equity": 98.78,
+  "totalPnl": -1.22,
+  "updated": "2026-07-06T08:14:46.854Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
     {
@@ -25,11 +25,11 @@
       "follow": {
         "label": "ETH-whale",
         "addr": "0x06dc…4524",
-        "entry": 0.722,
-        "book": 572458,
+        "entry": null,
+        "book": 433862,
         "wr": 73,
         "overallPnl": null,
-        "posPnl": 210
+        "posPnl": null
       }
     },
     {
@@ -39,9 +39,9 @@
       "entry": 0.77,
       "size": 19,
       "cost": 14.63,
-      "bid": 0.76,
-      "value": 14.44,
-      "pnl": -0.19,
+      "bid": 0.75,
+      "value": 14.25,
+      "pnl": -0.38,
       "ts": "2026-07-05T20:05:48.974Z",
       "whale": "tops",
       "reason": "FOLLOW-TOPS: топы нетто $41k NO, вход @0.77, yield ~30%",
@@ -52,10 +52,10 @@
         "label": "ETH-whale",
         "addr": "0x06dc…4524",
         "entry": 0.824,
-        "book": 572458,
+        "book": 433862,
         "wr": 73,
         "overallPnl": null,
-        "posPnl": -2867
+        "posPnl": -3354
       }
     },
     {
@@ -65,9 +65,9 @@
       "entry": 0.77,
       "size": 19,
       "cost": 14.63,
-      "bid": 0.76,
-      "value": 14.44,
-      "pnl": -0.19,
+      "bid": 0.79,
+      "value": 15.01,
+      "pnl": 0.38,
       "ts": "2026-07-05T20:05:48.974Z",
       "whale": "tops",
       "reason": "FOLLOW-TOPS: топы нетто $32k NO, вход @0.77, yield ~30%",
@@ -78,10 +78,10 @@
         "label": "floor-whale",
         "addr": "0xcc50…4c82",
         "entry": 0.649,
-        "book": 208862,
-        "wr": 52,
-        "overallPnl": 627580,
-        "posPnl": 1531
+        "book": 196872,
+        "wr": null,
+        "overallPnl": null,
+        "posPnl": 1885
       }
     },
     {
@@ -104,10 +104,10 @@
         "label": "sport-top",
         "addr": "0x7c1e…bab3",
         "entry": 0.55,
-        "book": 501650,
-        "wr": 50,
-        "overallPnl": 1908881,
-        "posPnl": -35750
+        "book": 20190,
+        "wr": null,
+        "overallPnl": null,
+        "posPnl": -357500
       }
     },
     {
@@ -129,10 +129,10 @@
         "label": "top #1",
         "addr": "0x7225…659a",
         "entry": 0.471,
-        "book": 953187,
-        "wr": 57,
-        "overallPnl": 4966589,
-        "posPnl": 350372
+        "book": 0,
+        "wr": null,
+        "overallPnl": null,
+        "posPnl": -602815
       }
     },
     {
@@ -153,11 +153,11 @@
       "follow": {
         "label": "top-sport2",
         "addr": "0x7ddd…c933",
-        "entry": 0.693,
-        "book": 326681,
-        "wr": 62,
-        "overallPnl": 357883,
-        "posPnl": -3960
+        "entry": null,
+        "book": 0,
+        "wr": null,
+        "overallPnl": null,
+        "posPnl": null
       }
     },
     {
@@ -167,9 +167,9 @@
       "entry": 0.37,
       "size": 28,
       "cost": 10.36,
-      "bid": 0.36,
-      "value": 10.08,
-      "pnl": -0.28,
+      "bid": 0.34,
+      "value": 9.52,
+      "pnl": -0.84,
       "ts": "2026-07-05T20:44:23.329Z",
       "followAddr": "0xb61b2079b95f6b7476fd3203e0274ffb93308a06",
       "followLabel": "top-bel",
@@ -179,10 +179,10 @@
         "label": "top-bel",
         "addr": "0xb61b…8a06",
         "entry": 0.35,
-        "book": 212874,
-        "wr": 61,
-        "overallPnl": 1536205,
-        "posPnl": 2625
+        "book": 60358,
+        "wr": null,
+        "overallPnl": null,
+        "posPnl": -892
       }
     },
     {
@@ -192,9 +192,9 @@
       "entry": 0.174,
       "size": 40,
       "cost": 6.96,
-      "bid": 0.171,
-      "value": 6.84,
-      "pnl": -0.12,
+      "bid": 0.168,
+      "value": 6.72,
+      "pnl": -0.24,
       "ts": "2026-07-05T20:44:23.329Z",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top-arg",
@@ -204,10 +204,10 @@
         "label": "top-arg",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 123215,
-        "wr": 65,
-        "overallPnl": 977120,
-        "posPnl": 5708
+        "book": 297506,
+        "wr": null,
+        "overallPnl": null,
+        "posPnl": 4225
       }
     }
   ],
@@ -228,24 +228,24 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 46832,
+      "book": 60711,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 6824,
+          "usd": 7101,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 6787,
+          "usd": 5633,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin dip to $52,500 in July",
           "side": "NO",
-          "usd": 4721,
+          "usd": 4994,
           "cat": "Крипта"
         }
       ]
@@ -254,24 +254,24 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 572458,
+      "book": 433546,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 38784,
-          "cat": "Крипта"
-        },
-        {
-          "m": "Bitcoin dip to $52,000 June 29-July 5",
-          "side": "NO",
-          "usd": 37591,
+          "usd": 39453,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 37248,
+          "usd": 36761,
+          "cat": "Крипта"
+        },
+        {
+          "m": "Bitcoin dip to $52,500 in July",
+          "side": "NO",
+          "usd": 23225,
           "cat": "Крипта"
         }
       ]
@@ -280,12 +280,12 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 208862,
+      "book": 196872,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
           "side": "NO",
-          "usd": 23249,
+          "usd": 23274,
           "cat": "Крипта"
         },
         {
@@ -312,14 +312,6 @@
   },
   "tops": [
     {
-      "addr": "0x7225…659a",
-      "copyPnl": 4629,
-      "realPnl": 4967,
-      "loss": 7,
-      "roi": 1283,
-      "hedged": 0
-    },
-    {
       "addr": "0x095f…90b2",
       "copyPnl": 3872,
       "realPnl": 3983,
@@ -328,43 +320,27 @@
       "hedged": 0
     },
     {
-      "addr": "0x7c1e…bab3",
-      "copyPnl": 1687,
-      "realPnl": 1909,
-      "loss": 12,
-      "roi": 794,
-      "hedged": 0
-    },
-    {
-      "addr": "0xb61b…8a06",
-      "copyPnl": 1436,
-      "realPnl": 1536,
-      "loss": 7,
-      "roi": 1387,
+      "addr": "0xf5fa…62df",
+      "copyPnl": 896,
+      "realPnl": 969,
+      "loss": 8,
+      "roi": 1163,
       "hedged": 0
     },
     {
       "addr": "0x6501…1220",
-      "copyPnl": 895,
-      "realPnl": 977,
-      "loss": 8,
-      "roi": 1330,
-      "hedged": 0
-    },
-    {
-      "addr": "0x34f6…4535",
-      "copyPnl": 533,
-      "realPnl": 589,
+      "copyPnl": 849,
+      "realPnl": 941,
       "loss": 10,
-      "roi": 1480,
+      "roi": 1238,
       "hedged": 0
     },
     {
-      "addr": "0xcc50…4c82",
-      "copyPnl": 514,
-      "realPnl": 628,
-      "loss": 18,
-      "roi": 553,
+      "addr": "0xa6a8…ba32",
+      "copyPnl": 392,
+      "realPnl": 417,
+      "loss": 6,
+      "roi": 2539,
       "hedged": 0
     },
     {
@@ -373,6 +349,30 @@
       "realPnl": 415,
       "loss": 8,
       "roi": 1090,
+      "hedged": 0
+    },
+    {
+      "addr": "0x7ddd…c933",
+      "copyPnl": 334,
+      "realPnl": 357,
+      "loss": 6,
+      "roi": 2202,
+      "hedged": 0
+    },
+    {
+      "addr": "0x447d…5eea",
+      "copyPnl": 321,
+      "realPnl": 363,
+      "loss": 11,
+      "roi": 955,
+      "hedged": 0
+    },
+    {
+      "addr": "0x2d4b…ca7a",
+      "copyPnl": 305,
+      "realPnl": 313,
+      "loss": 3,
+      "roi": 3455,
       "hedged": 0
     }
   ]
