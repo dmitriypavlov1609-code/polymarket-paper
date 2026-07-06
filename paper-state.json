@@ -1,37 +1,11 @@
 {
   "startBalance": 100,
   "cash": 2.95,
-  "equity": 47.99,
-  "totalPnl": -52.01,
-  "updated": "2026-07-06T12:10:10.091Z",
+  "equity": 32.79,
+  "totalPnl": -67.21,
+  "updated": "2026-07-06T12:14:01.889Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
-    {
-      "asset": "92816915429998265485709440266340158621084369220656661191529847288128743404723",
-      "title": "BTC не дойдёт $70k (июль)",
-      "side": "No",
-      "entry": 0.77,
-      "size": 19,
-      "cost": 14.63,
-      "bid": 0.81,
-      "value": 15.39,
-      "pnl": 0.76,
-      "ts": "2026-07-05T20:05:48.974Z",
-      "whale": "tops",
-      "reason": "FOLLOW-TOPS: топы нетто $41k NO, вход @0.77, yield ~30%",
-      "cat": "Крипта",
-      "followAddr": "0x06dc51826bc524d9a83770e7de9dd7e005b04524",
-      "followLabel": "ETH-whale",
-      "follow": {
-        "label": "ETH-whale",
-        "addr": "0x06dc…4524",
-        "entry": 0.824,
-        "book": 499110,
-        "wr": 73,
-        "overallPnl": null,
-        "posPnl": -438
-      }
-    },
     {
       "asset": "113384909315286427895253075840936333609056140759702064505761399190279923771325",
       "title": "BTC не упадёт $55k (июль)",
@@ -39,9 +13,9 @@
       "entry": 0.77,
       "size": 19,
       "cost": 14.63,
-      "bid": 0.71,
-      "value": 13.49,
-      "pnl": -1.14,
+      "bid": 0.72,
+      "value": 13.68,
+      "pnl": -0.95,
       "ts": "2026-07-05T20:05:48.974Z",
       "whale": "tops",
       "reason": "FOLLOW-TOPS: топы нетто $32k NO, вход @0.77, yield ~30%",
@@ -52,10 +26,10 @@
         "label": "floor-whale",
         "addr": "0xcc50…4c82",
         "entry": 0.649,
-        "book": 208893,
+        "book": 209093,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 913
+        "posPnl": 978
       }
     },
     {
@@ -153,6 +127,17 @@
       "pnl": -17.94,
       "exitTs": "2026-07-06T08:46:11.575Z",
       "followLabel": "top-sport2"
+    },
+    {
+      "title": "BTC не дойдёт $70k (июль)",
+      "side": "No",
+      "entry": 0.77,
+      "exit": 0,
+      "size": 19,
+      "cost": 14.63,
+      "pnl": -14.63,
+      "exitTs": "2026-07-06T12:13:47.439Z",
+      "followLabel": "ETH-whale"
     }
   ],
   "log": [
@@ -168,14 +153,15 @@
     "РЕЗОЛВ: «BTC не упадёт до $62,000 (5 июл)» 🔴ПРОИГРЫШ $-9.72 (за ETH-whale)",
     "РЕЗОЛВ: «Бразилия победит (5 июл)» 🔴ПРОИГРЫШ $-7.81 (за sport-top)",
     "РЕЗОЛВ: «Brazil-Norway: тотал меньше 2.5 (Under)» 🔴ПРОИГРЫШ $-15 (за top #1)",
-    "РЕЗОЛВ: «Мексика НЕ победит (5 июл)» 🔴ПРОИГРЫШ $-17.94 (за top-sport2)"
+    "РЕЗОЛВ: «Мексика НЕ победит (5 июл)» 🔴ПРОИГРЫШ $-17.94 (за top-sport2)",
+    "РЕЗОЛВ: «BTC не дойдёт $70k (июль)» 🔴ПРОИГРЫШ $-14.63"
   ],
   "whales": [
     {
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 72582,
+      "book": 73364,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -201,7 +187,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 499110,
+      "book": 499788,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -212,7 +198,7 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 39678,
+          "usd": 39439,
           "cat": "Крипта"
         },
         {
@@ -227,7 +213,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 208893,
+      "book": 209093,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -251,10 +237,10 @@
     }
   ],
   "stats": {
-    "day": -50.47,
-    "week": -50.47,
-    "month": -50.47,
-    "trades": 4,
+    "day": -65.1,
+    "week": -65.1,
+    "month": -65.1,
+    "trades": 5,
     "winrate": 0
   },
   "tops": [
