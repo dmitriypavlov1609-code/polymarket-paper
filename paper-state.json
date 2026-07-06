@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 96.04,
-  "equity": 298.73,
-  "totalPnl": -1.27,
+  "equity": 298.68,
+  "totalPnl": -1.32,
   "open": [
     {
       "title": "Portugal vs. Spain: Team to Advance",
@@ -22,7 +22,7 @@
         "label": "top$941k",
         "addr": "0x6501…1220",
         "entry": 0.673,
-        "book": 293781,
+        "book": 293745,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": -2610
@@ -70,10 +70,10 @@
         "label": "top$969k",
         "addr": "0xf5fa…62df",
         "entry": 0.674,
-        "book": 93530,
+        "book": 94882,
         "wr": 82,
         "overallPnl": 969316,
-        "posPnl": 1448
+        "posPnl": 2800
       }
     },
     {
@@ -94,7 +94,7 @@
         "label": "top$357k",
         "addr": "0x7ddd…c933",
         "entry": 0.72,
-        "book": 83648,
+        "book": 83686,
         "wr": 62,
         "overallPnl": 357049,
         "posPnl": 552
@@ -118,10 +118,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84739,
+        "book": 84582,
         "wr": 66,
         "overallPnl": 236707,
-        "posPnl": 1105
+        "posPnl": 1195
       }
     },
     {
@@ -166,7 +166,7 @@
         "label": "top$313k loss3%",
         "addr": "0x2d4b…ca7a",
         "entry": 0.298,
-        "book": 42798,
+        "book": 42804,
         "wr": 49,
         "overallPnl": 313392,
         "posPnl": 5283
@@ -190,7 +190,7 @@
         "label": "top$313k loss3%",
         "addr": "0x2d4b…ca7a",
         "entry": 0.305,
-        "book": 42798,
+        "book": 42804,
         "wr": 49,
         "overallPnl": 313392,
         "posPnl": 5062
@@ -214,7 +214,7 @@
         "label": "top$313k loss3%",
         "addr": "0x2d4b…ca7a",
         "entry": 0.134,
-        "book": 42798,
+        "book": 42804,
         "wr": 49,
         "overallPnl": 313392,
         "posPnl": 4351
@@ -238,7 +238,7 @@
         "label": "top$313k loss3%",
         "addr": "0x2d4b…ca7a",
         "entry": 0.304,
-        "book": 42798,
+        "book": 42804,
         "wr": 49,
         "overallPnl": 313392,
         "posPnl": 1832
@@ -262,7 +262,7 @@
         "label": "top$237k loss12%",
         "addr": "0xc8b9…b836",
         "entry": 0.938,
-        "book": 84739,
+        "book": 84582,
         "wr": 66,
         "overallPnl": 236707,
         "posPnl": 606
@@ -275,9 +275,9 @@
       "entry": 0.982,
       "size": 26,
       "cost": 25.52,
-      "bid": 0.971,
-      "value": 25.25,
-      "pnl": -0.27,
+      "bid": 0.969,
+      "value": 25.19,
+      "pnl": -0.33,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k loss12%",
@@ -286,10 +286,10 @@
         "label": "top$237k loss12%",
         "addr": "0xc8b9…b836",
         "entry": 0.882,
-        "book": 84739,
+        "book": 84582,
         "wr": 66,
         "overallPnl": 236707,
-        "posPnl": 1121
+        "posPnl": 1126
       }
     },
     {
@@ -310,7 +310,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 293781,
+        "book": 293745,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 3465
@@ -323,9 +323,9 @@
       "entry": 0.127,
       "size": 8,
       "cost": 1.02,
-      "bid": 0.126,
-      "value": 1.01,
-      "pnl": -0.01,
+      "bid": 0.128,
+      "value": 1.02,
+      "pnl": 0,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k loss10%",
@@ -334,7 +334,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 293781,
+        "book": 293745,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 2321
@@ -456,7 +456,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 575429,
+      "book": 575418,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -482,7 +482,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 248549,
+      "book": 249200,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -493,7 +493,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 18361,
+          "usd": 18937,
           "cat": "Крипта"
         },
         {
@@ -512,5 +512,5 @@
     "trades": 0,
     "winrate": 0
   },
-  "updated": "2026-07-06T16:58:23.598Z"
+  "updated": "2026-07-06T16:59:33.798Z"
 }
