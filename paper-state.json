@@ -22,12 +22,12 @@
         "label": "top$941k",
         "addr": "0x6501…1220",
         "entry": 0.652,
-        "book": 689774,
+        "book": 696732,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 204566
+        "posPnl": 210625
       },
-      "topPeak": 590841.0126
+      "topPeak": 605687.7867
     },
     {
       "title": "Will United States vs. Belgium end in a draw?",
@@ -47,12 +47,12 @@
         "label": "top$357k",
         "addr": "0x7ddd…c933",
         "entry": 0.72,
-        "book": 114891,
+        "book": 139774,
         "wr": 62,
         "overallPnl": 357049,
-        "posPnl": 792
+        "posPnl": 964
       },
-      "topPeak": 114891.1126
+      "topPeak": 139425.2607
     },
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -72,7 +72,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84948,
+        "book": 84879,
         "wr": 66,
         "overallPnl": 236707,
         "posPnl": 1363
@@ -122,7 +122,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 689774,
+        "book": 696732,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 4986
@@ -147,12 +147,12 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 689774,
+        "book": 696732,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 6444
+        "posPnl": 7415
       },
-      "topPeak": 16443.4102
+      "topPeak": 17413.5229
     }
   ],
   "closed": [
@@ -357,7 +357,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 89018,
+      "book": 89140,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -383,7 +383,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 601863,
+      "book": 600883,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -409,7 +409,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 252376,
+      "book": 252366,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -439,5 +439,5 @@
     "trades": 8,
     "winrate": 13
   },
-  "updated": "2026-07-06T21:01:45.432Z"
+  "updated": "2026-07-06T21:07:44.800Z"
 }
