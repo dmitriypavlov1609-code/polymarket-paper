@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 245.83,
-  "equity": 302.84,
-  "totalPnl": 2.84,
+  "equity": 302.86,
+  "totalPnl": 2.86,
   "open": [
     {
       "title": "Portugal vs. Spain: Team to Advance",
@@ -11,9 +11,9 @@
       "entry": 0.665,
       "size": 14,
       "cost": 9.31,
-      "bid": 0.65,
-      "value": 9.1,
-      "pnl": -0.21,
+      "bid": 0.64,
+      "value": 8.96,
+      "pnl": -0.35,
       "cat": "Политика",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k",
@@ -22,7 +22,7 @@
         "label": "top$941k",
         "addr": "0x6501…1220",
         "entry": 0.673,
-        "book": 295892,
+        "book": 294767,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": -5750
@@ -36,9 +36,9 @@
       "entry": 0.705,
       "size": 14,
       "cost": 9.87,
-      "bid": 0.68,
-      "value": 9.52,
-      "pnl": -0.35,
+      "bid": 0.69,
+      "value": 9.66,
+      "pnl": -0.21,
       "cat": "Спорт",
       "followAddr": "0xa6a872ded6039c17a9e5c81b706c04e76fbeba32",
       "followLabel": "top$417k",
@@ -97,12 +97,12 @@
         "label": "top$357k",
         "addr": "0x7ddd…c933",
         "entry": 0.72,
-        "book": 101051,
+        "book": 101090,
         "wr": 62,
         "overallPnl": 357049,
-        "posPnl": 690
+        "posPnl": 691
       },
-      "topPeak": 101042.954
+      "topPeak": 101089.5612
     },
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -122,7 +122,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85208,
+        "book": 85196,
         "wr": 66,
         "overallPnl": 236707,
         "posPnl": 1363
@@ -172,10 +172,10 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 295892,
+        "book": 294767,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 8788
+        "posPnl": 6887
       },
       "topPeak": 69769.0456
     },
@@ -186,9 +186,9 @@
       "entry": 0.127,
       "size": 8,
       "cost": 1.02,
-      "bid": 0.126,
-      "value": 1.01,
-      "pnl": -0.01,
+      "bid": 0.129,
+      "value": 1.03,
+      "pnl": 0.01,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k loss10%",
@@ -197,10 +197,10 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 295892,
+        "book": 294767,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 1885
+        "posPnl": 2661
       },
       "topPeak": 12902.4989
     }
@@ -379,18 +379,18 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 87298,
+      "book": 87625,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8866,
+          "usd": 8886,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 5036,
+          "usd": 5302,
           "cat": "Крипта"
         },
         {
@@ -405,7 +405,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 573576,
+      "book": 572231,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -422,7 +422,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 22896,
+          "usd": 22946,
           "cat": "Крипта"
         }
       ]
@@ -431,7 +431,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 251240,
+      "book": 251474,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -442,7 +442,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 19465,
+          "usd": 19670,
           "cat": "Крипта"
         },
         {
@@ -461,5 +461,5 @@
     "trades": 6,
     "winrate": 0
   },
-  "updated": "2026-07-06T18:55:45.298Z"
+  "updated": "2026-07-06T19:01:45.928Z"
 }
