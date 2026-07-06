@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 252.34,
-  "equity": 299.38,
-  "totalPnl": -0.62,
+  "cash": 248.89,
+  "equity": 299.35,
+  "totalPnl": -0.65,
   "open": [
     {
       "title": "Portugal vs. Spain: Team to Advance",
@@ -94,10 +94,10 @@
         "label": "top$357k",
         "addr": "0x7ddd…c933",
         "entry": 0.72,
-        "book": 82938,
+        "book": 83636,
         "wr": 62,
         "overallPnl": 357049,
-        "posPnl": 545
+        "posPnl": 552
       }
     },
     {
@@ -107,9 +107,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.525,
-      "value": 8.4,
-      "pnl": -0.34,
+      "bid": 0.526,
+      "value": 8.42,
+      "pnl": -0.32,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -118,10 +118,34 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84592,
+        "book": 84701,
         "wr": 66,
         "overallPnl": 236707,
-        "posPnl": 991
+        "posPnl": 980
+      }
+    },
+    {
+      "title": "UFC 329: Max Holloway vs. Conor McGregor (Welterweight, Main Card)",
+      "side": "Conor McGregor",
+      "asset": "12937069564920440485423856944961863118985999089649348190709599100219960110712",
+      "entry": 0.345,
+      "size": 10,
+      "cost": 3.45,
+      "bid": 0.34,
+      "value": 3.4,
+      "pnl": -0.05,
+      "cat": "Спорт",
+      "followAddr": "0xa6a872ded6039c17a9e5c81b706c04e76fbeba32",
+      "followLabel": "top-UFC $417k (лотерейка)",
+      "ts": "2026-07-06T16:55:53.089Z",
+      "follow": {
+        "label": "top-UFC $417k (лотерейка)",
+        "addr": "0xa6a8…ba32",
+        "entry": 0.34,
+        "book": 183745,
+        "wr": 64,
+        "overallPnl": 416952,
+        "posPnl": 288
       }
     }
   ],
@@ -132,7 +156,8 @@
     "ВХОД: «Portugal vs. Spain: O/U 3.5» Under @0.70 $14 за top$417k yield 42%",
     "ВХОД: «Wimbledon ATP: Taylor Fritz vs Alexander» Taylor Fritz @0.69 $14 за top$969k yield 46%",
     "ВХОД: «Will United States vs. Belgium end in a » No @0.72 $14 за top$357k yield 38%",
-    "ВХОД: «Will Larry Rhoden win the 2026 South Dak» Yes @0.55 $16 за top$237k yield 83%"
+    "ВХОД: «Will Larry Rhoden win the 2026 South Dak» Yes @0.55 $16 за top$237k yield 83%",
+    "ВХОД лотерейка: «UFC 329: Max Holloway vs. Conor McGregor» Conor McGregor @0.34 $10 (независимое событие, конвикция топа $20k)"
   ],
   "tops": [
     {
@@ -205,24 +230,24 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 88286,
+      "book": 87630,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8848,
-          "cat": "Крипта"
-        },
-        {
-          "m": "Bitcoin dip to $52,500 in July",
-          "side": "NO",
-          "usd": 5202,
+          "usd": 8843,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
           "usd": 5097,
+          "cat": "Крипта"
+        },
+        {
+          "m": "Bitcoin dip to $52,500 in July",
+          "side": "NO",
+          "usd": 4800,
           "cat": "Крипта"
         }
       ]
@@ -231,7 +256,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 572338,
+      "book": 575438,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -248,7 +273,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 22834,
+          "usd": 22822,
           "cat": "Крипта"
         }
       ]
@@ -257,7 +282,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 248179,
+      "book": 248671,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -268,7 +293,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 17997,
+          "usd": 18437,
           "cat": "Крипта"
         },
         {
@@ -287,5 +312,5 @@
     "trades": 0,
     "winrate": 0
   },
-  "updated": "2026-07-06T16:39:16.252Z"
+  "updated": "2026-07-06T16:55:57.890Z"
 }
