@@ -25,7 +25,7 @@ const nowIso = new Date().toISOString();
 const stillOpen = [];
 st.closed = st.closed || [];
 for (const p of st.open || []) {
-  const bk = await jget(`${CLOB}/book?token_id=${p.asset}`);
+  const bk = await jget(`https://clob.polymarket.com/book?token_id=${p.asset}`);
   const bids = bk ? (bk.bids || []).map(o => +o.price).filter(x => x > 0) : [];
   const bid = bids.length ? Math.max(...bids) : null;
   // РЕЗОЛВ только по авторитетному gamma-флагу closed (пустой стакан НЕ считается резолвом!)
