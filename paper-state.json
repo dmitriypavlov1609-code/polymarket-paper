@@ -1,37 +1,11 @@
 {
   "startBalance": 100,
   "cash": 2.95,
-  "equity": 98.78,
-  "totalPnl": -1.22,
-  "updated": "2026-07-06T08:41:45.391Z",
+  "equity": 48.45,
+  "totalPnl": -51.55,
+  "updated": "2026-07-06T08:46:17.806Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
-    {
-      "asset": "9420174165071993291999038043535308408119119711545225756908170661992638616197",
-      "title": "BTC не упадёт до $62,000 (5 июл)",
-      "side": "No",
-      "entry": 0.81,
-      "size": 12,
-      "cost": 9.72,
-      "bid": 0.73,
-      "value": 8.76,
-      "pnl": -0.96,
-      "ts": "2026-07-05T19:15:10.153Z",
-      "whale": "ETH-whale",
-      "reason": "ETH-whale направленно NO @0.81, BTC +1.4% выше $62k, yield 23%",
-      "cat": "Крипта",
-      "followAddr": "0x06dc51826bc524d9a83770e7de9dd7e005b04524",
-      "followLabel": "ETH-whale",
-      "follow": {
-        "label": "ETH-whale",
-        "addr": "0x06dc…4524",
-        "entry": null,
-        "book": 438630,
-        "wr": 73,
-        "overallPnl": null,
-        "posPnl": null
-      }
-    },
     {
       "asset": "92816915429998265485709440266340158621084369220656661191529847288128743404723",
       "title": "BTC не дойдёт $70k (июль)",
@@ -52,7 +26,7 @@
         "label": "ETH-whale",
         "addr": "0x06dc…4524",
         "entry": 0.824,
-        "book": 438630,
+        "book": 438677,
         "wr": 73,
         "overallPnl": null,
         "posPnl": -2867
@@ -78,86 +52,10 @@
         "label": "floor-whale",
         "addr": "0xcc50…4c82",
         "entry": 0.649,
-        "book": 204159,
+        "book": 204167,
         "wr": null,
         "overallPnl": null,
         "posPnl": 1755
-      }
-    },
-    {
-      "asset": "105654713241167797590254709131417748215287316658191010694033065067279349239377",
-      "title": "Бразилия победит (5 июл)",
-      "side": "Yes",
-      "entry": 0.71,
-      "size": 11,
-      "cost": 7.81,
-      "bid": 0.49,
-      "value": 5.39,
-      "pnl": -2.42,
-      "ts": "2026-07-05T20:13:34.004Z",
-      "whale": "top-sport",
-      "reason": "FOLLOW-TOPS (спорт): топ 0x7c1ee8 copyPnL $1.7M, YES $328k, вход @0.71 (лаг с 0.51)",
-      "cat": "Прочее",
-      "followAddr": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
-      "followLabel": "sport-top",
-      "follow": {
-        "label": "sport-top",
-        "addr": "0x7c1e…bab3",
-        "entry": 0.55,
-        "book": 20190,
-        "wr": null,
-        "overallPnl": null,
-        "posPnl": -357500
-      }
-    },
-    {
-      "asset": "97354152213735014139011986013760122167378688695797303173531572045601775113726",
-      "title": "Brazil-Norway: тотал меньше 2.5 (Under)",
-      "side": "Under",
-      "entry": 0.6,
-      "size": 25,
-      "cost": 15,
-      "bid": 0.74,
-      "value": 18.5,
-      "pnl": 3.5,
-      "ts": "2026-07-05T20:30:08.185Z",
-      "followAddr": "0x72254fe1a79fc8fd37de0168be735e6af4bd659a",
-      "followLabel": "top #1",
-      "reason": "FOLLOW #1 топ ($4.97M) + консенсус, Under $844k, его вход 0.468, наш 0.6 (лаг)",
-      "cat": "Прочее",
-      "follow": {
-        "label": "top #1",
-        "addr": "0x7225…659a",
-        "entry": 0.471,
-        "book": 0,
-        "wr": null,
-        "overallPnl": null,
-        "posPnl": -602815
-      }
-    },
-    {
-      "asset": "79778081949110454416364986546390783375315700746160389769653348735938264983258",
-      "title": "Мексика НЕ победит (5 июл)",
-      "side": "No",
-      "entry": 0.69,
-      "size": 26,
-      "cost": 17.94,
-      "bid": 0.68,
-      "value": 17.68,
-      "pnl": -0.26,
-      "ts": "2026-07-05T20:37:40.794Z",
-      "followAddr": "0x7dddf1968c14900b2d2ef9dada8465e82ac4c933",
-      "followLabel": "top-sport2",
-      "reason": "FOLLOW топ ($358k PnL WR62%), Mexico NO $327k, его вход 0.693, наш 0.69 (лаг ~0%!)",
-      "cat": "Прочее",
-      "follow": {
-        "label": "top-sport2",
-        "addr": "0x7ddd…c933",
-        "entry": null,
-        "book": 0,
-        "wr": 62,
-        "overallPnl": 357049,
-        "posPnl": null
       }
     },
     {
@@ -211,7 +109,52 @@
       }
     }
   ],
-  "closed": [],
+  "closed": [
+    {
+      "title": "BTC не упадёт до $62,000 (5 июл)",
+      "side": "No",
+      "entry": 0.81,
+      "exit": 0,
+      "size": 12,
+      "cost": 9.72,
+      "pnl": -9.72,
+      "exitTs": "2026-07-06T08:46:11.575Z",
+      "followLabel": "ETH-whale"
+    },
+    {
+      "title": "Бразилия победит (5 июл)",
+      "side": "Yes",
+      "entry": 0.71,
+      "exit": 0,
+      "size": 11,
+      "cost": 7.81,
+      "pnl": -7.81,
+      "exitTs": "2026-07-06T08:46:11.575Z",
+      "followLabel": "sport-top"
+    },
+    {
+      "title": "Brazil-Norway: тотал меньше 2.5 (Under)",
+      "side": "Under",
+      "entry": 0.6,
+      "exit": 0,
+      "size": 25,
+      "cost": 15,
+      "pnl": -15,
+      "exitTs": "2026-07-06T08:46:11.575Z",
+      "followLabel": "top #1"
+    },
+    {
+      "title": "Мексика НЕ победит (5 июл)",
+      "side": "No",
+      "entry": 0.69,
+      "exit": 0,
+      "size": 26,
+      "cost": 17.94,
+      "pnl": -17.94,
+      "exitTs": "2026-07-06T08:46:11.575Z",
+      "followLabel": "top-sport2"
+    }
+  ],
   "log": [
     "Бумажный счёт открыт: $100.",
     "СДЕЛКА: BUY «BTC не упадёт до $62k» NO ×12 @ $0.81 = $9.72 (за ETH-whale, yield 23%). Кэш → $90.28.",
@@ -221,19 +164,23 @@
     "СДЕЛКА: BUY «Brazil-Norway: тотал меньше 2.5 (Under)» ×25 @ $0.6 = $15 — за топом #1 ($4.97M PnL), его вход $0.468, консенсус 2 топа $844k",
     "СДЕЛКА: BUY «Мексика НЕ победит (5 июл)» NO ×26 @ $0.69 = $17.94 — за топом 0x7dddf1 ($358k, WR62%), его вход $0.693, лаг ~0%. Конвикция $327k",
     "СДЕЛКА: BUY «Бельгия победит (6 июл)» Yes ×28 @ $0.37 = $10.36 — за top-bel, его вход $0.35",
-    "СДЕЛКА: BUY «Аргентина — чемпион ЧМ-2026» Yes ×40 @ $0.174 = $6.96 — за top-arg, его вход $0.157"
+    "СДЕЛКА: BUY «Аргентина — чемпион ЧМ-2026» Yes ×40 @ $0.174 = $6.96 — за top-arg, его вход $0.157",
+    "РЕЗОЛВ: «BTC не упадёт до $62,000 (5 июл)» 🔴ПРОИГРЫШ $-9.72 (за ETH-whale)",
+    "РЕЗОЛВ: «Бразилия победит (5 июл)» 🔴ПРОИГРЫШ $-7.81 (за sport-top)",
+    "РЕЗОЛВ: «Brazil-Norway: тотал меньше 2.5 (Under)» 🔴ПРОИГРЫШ $-15 (за top #1)",
+    "РЕЗОЛВ: «Мексика НЕ победит (5 июл)» 🔴ПРОИГРЫШ $-17.94 (за top-sport2)"
   ],
   "whales": [
     {
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 60869,
+      "book": 60929,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 7104,
+          "usd": 7093,
           "cat": "Крипта"
         },
         {
@@ -254,7 +201,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 438630,
+      "book": 438837,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -280,7 +227,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 204159,
+      "book": 204167,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -304,10 +251,10 @@
     }
   ],
   "stats": {
-    "day": 0,
-    "week": 0,
-    "month": 0,
-    "trades": 0,
+    "day": -50.47,
+    "week": -50.47,
+    "month": -50.47,
+    "trades": 4,
     "winrate": 0
   },
   "tops": [
