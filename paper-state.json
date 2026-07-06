@@ -3,7 +3,7 @@
   "cash": 2.95,
   "equity": 98.78,
   "totalPnl": -1.22,
-  "updated": "2026-07-06T08:14:46.854Z",
+  "updated": "2026-07-06T08:15:51.766Z",
   "strategy": "Whale net-book directional + VSA confluence (paper $100)",
   "open": [
     {
@@ -155,8 +155,8 @@
         "addr": "0x7ddd…c933",
         "entry": null,
         "book": 0,
-        "wr": null,
-        "overallPnl": null,
+        "wr": 62,
+        "overallPnl": 357049,
         "posPnl": null
       }
     },
@@ -205,8 +205,8 @@
         "addr": "0x6501…1220",
         "entry": 0.157,
         "book": 297506,
-        "wr": null,
-        "overallPnl": null,
+        "wr": 60,
+        "overallPnl": 940546,
         "posPnl": 4225
       }
     }
@@ -228,12 +228,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 60711,
+      "book": 60716,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 7101,
+          "usd": 7097,
           "cat": "Крипта"
         },
         {
@@ -254,7 +254,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 433546,
+      "book": 433862,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
