@@ -47,7 +47,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84966,
+        "book": 85098,
         "wr": 66,
         "overallPnl": 236707,
         "posPnl": 1386
@@ -97,7 +97,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 105914,
+        "book": 105938,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 4986
@@ -122,10 +122,10 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 105914,
+        "book": 105938,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 7512
+        "posPnl": 7609
       },
       "topPeak": 17753.0624
     }
@@ -346,7 +346,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 91283,
+      "book": 91808,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -372,7 +372,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 595484,
+      "book": 591517,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -383,7 +383,7 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 32866,
+          "usd": 32379,
           "cat": "Крипта"
         },
         {
@@ -398,7 +398,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 251554,
+      "book": 254097,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -407,15 +407,15 @@
           "cat": "Крипта"
         },
         {
-          "m": "Bitcoin dip to $45,000 by December 31, 2",
+          "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 17484,
+          "usd": 19738,
           "cat": "Крипта"
         },
         {
-          "m": "Bitcoin reach $65,000 on July 6",
+          "m": "Bitcoin dip to $45,000 by December 31, 2",
           "side": "NO",
-          "usd": 17239,
+          "usd": 17484,
           "cat": "Крипта"
         }
       ]
@@ -428,5 +428,5 @@
     "trades": 9,
     "winrate": 11
   },
-  "updated": "2026-07-06T21:55:44.340Z"
+  "updated": "2026-07-06T22:01:44.828Z"
 }
