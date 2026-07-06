@@ -47,7 +47,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85212,
+        "book": 84963,
         "wr": 66,
         "overallPnl": 236707,
         "posPnl": 1363
@@ -346,7 +346,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 91859,
+      "book": 92213,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -372,7 +372,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 592438,
+      "book": 592748,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -398,12 +398,12 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 258618,
+      "book": 258720,
       "top": [
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 23825,
+          "usd": 24101,
           "cat": "Крипта"
         },
         {
@@ -428,5 +428,5 @@
     "trades": 9,
     "winrate": 11
   },
-  "updated": "2026-07-06T22:19:43.331Z"
+  "updated": "2026-07-06T22:25:43.648Z"
 }
