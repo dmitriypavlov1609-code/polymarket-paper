@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 245.83,
-  "equity": 303.53,
-  "totalPnl": 3.53,
+  "cash": 255.42,
+  "equity": 299.31,
+  "totalPnl": -0.69,
   "open": [
     {
       "title": "Portugal vs. Spain: Team to Advance",
@@ -22,7 +22,7 @@
         "label": "top$941k",
         "addr": "0x6501…1220",
         "entry": 0.673,
-        "book": 286543,
+        "book": 287319,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": -12028
@@ -36,9 +36,9 @@
       "entry": 0.705,
       "size": 14,
       "cost": 9.87,
-      "bid": 0.75,
-      "value": 10.5,
-      "pnl": 0.63,
+      "bid": 0.76,
+      "value": 10.64,
+      "pnl": 0.77,
       "cat": "Спорт",
       "followAddr": "0xa6a872ded6039c17a9e5c81b706c04e76fbeba32",
       "followLabel": "top$417k",
@@ -47,37 +47,12 @@
         "label": "top$417k",
         "addr": "0xa6a8…ba32",
         "entry": 0.707,
-        "book": 190700,
+        "book": 195337,
         "wr": 64,
         "overallPnl": 416952,
-        "posPnl": 6512
+        "posPnl": 11149
       },
-      "topPeak": 168093.3242
-    },
-    {
-      "title": "Wimbledon ATP: Taylor Fritz vs Alexander Bublik",
-      "side": "Taylor Fritz",
-      "asset": "57361880378032043498017248370769200385582571722646297920147575652439994867359",
-      "entry": 0.685,
-      "size": 14,
-      "cost": 9.59,
-      "bid": 0.999,
-      "value": 13.99,
-      "pnl": 4.4,
-      "cat": "Прочее",
-      "followAddr": "0xf5fabdcdc6eb6d9765a228824f16cca9c91f62df",
-      "followLabel": "top$969k",
-      "ts": "2026-07-06T16:35:00.034Z",
-      "follow": {
-        "label": "top$969k",
-        "addr": "0xf5fa…62df",
-        "entry": 0.674,
-        "book": 136472,
-        "wr": 82,
-        "overallPnl": 969316,
-        "posPnl": 44390
-      },
-      "topPeak": 136471.68
+      "topPeak": 175048.91
     },
     {
       "title": "Will United States vs. Belgium end in a draw?",
@@ -97,12 +72,12 @@
         "label": "top$357k",
         "addr": "0x7ddd…c933",
         "entry": 0.72,
-        "book": 104455,
+        "book": 104516,
         "wr": 62,
         "overallPnl": 357049,
-        "posPnl": 716
+        "posPnl": 717
       },
-      "topPeak": 104454.7004
+      "topPeak": 104492.7629
     },
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -122,7 +97,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84810,
+        "book": 84779,
         "wr": 66,
         "overallPnl": 236707,
         "posPnl": 1363
@@ -147,7 +122,7 @@
         "label": "top-UFC $417k (лотерейка)",
         "addr": "0xa6a8…ba32",
         "entry": 0.34,
-        "book": 190700,
+        "book": 195337,
         "wr": 64,
         "overallPnl": 416952,
         "posPnl": 288
@@ -172,7 +147,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 286543,
+        "book": 287319,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 5366
@@ -186,9 +161,9 @@
       "entry": 0.127,
       "size": 8,
       "cost": 1.02,
-      "bid": 0.129,
-      "value": 1.03,
-      "pnl": 0.01,
+      "bid": 0.134,
+      "value": 1.07,
+      "pnl": 0.05,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k loss10%",
@@ -197,12 +172,12 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 286543,
+        "book": 287319,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 2273
+        "posPnl": 3049
       },
-      "topPeak": 12902.4989
+      "topPeak": 13048.0158
     }
   ],
   "closed": [
@@ -283,6 +258,19 @@
       "exitTs": "2026-07-06T17:36:57.287Z",
       "followLabel": "top$237k loss12%",
       "reason": "догон-фаворит"
+    },
+    {
+      "title": "Wimbledon ATP: Taylor Fritz vs Alexander Bublik",
+      "side": "Taylor Fritz",
+      "entry": 0.685,
+      "exit": 0.685,
+      "size": 14,
+      "cost": 9.59,
+      "pnl": 0,
+      "proceeds": 9.59,
+      "exitTs": "2026-07-06T19:25:39.800Z",
+      "followLabel": "top$969k",
+      "reason": "топ вышел"
     }
   ],
   "log": [
@@ -306,7 +294,8 @@
     "ЗАКРЫТО (плохая асимметрия, догон кита): «Will the Iranian regime fall befor» @0.93 $-0.13",
     "ЗАКРЫТО (плохая асимметрия, догон кита): «Will Keir Starmer be the next lead» @0.96 $-0.12",
     "ЗАКРЫТО (плохая асимметрия, догон кита): «Will Alan Wilson win the South Car» @0.98 $-0.23",
-    "ЗАКРЫТО (плохая асимметрия, догон кита): «Will Victor Marx win the 2026 Colo» @0.97 $-0.2"
+    "ЗАКРЫТО (плохая асимметрия, догон кита): «Will Victor Marx win the 2026 Colo» @0.97 $-0.2",
+    "ВЫХОД вслед за топом (топ вышел): «Wimbledon ATP: Taylor Fritz vs Alexa» @0.69 +$0"
   ],
   "tops": [
     {
@@ -379,7 +368,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 87864,
+      "book": 88404,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -405,7 +394,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 586733,
+      "book": 593927,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -431,7 +420,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 251640,
+      "book": 251564,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -442,7 +431,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 19909,
+          "usd": 19735,
           "cat": "Крипта"
         },
         {
@@ -458,8 +447,8 @@
     "day": -0.71,
     "week": -0.71,
     "month": -0.71,
-    "trades": 6,
+    "trades": 7,
     "winrate": 0
   },
-  "updated": "2026-07-06T19:19:45.690Z"
+  "updated": "2026-07-06T19:25:49.408Z"
 }
