@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 242.03,
-  "equity": 303.44,
-  "totalPnl": 3.44,
+  "cash": 190.31,
+  "equity": 303.14,
+  "totalPnl": 3.14,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.548,
-      "value": 8.77,
-      "pnl": 0.03,
+      "bid": 0.549,
+      "value": 8.78,
+      "pnl": 0.04,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85202,
+        "book": 85006,
         "wr": 66,
         "overallPnl": 237530,
         "posPnl": 1386
@@ -47,10 +47,10 @@
         "label": "top-UFC $417k (лотерейка)",
         "addr": "0xa6a8…ba32",
         "entry": 0.353,
-        "book": 112745,
+        "book": 116077,
         "wr": 73,
         "overallPnl": 658874,
-        "posPnl": -6255
+        "posPnl": -2923
       },
       "topPeak": 119475.8065
     },
@@ -178,6 +178,126 @@
         "posPnl": 350
       },
       "topPeak": 4750
+    },
+    {
+      "title": "United States vs. Belgium: Team to Advance",
+      "side": "Belgium",
+      "asset": "90379632725832148117828959910559970163920103735864050457319074142102846066573",
+      "entry": 0.69,
+      "size": 14,
+      "cost": 9.66,
+      "bid": 0.69,
+      "value": 9.66,
+      "pnl": 0,
+      "cat": "Политика",
+      "followAddr": "0x28059b3fb7af7ed76d83dc9121bbb72ec7cf76ed",
+      "followLabel": "top$647k 🔥свежий ×3",
+      "ts": "2026-07-07T10:20:05.018Z",
+      "follow": {
+        "label": "top$647k 🔥свежий ×3",
+        "addr": "0x2805…76ed",
+        "entry": null,
+        "book": 0,
+        "wr": 49,
+        "overallPnl": 646711,
+        "posPnl": null
+      }
+    },
+    {
+      "title": "Portugal vs. Spain: Team to Advance",
+      "side": "Spain",
+      "asset": "37089422011487600761966371766395923813595879029748930849684427032931217400937",
+      "entry": 0.6,
+      "size": 14,
+      "cost": 8.4,
+      "bid": 0.6,
+      "value": 8.4,
+      "pnl": 0,
+      "cat": "Политика",
+      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
+      "followLabel": "top$1142k 🔥свежий ×2",
+      "ts": "2026-07-07T10:20:05.019Z",
+      "follow": {
+        "label": "top$1142k 🔥свежий ×2",
+        "addr": "0x6501…1220",
+        "entry": null,
+        "book": 346006,
+        "wr": 63,
+        "overallPnl": 1141744,
+        "posPnl": null
+      }
+    },
+    {
+      "title": "Spread: Belgium (-1.5)",
+      "side": "Belgium",
+      "asset": "97384721042904621567622007628134237879096074700401574644898928990533471975882",
+      "entry": 0.33,
+      "size": 22,
+      "cost": 7.26,
+      "bid": 0.33000000007882546,
+      "value": 7.26,
+      "pnl": 0,
+      "cat": "Прочее",
+      "followAddr": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
+      "followLabel": "top$2964k 🔥свежий",
+      "ts": "2026-07-07T10:20:05.019Z",
+      "follow": {
+        "label": "top$2964k 🔥свежий",
+        "addr": "0x7c1e…bab3",
+        "entry": null,
+        "book": 19797,
+        "wr": 52,
+        "overallPnl": 2964331,
+        "posPnl": null
+      }
+    },
+    {
+      "title": "Will Bitcoin reach $65,000 on July 7?",
+      "side": "No",
+      "asset": "113089859532805727138476402144930971343515403754119627725687445845449177270115",
+      "entry": 0.93,
+      "size": 16,
+      "cost": 14.88,
+      "bid": 0.91,
+      "value": 14.56,
+      "pnl": -0.32,
+      "cat": "Крипта",
+      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "followLabel": "top$628k 🔥свежий",
+      "ts": "2026-07-07T10:20:05.019Z",
+      "follow": {
+        "label": "top$628k 🔥свежий",
+        "addr": "0xcc50…4c82",
+        "entry": 0.941,
+        "book": 220497,
+        "wr": 52,
+        "overallPnl": 627966,
+        "posPnl": -132
+      }
+    },
+    {
+      "title": "Will Bitcoin dip to $61,000 on July 7?",
+      "side": "No",
+      "asset": "100334985847439891109009684594451555203564410818610201915506287492571427552636",
+      "entry": 0.96,
+      "size": 12,
+      "cost": 11.52,
+      "bid": 0.961,
+      "value": 11.53,
+      "pnl": 0.01,
+      "cat": "Крипта",
+      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "followLabel": "top$628k 🔥свежий",
+      "ts": "2026-07-07T10:20:05.019Z",
+      "follow": {
+        "label": "top$628k 🔥свежий",
+        "addr": "0xcc50…4c82",
+        "entry": null,
+        "book": 220497,
+        "wr": 52,
+        "overallPnl": 627966,
+        "posPnl": null
+      }
     }
   ],
   "closed": [
@@ -369,7 +489,12 @@
     "ВХОД: «Argentina vs. Egypt: Team to Advance» Argentina @0.85 $14 за top$1142k yield 17%",
     "ЗАКРЫТО (дедуп встречной стороны рынка): «Will Argentina win the 2026 FIFA W» Yes @0.184 +$0.14",
     "ВХОД: «Will France win the 2026 FIFA World Cup?» No @0.67 $16 за top$177k yield 49%",
-    "ВХОД: «Spread: Argentina (-1.5)» Argentina @0.47 $12 за top$292k yield 111%"
+    "ВХОД: «Spread: Argentina (-1.5)» Argentina @0.47 $12 за top$292k yield 111%",
+    "ВХОД: «United States vs. Belgium: Team to Advan» Belgium @0.69 $14 за top$647k 🔥свежий (консенсус ×3) yield 45%",
+    "ВХОД: «Portugal vs. Spain: Team to Advance» Spain @0.60 $14 за top$1142k 🔥свежий (консенсус ×2) yield 67%",
+    "ВХОД: «Spread: Belgium (-1.5)» Belgium @0.33 $22 за top$2964k 🔥свежий yield 203%",
+    "ВХОД: «Will Bitcoin reach $65,000 on July 7?» No @0.93 $16 за top$628k 🔥свежий yield 8%",
+    "ВХОД: «Will Bitcoin dip to $61,000 on July 7?» No @0.96 $12 за top$628k 🔥свежий yield 4%"
   ],
   "tops": [
     {
@@ -442,7 +567,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 74221,
+      "book": 74209,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -468,7 +593,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 621817,
+      "book": 621128,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -479,7 +604,7 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 36274,
+          "usd": 35544,
           "cat": "Крипта"
         },
         {
@@ -494,7 +619,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 220557,
+      "book": 220497,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -524,7 +649,7 @@
     "trades": 12,
     "winrate": 17
   },
-  "updated": "2026-07-07T10:16:53.263Z",
+  "updated": "2026-07-07T10:20:10.095Z",
   "topStats": [
     {
       "label": "top$417k",
@@ -543,7 +668,7 @@
       "total": 0.35,
       "realized": 0,
       "unreal": 0.35,
-      "open": 2,
+      "open": 3,
       "closed": 0,
       "wins": 0,
       "losses": 0
@@ -551,9 +676,31 @@
     {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
-      "total": 0.03,
+      "total": 0.04,
       "realized": 0,
-      "unreal": 0.03,
+      "unreal": 0.04,
+      "open": 1,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
+      "label": "top$647k 🔥свежий ×3",
+      "addr": "0x2805…76ed",
+      "total": 0,
+      "realized": 0,
+      "unreal": 0,
+      "open": 1,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
+      "label": "top$2964k 🔥свежий",
+      "addr": "0x7c1e…bab3",
+      "total": 0,
+      "realized": 0,
+      "unreal": 0,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -646,6 +793,17 @@
       "closed": 4,
       "wins": 0,
       "losses": 4
+    },
+    {
+      "label": "top$628k 🔥свежий",
+      "addr": "0xcc50…4c82",
+      "total": -0.31,
+      "realized": 0,
+      "unreal": -0.31,
+      "open": 2,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
     },
     {
       "label": "top$855k",
