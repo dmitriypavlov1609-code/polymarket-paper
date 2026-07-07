@@ -9,6 +9,8 @@ const TRACKED=[
 const $=id=>document.getElementById(id);
 const money=n=>(n>=0?"$":"-$")+Math.abs(n).toFixed(2);
 const cls=n=>n>0?"grn":n<0?"red":"";
+// дата по московскому времени (UTC+3): "07.07 14:23"
+const msk=iso=>{if(!iso)return"—";try{return new Date(iso).toLocaleString("ru-RU",{timeZone:"Europe/Moscow",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}).replace(", "," ");}catch{return"—";}};
 const jget=async u=>{try{return await(await fetch(u)).json()}catch{return null}};
 const isC=t=>/bitcoin|btc|ethereum| eth |solana| sol |xrp/i.test(" "+(t||"")+" ");
 function cat(t){t=(t||"").toLowerCase();
@@ -28,7 +30,8 @@ function renderOpen(){
   for(const p of list){
     h+='<div class="card" style="margin-bottom:10px">';
     h+='<div style="display:flex;justify-content:space-between;align-items:baseline"><div><b>'+p.title+'</b> <span class="badge">'+p.cat+'</span></div><div class="'+cls(p.pnl)+'" style="font-weight:700">'+money(p.pnl)+'</div></div>';
-    h+='<div style="font-size:13px;color:var(--dim);margin:4px 0 6px">Мы: <span class="side-'+(/yes/i.test(p.side)?"yes":"no")+'">'+p.side+'</span> ×'+p.size+' · вход $'+p.entry.toFixed(3)+' → тек. $'+p.bid.toFixed(3)+'</div>';
+    h+='<div style="font-size:13px;color:var(--dim);margin:4px 0 3px">Мы: <span class="side-'+(/yes/i.test(p.side)?"yes":"no")+'">'+p.side+'</span> ×'+p.size+' · вход $'+p.entry.toFixed(3)+' → тек. $'+p.bid.toFixed(3)+'</div>';
+    h+='<div style="font-size:12px;color:var(--dim);margin-bottom:6px">🗓 вход (МСК): <b>'+msk(p.ts)+'</b> · выход: <span style="color:var(--dim)">открыта</span></div>';
     const f=p.follow;
     if(f){
       h+='<div style="font-size:12px;border-top:1px solid var(--line);padding-top:6px">🐋 <b>'+f.label+'</b> <span style="color:var(--dim)">'+f.addr+'</span>';
@@ -115,8 +118,8 @@ function renderStatic(){
   }
   renderTopStats(); renderTops();
   if($("closed")){
-    if((s.closed||[]).length){let h='<table><tr><th>Рынок</th><th>Сторона</th><th>Вход→Выход</th><th>PnL</th></tr>';
-      for(const p of [...s.closed].reverse())h+='<tr><td>'+p.title+'</td><td class="side-'+(/yes/i.test(p.side)?"yes":"no")+'">'+p.side+'</td><td>$'+p.entry.toFixed(3)+'→$'+p.exit.toFixed(3)+'</td><td class="'+cls(p.pnl)+'">'+money(p.pnl)+'</td></tr>';
+    if((s.closed||[]).length){let h='<table><tr><th>Рынок</th><th>Сторона</th><th>Цена вх→вых</th><th>Дата входа (МСК)</th><th>Дата выхода (МСК)</th><th>PnL</th></tr>';
+      for(const p of [...s.closed].reverse())h+='<tr><td>'+p.title+'</td><td class="side-'+(/yes/i.test(p.side)?"yes":"no")+'">'+p.side+'</td><td>$'+p.entry.toFixed(3)+'→$'+p.exit.toFixed(3)+'</td><td>'+msk(p.entryTs)+'</td><td>'+msk(p.exitTs||p.ts)+'</td><td class="'+cls(p.pnl)+'">'+money(p.pnl)+'</td></tr>';
       $("closed").innerHTML=h+'</table>';}else $("closed").innerHTML='<div class="empty">Пока нет закрытых сделок</div>';
   }
   if($("digest")){

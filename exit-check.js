@@ -37,7 +37,7 @@ for (const { p, reason } of exits) {
   if (bid === null) { console.log(`  ⏸ ${(p.title || "").slice(0, 22)}: топ вышел, но стакан пуст → оставляю на резолв`); ok++; continue; }
   const proceeds = +(bid * p.size).toFixed(2);
   const pnl = +(proceeds - p.cost).toFixed(2);
-  (st.closed = st.closed || []).push({ title: p.title, side: p.side, entry: p.entry, exit: +bid.toFixed(3), size: p.size, cost: p.cost, pnl, proceeds, exitTs: new Date().toISOString(), followLabel: p.followLabel || "", followAddr: p.followAddr || "", asset: p.asset, reason });
+  (st.closed = st.closed || []).push({ title: p.title, side: p.side, entry: p.entry, exit: +bid.toFixed(3), size: p.size, cost: p.cost, pnl, proceeds, entryTs: p.ts || null, exitTs: new Date().toISOString(), followLabel: p.followLabel || "", followAddr: p.followAddr || "", asset: p.asset, reason });
   (st.log = st.log || []).push(`ВЫХОД вслед за топом (${reason}): «${(p.title || "").slice(0, 36)}» @${bid.toFixed(2)} ${pnl >= 0 ? "+" : ""}$${pnl}`);
   closedSet.add(p);
 }
