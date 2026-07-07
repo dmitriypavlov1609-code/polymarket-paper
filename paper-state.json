@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 223.76,
-  "equity": 335.34,
-  "totalPnl": 35.34,
+  "cash": 262.76,
+  "equity": 335.18,
+  "totalPnl": 35.18,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85270,
+        "book": 85156,
         "wr": 66,
         "overallPnl": 237530,
         "posPnl": 1298
@@ -180,31 +180,6 @@
       "topPeak": 4750
     },
     {
-      "title": "Will Bitcoin reach $65,000 on July 7?",
-      "side": "No",
-      "asset": "113089859532805727138476402144930971343515403754119627725687445845449177270115",
-      "entry": 0.93,
-      "size": 16,
-      "cost": 14.88,
-      "bid": 0.92,
-      "value": 14.72,
-      "pnl": -0.16,
-      "cat": "Крипта",
-      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
-      "followLabel": "top$628k 🔥свежий",
-      "ts": "2026-07-07T10:20:05.019Z",
-      "follow": {
-        "label": "top$628k 🔥свежий",
-        "addr": "0xcc50…4c82",
-        "entry": 0.941,
-        "book": 221678,
-        "wr": 52,
-        "overallPnl": 627966,
-        "posPnl": -82
-      },
-      "topPeak": 12129.4204
-    },
-    {
       "title": "President Trump to Attend World Cup Final?",
       "side": "Yes",
       "asset": "86680247297404227698835375487849042651771548951718649081182622616196290047519",
@@ -226,78 +201,6 @@
         "wr": 59,
         "overallPnl": 291756,
         "posPnl": 18
-      }
-    },
-    {
-      "title": "Will Bitcoin dip to $45,000 by December 31, 2026?",
-      "side": "No",
-      "asset": "20326394798700413571801660749437036272627203479853632032510011746755865615562",
-      "entry": 0.655,
-      "size": 16,
-      "cost": 10.48,
-      "bid": 0.65,
-      "value": 10.4,
-      "pnl": -0.08,
-      "cat": "Крипта",
-      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
-      "followLabel": "top$628k",
-      "ts": "2026-07-07T11:27:41.435Z",
-      "follow": {
-        "label": "top$628k",
-        "addr": "0xcc50…4c82",
-        "entry": 0.566,
-        "book": 221678,
-        "wr": 52,
-        "overallPnl": 627966,
-        "posPnl": 2350
-      }
-    },
-    {
-      "title": "Will Bitcoin dip to $50,000 by December 31, 2026?",
-      "side": "No",
-      "asset": "41832664285845832459030640969891483663884721696292020563915305291791682631668",
-      "entry": 0.515,
-      "size": 16,
-      "cost": 8.24,
-      "bid": 0.51,
-      "value": 8.16,
-      "pnl": -0.08,
-      "cat": "Крипта",
-      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
-      "followLabel": "top$628k",
-      "ts": "2026-07-07T11:27:41.435Z",
-      "follow": {
-        "label": "top$628k",
-        "addr": "0xcc50…4c82",
-        "entry": 0.431,
-        "book": 221678,
-        "wr": 52,
-        "overallPnl": 627966,
-        "posPnl": 2309
-      }
-    },
-    {
-      "title": "Will Bitcoin reach $67,500 in July?",
-      "side": "No",
-      "asset": "94252409631375149642232709930779092548259642333831512866206597068377247772631",
-      "entry": 0.52,
-      "size": 12,
-      "cost": 6.24,
-      "bid": 0.49,
-      "value": 5.88,
-      "pnl": -0.36,
-      "cat": "Крипта",
-      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
-      "followLabel": "top$628k",
-      "ts": "2026-07-07T11:27:41.435Z",
-      "follow": {
-        "label": "top$628k",
-        "addr": "0xcc50…4c82",
-        "entry": 0.631,
-        "book": 221678,
-        "wr": 52,
-        "overallPnl": 627966,
-        "posPnl": -930
       }
     }
   ],
@@ -512,6 +415,70 @@
       "followLabel": "top$292k 🔥свежий",
       "followAddr": "0xf7429705e25b619338412967f0a70260b6e1e039",
       "asset": "37637296964987996083417911154183442440916653098848857739933055567217915129720"
+    },
+    {
+      "title": "Will Bitcoin reach $65,000 on July 7?",
+      "side": "No",
+      "entry": 0.93,
+      "exit": 0.91,
+      "size": 16,
+      "cost": 14.88,
+      "pnl": -0.32,
+      "proceeds": 14.56,
+      "entryTs": "2026-07-07T10:20:05.019Z",
+      "exitTs": "2026-07-07T12:05:17.904Z",
+      "followLabel": "top$628k 🔥свежий",
+      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "asset": "113089859532805727138476402144930971343515403754119627725687445845449177270115",
+      "reason": "топ дисквалифицирован (loss>13%)"
+    },
+    {
+      "title": "Will Bitcoin dip to $45,000 by December 31, 2026?",
+      "side": "No",
+      "entry": 0.655,
+      "exit": 0.65,
+      "size": 16,
+      "cost": 10.48,
+      "pnl": -0.08,
+      "proceeds": 10.4,
+      "entryTs": "2026-07-07T11:27:41.435Z",
+      "exitTs": "2026-07-07T12:05:17.983Z",
+      "followLabel": "top$628k",
+      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "asset": "20326394798700413571801660749437036272627203479853632032510011746755865615562",
+      "reason": "топ дисквалифицирован (loss>13%)"
+    },
+    {
+      "title": "Will Bitcoin dip to $50,000 by December 31, 2026?",
+      "side": "No",
+      "entry": 0.515,
+      "exit": 0.51,
+      "size": 16,
+      "cost": 8.24,
+      "pnl": -0.08,
+      "proceeds": 8.16,
+      "entryTs": "2026-07-07T11:27:41.435Z",
+      "exitTs": "2026-07-07T12:05:18.062Z",
+      "followLabel": "top$628k",
+      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "asset": "41832664285845832459030640969891483663884721696292020563915305291791682631668",
+      "reason": "топ дисквалифицирован (loss>13%)"
+    },
+    {
+      "title": "Will Bitcoin reach $67,500 in July?",
+      "side": "No",
+      "entry": 0.52,
+      "exit": 0.49,
+      "size": 12,
+      "cost": 6.24,
+      "pnl": -0.36,
+      "proceeds": 5.88,
+      "entryTs": "2026-07-07T11:27:41.435Z",
+      "exitTs": "2026-07-07T12:05:18.139Z",
+      "followLabel": "top$628k",
+      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "asset": "94252409631375149642232709930779092548259642333831512866206597068377247772631",
+      "reason": "топ дисквалифицирован (loss>13%)"
     }
   ],
   "log": [
@@ -655,7 +622,11 @@
     "ВХОД: «President Trump to Attend World Cup Fina» Yes @0.93 $12 за top$292k 🔥свежий yield 8%",
     "ВХОД: «Will Bitcoin dip to $45,000 by December » No @0.66 $16 за top$628k yield 53%",
     "ВХОД: «Will Bitcoin dip to $50,000 by December » No @0.52 $16 за top$628k yield 94%",
-    "ВХОД: «Will Bitcoin reach $67,500 in July?» No @0.52 $12 за top$628k yield 92%"
+    "ВХОД: «Will Bitcoin reach $67,500 in July?» No @0.52 $12 за top$628k yield 92%",
+    "ЗАКРЫТО (топ отсеян ужесточением): «Will Bitcoin reach $65,000 on July» $-0.32",
+    "ЗАКРЫТО (топ отсеян ужесточением): «Will Bitcoin dip to $45,000 by Dec» $-0.08",
+    "ЗАКРЫТО (топ отсеян ужесточением): «Will Bitcoin dip to $50,000 by Dec» $-0.08",
+    "ЗАКРЫТО (топ отсеян ужесточением): «Will Bitcoin reach $67,500 in July» $-0.36"
   ],
   "tops": [
     {
@@ -728,18 +699,18 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 75331,
+      "book": 75422,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 5797,
+          "usd": 5794,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin dip to $52,500 in July",
           "side": "NO",
-          "usd": 4983,
+          "usd": 4942,
           "cat": "Крипта"
         },
         {
@@ -754,12 +725,12 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 659286,
+      "book": 659770,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 38784,
+          "usd": 39007,
           "cat": "Крипта"
         },
         {
@@ -771,7 +742,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 23379,
+          "usd": 23367,
           "cat": "Крипта"
         }
       ]
@@ -780,7 +751,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 221678,
+      "book": 224166,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -804,13 +775,13 @@
     }
   ],
   "stats": {
-    "day": 36.17,
-    "week": 36.17,
-    "month": 36.17,
-    "trades": 16,
-    "winrate": 38
+    "day": 35.33,
+    "week": 35.33,
+    "month": 35.33,
+    "trades": 20,
+    "winrate": 30
   },
-  "updated": "2026-07-07T12:04:13.774Z",
+  "updated": "2026-07-07T12:05:22.622Z",
   "topStats": [
     {
       "label": "top$2964k 🔥свежий",
@@ -936,13 +907,13 @@
     {
       "label": "top$628k 🔥свежий",
       "addr": "0xcc50…4c82",
-      "total": -1.09,
-      "realized": -0.41,
-      "unreal": -0.68,
-      "open": 4,
-      "closed": 4,
+      "total": -1.25,
+      "realized": -1.25,
+      "unreal": 0,
+      "open": 0,
+      "closed": 8,
       "wins": 0,
-      "losses": 4
+      "losses": 8
     }
   ],
   "digest": [
