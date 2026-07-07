@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 268.66,
-  "equity": 300.37,
-  "totalPnl": 0.37,
+  "equity": 304.14,
+  "totalPnl": 4.14,
   "open": [
     {
       "title": "Will United States vs. Belgium end in a draw?",
@@ -11,9 +11,9 @@
       "entry": 0.725,
       "size": 14,
       "cost": 10.15,
-      "bid": 0.69,
-      "value": 9.66,
-      "pnl": -0.49,
+      "bid": 0.76,
+      "value": 10.64,
+      "pnl": 0.49,
       "cat": "Спорт",
       "followAddr": "0x7dddf1968c14900b2d2ef9dada8465e82ac4c933",
       "followLabel": "top$357k",
@@ -47,7 +47,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84857,
+        "book": 84874,
         "wr": 66,
         "overallPnl": 236707,
         "posPnl": 1377
@@ -97,9 +97,9 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 103608,
-        "wr": 60,
-        "overallPnl": 940546,
+        "book": 103511,
+        "wr": 63,
+        "overallPnl": 1148958,
         "posPnl": 4986
       },
       "topPeak": 69769.0456
@@ -111,9 +111,9 @@
       "entry": 0.127,
       "size": 8,
       "cost": 1.02,
-      "bid": 0.184,
-      "value": 1.47,
-      "pnl": 0.45,
+      "bid": 0.182,
+      "value": 1.46,
+      "pnl": 0.44,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k loss10%",
@@ -122,10 +122,10 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 103608,
-        "wr": 60,
-        "overallPnl": 940546,
-        "posPnl": 7997
+        "book": 103511,
+        "wr": 63,
+        "overallPnl": 1148958,
+        "posPnl": 7900
       },
       "topPeak": 17995.5905
     },
@@ -136,9 +136,9 @@
       "entry": 0.715,
       "size": 14,
       "cost": 10.01,
-      "bid": 0.51,
-      "value": 7.14,
-      "pnl": -2.87,
+      "bid": 0.71,
+      "value": 9.94,
+      "pnl": -0.07,
       "cat": "Политика",
       "followAddr": "0x28059b3fb7af7ed76d83dc9121bbb72ec7cf76ed",
       "followLabel": "top$619k",
@@ -147,7 +147,7 @@
         "label": "top$619k",
         "addr": "0x2805…76ed",
         "entry": 0.699,
-        "book": 69503,
+        "book": 69328,
         "wr": 49,
         "overallPnl": 618552,
         "posPnl": 1523
@@ -303,19 +303,19 @@
   ],
   "tops": [
     {
+      "addr": "0x6501…1220",
+      "copyPnl": 1054,
+      "realPnl": 1149,
+      "loss": 8,
+      "roi": 1340,
+      "hedged": 0
+    },
+    {
       "addr": "0xf5fa…62df",
       "copyPnl": 896,
       "realPnl": 969,
       "loss": 8,
       "roi": 1163,
-      "hedged": 0
-    },
-    {
-      "addr": "0x6501…1220",
-      "copyPnl": 849,
-      "realPnl": 941,
-      "loss": 10,
-      "roi": 1238,
       "hedged": 0
     },
     {
@@ -372,12 +372,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 78804,
+      "book": 78809,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8233,
+          "usd": 8238,
           "cat": "Крипта"
         },
         {
@@ -398,7 +398,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 588530,
+      "book": 588026,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -415,7 +415,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 22797,
+          "usd": 22810,
           "cat": "Крипта"
         }
       ]
@@ -424,7 +424,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 248231,
+      "book": 248858,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -435,7 +435,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 22208,
+          "usd": 22731,
           "cat": "Крипта"
         },
         {
@@ -454,5 +454,5 @@
     "trades": 9,
     "winrate": 11
   },
-  "updated": "2026-07-07T00:31:44.475Z"
+  "updated": "2026-07-07T00:37:44.165Z"
 }
