@@ -47,7 +47,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85385,
+        "book": 85199,
         "wr": 66,
         "overallPnl": 236707,
         "posPnl": 1400
@@ -73,8 +73,8 @@
         "addr": "0xa6a8…ba32",
         "entry": 0.348,
         "book": 48505,
-        "wr": 64,
-        "overallPnl": 416952,
+        "wr": 73,
+        "overallPnl": 658874,
         "posPnl": -494
       },
       "topPeak": 49925.9089
@@ -327,6 +327,14 @@
       "hedged": 0
     },
     {
+      "addr": "0xa6a8…ba32",
+      "copyPnl": 627,
+      "realPnl": 659,
+      "loss": 5,
+      "roi": 2735,
+      "hedged": 0
+    },
+    {
       "addr": "0x2805…76ed",
       "copyPnl": 546,
       "realPnl": 619,
@@ -351,14 +359,6 @@
       "hedged": 0
     },
     {
-      "addr": "0xa6a8…ba32",
-      "copyPnl": 392,
-      "realPnl": 417,
-      "loss": 6,
-      "roi": 2539,
-      "hedged": 0
-    },
-    {
       "addr": "0xc57f…c909",
       "copyPnl": 381,
       "realPnl": 415,
@@ -372,7 +372,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 78416,
+      "book": 78477,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -398,7 +398,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 586865,
+      "book": 587351,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -424,7 +424,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 249058,
+      "book": 249082,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -435,7 +435,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 23147,
+          "usd": 23112,
           "cat": "Крипта"
         },
         {
@@ -454,5 +454,5 @@
     "trades": 9,
     "winrate": 11
   },
-  "updated": "2026-07-07T00:55:44.301Z"
+  "updated": "2026-07-07T01:01:44.735Z"
 }
