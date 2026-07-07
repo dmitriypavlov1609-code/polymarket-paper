@@ -17,10 +17,10 @@ async function cycle() {
   console.log("3) " + run("node paper-enter.js").split("\n")[0]);
   console.log("2b) " + run("node paper-update.js").split("\n").pop());
   console.log("5) " + run("node digest.js"));
-  // git push (only if changed)
-  const status = run("git status --porcelain");
+  // git push — ТОЛЬКО данные (paper-state.json), НИКОГДА не код (иначе движок затрёт UI-правки на origin)
+  const status = run("git status --porcelain -- paper-state.json");
   if (status && !status.startsWith("ERR")) {
-    run("git add -A && git commit -q -m 'paper 24/7 cycle'");
+    run("git add paper-state.json && git commit -q -m 'paper 24/7 cycle'");
     const push = run("git push -q origin main 2>&1");
     console.log("4) pushed" + (push.startsWith("ERR") ? " " + push : ""));
   } else {
