@@ -442,7 +442,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 220764,
+      "book": 220772,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -466,11 +466,11 @@
     }
   ],
   "stats": {
-    "day": 3.36,
-    "week": 3.36,
-    "month": 3.36,
-    "trades": 11,
-    "winrate": 9
+    "day": 3.5,
+    "week": 3.5,
+    "month": 3.5,
+    "trades": 12,
+    "winrate": 17
   },
-  "updated": "2026-07-07T10:02:10.746Z"
+  "updated": "2026-07-07T10:04:38.862Z"
 }
