@@ -158,6 +158,14 @@ if (lb && lb.data) {
 }
 st.tops = tops;
 
+// кривая эквити для графика (снимок не чаще, чем раз в ~5 мин; храним ~400 точек ≈ пара суток)
+st.equityCurve = st.equityCurve || [];
+const lastPt = st.equityCurve[st.equityCurve.length - 1];
+if (!lastPt || Date.now() - new Date(lastPt.t).getTime() > 5 * 60 * 1000) {
+  st.equityCurve.push({ t: new Date().toISOString(), eq: st.equity, pnl: +(st.equity - st.startBalance).toFixed(2), open: (st.open || []).length });
+  if (st.equityCurve.length > 400) st.equityCurve = st.equityCurve.slice(-400);
+}
+
 st.updated = new Date().toISOString();
 writeFileSync("paper-state.json", JSON.stringify(st, null, 2));
 console.log(`updated: equity $${st.equity} | open ${st.open.length} | whales ${whales.length} | tops ${tops.length} | day $${st.stats.day}`);
