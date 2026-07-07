@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 190.37,
-  "equity": 303.54,
-  "totalPnl": 3.54,
+  "cash": 190.38,
+  "equity": 303.68,
+  "totalPnl": 3.68,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.549,
-      "value": 8.78,
-      "pnl": 0.04,
+      "bid": 0.55,
+      "value": 8.8,
+      "pnl": 0.06,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85209,
+        "book": 85365,
         "wr": 66,
         "overallPnl": 237530,
         "posPnl": 1400
@@ -72,7 +72,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 345896,
+        "book": 345136,
         "wr": 63,
         "overallPnl": 1141744,
         "posPnl": 7512
@@ -86,9 +86,9 @@
       "entry": 0.829,
       "size": 24,
       "cost": 19.88,
-      "bid": 0.816,
-      "value": 19.58,
-      "pnl": -0.3,
+      "bid": 0.817,
+      "value": 19.61,
+      "pnl": -0.27,
       "cat": "Спорт",
       "followAddr": "0x0c787cc2962ee6464414da592b892c3886e077f1",
       "followLabel": "top$855k",
@@ -97,12 +97,12 @@
         "label": "top$855k",
         "addr": "0x0c78…77f1",
         "entry": 0.829,
-        "book": 99602,
+        "book": 99847,
         "wr": 49,
         "overallPnl": 626286,
-        "posPnl": -1695
+        "posPnl": -1450
       },
-      "topPeak": 99602.3504
+      "topPeak": 99846.6234
     },
     {
       "title": "Argentina vs. Egypt: Team to Advance",
@@ -122,7 +122,7 @@
         "label": "top$1142k",
         "addr": "0x6501…1220",
         "entry": 0.86,
-        "book": 345896,
+        "book": 345136,
         "wr": 63,
         "overallPnl": 1141744,
         "posPnl": -1455
@@ -147,7 +147,7 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 28436,
+        "book": 28390,
         "wr": 58,
         "overallPnl": 176530,
         "posPnl": -1634
@@ -172,7 +172,7 @@
         "label": "top$292k",
         "addr": "0xf742…e039",
         "entry": 0.44,
-        "book": 197243,
+        "book": 197043,
         "wr": 59,
         "overallPnl": 291756,
         "posPnl": 350
@@ -186,9 +186,9 @@
       "entry": 0.93,
       "size": 16,
       "cost": 14.88,
-      "bid": 0.93,
-      "value": 14.88,
-      "pnl": 0,
+      "bid": 0.94,
+      "value": 15.04,
+      "pnl": 0.16,
       "cat": "Крипта",
       "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
       "followLabel": "top$628k 🔥свежий",
@@ -197,12 +197,12 @@
         "label": "top$628k 🔥свежий",
         "addr": "0xcc50…4c82",
         "entry": 0.941,
-        "book": 220575,
+        "book": 221526,
         "wr": 52,
         "overallPnl": 627966,
-        "posPnl": -74
+        "posPnl": -80
       },
-      "topPeak": 10963.7601
+      "topPeak": 11725.8011
     },
     {
       "title": "United States vs. Belgium: Team to Advance",
@@ -217,7 +217,7 @@
       "cat": "Политика",
       "followAddr": "0x28059b3fb7af7ed76d83dc9121bbb72ec7cf76ed",
       "followLabel": "top$647k 🔥свежий ×3",
-      "ts": "2026-07-07T10:47:51.100Z",
+      "ts": "2026-07-07T10:53:54.570Z",
       "follow": {
         "label": "top$647k 🔥свежий ×3",
         "addr": "0x2805…76ed",
@@ -241,12 +241,12 @@
       "cat": "Политика",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$1142k 🔥свежий ×2",
-      "ts": "2026-07-07T10:47:51.100Z",
+      "ts": "2026-07-07T10:53:54.570Z",
       "follow": {
         "label": "top$1142k 🔥свежий ×2",
         "addr": "0x6501…1220",
         "entry": null,
-        "book": 345896,
+        "book": 345136,
         "wr": 63,
         "overallPnl": 1141744,
         "posPnl": null
@@ -265,7 +265,7 @@
       "cat": "Прочее",
       "followAddr": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
       "followLabel": "top$2964k 🔥свежий",
-      "ts": "2026-07-07T10:47:51.100Z",
+      "ts": "2026-07-07T10:53:54.570Z",
       "follow": {
         "label": "top$2964k 🔥свежий",
         "addr": "0x7c1e…bab3",
@@ -283,18 +283,18 @@
       "entry": 0.96,
       "size": 12,
       "cost": 11.52,
-      "bid": 0.961,
-      "value": 11.53,
-      "pnl": 0.01,
+      "bid": 0.954,
+      "value": 11.45,
+      "pnl": -0.07,
       "cat": "Крипта",
       "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
       "followLabel": "top$628k 🔥свежий",
-      "ts": "2026-07-07T10:47:51.100Z",
+      "ts": "2026-07-07T10:53:54.570Z",
       "follow": {
         "label": "top$628k 🔥свежий",
         "addr": "0xcc50…4c82",
         "entry": null,
-        "book": 220575,
+        "book": 221526,
         "wr": 52,
         "overallPnl": 627966,
         "posPnl": null
@@ -848,6 +848,62 @@
       "followLabel": "top$628k 🔥свежий",
       "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
       "reason": "топ вышел"
+    },
+    {
+      "title": "United States vs. Belgium: Team to Advance",
+      "side": "Belgium",
+      "entry": 0.69,
+      "exit": 0.69,
+      "size": 14,
+      "cost": 9.66,
+      "pnl": 0,
+      "proceeds": 9.66,
+      "exitTs": "2026-07-07T10:53:32.828Z",
+      "followLabel": "top$647k 🔥свежий ×3",
+      "followAddr": "0x28059b3fb7af7ed76d83dc9121bbb72ec7cf76ed",
+      "reason": "топ вышел"
+    },
+    {
+      "title": "Portugal vs. Spain: Team to Advance",
+      "side": "Spain",
+      "entry": 0.6,
+      "exit": 0.6,
+      "size": 14,
+      "cost": 8.4,
+      "pnl": 0,
+      "proceeds": 8.4,
+      "exitTs": "2026-07-07T10:53:36.659Z",
+      "followLabel": "top$1142k 🔥свежий ×2",
+      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
+      "reason": "топ вышел"
+    },
+    {
+      "title": "Spread: Belgium (-1.5)",
+      "side": "Belgium",
+      "entry": 0.33,
+      "exit": 0.33,
+      "size": 22,
+      "cost": 7.26,
+      "pnl": 0,
+      "proceeds": 7.26,
+      "exitTs": "2026-07-07T10:53:40.488Z",
+      "followLabel": "top$2964k 🔥свежий",
+      "followAddr": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
+      "reason": "топ вышел"
+    },
+    {
+      "title": "Will Bitcoin dip to $61,000 on July 7?",
+      "side": "No",
+      "entry": 0.96,
+      "exit": 0.961,
+      "size": 12,
+      "cost": 11.52,
+      "pnl": 0.01,
+      "proceeds": 11.53,
+      "exitTs": "2026-07-07T10:53:40.583Z",
+      "followLabel": "top$628k 🔥свежий",
+      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "reason": "топ вышел"
     }
   ],
   "log": [
@@ -900,6 +956,14 @@
     "ВЫХОД вслед за топом (топ вышел): «Portugal vs. Spain: Team to Advance» @0.60 +$0",
     "ВЫХОД вслед за топом (топ вышел): «Spread: Belgium (-1.5)» @0.33 +$0",
     "ВЫХОД вслед за топом (топ вышел): «Will Bitcoin dip to $61,000 on July » @0.96 +$0",
+    "ВХОД: «United States vs. Belgium: Team to Advan» Belgium @0.69 $14 за top$647k 🔥свежий (консенсус ×3) yield 45%",
+    "ВХОД: «Portugal vs. Spain: Team to Advance» Spain @0.60 $14 за top$1142k 🔥свежий (консенсус ×2) yield 67%",
+    "ВХОД: «Spread: Belgium (-1.5)» Belgium @0.33 $22 за top$2964k 🔥свежий yield 203%",
+    "ВХОД: «Will Bitcoin dip to $61,000 on July 7?» No @0.96 $12 за top$628k 🔥свежий yield 4%",
+    "ВЫХОД вслед за топом (топ вышел): «United States vs. Belgium: Team to A» @0.69 +$0",
+    "ВЫХОД вслед за топом (топ вышел): «Portugal vs. Spain: Team to Advance» @0.60 +$0",
+    "ВЫХОД вслед за топом (топ вышел): «Spread: Belgium (-1.5)» @0.33 +$0",
+    "ВЫХОД вслед за топом (топ вышел): «Will Bitcoin dip to $61,000 on July » @0.96 +$0.01",
     "ВХОД: «United States vs. Belgium: Team to Advan» Belgium @0.69 $14 за top$647k 🔥свежий (консенсус ×3) yield 45%",
     "ВХОД: «Portugal vs. Spain: Team to Advance» Spain @0.60 $14 за top$1142k 🔥свежий (консенсус ×2) yield 67%",
     "ВХОД: «Spread: Belgium (-1.5)» Belgium @0.33 $22 за top$2964k 🔥свежий yield 203%",
@@ -1016,7 +1080,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 74150,
+      "book": 74142,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -1042,7 +1106,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 642661,
+      "book": 642856,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -1059,7 +1123,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 23379,
+          "usd": 23392,
           "cat": "Крипта"
         }
       ]
@@ -1068,7 +1132,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 220587,
+      "book": 221526,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1092,13 +1156,13 @@
     }
   ],
   "stats": {
-    "day": 3.55,
-    "week": 3.55,
-    "month": 3.55,
-    "trades": 40,
+    "day": 3.56,
+    "week": 3.56,
+    "month": 3.56,
+    "trades": 44,
     "winrate": 18
   },
-  "updated": "2026-07-07T10:47:55.371Z",
+  "updated": "2026-07-07T10:53:59.127Z",
   "topStats": [
     {
       "label": "top$417k",
@@ -1125,20 +1189,20 @@
     {
       "label": "top$628k 🔥свежий",
       "addr": "0xcc50…4c82",
-      "total": 0.06,
-      "realized": 0.05,
-      "unreal": 0.01,
+      "total": 0.15,
+      "realized": 0.06,
+      "unreal": 0.09,
       "open": 2,
-      "closed": 5,
-      "wins": 5,
+      "closed": 6,
+      "wins": 6,
       "losses": 0
     },
     {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
-      "total": 0.04,
+      "total": 0.06,
       "realized": 0,
-      "unreal": 0.04,
+      "unreal": 0.06,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1244,6 +1308,17 @@
       "losses": 0
     },
     {
+      "label": "top$855k",
+      "addr": "0x0c78…77f1",
+      "total": -0.27,
+      "realized": 0,
+      "unreal": -0.27,
+      "open": 1,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
       "label": "top$313k loss3%",
       "addr": "",
       "total": -0.28,
@@ -1253,17 +1328,6 @@
       "closed": 4,
       "wins": 0,
       "losses": 4
-    },
-    {
-      "label": "top$855k",
-      "addr": "0x0c78…77f1",
-      "total": -0.3,
-      "realized": 0,
-      "unreal": -0.3,
-      "open": 1,
-      "closed": 0,
-      "wins": 0,
-      "losses": 0
     },
     {
       "label": "top$237k loss12%",
@@ -1310,6 +1374,12 @@
       "t": "2026-07-07T10:47:40.627Z",
       "eq": 303.53,
       "pnl": 3.53,
+      "open": 8
+    },
+    {
+      "t": "2026-07-07T10:53:44.132Z",
+      "eq": 303.73,
+      "pnl": 3.73,
       "open": 8
     }
   ]
