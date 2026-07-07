@@ -46,6 +46,13 @@
   .whalestat.pos{border-left-color:var(--grn)} .whalestat.neg{border-left-color:var(--red)}
   .whalestat .wl{font-weight:600;font-size:14px} .whalestat .wm{color:var(--dim);font-size:12px;margin-top:3px}
   .whalestat .wp{font-size:21px;font-weight:700;text-align:right;letter-spacing:-.02em} .whalestat .wpm{color:var(--dim);font-size:11px;text-align:right}
+  .nav{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;background:var(--bg);padding-top:8px}
+  .navtab{padding:10px 18px;font-size:14px;font-weight:600;cursor:pointer;color:var(--dim);border-bottom:2px solid transparent;margin-bottom:-1px}
+  .navtab:hover{color:var(--txt)}
+  .navtab.on{color:var(--txt);border-bottom-color:var(--acc)}
+  .page[hidden]{display:none}
+  th.sortable{cursor:pointer;user-select:none;white-space:nowrap} th.sortable:hover{color:var(--txt)}
+  th.sortable .ar{opacity:.4;font-size:9px} th.sortable.act{color:var(--txt)} th.sortable.act .ar{opacity:1;color:var(--acc)}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
@@ -53,49 +60,57 @@
   <h1>🐋 Whale Paper Trading</h1>
   <div class="sub"><span class="dot"></span>Ловим свежие входы топов polycop.fun · бумажный счёт $300 · <span class="live">24/7 на сервере</span> · мозг: Claude Opus</div>
 
+  <div class="nav">
+    <div class="navtab on" data-page="dashboard" onclick="setPage('dashboard')">📈 Дашборд</div>
+    <div class="navtab" data-page="stats" onclick="setPage('stats')">📊 Статистика</div>
+    <div class="navtab" data-page="whales" onclick="setPage('whales')">🐋 Киты</div>
+  </div>
+
   <div class="cards">
     <div class="card"><div class="lbl">Эквити</div><div class="val" id="equity">…</div></div>
     <div class="card"><div class="lbl">Кэш</div><div class="val" id="cash">…</div></div>
     <div class="card"><div class="lbl">Total PnL</div><div class="val" id="pnl">…</div></div>
     <div class="card"><div class="lbl">Открытых</div><div class="val" id="opencnt">…</div></div>
   </div>
-  <div class="stats">
-    <div class="stat">День<b id="s_day">—</b></div>
-    <div class="stat">Неделя<b id="s_week">—</b></div>
-    <div class="stat">Месяц<b id="s_month">—</b></div>
-    <div class="stat">Сделок<b id="s_trades">—</b></div>
-    <div class="stat">Winrate<b id="s_wr">—</b></div>
-  </div>
 
-  <h2>📊 Аналитика</h2>
-  <div class="charts">
-    <div class="chartcard wide"><div class="ct">Кривая эквити (старт $300)</div><canvas id="chEquity" height="90"></canvas></div>
-    <div class="chartcard"><div class="ct">💰 Заработок по китам (наш P&L)</div><canvas id="chWhales" height="150"></canvas></div>
-    <div class="chartcard"><div class="ct">🧭 Распределение по категориям</div><canvas id="chCat" height="150"></canvas></div>
-  </div>
-  <div id="whaleAnalytics" style="margin-top:10px"></div>
+  <!-- ДАШБОРД: только текущие ставки + за каким китом идём -->
+  <section id="page-dashboard" class="page">
+    <h2>Текущие ставки <span class="live">live</span></h2>
+    <div class="tabs" id="tabs"></div>
+    <div id="open"></div>
+  </section>
 
-  <h2>📈 Открытые позиции <span class="live">live</span></h2>
-  <div class="tabs" id="tabs"></div>
-  <div id="open"></div>
+  <!-- СТАТИСТИКА: графики + сортируемые таблицы -->
+  <section id="page-stats" class="page" hidden>
+    <div class="stats">
+      <div class="stat">День<b id="s_day">—</b></div>
+      <div class="stat">Неделя<b id="s_week">—</b></div>
+      <div class="stat">Месяц<b id="s_month">—</b></div>
+      <div class="stat">Сделок<b id="s_trades">—</b></div>
+      <div class="stat">Winrate<b id="s_wr">—</b></div>
+    </div>
+    <div class="charts">
+      <div class="chartcard wide"><div class="ct">Кривая эквити (старт $300)</div><canvas id="chEquity" height="90"></canvas></div>
+      <div class="chartcard"><div class="ct">💰 Заработок по китам (наш P&L)</div><canvas id="chWhales" height="150"></canvas></div>
+      <div class="chartcard"><div class="ct">🧭 Распределение по категориям</div><canvas id="chCat" height="150"></canvas></div>
+    </div>
+    <h2>🎯 Наш P&L по топам (за кем следуем)</h2>
+    <div id="topstats"></div>
+    <h2>✅ Закрытые сделки</h2>
+    <div id="closed"></div>
+    <h2>🕐 Часовая сводка</h2>
+    <div id="digest"></div>
+    <h2>📝 Журнал решений</h2>
+    <div class="log" id="log">Загрузка…</div>
+  </section>
 
-  <h2>🐋 Наши киты <span class="live">live</span></h2>
-  <div class="grid2" id="whales"></div>
-
-  <h2>🎯 Наш P&L по топам (за кем следуем)</h2>
-  <div id="topstats"></div>
-
-  <h2>🏆 Топы с лидерборда (polycop.fun)</h2>
-  <div id="tops"></div>
-
-  <h2>✅ Закрытые сделки</h2>
-  <div id="closed"></div>
-
-  <h2>🕐 Часовая сводка</h2>
-  <div id="digest"></div>
-
-  <h2>📝 Журнал решений</h2>
-  <div class="log" id="log">Загрузка…</div>
+  <!-- КИТЫ: наши + лидерборд, с сортировкой -->
+  <section id="page-whales" class="page" hidden>
+    <h2>🐋 Наши киты <span class="live">live</span></h2>
+    <div class="grid2" id="whales"></div>
+    <h2>🏆 Топы лидерборда (polycop.fun)</h2>
+    <div id="tops"></div>
+  </section>
 
   <div class="foot">Обновлено: <span id="updated">—</span> · позиции и киты — вживую · топы/журнал — по циклу</div>
 
@@ -181,18 +196,42 @@ async function loadLive(){
   $("whales").innerHTML=wh;
 }
 
+// ── вкладки ──
+function setPage(p){
+  document.querySelectorAll(".navtab").forEach(t=>t.classList.toggle("on",t.dataset.page===p));
+  document.querySelectorAll(".page").forEach(sec=>sec.hidden=(sec.id!=="page-"+p));
+  if(p==="stats"&&STATE)renderAnalytics();
+}
+// ── сортировка таблиц ──
+const SORT={topstats:{k:"total",dir:-1},tops:{k:"copyPnl",dir:-1}};
+function sortArr(arr,k,dir){return [...arr].sort((a,b)=>{let x=a[k],y=b[k];if(typeof x==="string"&&typeof y==="string")return dir*x.localeCompare(y);return dir*((+x||0)-(+y||0));});}
+function hdr(table,k,label){const st=SORT[table],act=st.k===k;return '<th class="sortable'+(act?" act":"")+'" onclick="sortBy(\''+table+'\',\''+k+'\')">'+label+' <span class="ar">'+(act?(st.dir<0?"▼":"▲"):"↕")+'</span></th>';}
+function sortBy(table,k){const st=SORT[table];if(st.k===k)st.dir*=-1;else{st.k=k;st.dir=-1;}table==="topstats"?renderTopStats():renderTops();}
+function renderTopStats(){
+  const s=STATE;let arr=(s.topStats||[]).map(t=>({...t,count:t.open+t.closed}));
+  if(!arr.length){$("topstats").innerHTML='<div class="empty">Появится после первых сделок</div>';return;}
+  arr=sortArr(arr,SORT.topstats.k,SORT.topstats.dir);
+  let h='<table><tr><th>Топ (за кем идём)</th>'+hdr("topstats","total","Наш итог")+hdr("topstats","realized","Реализ.")+hdr("topstats","unreal","Открыто")+hdr("topstats","count","Позиций")+hdr("topstats","wins","W")+hdr("topstats","losses","L")+'</tr>';
+  for(const t of arr)h+='<tr><td>'+(t.label||"top")+' <span class="acc" style="font-size:11px">'+(t.addr||"")+'</span></td>'
+    +'<td class="'+cls(t.total)+'"><b>'+money(t.total)+'</b></td><td class="'+cls(t.realized)+'">'+money(t.realized)+'</td>'
+    +'<td class="'+cls(t.unreal)+'">'+money(t.unreal)+' ('+t.open+')</td><td>'+t.count+'</td><td class="grn">'+t.wins+'</td><td class="red">'+t.losses+'</td></tr>';
+  $("topstats").innerHTML=h+'</table>';
+}
+function renderTops(){
+  const s=STATE;let arr=(s.tops||[]);
+  if(!arr.length){$("tops").innerHTML='<div class="empty">—</div>';return;}
+  arr=sortArr(arr,SORT.tops.k,SORT.tops.dir);
+  let h='<table><tr><th>Трейдер</th>'+hdr("tops","copyPnl","Copy PnL")+hdr("tops","realPnl","Real PnL")+hdr("tops","loss","Loss%")+hdr("tops","roi","ROI")+hdr("tops","hedged","Hedge%")+'</tr>';
+  for(const t of arr)h+='<tr><td>'+t.addr+'</td><td class="grn">$'+t.copyPnl+'k</td><td>$'+t.realPnl+'k</td><td>'+t.loss+'%</td><td class="acc">'+(t.roi!=null?t.roi+"%":"—")+'</td><td>'+t.hedged+'%</td></tr>';
+  $("tops").innerHTML=h+'</table>';
+}
 function renderStatic(){
   const s=STATE;const st=s.stats||{};
   $("s_day").innerHTML='<span class="'+cls(st.day)+'">'+money(st.day||0)+'</span>';
   $("s_week").innerHTML='<span class="'+cls(st.week)+'">'+money(st.week||0)+'</span>';
   $("s_month").innerHTML='<span class="'+cls(st.month)+'">'+money(st.month||0)+'</span>';
   $("s_trades").textContent=st.trades||0;$("s_wr").textContent=(st.winrate||0)+"%";
-  if((s.topStats||[]).length){let h='<table><tr><th>Топ</th><th>Наш итог</th><th>Реализ.</th><th>Открыто</th><th>Позиций</th><th>W/L</th></tr>';
-    for(const t of s.topStats)h+='<tr><td>'+(t.label||'top')+' <span class="acc">'+(t.addr||'')+'</span></td><td class="'+cls(t.total)+'">'+money(t.total)+'</td><td class="'+cls(t.realized)+'">'+money(t.realized)+'</td><td class="'+cls(t.unreal)+'">'+money(t.unreal)+' ('+t.open+')</td><td>'+(t.open+t.closed)+'</td><td>'+t.wins+'/'+t.losses+'</td></tr>';
-    $("topstats").innerHTML=h+'</table>';}else $("topstats").innerHTML='<div class="empty">—</div>';
-  if((s.tops||[]).length){let h='<table><tr><th>Трейдер</th><th>Copy PnL</th><th>Real PnL</th><th>Loss%</th><th>ROI</th><th>Hedge%</th></tr>';
-    for(const t of s.tops)h+='<tr><td>'+t.addr+'</td><td class="grn">$'+t.copyPnl+'k</td><td>$'+t.realPnl+'k</td><td>'+t.loss+'%</td><td class="acc">'+(t.roi!=null?t.roi+'%':'—')+'</td><td>'+t.hedged+'%</td></tr>';
-    $("tops").innerHTML=h+'</table>';}else $("tops").innerHTML='<div class="empty">—</div>';
+  renderTopStats(); renderTops();
   if((s.closed||[]).length){let h='<table><tr><th>Рынок</th><th>Сторона</th><th>Вход→Выход</th><th>PnL</th></tr>';
     for(const p of [...s.closed].reverse())h+='<tr><td>'+p.title+'</td><td class="side-'+(/yes/i.test(p.side)?"yes":"no")+'">'+p.side+'</td><td>$'+p.entry.toFixed(3)+'→$'+p.exit.toFixed(3)+'</td><td class="'+cls(p.pnl)+'">'+money(p.pnl)+'</td></tr>';
     $("closed").innerHTML=h+'</table>';}else $("closed").innerHTML='<div class="empty">Пока нет закрытых сделок</div>';
