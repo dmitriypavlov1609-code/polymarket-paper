@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 190.2,
-  "equity": 303.62,
-  "totalPnl": 3.62,
+  "cash": 197.9,
+  "equity": 303.51,
+  "totalPnl": 3.51,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85359,
+        "book": 85366,
         "wr": 66,
         "overallPnl": 237530,
         "posPnl": 1409
@@ -147,7 +147,7 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 28390,
+        "book": 28395,
         "wr": 58,
         "overallPnl": 176530,
         "posPnl": -1634
@@ -172,7 +172,7 @@
         "label": "top$292k",
         "addr": "0xf742…e039",
         "entry": 0.44,
-        "book": 197043,
+        "book": 197038,
         "wr": 59,
         "overallPnl": 291756,
         "posPnl": 350
@@ -197,7 +197,7 @@
         "label": "top$628k 🔥свежий",
         "addr": "0xcc50…4c82",
         "entry": 0.941,
-        "book": 221940,
+        "book": 221846,
         "wr": 52,
         "overallPnl": 627966,
         "posPnl": 172
@@ -217,7 +217,7 @@
       "cat": "Политика",
       "followAddr": "0x28059b3fb7af7ed76d83dc9121bbb72ec7cf76ed",
       "followLabel": "top$647k 🔥свежий ×3",
-      "ts": "2026-07-07T11:05:51.067Z",
+      "ts": "2026-07-07T11:17:51.511Z",
       "follow": {
         "label": "top$647k 🔥свежий ×3",
         "addr": "0x2805…76ed",
@@ -241,7 +241,7 @@
       "cat": "Политика",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$1142k 🔥свежий ×2",
-      "ts": "2026-07-07T11:05:51.067Z",
+      "ts": "2026-07-07T11:17:51.511Z",
       "follow": {
         "label": "top$1142k 🔥свежий ×2",
         "addr": "0x6501…1220",
@@ -265,7 +265,7 @@
       "cat": "Прочее",
       "followAddr": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
       "followLabel": "top$2964k 🔥свежий",
-      "ts": "2026-07-07T11:05:51.067Z",
+      "ts": "2026-07-07T11:17:51.511Z",
       "follow": {
         "label": "top$2964k 🔥свежий",
         "addr": "0x7c1e…bab3",
@@ -277,26 +277,26 @@
       }
     },
     {
-      "title": "Will Bitcoin dip to $61,000 on July 7?",
-      "side": "No",
-      "asset": "100334985847439891109009684594451555203564410818610201915506287492571427552636",
-      "entry": 0.96,
+      "title": "Spread: Belgium (-2.5)",
+      "side": "Belgium",
+      "asset": "37637296964987996083417911154183442440916653098848857739933055567217915129720",
+      "entry": 0.3,
       "size": 12,
-      "cost": 11.52,
-      "bid": 0.951,
-      "value": 11.41,
-      "pnl": -0.11,
-      "cat": "Крипта",
-      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
-      "followLabel": "top$628k 🔥свежий",
-      "ts": "2026-07-07T11:05:51.068Z",
+      "cost": 3.6,
+      "bid": 0.3000000018666667,
+      "value": 3.6,
+      "pnl": 0,
+      "cat": "Прочее",
+      "followAddr": "0xf7429705e25b619338412967f0a70260b6e1e039",
+      "followLabel": "top$292k 🔥свежий",
+      "ts": "2026-07-07T11:17:51.511Z",
       "follow": {
-        "label": "top$628k 🔥свежий",
-        "addr": "0xcc50…4c82",
+        "label": "top$292k 🔥свежий",
+        "addr": "0xf742…e039",
         "entry": null,
-        "book": 221940,
-        "wr": 52,
-        "overallPnl": 627966,
+        "book": 197038,
+        "wr": 59,
+        "overallPnl": 291756,
         "posPnl": null
       }
     }
@@ -1016,6 +1016,118 @@
       "followLabel": "top$628k 🔥свежий",
       "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
       "reason": "топ вышел"
+    },
+    {
+      "title": "United States vs. Belgium: Team to Advance",
+      "side": "Belgium",
+      "entry": 0.69,
+      "exit": 0.69,
+      "size": 14,
+      "cost": 9.66,
+      "pnl": 0,
+      "proceeds": 9.66,
+      "exitTs": "2026-07-07T11:11:28.839Z",
+      "followLabel": "top$647k 🔥свежий ×3",
+      "followAddr": "0x28059b3fb7af7ed76d83dc9121bbb72ec7cf76ed",
+      "reason": "топ вышел"
+    },
+    {
+      "title": "Portugal vs. Spain: Team to Advance",
+      "side": "Spain",
+      "entry": 0.6,
+      "exit": 0.6,
+      "size": 14,
+      "cost": 8.4,
+      "pnl": 0,
+      "proceeds": 8.4,
+      "exitTs": "2026-07-07T11:11:32.662Z",
+      "followLabel": "top$1142k 🔥свежий ×2",
+      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
+      "reason": "топ вышел"
+    },
+    {
+      "title": "Spread: Belgium (-1.5)",
+      "side": "Belgium",
+      "entry": 0.33,
+      "exit": 0.33,
+      "size": 22,
+      "cost": 7.26,
+      "pnl": 0,
+      "proceeds": 7.26,
+      "exitTs": "2026-07-07T11:11:36.466Z",
+      "followLabel": "top$2964k 🔥свежий",
+      "followAddr": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
+      "reason": "топ вышел"
+    },
+    {
+      "title": "Will Bitcoin dip to $61,000 on July 7?",
+      "side": "No",
+      "entry": 0.96,
+      "exit": 0.95,
+      "size": 12,
+      "cost": 11.52,
+      "pnl": -0.12,
+      "proceeds": 11.4,
+      "exitTs": "2026-07-07T11:11:36.537Z",
+      "followLabel": "top$628k 🔥свежий",
+      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "reason": "топ вышел"
+    },
+    {
+      "title": "United States vs. Belgium: Team to Advance",
+      "side": "Belgium",
+      "entry": 0.69,
+      "exit": 0.69,
+      "size": 14,
+      "cost": 9.66,
+      "pnl": 0,
+      "proceeds": 9.66,
+      "exitTs": "2026-07-07T11:17:29.962Z",
+      "followLabel": "top$647k 🔥свежий ×3",
+      "followAddr": "0x28059b3fb7af7ed76d83dc9121bbb72ec7cf76ed",
+      "reason": "топ вышел"
+    },
+    {
+      "title": "Portugal vs. Spain: Team to Advance",
+      "side": "Spain",
+      "entry": 0.6,
+      "exit": 0.6,
+      "size": 14,
+      "cost": 8.4,
+      "pnl": 0,
+      "proceeds": 8.4,
+      "exitTs": "2026-07-07T11:17:33.767Z",
+      "followLabel": "top$1142k 🔥свежий ×2",
+      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
+      "reason": "топ вышел"
+    },
+    {
+      "title": "Spread: Belgium (-1.5)",
+      "side": "Belgium",
+      "entry": 0.33,
+      "exit": 0.33,
+      "size": 22,
+      "cost": 7.26,
+      "pnl": 0,
+      "proceeds": 7.26,
+      "exitTs": "2026-07-07T11:17:37.610Z",
+      "followLabel": "top$2964k 🔥свежий",
+      "followAddr": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
+      "reason": "топ вышел"
+    },
+    {
+      "title": "Will Bitcoin dip to $61,000 on July 7?",
+      "side": "No",
+      "entry": 0.96,
+      "exit": 0.951,
+      "size": 12,
+      "cost": 11.52,
+      "pnl": -0.11,
+      "proceeds": 11.41,
+      "exitTs": "2026-07-07T11:17:37.680Z",
+      "followLabel": "top$628k 🔥свежий",
+      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "reason": "топ вышел"
     }
   ],
   "log": [
@@ -1135,7 +1247,23 @@
     "ВХОД: «United States vs. Belgium: Team to Advan» Belgium @0.69 $14 за top$647k 🔥свежий (консенсус ×3) yield 45%",
     "ВХОД: «Portugal vs. Spain: Team to Advance» Spain @0.60 $14 за top$1142k 🔥свежий (консенсус ×2) yield 67%",
     "ВХОД: «Spread: Belgium (-1.5)» Belgium @0.33 $22 за top$2964k 🔥свежий yield 203%",
-    "ВХОД: «Will Bitcoin dip to $61,000 on July 7?» No @0.96 $12 за top$628k 🔥свежий yield 4%"
+    "ВХОД: «Will Bitcoin dip to $61,000 on July 7?» No @0.96 $12 за top$628k 🔥свежий yield 4%",
+    "ВЫХОД вслед за топом (топ вышел): «United States vs. Belgium: Team to A» @0.69 +$0",
+    "ВЫХОД вслед за топом (топ вышел): «Portugal vs. Spain: Team to Advance» @0.60 +$0",
+    "ВЫХОД вслед за топом (топ вышел): «Spread: Belgium (-1.5)» @0.33 +$0",
+    "ВЫХОД вслед за топом (топ вышел): «Will Bitcoin dip to $61,000 on July » @0.95 $-0.12",
+    "ВХОД: «United States vs. Belgium: Team to Advan» Belgium @0.69 $14 за top$647k 🔥свежий (консенсус ×3) yield 45%",
+    "ВХОД: «Portugal vs. Spain: Team to Advance» Spain @0.60 $14 за top$1142k 🔥свежий (консенсус ×2) yield 67%",
+    "ВХОД: «Spread: Belgium (-1.5)» Belgium @0.33 $22 за top$2964k 🔥свежий yield 203%",
+    "ВХОД: «Will Bitcoin dip to $61,000 on July 7?» No @0.96 $12 за top$628k 🔥свежий yield 4%",
+    "ВЫХОД вслед за топом (топ вышел): «United States vs. Belgium: Team to A» @0.69 +$0",
+    "ВЫХОД вслед за топом (топ вышел): «Portugal vs. Spain: Team to Advance» @0.60 +$0",
+    "ВЫХОД вслед за топом (топ вышел): «Spread: Belgium (-1.5)» @0.33 +$0",
+    "ВЫХОД вслед за топом (топ вышел): «Will Bitcoin dip to $61,000 on July » @0.95 $-0.11",
+    "ВХОД: «United States vs. Belgium: Team to Advan» Belgium @0.69 $14 за top$647k 🔥свежий (консенсус ×3) yield 45%",
+    "ВХОД: «Portugal vs. Spain: Team to Advance» Spain @0.60 $14 за top$1142k 🔥свежий (консенсус ×2) yield 67%",
+    "ВХОД: «Spread: Belgium (-1.5)» Belgium @0.33 $22 за top$2964k 🔥свежий yield 203%",
+    "ВХОД: «Spread: Belgium (-2.5)» Belgium @0.30 $12 за top$292k 🔥свежий yield 233%"
   ],
   "tops": [
     {
@@ -1208,12 +1336,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 74061,
+      "book": 75610,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 5803,
+          "usd": 5800,
           "cat": "Крипта"
         },
         {
@@ -1225,7 +1353,7 @@
         {
           "m": "Bitcoin dip to $55,000 in July",
           "side": "NO",
-          "usd": 4944,
+          "usd": 4882,
           "cat": "Крипта"
         }
       ]
@@ -1234,7 +1362,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 643559,
+      "book": 643120,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -1245,13 +1373,13 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 36761,
+          "usd": 36274,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 23404,
+          "usd": 23392,
           "cat": "Крипта"
         }
       ]
@@ -1260,7 +1388,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 221940,
+      "book": 221846,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1284,13 +1412,13 @@
     }
   ],
   "stats": {
-    "day": 3.38,
-    "week": 3.38,
-    "month": 3.38,
-    "trades": 52,
-    "winrate": 15
+    "day": 3.15,
+    "week": 3.15,
+    "month": 3.15,
+    "trades": 60,
+    "winrate": 13
   },
-  "updated": "2026-07-07T11:05:56.033Z",
+  "updated": "2026-07-07T11:17:55.913Z",
   "topStats": [
     {
       "label": "top$417k",
@@ -1313,17 +1441,6 @@
       "closed": 0,
       "wins": 0,
       "losses": 0
-    },
-    {
-      "label": "top$628k 🔥свежий",
-      "addr": "0xcc50…4c82",
-      "total": 0.09,
-      "realized": -0.12,
-      "unreal": 0.21,
-      "open": 2,
-      "closed": 8,
-      "wins": 6,
-      "losses": 2
     },
     {
       "label": "top$237k",
@@ -1414,6 +1531,17 @@
       "losses": 0
     },
     {
+      "label": "top$628k 🔥свежий",
+      "addr": "0xcc50…4c82",
+      "total": -0.03,
+      "realized": -0.35,
+      "unreal": 0.32,
+      "open": 1,
+      "closed": 10,
+      "wins": 6,
+      "losses": 4
+    },
+    {
       "label": "top-UFC $417k (лотерейка)",
       "addr": "0xa6a8…ba32",
       "total": -0.05,
@@ -1430,7 +1558,7 @@
       "total": -0.06,
       "realized": 0,
       "unreal": -0.06,
-      "open": 1,
+      "open": 2,
       "closed": 0,
       "wins": 0,
       "losses": 0
@@ -1477,6 +1605,14 @@
       "open": 7,
       "cash": 242.03,
       "line": "эквити $303.34 (PnL +$3.34) · открыто 7 · кэш $242.03 · за час закрыто 1 (W1/L0) · лидеры: top$417k +$4.07, top$941k loss10% +$0.35 · минус: top$237k loss12% $-0.43, top$855k $-0.32"
+    },
+    {
+      "ts": "2026-07-07T11:11:54.794Z",
+      "equity": 303.5,
+      "pnl": 3.5,
+      "open": 12,
+      "cash": 190.08,
+      "line": "эквити $303.50 (PnL +$3.5) · открыто 12 · кэш $190.08 · за час закрыто 44 (W6/L3) · лидеры: top$417k +$4.07, top$941k loss10% +$0.35 · минус: top$237k loss12% $-0.43, top$313k loss3% $-0.28"
     }
   ],
   "equityCurve": [
@@ -1520,6 +1656,18 @@
       "t": "2026-07-07T11:05:41.513Z",
       "eq": 303.73,
       "pnl": 3.73,
+      "open": 8
+    },
+    {
+      "t": "2026-07-07T11:11:40.661Z",
+      "eq": 303.61,
+      "pnl": 3.61,
+      "open": 8
+    },
+    {
+      "t": "2026-07-07T11:17:41.461Z",
+      "eq": 303.51,
+      "pnl": 3.51,
       "open": 8
     }
   ]
