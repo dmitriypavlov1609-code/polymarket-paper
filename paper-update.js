@@ -47,7 +47,7 @@ for (const p of st.open || []) {
     const pnl = +((exit * p.size) - p.cost).toFixed(2);
     // ЧЕСТНОЕ время резолва рынка из gamma (closedTime/endDate), а не момент, когда мы заметили
     let resolveTs = nowIso;
-    try { const ct = m.closedTime || m.endDate; if (ct) { const d = new Date(String(ct).replace(" ", "T")); if (!isNaN(d)) resolveTs = d.toISOString(); } } catch {}
+    try { const ct = m.closedTime || m.endDate; if (ct) { const str = String(ct).replace(" ", "T").replace(/([+-]\d{2})$/, "$1:00"); const d = new Date(str); if (!isNaN(d)) resolveTs = d.toISOString(); } } catch {}
     st.closed.push({ title: p.title, side: p.side, entry: p.entry, exit, size: p.size, cost: p.cost, pnl, entryTs: p.ts || null, exitTs: resolveTs, followLabel: p.followLabel || "", followAddr: p.followAddr || "", asset: p.asset });
     (st.log = st.log || []).push("РЕЗОЛВ: «" + p.title + "» " + (exit ? "🟢ВЫИГРЫШ" : "🔴ПРОИГРЫШ") + " " + (pnl >= 0 ? "+" : "") + "$" + pnl);
     continue;
