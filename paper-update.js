@@ -28,9 +28,15 @@ for (const p of st.open || []) {
   const bk = await jget(`https://clob.polymarket.com/book?token_id=${p.asset}`);
   const bids = bk ? (bk.bids || []).map(o => +o.price).filter(x => x > 0) : [];
   const bid = bids.length ? Math.max(...bids) : null;
-  // РЕЗОЛВ только по авторитетному gamma-флагу closed (пустой стакан НЕ считается резолвом!)
-  const g = await jget(`https://gamma-api.polymarket.com/markets?clob_token_ids=${p.asset}`);
-  const m = Array.isArray(g) ? g[0] : g;
+  // РЕЗОЛВ по авторитетному gamma-флагу closed. ВАЖНО: gamma по умолчанию отдаёт ТОЛЬКО активные рынки —
+  // резолвнувшиеся возвращают []! Поэтому если активный запрос пуст/не закрыт, дозапрашиваем closed=true.
+  let g = await jget(`https://gamma-api.polymarket.com/markets?clob_token_ids=${p.asset}`);
+  let m = Array.isArray(g) ? g[0] : g;
+  if (!m || m.closed !== true) {
+    const gc = await jget(`https://gamma-api.polymarket.com/markets?clob_token_ids=${p.asset}&closed=true`);
+    const mc = Array.isArray(gc) ? gc[0] : gc;
+    if (mc && mc.closed === true) m = mc;
+  }
   if (m && m.closed === true) {
     let exit = 0;
     try {
