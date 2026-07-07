@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 268.94,
-  "equity": 303.69,
-  "totalPnl": 3.69,
+  "equity": 303.34,
+  "totalPnl": 3.34,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.553,
-      "value": 8.85,
-      "pnl": 0.11,
+      "bid": 0.542,
+      "value": 8.67,
+      "pnl": -0.07,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85398,
+        "book": 84830,
         "wr": 66,
         "overallPnl": 237066,
-        "posPnl": 1568
+        "posPnl": 1445
       },
       "topPeak": 12983.5971
     },
@@ -61,9 +61,9 @@
       "entry": 0.167,
       "size": 8,
       "cost": 1.33,
-      "bid": 0.183,
-      "value": 1.46,
-      "pnl": 0.13,
+      "bid": 0.194,
+      "value": 1.55,
+      "pnl": 0.22,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k loss10%",
@@ -72,12 +72,12 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 96811,
+        "book": 98024,
         "wr": 63,
         "overallPnl": 1148958,
-        "posPnl": 9928
+        "posPnl": 11069
       },
-      "topPeak": 69769.0456
+      "topPeak": 70909.6839
     },
     {
       "title": "Will Spain win the 2026 FIFA World Cup?",
@@ -97,7 +97,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 96811,
+        "book": 98024,
         "wr": 63,
         "overallPnl": 1148958,
         "posPnl": 7706
@@ -111,9 +111,9 @@
       "entry": 0.829,
       "size": 24,
       "cost": 19.88,
-      "bid": 0.816,
-      "value": 19.58,
-      "pnl": -0.3,
+      "bid": 0.805,
+      "value": 19.32,
+      "pnl": -0.56,
       "cat": "Спорт",
       "followAddr": "0x0c787cc2962ee6464414da592b892c3886e077f1",
       "followLabel": "top$855k",
@@ -122,10 +122,10 @@
         "label": "top$855k",
         "addr": "0x0c78…77f1",
         "entry": 0.833,
-        "book": 82630,
+        "book": 82326,
         "wr": 51,
         "overallPnl": 855176,
-        "posPnl": -1670
+        "posPnl": -1973
       },
       "topPeak": 83692.4
     }
@@ -376,12 +376,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 71403,
+      "book": 70359,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 6210,
+          "usd": 5763,
           "cat": "Крипта"
         },
         {
@@ -393,7 +393,7 @@
         {
           "m": "Bitcoin dip to $55,000 in July",
           "side": "NO",
-          "usd": 4896,
+          "usd": 4835,
           "cat": "Крипта"
         }
       ]
@@ -402,24 +402,24 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 611491,
+      "book": 611057,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 39007,
+          "usd": 39230,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 35788,
+          "usd": 36274,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 23169,
+          "usd": 23231,
           "cat": "Крипта"
         }
       ]
@@ -428,7 +428,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 250701,
+      "book": 250704,
       "top": [
         {
           "m": "Bitcoin reach $65,000 on July 6",
@@ -458,5 +458,5 @@
     "trades": 11,
     "winrate": 9
   },
-  "updated": "2026-07-07T03:13:44.000Z"
+  "updated": "2026-07-07T03:19:43.243Z"
 }
