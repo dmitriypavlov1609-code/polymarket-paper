@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 268.94,
-  "equity": 303.39,
-  "totalPnl": 3.39,
+  "equity": 303.41,
+  "totalPnl": 3.41,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.547,
-      "value": 8.75,
-      "pnl": 0.01,
+      "bid": 0.548,
+      "value": 8.77,
+      "pnl": 0.03,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85018,
+        "book": 85300,
         "wr": 66,
         "overallPnl": 237530,
         "posPnl": 1377
@@ -47,10 +47,10 @@
         "label": "top-UFC $417k (лотерейка)",
         "addr": "0xa6a8…ba32",
         "entry": 0.353,
-        "book": 114428,
+        "book": 112745,
         "wr": 73,
         "overallPnl": 658874,
-        "posPnl": -4572
+        "posPnl": -6255
       },
       "topPeak": 119475.8065
     },
@@ -122,12 +122,12 @@
         "label": "top$855k",
         "addr": "0x0c78…77f1",
         "entry": 0.829,
-        "book": 98895,
+        "book": 99075,
         "wr": 49,
         "overallPnl": 626286,
         "posPnl": -2184
       },
-      "topPeak": 98894.6341
+      "topPeak": 99032.8689
     }
   ],
   "closed": [
@@ -376,7 +376,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 73842,
+      "book": 73868,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -402,7 +402,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 620993,
+      "book": 620963,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -428,7 +428,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 220993,
+      "book": 221009,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -458,5 +458,5 @@
     "trades": 11,
     "winrate": 9
   },
-  "updated": "2026-07-07T09:38:09.843Z"
+  "updated": "2026-07-07T09:44:11.624Z"
 }
