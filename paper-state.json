@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 268.66,
-  "equity": 304.16,
-  "totalPnl": 4.16,
+  "equity": 304.02,
+  "totalPnl": 4.02,
   "open": [
     {
       "title": "Will United States vs. Belgium end in a draw?",
@@ -47,7 +47,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85084,
+        "book": 85187,
         "wr": 66,
         "overallPnl": 236707,
         "posPnl": 1377
@@ -97,7 +97,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 103511,
+        "book": 103608,
         "wr": 60,
         "overallPnl": 940546,
         "posPnl": 4986
@@ -122,12 +122,12 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 103511,
+        "book": 103608,
         "wr": 60,
         "overallPnl": 940546,
-        "posPnl": 7900
+        "posPnl": 7997
       },
-      "topPeak": 17898.5793
+      "topPeak": 17995.5905
     },
     {
       "title": "United States vs. Belgium: Team to Advance",
@@ -136,9 +136,9 @@
       "entry": 0.715,
       "size": 14,
       "cost": 10.01,
-      "bid": 0.71,
-      "value": 9.94,
-      "pnl": -0.07,
+      "bid": 0.7,
+      "value": 9.8,
+      "pnl": -0.21,
       "cat": "Политика",
       "followAddr": "0x28059b3fb7af7ed76d83dc9121bbb72ec7cf76ed",
       "followLabel": "top$619k",
@@ -147,11 +147,12 @@
         "label": "top$619k",
         "addr": "0x2805…76ed",
         "entry": 0.698,
-        "book": 62050,
+        "book": 62064,
         "wr": 49,
         "overallPnl": 618552,
         "posPnl": 1471
-      }
+      },
+      "topPeak": 61899.0699
     }
   ],
   "closed": [
@@ -334,6 +335,14 @@
       "hedged": 0
     },
     {
+      "addr": "0x447d…5eea",
+      "copyPnl": 411,
+      "realPnl": 454,
+      "loss": 9,
+      "roi": 1061,
+      "hedged": 0
+    },
+    {
       "addr": "0xa6a8…ba32",
       "copyPnl": 392,
       "realPnl": 417,
@@ -356,14 +365,6 @@
       "loss": 6,
       "roi": 2202,
       "hedged": 0
-    },
-    {
-      "addr": "0x447d…5eea",
-      "copyPnl": 321,
-      "realPnl": 363,
-      "loss": 11,
-      "roi": 955,
-      "hedged": 0
     }
   ],
   "whales": [
@@ -371,7 +372,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 79277,
+      "book": 78767,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -397,7 +398,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 580297,
+      "book": 581124,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -423,7 +424,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 249148,
+      "book": 249168,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -434,7 +435,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 23159,
+          "usd": 23135,
           "cat": "Крипта"
         },
         {
@@ -453,5 +454,5 @@
     "trades": 9,
     "winrate": 11
   },
-  "updated": "2026-07-07T00:19:43.708Z"
+  "updated": "2026-07-07T00:25:43.854Z"
 }
