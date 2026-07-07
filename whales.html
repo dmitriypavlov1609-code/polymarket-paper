@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>🐋 Дашборд · Whale Paper Trading</title>
+<title>🐋 Киты · Whale Paper Trading</title>
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <h1>🐋 Whale Paper Trading</h1>
-  <div class="sub"><span class="dot"></span>Ловим свежие входы топов polycop.fun · счёт $300 · <span class="live">24/7 на сервере</span></div>
+  <div class="sub"><span class="dot"></span>Киты и лидерборд polycop.fun · счёт $300 · <span class="live">24/7</span></div>
 
   <nav class="nav">
-    <a class="navtab on" href="/">📈 Дашборд</a>
+    <a class="navtab" href="/">📈 Дашборд</a>
     <a class="navtab" href="/stats">📊 Статистика</a>
-    <a class="navtab" href="/whales">🐋 Киты</a>
+    <a class="navtab on" href="/whales">🐋 Киты</a>
   </nav>
 
   <div class="cards">
@@ -23,11 +23,13 @@
     <div class="card"><div class="lbl">Открытых</div><div class="val" id="opencnt">…</div></div>
   </div>
 
-  <h2>Текущие ставки <span class="live">live</span></h2>
-  <div class="tabs" id="tabs"></div>
-  <div id="open"></div>
+  <h2>🐋 Наши киты <span class="live">live</span></h2>
+  <div class="grid2" id="whales"></div>
 
-  <div class="foot">Обновлено: <span id="updated">—</span> · позиции и киты — вживую</div>
+  <h2>🏆 Топы лидерборда (сортируется — клик по столбцу)</h2>
+  <div id="tops"></div>
+
+  <div class="foot">Обновлено: <span id="updated">—</span></div>
 <script src="/app.js"></script>
 </body>
 </html>
