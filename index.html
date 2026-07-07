@@ -70,6 +70,9 @@
   <h2>✅ Закрытые сделки</h2>
   <div id="closed"></div>
 
+  <h2>🕐 Часовая сводка</h2>
+  <div id="digest"></div>
+
   <h2>📝 Журнал решений</h2>
   <div class="log" id="log">Загрузка…</div>
 
@@ -171,6 +174,10 @@ function renderStatic(){
   if((s.closed||[]).length){let h='<table><tr><th>Рынок</th><th>Сторона</th><th>Вход→Выход</th><th>PnL</th></tr>';
     for(const p of [...s.closed].reverse())h+='<tr><td>'+p.title+'</td><td class="side-'+(/yes/i.test(p.side)?"yes":"no")+'">'+p.side+'</td><td>$'+p.entry.toFixed(3)+'→$'+p.exit.toFixed(3)+'</td><td class="'+cls(p.pnl)+'">'+money(p.pnl)+'</td></tr>';
     $("closed").innerHTML=h+'</table>';}else $("closed").innerHTML='<div class="empty">Пока нет закрытых сделок</div>';
+  if((s.digest||[]).length){$("digest").innerHTML=[...s.digest].reverse().slice(0,12).map(d=>{
+    const t=new Date(d.ts),hh=String(t.getHours()).padStart(2,"0")+":"+String(t.getMinutes()).padStart(2,"0"),dd=t.getDate()+"."+(t.getMonth()+1);
+    return '<div style="padding:4px 0;border-bottom:1px solid #1e2530"><span class="acc">'+dd+' '+hh+'</span> — '+d.line+'</div>';}).join("");}
+  else $("digest").innerHTML='<div class="empty">Первая сводка появится в течение часа</div>';
   $("log").innerHTML=(s.log||[]).slice(-14).reverse().map(l=>"• "+l).join("<br>");
 }
 function setFilter(c){FILTER=c;document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.textContent===c));renderOpen();}
