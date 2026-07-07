@@ -39,7 +39,7 @@ for (const p of st.open || []) {
       exit = (i >= 0 && +pr[i] >= 0.5) ? 1 : (i >= 0 ? 0 : (bid != null && bid >= 0.5 ? 1 : 0));
     } catch { exit = (bid != null && bid >= 0.5) ? 1 : 0; }
     const pnl = +((exit * p.size) - p.cost).toFixed(2);
-    st.closed.push({ title: p.title, side: p.side, entry: p.entry, exit, size: p.size, cost: p.cost, pnl, exitTs: nowIso, followLabel: p.followLabel || "" });
+    st.closed.push({ title: p.title, side: p.side, entry: p.entry, exit, size: p.size, cost: p.cost, pnl, exitTs: nowIso, followLabel: p.followLabel || "", followAddr: p.followAddr || "" });
     (st.log = st.log || []).push("РЕЗОЛВ: «" + p.title + "» " + (exit ? "🟢ВЫИГРЫШ" : "🔴ПРОИГРЫШ") + " " + (pnl >= 0 ? "+" : "") + "$" + pnl);
     continue;
   }
@@ -86,6 +86,26 @@ for (const p of st.open || []) {
     posPnl: posPnl != null ? Math.round(posPnl) : null,
   };
 }
+
+// 1b) СТАТИСТИКА ПО ТОПАМ: сколько заработали/проиграли следуя за каждым (реализ + открытое)
+const tstat = {};
+const tkey = (addr, label) => (addr || label || "?");
+for (const p of (st.open || [])) {
+  const k = tkey(p.followAddr, p.followLabel); if (!k || k === "?") continue;
+  const s = tstat[k] || (tstat[k] = { addr: p.followAddr || "", label: p.followLabel || "top", realized: 0, unreal: 0, open: 0, wins: 0, losses: 0 });
+  s.unreal += (p.pnl || 0); s.open += 1; if (!s.label && p.followLabel) s.label = p.followLabel;
+}
+for (const c of (st.closed || [])) {
+  const k = tkey(c.followAddr, c.followLabel); if (!k || k === "?") continue;
+  const s = tstat[k] || (tstat[k] = { addr: c.followAddr || "", label: c.followLabel || "top", realized: 0, unreal: 0, open: 0, wins: 0, losses: 0 });
+  s.realized += (c.pnl || 0); if ((c.pnl || 0) > 0) s.wins += 1; else if ((c.pnl || 0) < 0) s.losses += 1;
+  if (!s.addr && c.followAddr) s.addr = c.followAddr;
+}
+st.topStats = Object.values(tstat).map(s => ({
+  label: s.label, addr: s.addr ? s.addr.slice(0, 6) + "…" + s.addr.slice(-4) : "",
+  total: +(s.realized + s.unreal).toFixed(2), realized: +s.realized.toFixed(2), unreal: +s.unreal.toFixed(2),
+  open: s.open, closed: s.wins + s.losses, wins: s.wins, losses: s.losses,
+})).sort((a, b) => b.total - a.total);
 
 // 2) тайм-статистика по закрытым (по exitTs)
 const nowMs = Date.now();

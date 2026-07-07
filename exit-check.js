@@ -29,7 +29,7 @@ for (const { p, reason } of exits) {
   const bid = b ? Math.max(0, ...(b.bids || []).map(o => +o.price)) : p.entry;
   const proceeds = +(bid * p.size).toFixed(2);
   const pnl = +(proceeds - p.cost).toFixed(2);
-  (st.closed = st.closed || []).push({ title: p.title, side: p.side, entry: p.entry, exit: +bid.toFixed(3), size: p.size, cost: p.cost, pnl, proceeds, exitTs: new Date().toISOString(), followLabel: p.followLabel || "", reason });
+  (st.closed = st.closed || []).push({ title: p.title, side: p.side, entry: p.entry, exit: +bid.toFixed(3), size: p.size, cost: p.cost, pnl, proceeds, exitTs: new Date().toISOString(), followLabel: p.followLabel || "", followAddr: p.followAddr || "", reason });
   (st.log = st.log || []).push(`ВЫХОД вслед за топом (${reason}): «${(p.title || "").slice(0, 36)}» @${bid.toFixed(2)} ${pnl >= 0 ? "+" : ""}$${pnl}`);
 }
 if (exits.length) {

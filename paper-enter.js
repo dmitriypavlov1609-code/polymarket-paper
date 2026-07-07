@@ -51,16 +51,16 @@ if (!lb || !lb.data) { console.log("нет лидерборда"); process.exit(
 const tops = lb.data
   .filter(t => (t.copy_backtest_pnl || 0) > 150000 && (t.copy_loss_rate ?? 99) < 18 && (t.hedged_pct || 0) < 60)
   .sort((a, b) => (b.copy_backtest_pnl || 0) - (a.copy_backtest_pnl || 0))
-  .slice(0, 14);
+  .slice(0, 20);
 
 // собираем кандидатов по всем топам
 const cands = [];
 const seenMarket = new Set();
 for (const t of tops) {
-  const pos = await jget(`https://data-api.polymarket.com/positions?user=${t.address}&sizeThreshold=4000`);
+  const pos = await jget(`https://data-api.polymarket.com/positions?user=${t.address}&sizeThreshold=2000`);
   for (const x of (Array.isArray(pos) ? pos : [])) {
     const cv = +x.currentValue, cur = +x.curPrice, avg = +x.avgPrice;
-    if (!(cv >= 5000)) continue;
+    if (!(cv >= 2500)) continue;
     if (!(cur >= 0.25 && cur <= 0.9)) continue;        // не крайности, но фаворитов пускаем
     const isSingle = !multiDay(x.title);
     if (isSingle && cv < 30000) continue;              // одиночный матч — только с ОГРОМНОЙ конвикцией топа
