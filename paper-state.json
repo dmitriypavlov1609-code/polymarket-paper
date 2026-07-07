@@ -147,11 +147,12 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 26504,
+        "book": 26502,
         "wr": 58,
         "overallPnl": 176530,
         "posPnl": -1634
-      }
+      },
+      "topPeak": 11432.2464
     },
     {
       "title": "Spread: Argentina (-1.5)",
@@ -175,7 +176,8 @@
         "wr": 59,
         "overallPnl": 291756,
         "posPnl": 350
-      }
+      },
+      "topPeak": 4750
     }
   ],
   "closed": [
@@ -440,7 +442,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 74195,
+      "book": 74194,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -466,7 +468,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 620696,
+      "book": 620708,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -522,7 +524,7 @@
     "trades": 12,
     "winrate": 17
   },
-  "updated": "2026-07-07T10:09:27.364Z",
+  "updated": "2026-07-07T10:10:52.339Z",
   "topStats": [
     {
       "label": "top$417k",
