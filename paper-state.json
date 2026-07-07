@@ -22,9 +22,9 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84866,
-        "wr": null,
-        "overallPnl": null,
+        "book": 84802,
+        "wr": 66,
+        "overallPnl": 237530,
         "posPnl": 1332
       },
       "topPeak": 12983.5971
@@ -48,8 +48,8 @@
         "addr": "0xa6a8…ba32",
         "entry": 0.348,
         "book": 48505,
-        "wr": null,
-        "overallPnl": null,
+        "wr": 73,
+        "overallPnl": 658874,
         "posPnl": -494
       },
       "topPeak": 49925.9089
@@ -72,10 +72,10 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 98781,
-        "wr": null,
-        "overallPnl": null,
-        "posPnl": 11449
+        "book": 97831,
+        "wr": 63,
+        "overallPnl": 1141744,
+        "posPnl": 10499
       },
       "topPeak": 72050.3223
     },
@@ -97,9 +97,9 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 98781,
-        "wr": null,
-        "overallPnl": null,
+        "book": 97831,
+        "wr": 63,
+        "overallPnl": 1141744,
         "posPnl": 7900
       },
       "topPeak": 18092.6018
@@ -122,10 +122,10 @@
         "label": "top$855k",
         "addr": "0x0c78…77f1",
         "entry": 0.833,
-        "book": 82225,
-        "wr": null,
-        "overallPnl": null,
-        "posPnl": -2075
+        "book": 82529,
+        "wr": 49,
+        "overallPnl": 626286,
+        "posPnl": -1771
       },
       "topPeak": 83692.4
     }
@@ -305,18 +305,83 @@
     "ВЫХОД вслед за топом (топ вышел): «United States vs. Belgium: Team to A» @0.71 +$0",
     "ВХОД: «Will Argentina win the 2026 FIFA World C» No @0.83 $24 за top$855k yield 21%"
   ],
-  "tops": [],
+  "tops": [
+    {
+      "addr": "0x7c1e…bab3",
+      "copyPnl": 2678,
+      "realPnl": 2964,
+      "loss": 10,
+      "roi": 1015,
+      "hedged": 0
+    },
+    {
+      "addr": "0x6501…1220",
+      "copyPnl": 1047,
+      "realPnl": 1142,
+      "loss": 8,
+      "roi": 1332,
+      "hedged": 0
+    },
+    {
+      "addr": "0x5257…3e2a",
+      "copyPnl": 732,
+      "realPnl": 872,
+      "loss": 16,
+      "roi": 448,
+      "hedged": 0
+    },
+    {
+      "addr": "0xa6a8…ba32",
+      "copyPnl": 627,
+      "realPnl": 659,
+      "loss": 5,
+      "roi": 2735,
+      "hedged": 0
+    },
+    {
+      "addr": "0x2805…76ed",
+      "copyPnl": 573,
+      "realPnl": 647,
+      "loss": 11,
+      "roi": 834,
+      "hedged": 0
+    },
+    {
+      "addr": "0x0c78…77f1",
+      "copyPnl": 570,
+      "realPnl": 626,
+      "loss": 9,
+      "roi": 1102,
+      "hedged": 0
+    },
+    {
+      "addr": "0x7ddd…c933",
+      "copyPnl": 569,
+      "realPnl": 589,
+      "loss": 3,
+      "roi": 2536,
+      "hedged": 0
+    },
+    {
+      "addr": "0xcc50…4c82",
+      "copyPnl": 513,
+      "realPnl": 628,
+      "loss": 18,
+      "roi": 548,
+      "hedged": 0
+    }
+  ],
   "whales": [
     {
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 71953,
+      "book": 72167,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 5825,
+          "usd": 5788,
           "cat": "Крипта"
         },
         {
@@ -328,7 +393,7 @@
         {
           "m": "Bitcoin dip to $55,000 in July",
           "side": "NO",
-          "usd": 4713,
+          "usd": 4774,
           "cat": "Крипта"
         }
       ]
@@ -337,7 +402,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 598471,
+      "book": 598306,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -354,7 +419,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 23491,
+          "usd": 23355,
           "cat": "Крипта"
         }
       ]
@@ -363,7 +428,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 212960,
+      "book": 212984,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -393,5 +458,5 @@
     "trades": 11,
     "winrate": 9
   },
-  "updated": "2026-07-07T05:20:10.083Z"
+  "updated": "2026-07-07T05:26:09.960Z"
 }
