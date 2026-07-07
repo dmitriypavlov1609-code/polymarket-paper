@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84916,
+        "book": 84959,
         "wr": 66,
         "overallPnl": 237530,
         "posPnl": 1363
@@ -47,12 +47,12 @@
         "label": "top-UFC $417k (лотерейка)",
         "addr": "0xa6a8…ba32",
         "entry": 0.348,
-        "book": 47113,
+        "book": 56710,
         "wr": 73,
         "overallPnl": 658874,
-        "posPnl": -1887
+        "posPnl": -2290
       },
-      "topPeak": 49925.9089
+      "topPeak": 56710.21
     },
     {
       "title": "Will Argentina win the 2026 FIFA World Cup?",
@@ -122,10 +122,10 @@
         "label": "top$855k",
         "addr": "0x0c78…77f1",
         "entry": 0.833,
-        "book": 83161,
+        "book": 83447,
         "wr": 49,
         "overallPnl": 626286,
-        "posPnl": -2081
+        "posPnl": -2073
       },
       "topPeak": 83692.4
     }
@@ -376,7 +376,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 73003,
+      "book": 73677,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -387,7 +387,7 @@
         {
           "m": "Bitcoin dip to $52,500 in July",
           "side": "NO",
-          "usd": 4954,
+          "usd": 4926,
           "cat": "Крипта"
         },
         {
@@ -402,7 +402,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 615493,
+      "book": 616281,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -413,7 +413,7 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 36274,
+          "usd": 36761,
           "cat": "Крипта"
         },
         {
@@ -428,7 +428,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 221197,
+      "book": 221342,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -458,5 +458,5 @@
     "trades": 11,
     "winrate": 9
   },
-  "updated": "2026-07-07T08:32:09.920Z"
+  "updated": "2026-07-07T08:38:09.819Z"
 }
