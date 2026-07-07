@@ -29,9 +29,11 @@ const recentlyClosedMkt = new Set((st.closed || []).filter(c => new Date(c.exitT
 function category(title) {
   const t = (title || "").toLowerCase();
   if (/bitcoin|btc|ethereum|eth|solana| sol |xrp|dogecoin|crypto/.test(t)) return "Крипта";
-  if (/election|president|trump|vance|congress|senate|governor|primary|democrat|republican|putin|zelensky|mamdani|nyc mayor/.test(t)) return "Политика";
+  // СПОРТ проверяем ДО политики: матчи/турниры/проп-ставки ('advance' не должно ловиться как 'vance')
+  if (/\bvs\.?\b| vs |spread|half.?time|corners|o\/u| total|to advance|leading at|end in a draw|win on 20\d\d|\bufc\b|\bfifa\b|world cup|\bleague\b|\bnba\b|\bnfl\b|\bnhl\b|wimbledon|\batp\b|\bwta\b|to score|assist|goal/.test(t)) return "Спорт";
+  if (/election|president|trump|\bvance\b|congress|senate|governor|primary|democrat|republican|putin|zelensky|mamdani|nyc mayor|nominee/.test(t)) return "Политика";
   if (/\bai\b|openai|xai|gpt|tesla|model|grok|llm|agi/.test(t)) return "Технологии";
-  if (/win|cup|league|match|vs\.|corners|goal|assist|fifa|nba|nfl|nhl/.test(t)) return "Спорт";
+  if (/\bwin\b|championship|\btitle\b|\bcup\b/.test(t)) return "Спорт";
   return "Прочее";
 }
 // многодневный низкодисперсный? (крипто-диапазоны, политика, макро с горизонтом) — НЕ спорт-матч-одиночка

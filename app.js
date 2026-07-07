@@ -15,9 +15,10 @@ const jget=async u=>{try{return await(await fetch(u)).json()}catch{return null}}
 const isC=t=>/bitcoin|btc|ethereum| eth |solana| sol |xrp/i.test(" "+(t||"")+" ");
 function cat(t){t=(t||"").toLowerCase();
   if(/bitcoin|btc|ethereum|eth|solana|xrp|crypto|\$[0-9]{2},/.test(t))return"Крипта";
-  if(/election|president|trump|vance|senate|democrat|republican|putin/.test(t))return"Политика";
+  if(/\bvs\.?\b| vs |spread|half.?time|corners|o\/u| total|to advance|leading at|end in a draw|win on 20\d\d|\bufc\b|\bfifa\b|world cup|\bleague\b|\bnba\b|\bnfl\b|\bnhl\b|wimbledon|\batp\b|\bwta\b|to score|assist|goal/.test(t))return"Спорт";
+  if(/election|president|trump|\bvance\b|senate|democrat|republican|putin|governor|primary|nominee|mamdani/.test(t))return"Политика";
   if(/\bai\b|openai|xai|gpt|tesla|grok|model/.test(t))return"Технологии";
-  if(/win|cup|league|match| vs|fifa|nba|nfl|corners/.test(t))return"Спорт";return"Прочее";}
+  if(/\bwin\b|championship|\btitle\b|\bcup\b/.test(t))return"Спорт";return"Прочее";}
 let STATE=null,FILTER="Все",OPENLIVE=[];
 // фильтр по времени входа ставки + сортировка
 let TIMEF="Всё время",SORTDIR="new";
