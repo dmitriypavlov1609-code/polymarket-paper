@@ -1,34 +1,9 @@
 {
   "startBalance": 300,
-  "cash": 268.66,
-  "equity": 311.54,
-  "totalPnl": 11.54,
+  "cash": 268.94,
+  "equity": 303.71,
+  "totalPnl": 3.71,
   "open": [
-    {
-      "title": "Will United States vs. Belgium end in a draw?",
-      "side": "No",
-      "asset": "4336501406798532674523516058112115918026662785501719314483380065052952380213",
-      "entry": 0.725,
-      "size": 14,
-      "cost": 10.15,
-      "bid": 0.999,
-      "value": 13.99,
-      "pnl": 3.84,
-      "cat": "Спорт",
-      "followAddr": "0x7dddf1968c14900b2d2ef9dada8465e82ac4c933",
-      "followLabel": "top$357k",
-      "ts": "2026-07-06T16:35:00.034Z",
-      "follow": {
-        "label": "top$357k",
-        "addr": "0x7ddd…c933",
-        "entry": 0.72,
-        "book": 309994,
-        "wr": 64,
-        "overallPnl": 519330,
-        "posPnl": 86687
-      },
-      "topPeak": 309994.2609
-    },
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
       "side": "Yes",
@@ -47,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85135,
+        "book": 85360,
         "wr": 66,
         "overallPnl": 237066,
         "posPnl": 1422
@@ -97,7 +72,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 91860,
+        "book": 91896,
         "wr": 63,
         "overallPnl": 1148958,
         "posPnl": 5366
@@ -122,7 +97,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 91860,
+        "book": 91896,
         "wr": 63,
         "overallPnl": 1148958,
         "posPnl": 8094
@@ -130,29 +105,28 @@
       "topPeak": 18092.6018
     },
     {
-      "title": "United States vs. Belgium: Team to Advance",
-      "side": "Belgium",
-      "asset": "90379632725832148117828959910559970163920103735864050457319074142102846066573",
-      "entry": 0.715,
-      "size": 14,
-      "cost": 10.01,
-      "bid": 0.999,
-      "value": 13.99,
-      "pnl": 3.98,
-      "cat": "Политика",
-      "followAddr": "0x28059b3fb7af7ed76d83dc9121bbb72ec7cf76ed",
-      "followLabel": "top$619k",
-      "ts": "2026-07-07T00:19:41.164Z",
+      "title": "Will Argentina win the 2026 FIFA World Cup?",
+      "side": "No",
+      "asset": "115428153746996892211798999366308897078723117634059783423375188043903703749062",
+      "entry": 0.829,
+      "size": 24,
+      "cost": 19.88,
+      "bid": 0.828,
+      "value": 19.87,
+      "pnl": -0.01,
+      "cat": "Спорт",
+      "followAddr": "0x0c787cc2962ee6464414da592b892c3886e077f1",
+      "followLabel": "top$855k",
+      "ts": "2026-07-07T02:13:49.492Z",
       "follow": {
-        "label": "top$619k",
-        "addr": "0x2805…76ed",
-        "entry": 0.699,
-        "book": 96983,
-        "wr": 49,
-        "overallPnl": 618552,
-        "posPnl": 29109
-      },
-      "topPeak": 96914.0346
+        "label": "top$855k",
+        "addr": "0x0c78…77f1",
+        "entry": 0.833,
+        "book": 84147,
+        "wr": 51,
+        "overallPnl": 855176,
+        "posPnl": -455
+      }
     }
   ],
   "closed": [
@@ -272,6 +246,32 @@
       "exitTs": "2026-07-06T21:25:39.358Z",
       "followLabel": "top$941k",
       "reason": "топ вышел"
+    },
+    {
+      "title": "Will United States vs. Belgium end in a draw?",
+      "side": "No",
+      "entry": 0.725,
+      "exit": 0.725,
+      "size": 14,
+      "cost": 10.15,
+      "pnl": 0,
+      "proceeds": 10.15,
+      "exitTs": "2026-07-07T02:13:39.749Z",
+      "followLabel": "top$357k",
+      "reason": "топ вышел"
+    },
+    {
+      "title": "United States vs. Belgium: Team to Advance",
+      "side": "Belgium",
+      "entry": 0.715,
+      "exit": 0.715,
+      "size": 14,
+      "cost": 10.01,
+      "pnl": 0,
+      "proceeds": 10.01,
+      "exitTs": "2026-07-07T02:13:43.570Z",
+      "followLabel": "top$619k",
+      "reason": "топ вышел"
     }
   ],
   "log": [
@@ -299,7 +299,10 @@
     "ВЫХОД вслед за топом (топ вышел): «Wimbledon ATP: Taylor Fritz vs Alexa» @0.69 +$0",
     "ВЫХОД вслед за топом (топ вышел): «Portugal vs. Spain: O/U 3.5» @1.00 +$4.07",
     "ВЫХОД вслед за топом (топ вышел): «Portugal vs. Spain: Team to Advance» @0.67 +$0",
-    "ВХОД: «United States vs. Belgium: Team to Advan» Belgium @0.71 $14 за top$619k yield 40%"
+    "ВХОД: «United States vs. Belgium: Team to Advan» Belgium @0.71 $14 за top$619k yield 40%",
+    "ВЫХОД вслед за топом (топ вышел): «Will United States vs. Belgium end i» @0.72 +$0",
+    "ВЫХОД вслед за топом (топ вышел): «United States vs. Belgium: Team to A» @0.71 +$0",
+    "ВХОД: «Will Argentina win the 2026 FIFA World C» No @0.83 $24 за top$855k yield 21%"
   ],
   "tops": [
     {
@@ -327,11 +330,27 @@
       "hedged": 0
     },
     {
+      "addr": "0x5257…3e2a",
+      "copyPnl": 732,
+      "realPnl": 872,
+      "loss": 16,
+      "roi": 448,
+      "hedged": 0
+    },
+    {
       "addr": "0xa6a8…ba32",
       "copyPnl": 627,
       "realPnl": 659,
       "loss": 5,
       "roi": 2735,
+      "hedged": 0
+    },
+    {
+      "addr": "0x7ddd…c933",
+      "copyPnl": 569,
+      "realPnl": 589,
+      "loss": 3,
+      "roi": 2536,
       "hedged": 0
     },
     {
@@ -349,22 +368,6 @@
       "loss": 18,
       "roi": 547,
       "hedged": 0
-    },
-    {
-      "addr": "0x7ddd…c933",
-      "copyPnl": 494,
-      "realPnl": 519,
-      "loss": 5,
-      "roi": 2236,
-      "hedged": 0
-    },
-    {
-      "addr": "0x447d…5eea",
-      "copyPnl": 411,
-      "realPnl": 454,
-      "loss": 9,
-      "roi": 1061,
-      "hedged": 0
     }
   ],
   "whales": [
@@ -372,12 +375,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 76735,
+      "book": 76374,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 7336,
+          "usd": 7360,
           "cat": "Крипта"
         },
         {
@@ -398,7 +401,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 590173,
+      "book": 590375,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -415,7 +418,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 22872,
+          "usd": 22946,
           "cat": "Крипта"
         }
       ]
@@ -424,7 +427,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 249733,
+      "book": 249943,
       "top": [
         {
           "m": "Bitcoin reach $65,000 on July 6",
@@ -451,8 +454,8 @@
     "day": 3.36,
     "week": 3.36,
     "month": 3.36,
-    "trades": 9,
-    "winrate": 11
+    "trades": 11,
+    "winrate": 9
   },
-  "updated": "2026-07-07T02:07:44.305Z"
+  "updated": "2026-07-07T02:13:51.696Z"
 }
