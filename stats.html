@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📊 Статистика · Whale Paper Trading</title>
+<link rel="stylesheet" href="/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <h1>🐋 Whale Paper Trading</h1>
+  <div class="sub"><span class="dot"></span>Статистика и аналитика · счёт $300 · <span class="live">24/7</span></div>
+
+  <nav class="nav">
+    <a class="navtab" href="/">📈 Дашборд</a>
+    <a class="navtab on" href="/stats">📊 Статистика</a>
+    <a class="navtab" href="/whales">🐋 Киты</a>
+  </nav>
+
+  <div class="cards">
+    <div class="card"><div class="lbl">Эквити</div><div class="val" id="equity">…</div></div>
+    <div class="card"><div class="lbl">Кэш</div><div class="val" id="cash">…</div></div>
+    <div class="card"><div class="lbl">Total PnL</div><div class="val" id="pnl">…</div></div>
+    <div class="card"><div class="lbl">Открытых</div><div class="val" id="opencnt">…</div></div>
+  </div>
+
+  <div class="stats">
+    <div class="stat">День<b id="s_day">—</b></div>
+    <div class="stat">Неделя<b id="s_week">—</b></div>
+    <div class="stat">Месяц<b id="s_month">—</b></div>
+    <div class="stat">Сделок<b id="s_trades">—</b></div>
+    <div class="stat">Winrate<b id="s_wr">—</b></div>
+  </div>
+
+  <h2>📊 Аналитика</h2>
+  <div class="charts">
+    <div class="chartcard wide"><div class="ct">Кривая эквити (старт $300)</div><canvas id="chEquity" height="90"></canvas></div>
+    <div class="chartcard"><div class="ct">💰 Заработок по китам (наш P&L)</div><canvas id="chWhales" height="150"></canvas></div>
+    <div class="chartcard"><div class="ct">🧭 Распределение по категориям</div><canvas id="chCat" height="150"></canvas></div>
+  </div>
+
+  <h2>🎯 Наш P&L по топам (сортируется — клик по столбцу)</h2>
+  <div id="topstats"></div>
+  <div id="whaleAnalytics" style="margin-top:12px"></div>
+
+  <h2>✅ Закрытые сделки</h2>
+  <div id="closed"></div>
+
+  <h2>🕐 Часовая сводка</h2>
+  <div id="digest"></div>
+
+  <h2>📝 Журнал решений</h2>
+  <div class="log" id="log">Загрузка…</div>
+
+  <div class="foot">Обновлено: <span id="updated">—</span></div>
+<script src="/app.js"></script>
+</body>
+</html>
