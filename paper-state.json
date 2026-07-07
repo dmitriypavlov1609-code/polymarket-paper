@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 268.66,
-  "equity": 310.76,
-  "totalPnl": 10.76,
+  "equity": 310.94,
+  "totalPnl": 10.94,
   "open": [
     {
       "title": "Will United States vs. Belgium end in a draw?",
@@ -11,9 +11,9 @@
       "entry": 0.725,
       "size": 14,
       "cost": 10.15,
-      "bid": 0.962,
-      "value": 13.47,
-      "pnl": 3.32,
+      "bid": 0.973,
+      "value": 13.62,
+      "pnl": 3.47,
       "cat": "Спорт",
       "followAddr": "0x7dddf1968c14900b2d2ef9dada8465e82ac4c933",
       "followLabel": "top$357k",
@@ -22,12 +22,12 @@
         "label": "top$357k",
         "addr": "0x7ddd…c933",
         "entry": 0.72,
-        "book": 300380,
+        "book": 299914,
         "wr": 64,
         "overallPnl": 519330,
-        "posPnl": 77072
+        "posPnl": 76607
       },
-      "topPeak": 299294.1088
+      "topPeak": 299914.4075
     },
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -47,7 +47,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85047,
+        "book": 84862,
         "wr": 66,
         "overallPnl": 237066,
         "posPnl": 1422
@@ -97,7 +97,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 93544,
+        "book": 93437,
         "wr": 63,
         "overallPnl": 1148958,
         "posPnl": 5366
@@ -122,7 +122,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 93544,
+        "book": 93437,
         "wr": 63,
         "overallPnl": 1148958,
         "posPnl": 7900
@@ -136,9 +136,9 @@
       "entry": 0.715,
       "size": 14,
       "cost": 10.01,
-      "bid": 0.982,
-      "value": 13.75,
-      "pnl": 3.74,
+      "bid": 0.984,
+      "value": 13.78,
+      "pnl": 3.77,
       "cat": "Политика",
       "followAddr": "0x28059b3fb7af7ed76d83dc9121bbb72ec7cf76ed",
       "followLabel": "top$619k",
@@ -147,12 +147,12 @@
         "label": "top$619k",
         "addr": "0x2805…76ed",
         "entry": 0.699,
-        "book": 94733,
+        "book": 95508,
         "wr": 49,
         "overallPnl": 618552,
-        "posPnl": 26927
+        "posPnl": 27703
       },
-      "topPeak": 94732.378
+      "topPeak": 95508.0781
     }
   ],
   "closed": [
@@ -372,12 +372,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 78959,
+      "book": 79116,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8242,
+          "usd": 8233,
           "cat": "Крипта"
         },
         {
@@ -398,7 +398,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 584424,
+      "book": 585467,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -409,13 +409,13 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 33835,
+          "usd": 33353,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 22822,
+          "usd": 22797,
           "cat": "Крипта"
         }
       ]
@@ -424,18 +424,18 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 249288,
+      "book": 249346,
       "top": [
-        {
-          "m": "Bitcoin reach $65,000 on July 6",
-          "side": "NO",
-          "usd": 23337,
-          "cat": "Крипта"
-        },
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
           "side": "NO",
           "usd": 23322,
+          "cat": "Крипта"
+        },
+        {
+          "m": "Bitcoin reach $65,000 on July 6",
+          "side": "NO",
+          "usd": 23302,
           "cat": "Крипта"
         },
         {
@@ -454,5 +454,5 @@
     "trades": 9,
     "winrate": 11
   },
-  "updated": "2026-07-07T01:45:09.211Z"
+  "updated": "2026-07-07T01:49:45.786Z"
 }
