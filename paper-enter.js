@@ -56,8 +56,10 @@ if (!lb || !lb.data) { console.log("нет лидерборда"); process.exit(
 // Ловим тех, за кем копир РЕАЛЬНО зарабатывает стабильно, а не просто с большим PnL.
 const copyScore = (t) => {
   const cb = t.copy_backtest_pnl || 0, loss = t.copy_loss_rate ?? 99, hedge = t.hedged_pct || 0, roi = t.roi ? t.roi * 100 : 0;
-  if (cb < 120000 || loss > 20 || hedge > 60) return -1;
-  return (cb / 1000) * Math.pow(1 - loss / 100, 2) * (1 - hedge / 100) * (roi > 0 ? 1 : 0.4);
+  const wr = (t.win_rate > 1 ? t.win_rate : (t.win_rate || 0) * 100);
+  // ужесточено: только СТАБИЛЬНЫЕ топы. loss<13 (у элиты медиана 8%), направленные, положит ROI
+  if (cb < 150000 || loss > 13 || hedge > 55 || roi <= 0) return -1;
+  return (cb / 1000) * Math.pow(1 - loss / 100, 2) * (1 - hedge / 100) * (0.7 + wr / 200);
 };
 const tops = lb.data
   .map(t => ({ ...t, _sc: copyScore(t) }))
@@ -146,10 +148,12 @@ ranked.sort((a, b) => (b.fresh - a.fresh) || (b.consensus - a.consensus) || (b.c
 // диверсификация: не более 3 позиций на категорию
 let deployed = (st.open || []).reduce((a, p) => a + p.cost, 0);
 const catCount = {}; for (const p of (st.open || [])) catCount[p.cat] = (catCount[p.cat] || 0) + 1;
+const topCount = {}; for (const p of (st.open || [])) topCount[p.followAddr] = (topCount[p.followAddr] || 0) + 1;   // сколько уже за каждым топом
 const added = [];
 for (const c of ranked) {
   if ((st.open || []).length >= MAX_OPEN) break;
   if ((catCount[c.cat] || 0) >= 4) continue;
+  if ((topCount[c.topAddr] || 0) >= 3) continue;   // не больше 3 позиций за одним топом (диверсификация, не кластер)
   if (heldMarkets.has(mkey0(c.title))) continue;   // страховка от встречной стороны в этом же проходе
   const size = sizeFor(c.conv, c.topPnl, c.isSingle);
   const cost = +(size * c.cur).toFixed(2);
@@ -166,6 +170,7 @@ for (const c of ranked) {
   heldMarkets.add(mkey0(c.title));
   deployed += cost;
   catCount[c.cat] = (catCount[c.cat] || 0) + 1;
+  topCount[c.topAddr] = (topCount[c.topAddr] || 0) + 1;
   (st.log = st.log || []).push(`ВХОД: «${c.title.slice(0,40)}» ${c.side} @${c.cur.toFixed(2)} $${size} за ${c.topLabel}${c.consensus>1?` (консенсус ×${c.consensus})`:""} yield ${c.yield_.toFixed(0)}%`);
   added.push(p);
 }
