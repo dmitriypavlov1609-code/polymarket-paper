@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 268.66,
-  "equity": 304.5,
-  "totalPnl": 4.5,
+  "equity": 309.54,
+  "totalPnl": 9.54,
   "open": [
     {
       "title": "Will United States vs. Belgium end in a draw?",
@@ -11,9 +11,9 @@
       "entry": 0.725,
       "size": 14,
       "cost": 10.15,
-      "bid": 0.76,
-      "value": 10.64,
-      "pnl": 0.49,
+      "bid": 0.92,
+      "value": 12.88,
+      "pnl": 2.73,
       "cat": "Спорт",
       "followAddr": "0x7dddf1968c14900b2d2ef9dada8465e82ac4c933",
       "followLabel": "top$357k",
@@ -22,12 +22,12 @@
         "label": "top$357k",
         "addr": "0x7ddd…c933",
         "entry": 0.72,
-        "book": 240366,
+        "book": 283787,
         "wr": 64,
         "overallPnl": 519330,
-        "posPnl": 17058
+        "posPnl": 60479
       },
-      "topPeak": 240365.735
+      "topPeak": 283786.642
     },
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -47,7 +47,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85265,
+        "book": 85204,
         "wr": 66,
         "overallPnl": 237066,
         "posPnl": 1400
@@ -97,7 +97,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 103292,
+        "book": 96123,
         "wr": 63,
         "overallPnl": 1148958,
         "posPnl": 5366
@@ -122,7 +122,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 103292,
+        "book": 96123,
         "wr": 63,
         "overallPnl": 1148958,
         "posPnl": 7706
@@ -136,9 +136,9 @@
       "entry": 0.715,
       "size": 14,
       "cost": 10.01,
-      "bid": 0.74,
-      "value": 10.36,
-      "pnl": 0.35,
+      "bid": 0.94,
+      "value": 13.16,
+      "pnl": 3.15,
       "cat": "Политика",
       "followAddr": "0x28059b3fb7af7ed76d83dc9121bbb72ec7cf76ed",
       "followLabel": "top$619k",
@@ -147,12 +147,12 @@
         "label": "top$619k",
         "addr": "0x2805…76ed",
         "entry": 0.699,
-        "book": 73207,
+        "book": 90660,
         "wr": 49,
         "overallPnl": 618552,
-        "posPnl": 5402
+        "posPnl": 22855
       },
-      "topPeak": 74176.3246
+      "topPeak": 90659.9523
     }
   ],
   "closed": [
@@ -311,14 +311,6 @@
       "hedged": 0
     },
     {
-      "addr": "0xf5fa…62df",
-      "copyPnl": 896,
-      "realPnl": 969,
-      "loss": 8,
-      "roi": 1163,
-      "hedged": 0
-    },
-    {
       "addr": "0x0c78…77f1",
       "copyPnl": 795,
       "realPnl": 855,
@@ -365,6 +357,14 @@
       "loss": 9,
       "roi": 1061,
       "hedged": 0
+    },
+    {
+      "addr": "0xc57f…c909",
+      "copyPnl": 381,
+      "realPnl": 415,
+      "loss": 8,
+      "roi": 1090,
+      "hedged": 0
     }
   ],
   "whales": [
@@ -377,7 +377,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8233,
+          "usd": 8238,
           "cat": "Крипта"
         },
         {
@@ -398,7 +398,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 585519,
+      "book": 585688,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -415,7 +415,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 22797,
+          "usd": 22810,
           "cat": "Крипта"
         }
       ]
@@ -424,7 +424,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 249337,
+      "book": 249312,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -435,7 +435,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 6",
           "side": "NO",
-          "usd": 23290,
+          "usd": 23302,
           "cat": "Крипта"
         },
         {
@@ -454,5 +454,5 @@
     "trades": 9,
     "winrate": 11
   },
-  "updated": "2026-07-07T01:19:43.755Z"
+  "updated": "2026-07-07T01:25:45.692Z"
 }
