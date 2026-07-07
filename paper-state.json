@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 268.66,
-  "equity": 310.62,
-  "totalPnl": 10.62,
+  "equity": 310.76,
+  "totalPnl": 10.76,
   "open": [
     {
       "title": "Will United States vs. Belgium end in a draw?",
@@ -11,9 +11,9 @@
       "entry": 0.725,
       "size": 14,
       "cost": 10.15,
-      "bid": 0.96,
-      "value": 13.44,
-      "pnl": 3.29,
+      "bid": 0.962,
+      "value": 13.47,
+      "pnl": 3.32,
       "cat": "Спорт",
       "followAddr": "0x7dddf1968c14900b2d2ef9dada8465e82ac4c933",
       "followLabel": "top$357k",
@@ -22,12 +22,12 @@
         "label": "top$357k",
         "addr": "0x7ddd…c933",
         "entry": 0.72,
-        "book": 296193,
+        "book": 300380,
         "wr": 64,
         "overallPnl": 519330,
-        "posPnl": 72885
+        "posPnl": 77072
       },
-      "topPeak": 296192.6155
+      "topPeak": 299294.1088
     },
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -47,10 +47,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84836,
+        "book": 85047,
         "wr": 66,
         "overallPnl": 237066,
-        "posPnl": 1400
+        "posPnl": 1422
       },
       "topPeak": 12929.1109
     },
@@ -97,7 +97,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 94040,
+        "book": 93544,
         "wr": 63,
         "overallPnl": 1148958,
         "posPnl": 5366
@@ -111,9 +111,9 @@
       "entry": 0.127,
       "size": 8,
       "cost": 1.02,
-      "bid": 0.182,
-      "value": 1.46,
-      "pnl": 0.44,
+      "bid": 0.184,
+      "value": 1.47,
+      "pnl": 0.45,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k loss10%",
@@ -122,10 +122,10 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 94040,
+        "book": 93544,
         "wr": 63,
         "overallPnl": 1148958,
-        "posPnl": 7706
+        "posPnl": 7900
       },
       "topPeak": 17995.5905
     },
@@ -136,9 +136,9 @@
       "entry": 0.715,
       "size": 14,
       "cost": 10.01,
-      "bid": 0.975,
-      "value": 13.65,
-      "pnl": 3.64,
+      "bid": 0.982,
+      "value": 13.75,
+      "pnl": 3.74,
       "cat": "Политика",
       "followAddr": "0x28059b3fb7af7ed76d83dc9121bbb72ec7cf76ed",
       "followLabel": "top$619k",
@@ -147,12 +147,12 @@
         "label": "top$619k",
         "addr": "0x2805…76ed",
         "entry": 0.699,
-        "book": 93569,
+        "book": 94733,
         "wr": 49,
         "overallPnl": 618552,
-        "posPnl": 25764
+        "posPnl": 26927
       },
-      "topPeak": 93568.8278
+      "topPeak": 94732.378
     }
   ],
   "closed": [
@@ -372,12 +372,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 78652,
+      "book": 78959,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8233,
+          "usd": 8242,
           "cat": "Крипта"
         },
         {
@@ -398,7 +398,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 584296,
+      "book": 584424,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -409,13 +409,13 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 33353,
+          "usd": 33835,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 22797,
+          "usd": 22822,
           "cat": "Крипта"
         }
       ]
@@ -424,18 +424,18 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 249329,
+      "book": 249288,
       "top": [
+        {
+          "m": "Bitcoin reach $65,000 on July 6",
+          "side": "NO",
+          "usd": 23337,
+          "cat": "Крипта"
+        },
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
           "side": "NO",
           "usd": 23322,
-          "cat": "Крипта"
-        },
-        {
-          "m": "Bitcoin reach $65,000 on July 6",
-          "side": "NO",
-          "usd": 23290,
           "cat": "Крипта"
         },
         {
@@ -454,5 +454,5 @@
     "trades": 9,
     "winrate": 11
   },
-  "updated": "2026-07-07T01:37:46.656Z"
+  "updated": "2026-07-07T01:45:09.211Z"
 }
