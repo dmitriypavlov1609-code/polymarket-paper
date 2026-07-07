@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 259.82,
-  "equity": 336.48,
-  "totalPnl": 36.48,
+  "cash": 223.76,
+  "equity": 336.26,
+  "totalPnl": 36.26,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -203,6 +203,102 @@
         "posPnl": 172
       },
       "topPeak": 12086.4454
+    },
+    {
+      "title": "President Trump to Attend World Cup Final?",
+      "side": "Yes",
+      "asset": "86680247297404227698835375487849042651771548951718649081182622616196290047519",
+      "entry": 0.925,
+      "size": 12,
+      "cost": 11.1,
+      "bid": 0.92,
+      "value": 11.04,
+      "pnl": -0.06,
+      "cat": "Политика",
+      "followAddr": "0xf7429705e25b619338412967f0a70260b6e1e039",
+      "followLabel": "top$292k 🔥свежий",
+      "ts": "2026-07-07T11:27:41.434Z",
+      "follow": {
+        "label": "top$292k 🔥свежий",
+        "addr": "0xf742…e039",
+        "entry": 0.921,
+        "book": 197694,
+        "wr": 59,
+        "overallPnl": 291756,
+        "posPnl": 18
+      }
+    },
+    {
+      "title": "Will Bitcoin dip to $45,000 by December 31, 2026?",
+      "side": "No",
+      "asset": "20326394798700413571801660749437036272627203479853632032510011746755865615562",
+      "entry": 0.655,
+      "size": 16,
+      "cost": 10.48,
+      "bid": 0.65,
+      "value": 10.4,
+      "pnl": -0.08,
+      "cat": "Крипта",
+      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "followLabel": "top$628k",
+      "ts": "2026-07-07T11:27:41.435Z",
+      "follow": {
+        "label": "top$628k",
+        "addr": "0xcc50…4c82",
+        "entry": 0.566,
+        "book": 221809,
+        "wr": 52,
+        "overallPnl": 627966,
+        "posPnl": 2350
+      }
+    },
+    {
+      "title": "Will Bitcoin dip to $50,000 by December 31, 2026?",
+      "side": "No",
+      "asset": "41832664285845832459030640969891483663884721696292020563915305291791682631668",
+      "entry": 0.515,
+      "size": 16,
+      "cost": 8.24,
+      "bid": 0.51,
+      "value": 8.16,
+      "pnl": -0.08,
+      "cat": "Крипта",
+      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "followLabel": "top$628k",
+      "ts": "2026-07-07T11:27:41.435Z",
+      "follow": {
+        "label": "top$628k",
+        "addr": "0xcc50…4c82",
+        "entry": 0.431,
+        "book": 221809,
+        "wr": 52,
+        "overallPnl": 627966,
+        "posPnl": 2309
+      }
+    },
+    {
+      "title": "Will Bitcoin reach $67,500 in July?",
+      "side": "No",
+      "asset": "94252409631375149642232709930779092548259642333831512866206597068377247772631",
+      "entry": 0.52,
+      "size": 12,
+      "cost": 6.24,
+      "bid": 0.52,
+      "value": 6.24,
+      "pnl": 0,
+      "cat": "Крипта",
+      "followAddr": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "followLabel": "top$628k",
+      "ts": "2026-07-07T11:27:41.435Z",
+      "follow": {
+        "label": "top$628k",
+        "addr": "0xcc50…4c82",
+        "entry": 0.631,
+        "book": 221809,
+        "wr": 52,
+        "overallPnl": 627966,
+        "posPnl": -788
+      }
     }
   ],
   "closed": [
@@ -555,7 +651,11 @@
     "РЕЗОЛВ: «United States vs. Belgium: Team to Advance» 🟢ВЫИГРЫШ +$4.34",
     "РЕЗОЛВ: «Portugal vs. Spain: Team to Advance» 🟢ВЫИГРЫШ +$5.6",
     "РЕЗОЛВ: «Spread: Belgium (-1.5)» 🟢ВЫИГРЫШ +$14.74",
-    "РЕЗОЛВ: «Spread: Belgium (-2.5)» 🟢ВЫИГРЫШ +$8.4"
+    "РЕЗОЛВ: «Spread: Belgium (-2.5)» 🟢ВЫИГРЫШ +$8.4",
+    "ВХОД: «President Trump to Attend World Cup Fina» Yes @0.93 $12 за top$292k 🔥свежий yield 8%",
+    "ВХОД: «Will Bitcoin dip to $45,000 by December » No @0.66 $16 за top$628k yield 53%",
+    "ВХОД: «Will Bitcoin dip to $50,000 by December » No @0.52 $16 за top$628k yield 94%",
+    "ВХОД: «Will Bitcoin reach $67,500 in July?» No @0.52 $12 за top$628k yield 92%"
   ],
   "tops": [
     {
@@ -628,7 +728,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 75620,
+      "book": 75619,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -710,7 +810,7 @@
     "trades": 16,
     "winrate": 38
   },
-  "updated": "2026-07-07T11:27:24.536Z",
+  "updated": "2026-07-07T11:27:46.660Z",
   "topStats": [
     {
       "label": "top$2964k 🔥свежий",
@@ -726,10 +826,10 @@
     {
       "label": "top$292k",
       "addr": "0xf742…e039",
-      "total": 8.34,
+      "total": 8.28,
       "realized": 8.4,
-      "unreal": -0.06,
-      "open": 1,
+      "unreal": -0.12,
+      "open": 2,
       "closed": 1,
       "wins": 1,
       "losses": 0
@@ -803,10 +903,10 @@
     {
       "label": "top$628k 🔥свежий",
       "addr": "0xcc50…4c82",
-      "total": -0.09,
+      "total": -0.25,
       "realized": -0.41,
-      "unreal": 0.32,
-      "open": 1,
+      "unreal": 0.16,
+      "open": 4,
       "closed": 4,
       "wins": 0,
       "losses": 4
