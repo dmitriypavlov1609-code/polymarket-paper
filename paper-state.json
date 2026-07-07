@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85365,
+        "book": 85370,
         "wr": 66,
         "overallPnl": 237530,
         "posPnl": 1409
@@ -668,7 +668,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 75576,
+      "book": 75587,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -694,7 +694,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 642869,
+      "book": 642813,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -750,7 +750,7 @@
     "trades": 12,
     "winrate": 17
   },
-  "updated": "2026-07-07T11:20:27.959Z",
+  "updated": "2026-07-07T11:21:58.837Z",
   "topStats": [
     {
       "label": "top$417k",
