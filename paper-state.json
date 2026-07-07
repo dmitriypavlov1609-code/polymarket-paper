@@ -1,6 +1,6 @@
 {
   "startBalance": 300,
-  "cash": 256.97,
+  "cash": 258.44,
   "equity": 303.41,
   "totalPnl": 3.41,
   "open": [
@@ -53,31 +53,6 @@
         "posPnl": -6255
       },
       "topPeak": 119475.8065
-    },
-    {
-      "title": "Will Argentina win the 2026 FIFA World Cup?",
-      "side": "Yes",
-      "asset": "18812649149814341758733697580460697418474693998558159483117100240528657629879",
-      "entry": 0.167,
-      "size": 8,
-      "cost": 1.33,
-      "bid": 0.184,
-      "value": 1.47,
-      "pnl": 0.14,
-      "cat": "Спорт",
-      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
-      "followLabel": "top$941k loss10%",
-      "ts": "2026-07-06T16:58:15.079Z",
-      "follow": {
-        "label": "top$941k loss10%",
-        "addr": "0x6501…1220",
-        "entry": 0.157,
-        "book": 346386,
-        "wr": 63,
-        "overallPnl": 1141744,
-        "posPnl": 10689
-      },
-      "topPeak": 73571.1734
     },
     {
       "title": "Will Spain win the 2026 FIFA World Cup?",
@@ -298,6 +273,18 @@
       "exitTs": "2026-07-07T02:13:43.570Z",
       "followLabel": "top$619k",
       "reason": "топ вышел"
+    },
+    {
+      "title": "Will Argentina win the 2026 FIFA World Cup?",
+      "side": "Yes",
+      "entry": 0.167,
+      "exit": 0.184,
+      "size": 8,
+      "cost": 1.33,
+      "pnl": 0.14,
+      "proceeds": 1.47,
+      "exitTs": "2026-07-07T10:02:53.389Z",
+      "reason": "дедуп встречной стороны"
     }
   ],
   "log": [
@@ -329,7 +316,8 @@
     "ВЫХОД вслед за топом (топ вышел): «Will United States vs. Belgium end i» @0.72 +$0",
     "ВЫХОД вслед за топом (топ вышел): «United States vs. Belgium: Team to A» @0.71 +$0",
     "ВХОД: «Will Argentina win the 2026 FIFA World C» No @0.83 $24 за top$855k yield 21%",
-    "ВХОД: «Argentina vs. Egypt: Team to Advance» Argentina @0.85 $14 за top$1142k yield 17%"
+    "ВХОД: «Argentina vs. Egypt: Team to Advance» Argentina @0.85 $14 за top$1142k yield 17%",
+    "ЗАКРЫТО (дедуп встречной стороны рынка): «Will Argentina win the 2026 FIFA W» Yes @0.184 +$0.14"
   ],
   "tops": [
     {
