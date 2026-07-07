@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84389,
+        "book": 84386,
         "wr": 66,
         "overallPnl": 237530,
-        "posPnl": 1491
+        "posPnl": 1500
       },
       "topPeak": 13190.1904
     },
@@ -72,7 +72,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 169045,
+        "book": 168993,
         "wr": 63,
         "overallPnl": 1141744,
         "posPnl": 7997
@@ -97,7 +97,7 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 27348,
+        "book": 27315,
         "wr": 58,
         "overallPnl": 176530,
         "posPnl": -1583
@@ -122,7 +122,7 @@
         "label": "top$292k 🔥свежий",
         "addr": "0xf742…e039",
         "entry": 0.917,
-        "book": 202741,
+        "book": 201752,
         "wr": 59,
         "overallPnl": 291756,
         "posPnl": -40
@@ -692,12 +692,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 77944,
+      "book": 78208,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 5513,
+          "usd": 5747,
           "cat": "Крипта"
         },
         {
@@ -718,24 +718,24 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 588137,
+      "book": 588039,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 39007,
+          "usd": 38561,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin dip to $57,500 in July",
           "side": "NO",
-          "usd": 28806,
+          "usd": 29233,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 28629,
+          "usd": 28240,
           "cat": "Крипта"
         }
       ]
@@ -744,7 +744,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 252045,
+      "book": 252088,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -755,7 +755,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 7",
           "side": "NO",
-          "usd": 17678,
+          "usd": 17597,
           "cat": "Крипта"
         },
         {
@@ -774,7 +774,7 @@
     "trades": 24,
     "winrate": 25
   },
-  "updated": "2026-07-07T23:06:14.934Z",
+  "updated": "2026-07-07T23:12:14.373Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -981,6 +981,14 @@
       "open": 5,
       "cash": 272.88,
       "line": "эквити $307.95 (PnL +$7.95) · открыто 5 · кэш $272.88 · за час закрыто 0 (W0/L0) · лидеры: top$292k 🔥свежий +$4.8, top$647k 🔥свежий ×3 +$4.34 · минус: top$941k loss10% $-4.35, top$628k 🔥свежий $-1.25"
+    },
+    {
+      "ts": "2026-07-07T23:12:14.442Z",
+      "equity": 307.93,
+      "pnl": 7.93,
+      "open": 5,
+      "cash": 272.88,
+      "line": "эквити $307.93 (PnL +$7.93) · открыто 5 · кэш $272.88 · за час закрыто 0 (W0/L0) · лидеры: top$292k 🔥свежий +$4.8, top$647k 🔥свежий ×3 +$4.34 · минус: top$941k loss10% $-4.37, top$628k 🔥свежий $-1.25"
     }
   ],
   "equityCurve": [
@@ -1484,6 +1492,12 @@
     },
     {
       "t": "2026-07-07T23:06:06.167Z",
+      "eq": 307.93,
+      "pnl": 7.93,
+      "open": 5
+    },
+    {
+      "t": "2026-07-07T23:12:06.067Z",
       "eq": 307.93,
       "pnl": 7.93,
       "open": 5
