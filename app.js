@@ -19,13 +19,19 @@ function cat(t){t=(t||"").toLowerCase();
   if(/\bai\b|openai|xai|gpt|tesla|grok|model/.test(t))return"Технологии";
   if(/win|cup|league|match| vs|fifa|nba|nfl|corners/.test(t))return"Спорт";return"Прочее";}
 let STATE=null,FILTER="Все",OPENLIVE=[];
+// фильтр по времени входа ставки + сортировка
+let TIMEF="Всё время",SORTDIR="new";
+const TIMEWIN={"Всё время":Infinity,"24ч":24,"3 дня":72,"7 дней":168};
 
 async function bidOf(asset){const b=await jget(CLOB+"/book?token_id="+asset);return b?Math.max(0,...(b.bids||[]).map(o=>+o.price)):0;}
 
 function renderOpen(){
   if(!$("open"))return;
-  const list=OPENLIVE.filter(p=>FILTER==="Все"||p.cat===FILTER);
-  if(!list.length){$("open").innerHTML='<div class="empty">Нет позиций'+(FILTER!=="Все"?" в «"+FILTER+"»":" — жду сигнал кита")+'</div>';return;}
+  const winH=TIMEWIN[TIMEF]||Infinity, now=Date.now();
+  let list=OPENLIVE.filter(p=>FILTER==="Все"||p.cat===FILTER)
+    .filter(p=>winH===Infinity||(p.ts&&(now-new Date(p.ts).getTime())<=winH*3600e3));
+  list.sort((a,b)=>{const ta=new Date(a.ts||0).getTime(),tb=new Date(b.ts||0).getTime();return SORTDIR==="new"?tb-ta:ta-tb;});
+  if(!list.length){$("open").innerHTML='<div class="empty">Нет ставок'+(FILTER!=="Все"?" в «"+FILTER+"»":"")+(TIMEF!=="Всё время"?" за "+TIMEF:"")+'</div>';return;}
   let h='';
   for(const p of list){
     h+='<div class="card" style="margin-bottom:10px">';
@@ -66,6 +72,7 @@ async function loadLive(){
   if($("opencnt"))$("opencnt").textContent=OPENLIVE.length;
   if($("tabs")){const cats=["Все",...new Set(OPENLIVE.map(p=>p.cat))];
     $("tabs").innerHTML=cats.map(c=>'<span class="tab'+(c===FILTER?' on':'')+'" onclick="setFilter(\''+c+'\')">'+c+'</span>').join('');}
+  buildTimeChips();
   renderOpen();
   if($("updated"))$("updated").textContent=new Date().toLocaleTimeString("ru-RU");
 
@@ -156,6 +163,15 @@ function renderAnalytics(){
     }).join("");else $("whaleAnalytics").innerHTML='<div class="empty">Аналитика появится после первых сделок</div>';
   }
 }
-function setFilter(c){FILTER=c;document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.textContent===c));renderOpen();}
+function setFilter(c){FILTER=c;if($("tabs"))$("tabs").querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.textContent===c));renderOpen();}
+function buildTimeChips(){
+  if(!$("timefilter"))return;
+  const periods=Object.keys(TIMEWIN);
+  let th=periods.map(t=>'<span class="tab'+(t===TIMEF?" on":"")+'" onclick="setTimeFilter(\''+t+'\')">'+(t==="Всё время"?"🕐 "+t:t)+'</span>').join("");
+  th+='<span class="tab" onclick="toggleSort()" title="порядок по времени входа">'+(SORTDIR==="new"?"↓ новые сверху":"↑ старые сверху")+'</span>';
+  $("timefilter").innerHTML=th;
+}
+function setTimeFilter(t){TIMEF=t;buildTimeChips();renderOpen();}
+function toggleSort(){SORTDIR=SORTDIR==="new"?"old":"new";buildTimeChips();renderOpen();}
 async function loadState(){STATE=await jget(SRC+"?t="+Date.now());if(STATE){renderStatic();loadLive();}}
 loadState(); setInterval(loadLive,20000); setInterval(loadState,120000);
