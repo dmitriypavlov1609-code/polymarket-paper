@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 256.97,
-  "equity": 303.4,
-  "totalPnl": 3.4,
+  "cash": 258.44,
+  "equity": 303.41,
+  "totalPnl": 3.41,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84969,
+        "book": 84959,
         "wr": 66,
         "overallPnl": 237530,
         "posPnl": 1386
@@ -55,31 +55,6 @@
       "topPeak": 119475.8065
     },
     {
-      "title": "Will Argentina win the 2026 FIFA World Cup?",
-      "side": "Yes",
-      "asset": "18812649149814341758733697580460697418474693998558159483117100240528657629879",
-      "entry": 0.167,
-      "size": 8,
-      "cost": 1.33,
-      "bid": 0.185,
-      "value": 1.48,
-      "pnl": 0.15,
-      "cat": "Спорт",
-      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
-      "followLabel": "top$941k loss10%",
-      "ts": "2026-07-06T16:58:15.079Z",
-      "follow": {
-        "label": "top$941k loss10%",
-        "addr": "0x6501…1220",
-        "entry": 0.157,
-        "book": 347110,
-        "wr": 63,
-        "overallPnl": 1141744,
-        "posPnl": 11449
-      },
-      "topPeak": 73571.1734
-    },
-    {
       "title": "Will Spain win the 2026 FIFA World Cup?",
       "side": "Yes",
       "asset": "4394372887385518214471608448209527405727552777602031099972143344338178308080",
@@ -97,7 +72,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 347110,
+        "book": 346386,
         "wr": 63,
         "overallPnl": 1141744,
         "posPnl": 7512
@@ -111,9 +86,9 @@
       "entry": 0.829,
       "size": 24,
       "cost": 19.88,
-      "bid": 0.814,
-      "value": 19.54,
-      "pnl": -0.34,
+      "bid": 0.815,
+      "value": 19.56,
+      "pnl": -0.32,
       "cat": "Спорт",
       "followAddr": "0x0c787cc2962ee6464414da592b892c3886e077f1",
       "followLabel": "top$855k",
@@ -122,12 +97,12 @@
         "label": "top$855k",
         "addr": "0x0c78…77f1",
         "entry": 0.829,
-        "book": 99236,
+        "book": 99480,
         "wr": 49,
         "overallPnl": 626286,
-        "posPnl": -2061
+        "posPnl": -1817
       },
-      "topPeak": 99235.9407
+      "topPeak": 99480.2138
     },
     {
       "title": "Argentina vs. Egypt: Team to Advance",
@@ -147,7 +122,7 @@
         "label": "top$1142k",
         "addr": "0x6501…1220",
         "entry": 0.86,
-        "book": 347110,
+        "book": 346386,
         "wr": 63,
         "overallPnl": 1141744,
         "posPnl": -1455
@@ -298,6 +273,18 @@
       "exitTs": "2026-07-07T02:13:43.570Z",
       "followLabel": "top$619k",
       "reason": "топ вышел"
+    },
+    {
+      "title": "Will Argentina win the 2026 FIFA World Cup?",
+      "side": "Yes",
+      "entry": 0.167,
+      "exit": 0.184,
+      "size": 8,
+      "cost": 1.33,
+      "pnl": 0.14,
+      "proceeds": 1.47,
+      "exitTs": "2026-07-07T10:02:53.389Z",
+      "reason": "дедуп встречной стороны"
     }
   ],
   "log": [
@@ -329,7 +316,8 @@
     "ВЫХОД вслед за топом (топ вышел): «Will United States vs. Belgium end i» @0.72 +$0",
     "ВЫХОД вслед за топом (топ вышел): «United States vs. Belgium: Team to A» @0.71 +$0",
     "ВХОД: «Will Argentina win the 2026 FIFA World C» No @0.83 $24 за top$855k yield 21%",
-    "ВХОД: «Argentina vs. Egypt: Team to Advance» Argentina @0.85 $14 за top$1142k yield 17%"
+    "ВХОД: «Argentina vs. Egypt: Team to Advance» Argentina @0.85 $14 за top$1142k yield 17%",
+    "ЗАКРЫТО (дедуп встречной стороны рынка): «Will Argentina win the 2026 FIFA W» Yes @0.184 +$0.14"
   ],
   "tops": [
     {
@@ -346,14 +334,6 @@
       "realPnl": 1142,
       "loss": 8,
       "roi": 1332,
-      "hedged": 0
-    },
-    {
-      "addr": "0x5257…3e2a",
-      "copyPnl": 732,
-      "realPnl": 872,
-      "loss": 16,
-      "roi": 448,
       "hedged": 0
     },
     {
@@ -395,6 +375,14 @@
       "loss": 18,
       "roi": 548,
       "hedged": 0
+    },
+    {
+      "addr": "0x447d…5eea",
+      "copyPnl": 422,
+      "realPnl": 464,
+      "loss": 9,
+      "roi": 1064,
+      "hedged": 0
     }
   ],
   "whales": [
@@ -402,7 +390,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 74022,
+      "book": 73991,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -428,7 +416,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 620796,
+      "book": 620782,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -454,7 +442,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 220554,
+      "book": 220764,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -484,5 +472,5 @@
     "trades": 11,
     "winrate": 9
   },
-  "updated": "2026-07-07T09:56:10.340Z"
+  "updated": "2026-07-07T10:02:10.746Z"
 }
