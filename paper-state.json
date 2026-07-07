@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 258.44,
-  "equity": 303.41,
-  "totalPnl": 3.41,
+  "cash": 242.03,
+  "equity": 303.34,
+  "totalPnl": 3.34,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84959,
+        "book": 85360,
         "wr": 66,
         "overallPnl": 237530,
         "posPnl": 1386
@@ -72,7 +72,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 346386,
+        "book": 346006,
         "wr": 63,
         "overallPnl": 1141744,
         "posPnl": 7512
@@ -97,12 +97,12 @@
         "label": "top$855k",
         "addr": "0x0c78…77f1",
         "entry": 0.829,
-        "book": 99480,
+        "book": 99602,
         "wr": 49,
         "overallPnl": 626286,
-        "posPnl": -1817
+        "posPnl": -1695
       },
-      "topPeak": 99480.2138
+      "topPeak": 99602.3504
     },
     {
       "title": "Argentina vs. Egypt: Team to Advance",
@@ -122,12 +122,60 @@
         "label": "top$1142k",
         "addr": "0x6501…1220",
         "entry": 0.86,
-        "book": 346386,
+        "book": 346006,
         "wr": 63,
         "overallPnl": 1141744,
         "posPnl": -1455
       },
       "topPeak": 248899.0424
+    },
+    {
+      "title": "Will France win the 2026 FIFA World Cup?",
+      "side": "No",
+      "asset": "32270411694523539495262303868629477861017829722282576458031815333486368239544",
+      "entry": 0.669,
+      "size": 16,
+      "cost": 10.71,
+      "bid": 0.669,
+      "value": 10.7,
+      "pnl": -0.01,
+      "cat": "Спорт",
+      "followAddr": "0x1c66c88a4be1ca1081d93c6e1fd5b5b5847ce371",
+      "followLabel": "top$177k",
+      "ts": "2026-07-07T10:09:23.731Z",
+      "follow": {
+        "label": "top$177k",
+        "addr": "0x1c66…e371",
+        "entry": 0.765,
+        "book": 26504,
+        "wr": 58,
+        "overallPnl": 176530,
+        "posPnl": -1634
+      }
+    },
+    {
+      "title": "Spread: Argentina (-1.5)",
+      "side": "Argentina",
+      "asset": "71961256635946667086760890582546048349359304365106838820602129059570735399567",
+      "entry": 0.475,
+      "size": 12,
+      "cost": 5.7,
+      "bid": 0.47,
+      "value": 5.64,
+      "pnl": -0.06,
+      "cat": "Прочее",
+      "followAddr": "0xf7429705e25b619338412967f0a70260b6e1e039",
+      "followLabel": "top$292k",
+      "ts": "2026-07-07T10:09:23.731Z",
+      "follow": {
+        "label": "top$292k",
+        "addr": "0xf742…e039",
+        "entry": 0.44,
+        "book": 196997,
+        "wr": 59,
+        "overallPnl": 291756,
+        "posPnl": 350
+      }
     }
   ],
   "closed": [
@@ -317,7 +365,9 @@
     "ВЫХОД вслед за топом (топ вышел): «United States vs. Belgium: Team to A» @0.71 +$0",
     "ВХОД: «Will Argentina win the 2026 FIFA World C» No @0.83 $24 за top$855k yield 21%",
     "ВХОД: «Argentina vs. Egypt: Team to Advance» Argentina @0.85 $14 за top$1142k yield 17%",
-    "ЗАКРЫТО (дедуп встречной стороны рынка): «Will Argentina win the 2026 FIFA W» Yes @0.184 +$0.14"
+    "ЗАКРЫТО (дедуп встречной стороны рынка): «Will Argentina win the 2026 FIFA W» Yes @0.184 +$0.14",
+    "ВХОД: «Will France win the 2026 FIFA World Cup?» No @0.67 $16 за top$177k yield 49%",
+    "ВХОД: «Spread: Argentina (-1.5)» Argentina @0.47 $12 за top$292k yield 111%"
   ],
   "tops": [
     {
@@ -390,7 +440,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 73991,
+      "book": 74195,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -407,7 +457,7 @@
         {
           "m": "Bitcoin dip to $55,000 in July",
           "side": "NO",
-          "usd": 4913,
+          "usd": 4944,
           "cat": "Крипта"
         }
       ]
@@ -416,7 +466,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 620782,
+      "book": 620696,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -427,7 +477,7 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 36031,
+          "usd": 35301,
           "cat": "Крипта"
         },
         {
@@ -442,7 +492,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 220772,
+      "book": 220583,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -472,5 +522,150 @@
     "trades": 12,
     "winrate": 17
   },
-  "updated": "2026-07-07T10:04:38.862Z"
+  "updated": "2026-07-07T10:09:27.364Z",
+  "topStats": [
+    {
+      "label": "top$417k",
+      "addr": "",
+      "total": 4.07,
+      "realized": 4.07,
+      "unreal": 0,
+      "open": 0,
+      "closed": 1,
+      "wins": 1,
+      "losses": 0
+    },
+    {
+      "label": "top$941k loss10%",
+      "addr": "0x6501…1220",
+      "total": 0.35,
+      "realized": 0,
+      "unreal": 0.35,
+      "open": 2,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
+      "label": "top$237k",
+      "addr": "0xc8b9…b836",
+      "total": 0.03,
+      "realized": 0,
+      "unreal": 0.03,
+      "open": 1,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
+      "label": "top$969k",
+      "addr": "",
+      "total": 0,
+      "realized": 0,
+      "unreal": 0,
+      "open": 0,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
+      "label": "top$941k",
+      "addr": "",
+      "total": 0,
+      "realized": 0,
+      "unreal": 0,
+      "open": 0,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
+      "label": "top$357k",
+      "addr": "",
+      "total": 0,
+      "realized": 0,
+      "unreal": 0,
+      "open": 0,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
+      "label": "top$619k",
+      "addr": "",
+      "total": 0,
+      "realized": 0,
+      "unreal": 0,
+      "open": 0,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
+      "label": "top$177k",
+      "addr": "0x1c66…e371",
+      "total": -0.01,
+      "realized": 0,
+      "unreal": -0.01,
+      "open": 1,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
+      "label": "top$292k",
+      "addr": "0xf742…e039",
+      "total": -0.06,
+      "realized": 0,
+      "unreal": -0.06,
+      "open": 1,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
+      "label": "top-UFC $417k (лотерейка)",
+      "addr": "0xa6a8…ba32",
+      "total": -0.15,
+      "realized": 0,
+      "unreal": -0.15,
+      "open": 1,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
+      "label": "top$313k loss3%",
+      "addr": "",
+      "total": -0.28,
+      "realized": -0.28,
+      "unreal": 0,
+      "open": 0,
+      "closed": 4,
+      "wins": 0,
+      "losses": 4
+    },
+    {
+      "label": "top$855k",
+      "addr": "0x0c78…77f1",
+      "total": -0.32,
+      "realized": 0,
+      "unreal": -0.32,
+      "open": 1,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
+      "label": "top$237k loss12%",
+      "addr": "",
+      "total": -0.43,
+      "realized": -0.43,
+      "unreal": 0,
+      "open": 0,
+      "closed": 2,
+      "wins": 0,
+      "losses": 2
+    }
+  ]
 }
