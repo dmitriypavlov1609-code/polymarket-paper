@@ -5,13 +5,17 @@ import { readFileSync, writeFileSync } from "node:fs";
 
 const jget = async (u) => { for (let i = 0; i < 3; i++) { try { const r = await fetch(u); if (r.ok) return await r.json(); } catch {} await new Promise(s => setTimeout(s, 1200)); } return null; };
 
+const GRACE_MIN = 45;   // свежую позицию не трогаем первые 45 мин (защита от черна вход↔выход)
 const st = JSON.parse(readFileSync("paper-state.json", "utf8"));
 const byTop = {};
 const exits = [];
-let ok = 0;
+let ok = 0, skippedFresh = 0;
 
 for (const p of st.open || []) {
   if (!p.followAddr) { ok++; continue; }
+  // грейс: не выходим из только что открытой позиции
+  const ageMin = p.ts ? (Date.now() - new Date(p.ts).getTime()) / 60000 : 999;
+  if (ageMin < GRACE_MIN) { skippedFresh++; ok++; continue; }
   if (!(p.followAddr in byTop)) byTop[p.followAddr] = await jget(`https://data-api.polymarket.com/positions?user=${p.followAddr}&sizeThreshold=1`);
   const pos = byTop[p.followAddr];
   if (pos === null) { console.log(`  ⚠ нет данных по топу: ${(p.title || "").slice(0, 24)} — оставляю`); ok++; continue; }
@@ -24,20 +28,22 @@ for (const p of st.open || []) {
   ok++;
 }
 
+const closedSet = new Set();
 for (const { p, reason } of exits) {
   const b = await jget(`https://clob.polymarket.com/book?token_id=${p.asset}`);
-  const bid = b ? Math.max(0, ...(b.bids || []).map(o => +o.price)) : p.entry;
+  const bids = b ? (b.bids || []).map(o => +o.price).filter(x => x > 0) : [];
+  const bid = bids.length ? Math.max(...bids) : null;
+  // не можем оценить (пустой/недоступный стакан — часто рынок резолвится) → НЕ закрываем фейково, оставляем на резолв paper-update
+  if (bid === null) { console.log(`  ⏸ ${(p.title || "").slice(0, 22)}: топ вышел, но стакан пуст → оставляю на резолв`); ok++; continue; }
   const proceeds = +(bid * p.size).toFixed(2);
   const pnl = +(proceeds - p.cost).toFixed(2);
-  (st.closed = st.closed || []).push({ title: p.title, side: p.side, entry: p.entry, exit: +bid.toFixed(3), size: p.size, cost: p.cost, pnl, proceeds, exitTs: new Date().toISOString(), followLabel: p.followLabel || "", followAddr: p.followAddr || "", reason });
+  (st.closed = st.closed || []).push({ title: p.title, side: p.side, entry: p.entry, exit: +bid.toFixed(3), size: p.size, cost: p.cost, pnl, proceeds, exitTs: new Date().toISOString(), followLabel: p.followLabel || "", followAddr: p.followAddr || "", asset: p.asset, reason });
   (st.log = st.log || []).push(`ВЫХОД вслед за топом (${reason}): «${(p.title || "").slice(0, 36)}» @${bid.toFixed(2)} ${pnl >= 0 ? "+" : ""}$${pnl}`);
+  closedSet.add(p);
 }
-if (exits.length) {
-  const set = new Set(exits.map(e => e.p));
-  st.open = (st.open || []).filter(p => !set.has(p));
-}
+if (closedSet.size) st.open = (st.open || []).filter(p => !closedSet.has(p));
 // пересчёт кэша/эквити
 st.cash = +(st.startBalance - (st.open || []).reduce((a, p) => a + p.cost, 0) - (st.closed || []).reduce((a, c) => a + c.cost, 0) + (st.closed || []).reduce((a, c) => a + (c.exit * c.size), 0)).toFixed(2);
 st.equity = +(st.cash + (st.open || []).reduce((a, p) => a + (p.value || p.cost), 0)).toFixed(2);
 writeFileSync("paper-state.json", JSON.stringify(st, null, 2));
-console.log(`exit-check: держат ${ok} | вышли ${exits.length}${exits.length ? " → " + exits.map(e => (e.p.title || "").slice(0, 18)).join(", ") : ""}`);
+console.log(`exit-check: держат ${ok} (свежих в грейсе ${skippedFresh}) | закрыто ${closedSet.size}${closedSet.size ? " → " + [...closedSet].map(p => (p.title || "").slice(0, 18)).join(", ") : ""}`);

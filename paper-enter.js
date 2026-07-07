@@ -20,6 +20,11 @@ const heldAssets = new Set((st.open || []).map(p => p.asset));
 // рынок-ключ = нормализованный заголовок без хвоста вопроса (чтобы не влезать во ВСТРЕЧНУЮ сторону того же рынка)
 const mkey0 = (t) => (t || "").replace(/\?.*$/, "").trim().toLowerCase();
 const heldMarkets = new Set((st.open || []).map(p => mkey0(p.title)));
+// КУЛДАУН: не перезаходить в рынок, который закрыли за последние 8ч (защита от петли вход↔выход)
+const COOLDOWN_H = 8;
+const cdCut = Date.now() - COOLDOWN_H * 3600e3;
+const recentlyClosed = new Set((st.closed || []).filter(c => c.asset && new Date(c.exitTs || 0).getTime() > cdCut).map(c => c.asset));
+const recentlyClosedMkt = new Set((st.closed || []).filter(c => new Date(c.exitTs || 0).getTime() > cdCut).map(c => mkey0(c.title)));
 
 function category(title) {
   const t = (title || "").toLowerCase();
@@ -79,8 +84,11 @@ for (const t of tops) {
     f.usd += Number(e.usdcSize || 0); f.price = +e.price;
   }
   for (const [asset, f] of Object.entries(freshByAsset)) {
-    const m = curMap[asset]; const cur = m ? m.cur : f.price;
+    const m = curMap[asset];
+    if (!m || m.cv < 2500) continue;                    // топ ДОЛЖЕН всё ещё держать позицию (иначе тут же выйдем = черн)
+    const cur = m.cur;
     if (heldAssets.has(asset) || heldMarkets.has(mkey0(f.title))) continue;
+    if (recentlyClosed.has(asset) || recentlyClosedMkt.has(mkey0(f.title))) continue;   // кулдаун
     if (!(cur >= 0.12 && cur <= 0.96)) continue;
     const lag = f.price > 0 ? (cur - f.price) / f.price : 1;
     if (lag > 0.08) continue;                            // свежий, но цена уже ушла вверх >8% → эдж съеден
@@ -110,6 +118,7 @@ for (const t of tops) {
     if (yield_ < 8) continue;
     if (heldAssets.has(x.asset)) continue;
     if (heldMarkets.has(mkey0(x.title))) continue;
+    if (recentlyClosed.has(x.asset) || recentlyClosedMkt.has(mkey0(x.title))) continue;   // кулдаун
     cands.push({
       asset: x.asset, title: x.title, side: x.outcome, cur, avg,
       cv, yield_, lag, mkey: (x.title || "").replace(/\?.*/, "").slice(0, 40), isSingle,
