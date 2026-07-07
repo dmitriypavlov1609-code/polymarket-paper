@@ -61,11 +61,17 @@
   <h2>🐋 Наши киты <span class="live">live</span></h2>
   <div class="grid2" id="whales"></div>
 
+  <h2>🎯 Наш P&L по топам (за кем следуем)</h2>
+  <div id="topstats"></div>
+
   <h2>🏆 Топы с лидерборда (polycop.fun)</h2>
   <div id="tops"></div>
 
   <h2>✅ Закрытые сделки</h2>
   <div id="closed"></div>
+
+  <h2>🕐 Часовая сводка</h2>
+  <div id="digest"></div>
 
   <h2>📝 Журнал решений</h2>
   <div class="log" id="log">Загрузка…</div>
@@ -159,12 +165,19 @@ function renderStatic(){
   $("s_week").innerHTML='<span class="'+cls(st.week)+'">'+money(st.week||0)+'</span>';
   $("s_month").innerHTML='<span class="'+cls(st.month)+'">'+money(st.month||0)+'</span>';
   $("s_trades").textContent=st.trades||0;$("s_wr").textContent=(st.winrate||0)+"%";
+  if((s.topStats||[]).length){let h='<table><tr><th>Топ</th><th>Наш итог</th><th>Реализ.</th><th>Открыто</th><th>Позиций</th><th>W/L</th></tr>';
+    for(const t of s.topStats)h+='<tr><td>'+(t.label||'top')+' <span class="acc">'+(t.addr||'')+'</span></td><td class="'+cls(t.total)+'">'+money(t.total)+'</td><td class="'+cls(t.realized)+'">'+money(t.realized)+'</td><td class="'+cls(t.unreal)+'">'+money(t.unreal)+' ('+t.open+')</td><td>'+(t.open+t.closed)+'</td><td>'+t.wins+'/'+t.losses+'</td></tr>';
+    $("topstats").innerHTML=h+'</table>';}else $("topstats").innerHTML='<div class="empty">—</div>';
   if((s.tops||[]).length){let h='<table><tr><th>Трейдер</th><th>Copy PnL</th><th>Real PnL</th><th>Loss%</th><th>ROI</th><th>Hedge%</th></tr>';
     for(const t of s.tops)h+='<tr><td>'+t.addr+'</td><td class="grn">$'+t.copyPnl+'k</td><td>$'+t.realPnl+'k</td><td>'+t.loss+'%</td><td class="acc">'+(t.roi!=null?t.roi+'%':'—')+'</td><td>'+t.hedged+'%</td></tr>';
     $("tops").innerHTML=h+'</table>';}else $("tops").innerHTML='<div class="empty">—</div>';
   if((s.closed||[]).length){let h='<table><tr><th>Рынок</th><th>Сторона</th><th>Вход→Выход</th><th>PnL</th></tr>';
     for(const p of [...s.closed].reverse())h+='<tr><td>'+p.title+'</td><td class="side-'+(/yes/i.test(p.side)?"yes":"no")+'">'+p.side+'</td><td>$'+p.entry.toFixed(3)+'→$'+p.exit.toFixed(3)+'</td><td class="'+cls(p.pnl)+'">'+money(p.pnl)+'</td></tr>';
     $("closed").innerHTML=h+'</table>';}else $("closed").innerHTML='<div class="empty">Пока нет закрытых сделок</div>';
+  if((s.digest||[]).length){$("digest").innerHTML=[...s.digest].reverse().slice(0,12).map(d=>{
+    const t=new Date(d.ts),hh=String(t.getHours()).padStart(2,"0")+":"+String(t.getMinutes()).padStart(2,"0"),dd=t.getDate()+"."+(t.getMonth()+1);
+    return '<div style="padding:4px 0;border-bottom:1px solid #1e2530"><span class="acc">'+dd+' '+hh+'</span> — '+d.line+'</div>';}).join("");}
+  else $("digest").innerHTML='<div class="empty">Первая сводка появится в течение часа</div>';
   $("log").innerHTML=(s.log||[]).slice(-14).reverse().map(l=>"• "+l).join("<br>");
 }
 function setFilter(c){FILTER=c;document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.textContent===c));renderOpen();}

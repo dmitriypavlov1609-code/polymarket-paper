@@ -16,6 +16,7 @@ async function cycle() {
   console.log("2) " + run("node paper-update.js").split("\n").pop());
   console.log("3) " + run("node paper-enter.js").split("\n")[0]);
   console.log("2b) " + run("node paper-update.js").split("\n").pop());
+  console.log("5) " + run("node digest.js"));
   // git push (only if changed)
   const status = run("git status --porcelain");
   if (status && !status.startsWith("ERR")) {
