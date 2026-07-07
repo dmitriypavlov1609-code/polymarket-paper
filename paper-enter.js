@@ -17,6 +17,9 @@ if (RESET) {
 const MAX_OPEN = 12;
 const MAX_DEPLOY = st.startBalance * 0.70;   // держим ~30% кэша сухим порохом
 const heldAssets = new Set((st.open || []).map(p => p.asset));
+// рынок-ключ = нормализованный заголовок без хвоста вопроса (чтобы не влезать во ВСТРЕЧНУЮ сторону того же рынка)
+const mkey0 = (t) => (t || "").replace(/\?.*$/, "").trim().toLowerCase();
+const heldMarkets = new Set((st.open || []).map(p => mkey0(p.title)));
 
 function category(title) {
   const t = (title || "").toLowerCase();
@@ -66,6 +69,7 @@ for (const t of tops) {
     const yield_ = (1 / cur - 1) * 100;
     if (yield_ < 8) continue;                           // минимальный апсайд
     if (heldAssets.has(x.asset)) continue;
+    if (heldMarkets.has(mkey0(x.title))) continue;   // уже держим сторону этого рынка → не влезать во встречную
     const mkey = (x.title || "").replace(/\?.*/, "").slice(0, 40);
     cands.push({
       asset: x.asset, title: x.title, side: x.outcome, cur, avg,
@@ -97,6 +101,7 @@ const added = [];
 for (const c of ranked) {
   if ((st.open || []).length >= MAX_OPEN) break;
   if ((catCount[c.cat] || 0) >= 4) continue;
+  if (heldMarkets.has(mkey0(c.title))) continue;   // страховка от встречной стороны в этом же проходе
   const size = sizeFor(c.conv, c.topPnl, c.isSingle);
   const cost = +(size * c.cur).toFixed(2);
   if (deployed + cost > MAX_DEPLOY) continue;
@@ -109,6 +114,7 @@ for (const c of ranked) {
     ts: new Date().toISOString(),
   };
   st.open.push(p);
+  heldMarkets.add(mkey0(c.title));
   deployed += cost;
   catCount[c.cat] = (catCount[c.cat] || 0) + 1;
   (st.log = st.log || []).push(`ВХОД: «${c.title.slice(0,40)}» ${c.side} @${c.cur.toFixed(2)} $${size} за ${c.topLabel}${c.consensus>1?` (консенсус ×${c.consensus})`:""} yield ${c.yield_.toFixed(0)}%`);
