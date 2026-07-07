@@ -10,6 +10,8 @@ const run = (cmd) => { try { return execSync(cmd, { cwd: process.cwd(), stdio: [
 async function cycle() {
   const ts = new Date().toISOString().slice(11, 19);
   console.log(`\n[${ts}] === CYCLE ===`);
+  // подтянуть код-правки из origin (merge; наш state и удалённый код не конфликтуют) — self-heal от гонок пуша
+  run("git stash -q; git pull -q --no-rebase origin main; git stash pop -q");
   console.log("1) " + run("node exit-check.js"));
   console.log("2) " + run("node paper-update.js").split("\n").pop());
   console.log("3) " + run("node paper-enter.js").split("\n")[0]);
