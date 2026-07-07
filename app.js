@@ -76,20 +76,34 @@ async function loadLive(){
   renderOpen();
   if($("updated"))$("updated").textContent=new Date().toLocaleTimeString("ru-RU");
 
-  // киты live (нетто крипто-книга) — только на странице Киты
-  if($("whales")){
-    let wh='';
-    for(const[a,label,stat]of TRACKED){
-      const p=await jget(DATA+"/positions?user="+a+"&sizeThreshold=50");
-      const mkt={};let tot=0;
-      for(const x of(Array.isArray(p)?p:[])){if(!isC(x.title))continue;tot+=+x.currentValue;const k=(x.title||"").replace(/\?.*/,"");mkt[k]=(mkt[k]||0)+(/yes/i.test(x.outcome)?1:-1)*(+x.currentValue);}
-      const top=Object.entries(mkt).filter(([k,v])=>Math.abs(v)>2000).sort((x,y)=>Math.abs(y[1])-Math.abs(x[1])).slice(0,3);
-      wh+='<div class="card"><div style="display:flex;justify-content:space-between"><div><b>'+label+'</b> <span style="color:var(--dim);font-size:12px">'+a.slice(0,6)+'…'+a.slice(-4)+'</span></div><div class="acc" style="font-weight:700">$'+(tot/1000).toFixed(0)+'k</div></div><div style="color:var(--dim);font-size:12px;margin:2px 0 8px">'+stat+'</div>';
-      for(const[k,v]of top){const m=k.replace(/Will (the price of )?/i,"").slice(0,40);wh+='<div style="font-size:13px;margin:3px 0"><span class="side-'+(v>0?"yes":"no")+'">'+(v>0?"YES":"NO")+'</span> <b>$'+(Math.abs(v)>=1000?(Math.abs(v)/1000).toFixed(0)+'k':Math.round(Math.abs(v)))+'</b> <span style="color:var(--dim)">'+m+'</span></div>';}
-      wh+='</div>';
+  renderMyWhales();
+}
+
+// НАШИ КИТЫ = все, за кем мы реально следим (из наших позиций). Сколько заработали, на каких ставках, когда.
+function renderMyWhales(){
+  if(!$("whales")||!STATE)return;const s=STATE;
+  const g={};
+  const add=(addr,label,bet)=>{const k=addr||label||"?";const w=(g[k]=g[k]||{addr:addr||"",label:label||"top",bets:[],realized:0,unreal:0,wins:0,losses:0,open:0,closed:0});w.bets.push(bet);if((!w.addr||w.addr==="")&&addr)w.addr=addr;if((!w.label||w.label==="top")&&label)w.label=label;};
+  for(const p of s.open||[]){const live=(OPENLIVE||[]).find(x=>x.asset===p.asset);const pnl=live?live.pnl:(p.pnl||0);
+    add(p.followAddr,p.followLabel,{title:p.title,side:p.side,pnl,entryTs:p.ts,exitTs:null,status:"open"});}
+  for(const c of s.closed||[])add(c.followAddr,c.followLabel,{title:c.title,side:c.side,pnl:c.pnl||0,entryTs:c.entryTs,exitTs:c.exitTs,status:"closed"});
+  for(const w of Object.values(g)){for(const b of w.bets){if(b.status==="open"){w.unreal+=b.pnl;w.open++;}else{w.realized+=b.pnl;w.closed++;b.pnl>0?w.wins++:(b.pnl<0&&w.losses++);}}w.total=+(w.realized+w.unreal).toFixed(2);w.bets.sort((a,b)=>new Date(b.entryTs||0)-new Date(a.entryTs||0));}
+  const list=Object.values(g).sort((a,b)=>b.total-a.total);
+  if(!list.length){$("whales").innerHTML='<div class="empty">Пока нет ставок за китами</div>';return;}
+  let h="";
+  for(const w of list){
+    const wr=w.closed?Math.round(w.wins/w.closed*100):null;
+    h+='<div class="card" style="border-left:3px solid '+(w.total>=0?"var(--grn)":"var(--red)")+';margin-bottom:12px">';
+    h+='<div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px"><div><b style="font-size:15px">'+w.label+'</b> <span class="acc" style="font-size:12px">'+(w.addr?w.addr.slice(0,6)+"…"+w.addr.slice(-4):"")+'</span></div><div class="'+cls(w.total)+'" style="font-size:21px;font-weight:700">'+money(w.total)+'</div></div>';
+    h+='<div style="color:var(--dim);font-size:12px;margin:3px 0 8px">заработано с этим китом · '+w.bets.length+' ставок · W'+w.wins+'/L'+w.losses+(wr!=null?" · WR "+wr+"%":"")+' · реализ '+money(w.realized)+' · открыто '+money(w.unreal)+'</div>';
+    for(const b of w.bets){
+      h+='<div style="display:flex;justify-content:space-between;gap:10px;font-size:12px;padding:6px 0;border-top:1px solid var(--line)">';
+      h+='<div><span class="side-'+(/yes/i.test(b.side)?"yes":"no")+'">'+b.side+'</span> '+(b.title||"").slice(0,42)+'<div style="color:var(--dim);margin-top:2px">🗓 '+msk(b.entryTs)+' → '+(b.status==="open"?'<span class="grn">открыта</span>':msk(b.exitTs))+'</div></div>';
+      h+='<div class="'+cls(b.pnl)+'" style="font-weight:700;white-space:nowrap">'+money(b.pnl)+'</div></div>';
     }
-    $("whales").innerHTML=wh;
+    h+='</div>';
   }
+  $("whales").innerHTML=h;
 }
 
 // ── сортировка таблиц ──
