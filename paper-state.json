@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85099,
+        "book": 85018,
         "wr": 66,
         "overallPnl": 237530,
         "posPnl": 1377
@@ -47,10 +47,10 @@
         "label": "top-UFC $417k (лотерейка)",
         "addr": "0xa6a8…ba32",
         "entry": 0.353,
-        "book": 112745,
+        "book": 114428,
         "wr": 73,
         "overallPnl": 658874,
-        "posPnl": -6255
+        "posPnl": -4572
       },
       "topPeak": 119475.8065
     },
@@ -122,12 +122,12 @@
         "label": "top$855k",
         "addr": "0x0c78…77f1",
         "entry": 0.829,
-        "book": 98678,
+        "book": 98895,
         "wr": 49,
         "overallPnl": 626286,
         "posPnl": -2184
       },
-      "topPeak": 98777.6125
+      "topPeak": 98894.6341
     }
   ],
   "closed": [
@@ -376,7 +376,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 73860,
+      "book": 73842,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -402,7 +402,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 621027,
+      "book": 620993,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -413,7 +413,7 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 36274,
+          "usd": 36518,
           "cat": "Крипта"
         },
         {
@@ -428,7 +428,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 221202,
+      "book": 220993,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -439,7 +439,7 @@
         {
           "m": "Bitcoin dip to $45,000 by December 31, 2",
           "side": "NO",
-          "usd": 17484,
+          "usd": 17353,
           "cat": "Крипта"
         },
         {
@@ -458,5 +458,5 @@
     "trades": 11,
     "winrate": 9
   },
-  "updated": "2026-07-07T09:32:10.375Z"
+  "updated": "2026-07-07T09:38:09.843Z"
 }
