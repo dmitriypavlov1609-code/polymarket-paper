@@ -46,7 +46,7 @@
   .whalestat.pos{border-left-color:var(--grn)} .whalestat.neg{border-left-color:var(--red)}
   .whalestat .wl{font-weight:600;font-size:14px} .whalestat .wm{color:var(--dim);font-size:12px;margin-top:3px}
   .whalestat .wp{font-size:21px;font-weight:700;text-align:right;letter-spacing:-.02em} .whalestat .wpm{color:var(--dim);font-size:11px;text-align:right}
-  .nav{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 26px;border-bottom:1px solid var(--line);padding-bottom:0}
+  .nav{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;background:var(--bg);padding-top:8px}
   .navtab{padding:10px 18px;font-size:14px;font-weight:600;cursor:pointer;color:var(--dim);border-bottom:2px solid transparent;margin-bottom:-1px}
   .navtab:hover{color:var(--txt)}
   .navtab.on{color:var(--txt);border-bottom-color:var(--acc)}
@@ -60,17 +60,17 @@
   <h1>🐋 Whale Paper Trading</h1>
   <div class="sub"><span class="dot"></span>Ловим свежие входы топов polycop.fun · бумажный счёт $300 · <span class="live">24/7 на сервере</span> · мозг: Claude Opus</div>
 
+  <div class="nav">
+    <div class="navtab on" data-page="dashboard" onclick="setPage('dashboard')">📈 Дашборд</div>
+    <div class="navtab" data-page="stats" onclick="setPage('stats')">📊 Статистика</div>
+    <div class="navtab" data-page="whales" onclick="setPage('whales')">🐋 Киты</div>
+  </div>
+
   <div class="cards">
     <div class="card"><div class="lbl">Эквити</div><div class="val" id="equity">…</div></div>
     <div class="card"><div class="lbl">Кэш</div><div class="val" id="cash">…</div></div>
     <div class="card"><div class="lbl">Total PnL</div><div class="val" id="pnl">…</div></div>
     <div class="card"><div class="lbl">Открытых</div><div class="val" id="opencnt">…</div></div>
-  </div>
-
-  <div class="nav">
-    <div class="navtab on" data-page="dashboard" onclick="setPage('dashboard')">📈 Дашборд</div>
-    <div class="navtab" data-page="stats" onclick="setPage('stats')">📊 Статистика</div>
-    <div class="navtab" data-page="whales" onclick="setPage('whales')">🐋 Киты</div>
   </div>
 
   <!-- ДАШБОРД: только текущие ставки + за каким китом идём -->
