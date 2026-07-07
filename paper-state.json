@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84424,
+        "book": 84432,
         "wr": 66,
         "overallPnl": 237530,
         "posPnl": 1545
@@ -72,7 +72,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 137287,
+        "book": 145419,
         "wr": 63,
         "overallPnl": 1141744,
         "posPnl": 8191
@@ -122,7 +122,7 @@
         "label": "top$292k 🔥свежий",
         "addr": "0xf742…e039",
         "entry": 0.919,
-        "book": 216026,
+        "book": 216101,
         "wr": 59,
         "overallPnl": 291756,
         "posPnl": -48
@@ -692,7 +692,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 76570,
+      "book": 76130,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -703,7 +703,7 @@
         {
           "m": "Bitcoin dip to $55,000 in July",
           "side": "NO",
-          "usd": 4789,
+          "usd": 4760,
           "cat": "Крипта"
         },
         {
@@ -718,7 +718,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 607707,
+      "book": 608249,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -744,7 +744,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 251387,
+      "book": 251409,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -774,7 +774,7 @@
     "trades": 24,
     "winrate": 25
   },
-  "updated": "2026-07-07T21:42:14.434Z",
+  "updated": "2026-07-07T21:48:16.314Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1392,6 +1392,12 @@
     },
     {
       "t": "2026-07-07T21:42:05.560Z",
+      "eq": 307.95,
+      "pnl": 7.95,
+      "open": 5
+    },
+    {
+      "t": "2026-07-07T21:48:06.223Z",
       "eq": 307.95,
       "pnl": 7.95,
       "open": 5
