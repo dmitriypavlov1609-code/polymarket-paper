@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85169,
+        "book": 85214,
         "wr": 66,
         "overallPnl": 237530,
         "posPnl": 1332
@@ -72,12 +72,12 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.157,
-        "book": 97017,
+        "book": 100856,
         "wr": 63,
         "overallPnl": 1141744,
-        "posPnl": 9928
+        "posPnl": 13731
       },
-      "topPeak": 72050.3223
+      "topPeak": 73571.1734
     },
     {
       "title": "Will Spain win the 2026 FIFA World Cup?",
@@ -97,7 +97,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 97017,
+        "book": 100856,
         "wr": 63,
         "overallPnl": 1141744,
         "posPnl": 7803
@@ -122,10 +122,10 @@
         "label": "top$855k",
         "addr": "0x0c78…77f1",
         "entry": 0.833,
-        "book": 82630,
+        "book": 81618,
         "wr": 49,
         "overallPnl": 626286,
-        "posPnl": -1670
+        "posPnl": -2682
       },
       "topPeak": 83692.4
     }
@@ -376,7 +376,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 72967,
+      "book": 73069,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -402,18 +402,18 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 611570,
+      "book": 611075,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 39453,
+          "usd": 39230,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 36761,
+          "usd": 36274,
           "cat": "Крипта"
         },
         {
@@ -428,7 +428,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 212810,
+      "book": 212583,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -458,5 +458,5 @@
     "trades": 11,
     "winrate": 9
   },
-  "updated": "2026-07-07T06:32:10.210Z"
+  "updated": "2026-07-07T06:38:09.312Z"
 }
