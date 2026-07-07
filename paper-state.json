@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 251.51,
-  "equity": 316.65,
-  "totalPnl": 16.65,
+  "equity": 315.96,
+  "totalPnl": 15.96,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,12 +22,12 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84628,
+        "book": 84625,
         "wr": 66,
         "overallPnl": 237530,
         "posPnl": 1672
       },
-      "topPeak": 12983.5971
+      "topPeak": 13088.0289
     },
     {
       "title": "UFC 329: Max Holloway vs. Conor McGregor (Welterweight, Main Card)",
@@ -47,7 +47,7 @@
         "label": "top-UFC $417k (лотерейка)",
         "addr": "0xa6a8…ba32",
         "entry": 0.353,
-        "book": 208864,
+        "book": 203019,
         "wr": 73,
         "overallPnl": 658874,
         "posPnl": -2923
@@ -61,9 +61,9 @@
       "entry": 0.127,
       "size": 8,
       "cost": 1.02,
-      "bid": 0.185,
-      "value": 1.48,
-      "pnl": 0.46,
+      "bid": 0.189,
+      "value": 1.51,
+      "pnl": 0.49,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k loss10%",
@@ -72,7 +72,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 661120,
+        "book": 641257,
         "wr": 63,
         "overallPnl": 1141744,
         "posPnl": 7997
@@ -86,9 +86,9 @@
       "entry": 0.829,
       "size": 24,
       "cost": 19.88,
-      "bid": 0.893,
-      "value": 21.43,
-      "pnl": 1.55,
+      "bid": 0.92,
+      "value": 22.08,
+      "pnl": 2.2,
       "cat": "Спорт",
       "followAddr": "0x0c787cc2962ee6464414da592b892c3886e077f1",
       "followLabel": "top$855k",
@@ -97,10 +97,10 @@
         "label": "top$855k",
         "addr": "0x0c78…77f1",
         "entry": 0.823,
-        "book": 388504,
+        "book": 389499,
         "wr": 49,
         "overallPnl": 626286,
-        "posPnl": 29667
+        "posPnl": 30089
       },
       "topPeak": 380853.9108
     },
@@ -111,9 +111,9 @@
       "entry": 0.855,
       "size": 14,
       "cost": 11.97,
-      "bid": 0.59,
-      "value": 8.26,
-      "pnl": -3.71,
+      "bid": 0.5,
+      "value": 7,
+      "pnl": -4.97,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$1142k",
@@ -122,10 +122,10 @@
         "label": "top$1142k",
         "addr": "0x6501…1220",
         "entry": 0.758,
-        "book": 661120,
+        "book": 641257,
         "wr": 63,
         "overallPnl": 1141744,
-        "posPnl": -138630
+        "posPnl": -157966
       },
       "topPeak": 613944.1124
     },
@@ -136,9 +136,9 @@
       "entry": 0.669,
       "size": 16,
       "cost": 10.71,
-      "bid": 0.669,
-      "value": 10.7,
-      "pnl": -0.01,
+      "bid": 0.662,
+      "value": 10.59,
+      "pnl": -0.12,
       "cat": "Спорт",
       "followAddr": "0x1c66c88a4be1ca1081d93c6e1fd5b5b5847ce371",
       "followLabel": "top$177k",
@@ -147,10 +147,10 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 25951,
+        "book": 26139,
         "wr": 58,
         "overallPnl": 176530,
-        "posPnl": -1719
+        "posPnl": -1634
       },
       "topPeak": 11483.4737
     },
@@ -172,7 +172,7 @@
         "label": "top$292k 🔥свежий",
         "addr": "0xf742…e039",
         "entry": 0.921,
-        "book": 224240,
+        "book": 235032,
         "wr": 59,
         "overallPnl": 291756,
         "posPnl": -5
@@ -197,7 +197,7 @@
         "label": "top$2964k 🔥свежий",
         "addr": "0x7c1e…bab3",
         "entry": 0.54,
-        "book": 177084,
+        "book": 194925,
         "wr": 52,
         "overallPnl": 2964331,
         "posPnl": -94412
@@ -718,7 +718,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 74748,
+      "book": 74760,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -744,7 +744,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 575442,
+      "book": 575441,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -770,7 +770,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 249189,
+      "book": 249946,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -781,7 +781,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 7",
           "side": "NO",
-          "usd": 20880,
+          "usd": 21766,
           "cat": "Крипта"
         },
         {
@@ -800,7 +800,7 @@
     "trades": 21,
     "winrate": 29
   },
-  "updated": "2026-07-07T17:19:02.164Z",
+  "updated": "2026-07-07T17:24:17.102Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -836,22 +836,11 @@
       "losses": 0
     },
     {
-      "label": "top$941k loss10%",
-      "addr": "0x6501…1220",
-      "total": 2.35,
-      "realized": 5.6,
-      "unreal": -3.25,
-      "open": 2,
-      "closed": 1,
-      "wins": 1,
-      "losses": 0
-    },
-    {
       "label": "top$855k",
       "addr": "0x0c78…77f1",
-      "total": 1.55,
+      "total": 2.2,
       "realized": 0,
-      "unreal": 1.55,
+      "unreal": 2.2,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -869,6 +858,17 @@
       "losses": 0
     },
     {
+      "label": "top$941k loss10%",
+      "addr": "0x6501…1220",
+      "total": 1.12,
+      "realized": 5.6,
+      "unreal": -4.48,
+      "open": 2,
+      "closed": 1,
+      "wins": 1,
+      "losses": 0
+    },
+    {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
       "total": 0.16,
@@ -880,22 +880,22 @@
       "losses": 0
     },
     {
-      "label": "top$177k",
-      "addr": "0x1c66…e371",
-      "total": -0.01,
+      "label": "top-UFC $417k (лотерейка)",
+      "addr": "0xa6a8…ba32",
+      "total": -0.05,
       "realized": 0,
-      "unreal": -0.01,
+      "unreal": -0.05,
       "open": 1,
       "closed": 0,
       "wins": 0,
       "losses": 0
     },
     {
-      "label": "top-UFC $417k (лотерейка)",
-      "addr": "0xa6a8…ba32",
-      "total": -0.05,
+      "label": "top$177k",
+      "addr": "0x1c66…e371",
+      "total": -0.12,
       "realized": 0,
-      "unreal": -0.05,
+      "unreal": -0.12,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1130,6 +1130,12 @@
       "t": "2026-07-07T17:18:07.318Z",
       "eq": 316.84,
       "pnl": 16.84,
+      "open": 8
+    },
+    {
+      "t": "2026-07-07T17:24:07.337Z",
+      "eq": 316.21,
+      "pnl": 16.21,
       "open": 8
     }
   ]
