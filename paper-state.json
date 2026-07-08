@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 248,
-  "equity": 304.05,
-  "totalPnl": 4.05,
+  "cash": 252.8,
+  "equity": 303.21,
+  "totalPnl": 3.21,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84412,
+        "book": 84414,
         "wr": 66,
         "overallPnl": 236785,
         "posPnl": 1445
@@ -72,7 +72,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 98352,
+        "book": 97768,
         "wr": 64,
         "overallPnl": 1459006,
         "posPnl": 7997
@@ -147,7 +147,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 221234,
+        "book": 221229,
         "wr": 57,
         "overallPnl": 172878,
         "posPnl": -106
@@ -161,9 +161,9 @@
       "entry": 0.59,
       "size": 12,
       "cost": 7.08,
-      "bid": 0.42,
-      "value": 5.04,
-      "pnl": -2.04,
+      "bid": 0.39,
+      "value": 4.68,
+      "pnl": -2.4,
       "cat": "Прочее",
       "followAddr": "0x50c80ae7a66e49701dc9388bd13574ba03e0caa2",
       "followLabel": "top$175k",
@@ -172,37 +172,12 @@
         "label": "top$175k",
         "addr": "0x50c8…caa2",
         "entry": 0.525,
-        "book": 29290,
+        "book": 29492,
         "wr": 72,
         "overallPnl": 174639,
-        "posPnl": -290
+        "posPnl": -354
       },
       "topPeak": 2716.5726
-    },
-    {
-      "title": "S&P 500 (SPX) Up or Down on July 8?",
-      "side": "Up",
-      "asset": "48387226662773948021677808540478272515019347867773181951311214803450145113031",
-      "entry": 0.595,
-      "size": 12,
-      "cost": 7.14,
-      "bid": 0.44,
-      "value": 5.28,
-      "pnl": -1.86,
-      "cat": "Прочее",
-      "followAddr": "0x50c80ae7a66e49701dc9388bd13574ba03e0caa2",
-      "followLabel": "top$175k",
-      "ts": "2026-07-08T03:30:12.827Z",
-      "follow": {
-        "label": "top$175k",
-        "addr": "0x50c8…caa2",
-        "entry": 0.545,
-        "book": 29290,
-        "wr": 72,
-        "overallPnl": 174639,
-        "posPnl": -365
-      },
-      "topPeak": 3031.8111
     }
   ],
   "closed": [
@@ -542,6 +517,22 @@
       "followAddr": "0x0c787cc2962ee6464414da592b892c3886e077f1",
       "asset": "115428153746996892211798999366308897078723117634059783423375188043903703749062",
       "reason": "топ сократил >50% ($414440→$206924)"
+    },
+    {
+      "title": "S&P 500 (SPX) Up or Down on July 8?",
+      "side": "Up",
+      "entry": 0.595,
+      "exit": 0.4,
+      "size": 12,
+      "cost": 7.14,
+      "pnl": -2.34,
+      "proceeds": 4.8,
+      "entryTs": "2026-07-08T03:30:12.827Z",
+      "exitTs": "2026-07-08T06:36:03.933Z",
+      "followLabel": "top$175k",
+      "followAddr": "0x50c80ae7a66e49701dc9388bd13574ba03e0caa2",
+      "asset": "48387226662773948021677808540478272515019347867773181951311214803450145113031",
+      "reason": "топ сократил >50% ($3032→$1444)"
     }
   ],
   "log": [
@@ -697,7 +688,8 @@
     "ВЫХОД вслед за топом (топ сократил >50% ($414440→$206924)): «Will Argentina win the 2026 FIFA Wor» @0.83 $-0.06",
     "ВХОД: «Will no qualifying diplomatic US-Iran me» No @0.89 $12 за top$173k yield 13%",
     "ВХОД: «SPY (SPY) Up or Down on July 8?» Up @0.59 $12 за top$175k yield 69%",
-    "ВХОД: «S&P 500 (SPX) Up or Down on July 8?» Up @0.59 $12 за top$175k yield 68%"
+    "ВХОД: «S&P 500 (SPX) Up or Down on July 8?» Up @0.59 $12 за top$175k yield 68%",
+    "ВЫХОД вслед за топом (топ сократил >50% ($3032→$1444)): «S&P 500 (SPX) Up or Down on July 8?» @0.40 $-2.34"
   ],
   "tops": [
     {
@@ -770,12 +762,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 77431,
+      "book": 77446,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 5882,
+          "usd": 5895,
           "cat": "Крипта"
         },
         {
@@ -796,7 +788,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 566441,
+      "book": 565617,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -807,7 +799,7 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 28250,
+          "usd": 28527,
           "cat": "Крипта"
         },
         {
@@ -822,7 +814,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 220743,
+      "book": 220975,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -846,13 +838,13 @@
     }
   ],
   "stats": {
-    "day": -28.55,
-    "week": 7.89,
-    "month": 7.89,
-    "trades": 24,
-    "winrate": 25
+    "day": -30.89,
+    "week": 5.55,
+    "month": 5.55,
+    "trades": 25,
+    "winrate": 24
   },
-  "updated": "2026-07-08T06:30:16.570Z",
+  "updated": "2026-07-08T06:36:16.290Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -987,17 +979,6 @@
       "losses": 8
     },
     {
-      "label": "top$175k",
-      "addr": "0x50c8…caa2",
-      "total": -3.9,
-      "realized": 0,
-      "unreal": -3.9,
-      "open": 2,
-      "closed": 0,
-      "wins": 0,
-      "losses": 0
-    },
-    {
       "label": "top$941k loss10%",
       "addr": "0x6501…1220",
       "total": -4.37,
@@ -1006,6 +987,17 @@
       "open": 1,
       "closed": 2,
       "wins": 1,
+      "losses": 1
+    },
+    {
+      "label": "top$175k",
+      "addr": "0x50c8…caa2",
+      "total": -4.74,
+      "realized": -2.34,
+      "unreal": -2.4,
+      "open": 1,
+      "closed": 1,
+      "wins": 0,
       "losses": 1
     }
   ],
@@ -2083,6 +2075,12 @@
       "eq": 304.05,
       "pnl": 4.05,
       "open": 8
+    },
+    {
+      "t": "2026-07-08T06:36:07.160Z",
+      "eq": 303.21,
+      "pnl": 3.21,
+      "open": 7
     }
   ]
 }
