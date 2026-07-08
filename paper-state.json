@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 252.8,
-  "equity": 299.27,
-  "totalPnl": -0.73,
+  "equity": 299.28,
+  "totalPnl": -0.72,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -161,9 +161,9 @@
       "entry": 0.59,
       "size": 12,
       "cost": 7.08,
-      "bid": 0.05,
-      "value": 0.6,
-      "pnl": -6.48,
+      "bid": 0.051,
+      "value": 0.61,
+      "pnl": -6.47,
       "cat": "Прочее",
       "followAddr": "0x50c80ae7a66e49701dc9388bd13574ba03e0caa2",
       "followLabel": "top$175k",
@@ -762,7 +762,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 86500,
+      "book": 86693,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -814,7 +814,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 230481,
+      "book": 230464,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -844,7 +844,7 @@
     "trades": 25,
     "winrate": 24
   },
-  "updated": "2026-07-08T18:37:34.147Z",
+  "updated": "2026-07-08T18:42:29.738Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -992,9 +992,9 @@
     {
       "label": "top$175k",
       "addr": "0x50c8…caa2",
-      "total": -8.82,
+      "total": -8.81,
       "realized": -2.34,
-      "unreal": -6.48,
+      "unreal": -6.47,
       "open": 1,
       "closed": 1,
       "wins": 0,
@@ -2896,6 +2896,12 @@
       "t": "2026-07-08T18:37:01.272Z",
       "eq": 299.15,
       "pnl": -0.85,
+      "open": 7
+    },
+    {
+      "t": "2026-07-08T18:42:08.035Z",
+      "eq": 299.27,
+      "pnl": -0.73,
       "open": 7
     }
   ]
