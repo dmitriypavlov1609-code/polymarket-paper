@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84486,
+        "book": 84534,
         "wr": 66,
         "overallPnl": 236785,
         "posPnl": 1445
@@ -72,7 +72,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 98696,
+        "book": 98842,
         "wr": 64,
         "overallPnl": 1459006,
         "posPnl": 7997
@@ -122,7 +122,7 @@
         "label": "top$292k 🔥свежий",
         "addr": "0xf742…e039",
         "entry": 0.916,
-        "book": 193272,
+        "book": 194239,
         "wr": 58,
         "overallPnl": 322236,
         "posPnl": -8
@@ -171,11 +171,11 @@
       "follow": {
         "label": "top$175k",
         "addr": "0x50c8…caa2",
-        "entry": 0.199,
-        "book": 32339,
+        "entry": 0.21,
+        "book": 31808,
         "wr": 72,
         "overallPnl": 178356,
-        "posPnl": -2
+        "posPnl": 0
       },
       "topPeak": 2716.5726
     }
@@ -762,7 +762,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 84631,
+      "book": 84759,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -788,7 +788,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 627041,
+      "book": 627059,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -814,7 +814,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 229980,
+      "book": 230002,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -844,7 +844,7 @@
     "trades": 25,
     "winrate": 24
   },
-  "updated": "2026-07-08T12:30:17.895Z",
+  "updated": "2026-07-08T12:36:18.152Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -2480,6 +2480,12 @@
     },
     {
       "t": "2026-07-08T12:30:07.986Z",
+      "eq": 301.32,
+      "pnl": 1.32,
+      "open": 7
+    },
+    {
+      "t": "2026-07-08T12:36:07.840Z",
       "eq": 301.32,
       "pnl": 1.32,
       "open": 7
