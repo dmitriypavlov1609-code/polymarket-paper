@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84404,
+        "book": 84408,
         "wr": 66,
         "overallPnl": 236785,
         "posPnl": 1445
@@ -147,10 +147,10 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 221255,
+        "book": 221329,
         "wr": 57,
         "overallPnl": 172878,
-        "posPnl": -237
+        "posPnl": -239
       },
       "topPeak": 3133.6404
     },
@@ -762,7 +762,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 81682,
+      "book": 81744,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -788,7 +788,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 602044,
+      "book": 601979,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -814,7 +814,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 231179,
+      "book": 231274,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -844,7 +844,7 @@
     "trades": 25,
     "winrate": 24
   },
-  "updated": "2026-07-08T09:48:16.630Z",
+  "updated": "2026-07-08T09:54:16.606Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -2294,6 +2294,12 @@
     },
     {
       "t": "2026-07-08T09:48:07.142Z",
+      "eq": 299.39,
+      "pnl": -0.61,
+      "open": 7
+    },
+    {
+      "t": "2026-07-08T09:54:06.881Z",
       "eq": 299.39,
       "pnl": -0.61,
       "open": 7
