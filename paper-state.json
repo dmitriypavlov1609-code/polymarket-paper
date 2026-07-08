@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.545,
-      "value": 8.72,
-      "pnl": -0.02,
+      "bid": 0.546,
+      "value": 8.74,
+      "pnl": 0,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85216,
+        "book": 85368,
         "wr": 66,
         "overallPnl": 236785,
-        "posPnl": 1409
+        "posPnl": 1422
       },
       "topPeak": 13190.1904
     },
@@ -72,7 +72,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 100092,
+        "book": 102374,
         "wr": 64,
         "overallPnl": 1459006,
         "posPnl": 8191
@@ -97,7 +97,7 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 27680,
+        "book": 27788,
         "wr": null,
         "overallPnl": null,
         "posPnl": -1549
@@ -122,12 +122,12 @@
         "label": "top$292k 🔥свежий",
         "addr": "0xf742…e039",
         "entry": 0.915,
-        "book": 194198,
+        "book": 194938,
         "wr": 58,
         "overallPnl": 322236,
-        "posPnl": -33
+        "posPnl": -32
       },
-      "topPeak": 5857.5142
+      "topPeak": 5996.7897
     },
     {
       "title": "Will no qualifying diplomatic US-Iran meeting occur by September 30, 2026?",
@@ -147,7 +147,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 221693,
+        "book": 221685,
         "wr": 57,
         "overallPnl": 172878,
         "posPnl": -66
@@ -161,9 +161,9 @@
       "entry": 0.59,
       "size": 12,
       "cost": 7.08,
-      "bid": 0.003,
-      "value": 0.04,
-      "pnl": -7.04,
+      "bid": 0.002,
+      "value": 0.02,
+      "pnl": -7.06,
       "cat": "Прочее",
       "followAddr": "0x50c80ae7a66e49701dc9388bd13574ba03e0caa2",
       "followLabel": "top$175k",
@@ -172,7 +172,7 @@
         "label": "top$175k",
         "addr": "0x50c8…caa2",
         "entry": 0.106,
-        "book": 30560,
+        "book": 30536,
         "wr": 72,
         "overallPnl": 178356,
         "posPnl": 0
@@ -762,7 +762,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 87332,
+      "book": 87304,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -788,7 +788,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 549717,
+      "book": 550175,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -799,7 +799,7 @@
         {
           "m": "Bitcoin dip to $57,500 in July",
           "side": "NO",
-          "usd": 24539,
+          "usd": 24752,
           "cat": "Крипта"
         },
         {
@@ -814,7 +814,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 225245,
+      "book": 225413,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -844,7 +844,7 @@
     "trades": 25,
     "winrate": 24
   },
-  "updated": "2026-07-08T19:36:18.017Z",
+  "updated": "2026-07-08T19:42:17.472Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -915,9 +915,9 @@
     {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
-      "total": -0.02,
+      "total": 0,
       "realized": 0,
-      "unreal": -0.02,
+      "unreal": 0,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -992,9 +992,9 @@
     {
       "label": "top$175k",
       "addr": "0x50c8…caa2",
-      "total": -9.38,
+      "total": -9.4,
       "realized": -2.34,
-      "unreal": -7.04,
+      "unreal": -7.06,
       "open": 1,
       "closed": 1,
       "wins": 0,
@@ -2964,6 +2964,12 @@
       "t": "2026-07-08T19:36:07.662Z",
       "eq": 298.69,
       "pnl": -1.31,
+      "open": 7
+    },
+    {
+      "t": "2026-07-08T19:42:07.804Z",
+      "eq": 298.71,
+      "pnl": -1.29,
       "open": 7
     }
   ]
