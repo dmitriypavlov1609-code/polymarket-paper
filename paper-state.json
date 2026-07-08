@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 84454,
+        "book": 84460,
         "wr": 66,
         "overallPnl": 236785,
-        "posPnl": 1545
+        "posPnl": 1559
       },
       "topPeak": 13190.1904
     },
@@ -72,7 +72,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 97300,
+        "book": 97409,
         "wr": 64,
         "overallPnl": 1459006,
         "posPnl": 7997
@@ -147,10 +147,10 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 221452,
+        "book": 221516,
         "wr": 57,
         "overallPnl": 172878,
-        "posPnl": -65
+        "posPnl": -66
       }
     }
   ],
@@ -717,12 +717,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 73687,
+      "book": 73832,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 5830,
+          "usd": 5851,
           "cat": "Крипта"
         },
         {
@@ -734,7 +734,7 @@
         {
           "m": "Bitcoin dip to $55,000 in July",
           "side": "NO",
-          "usd": 4762,
+          "usd": 4793,
           "cat": "Крипта"
         }
       ]
@@ -743,7 +743,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 592022,
+      "book": 576875,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -754,7 +754,7 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 30577,
+          "usd": 30967,
           "cat": "Крипта"
         },
         {
@@ -769,7 +769,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 250815,
+      "book": 250891,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -780,7 +780,7 @@
         {
           "m": "Bitcoin reach $65,000 on July 7",
           "side": "NO",
-          "usd": 17839,
+          "usd": 17830,
           "cat": "Крипта"
         },
         {
@@ -799,7 +799,7 @@
     "trades": 24,
     "winrate": 25
   },
-  "updated": "2026-07-08T02:18:14.918Z",
+  "updated": "2026-07-08T02:24:14.928Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1744,6 +1744,12 @@
     },
     {
       "t": "2026-07-08T02:18:06.311Z",
+      "eq": 307.92,
+      "pnl": 7.92,
+      "open": 6
+    },
+    {
+      "t": "2026-07-08T02:24:06.021Z",
       "eq": 307.92,
       "pnl": 7.92,
       "open": 6
