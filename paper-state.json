@@ -1,6 +1,6 @@
 {
   "startBalance": 300,
-  "cash": 245.48,
+  "cash": 237.8,
   "equity": 298.69,
   "totalPnl": -1.31,
   "open": [
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 85122,
+        "book": 85091,
         "wr": 66,
         "overallPnl": 237598,
         "posPnl": 1422
@@ -72,7 +72,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 102374,
+        "book": 102337,
         "wr": 64,
         "overallPnl": 1463553,
         "posPnl": 8191
@@ -111,9 +111,9 @@
       "entry": 0.925,
       "size": 12,
       "cost": 11.1,
-      "bid": 0.9,
-      "value": 10.8,
-      "pnl": -0.3,
+      "bid": 0.91,
+      "value": 10.92,
+      "pnl": -0.18,
       "cat": "Спорт",
       "followAddr": "0xf7429705e25b619338412967f0a70260b6e1e039",
       "followLabel": "top$292k 🔥свежий",
@@ -122,12 +122,12 @@
         "label": "top$292k 🔥свежий",
         "addr": "0xf742…e039",
         "entry": 0.914,
-        "book": 210382,
+        "book": 210437,
         "wr": null,
         "overallPnl": null,
-        "posPnl": -30
+        "posPnl": 4
       },
-      "topPeak": 6133.2897
+      "topPeak": 6166.9891
     },
     {
       "title": "Will no qualifying diplomatic US-Iran meeting occur by September 30, 2026?",
@@ -147,7 +147,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 221595,
+        "book": 221593,
         "wr": 57,
         "overallPnl": 172863,
         "posPnl": -59
@@ -161,9 +161,9 @@
       "entry": 0.61,
       "size": 12,
       "cost": 7.32,
-      "bid": 0.61,
-      "value": 7.32,
-      "pnl": 0,
+      "bid": 0.62,
+      "value": 7.44,
+      "pnl": 0.12,
       "cat": "Прочее",
       "followAddr": "0x50c80ae7a66e49701dc9388bd13574ba03e0caa2",
       "followLabel": "top$180k 🔥свежий",
@@ -171,13 +171,37 @@
       "follow": {
         "label": "top$180k 🔥свежий",
         "addr": "0x50c8…caa2",
-        "entry": 0.593,
-        "book": 31411,
+        "entry": 0.596,
+        "book": 32214,
         "wr": 70,
         "overallPnl": 180395,
-        "posPnl": 162
+        "posPnl": 117
       },
-      "topPeak": 2769.0242
+      "topPeak": 3035.0714
+    },
+    {
+      "title": "S&P 500 (SPX) Up or Down on July 9?",
+      "side": "Up",
+      "asset": "104569072543003809697076861535152529964585436065702610929072863634059060835854",
+      "entry": 0.64,
+      "size": 12,
+      "cost": 7.68,
+      "bid": 0.62,
+      "value": 7.44,
+      "pnl": -0.24,
+      "cat": "Прочее",
+      "followAddr": "0x50c80ae7a66e49701dc9388bd13574ba03e0caa2",
+      "followLabel": "top$180k",
+      "ts": "2026-07-09T04:06:12.635Z",
+      "follow": {
+        "label": "top$180k",
+        "addr": "0x50c8…caa2",
+        "entry": 0.591,
+        "book": 32214,
+        "wr": 70,
+        "overallPnl": 180395,
+        "posPnl": 223
+      }
     }
   ],
   "closed": [
@@ -705,7 +729,8 @@
     "ВХОД: «S&P 500 (SPX) Up or Down on July 8?» Up @0.59 $12 за top$175k yield 68%",
     "ВЫХОД вслед за топом (топ сократил >50% ($3032→$1444)): «S&P 500 (SPX) Up or Down on July 8?» @0.40 $-2.34",
     "РЕЗОЛВ: «SPY (SPY) Up or Down on July 8?» 🔴ПРОИГРЫШ $-7.08",
-    "ВХОД: «SPY (SPY) Up or Down on July 9?» Up @0.61 $12 за top$180k 🔥свежий yield 64%"
+    "ВХОД: «SPY (SPY) Up or Down on July 9?» Up @0.61 $12 за top$180k 🔥свежий yield 64%",
+    "ВХОД: «S&P 500 (SPX) Up or Down on July 9?» Up @0.64 $12 за top$180k yield 56%"
   ],
   "tops": [
     {
@@ -778,7 +803,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 76455,
+      "book": 76473,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -789,7 +814,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 5928,
+          "usd": 5931,
           "cat": "Крипта"
         },
         {
@@ -804,7 +829,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 508717,
+      "book": 509308,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -815,13 +840,13 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 23875,
+          "usd": 23887,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin dip to $57,500 in July",
           "side": "NO",
-          "usd": 22389,
+          "usd": 22789,
           "cat": "Крипта"
         }
       ]
@@ -830,7 +855,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 219900,
+      "book": 220128,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -860,14 +885,14 @@
     "trades": 26,
     "winrate": 23
   },
-  "updated": "2026-07-09T04:00:18.663Z",
+  "updated": "2026-07-09T04:06:16.095Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
       "addr": "0xf742…e039",
-      "total": 4.8,
+      "total": 4.92,
       "realized": 5.1,
-      "unreal": -0.3,
+      "unreal": -0.18,
       "open": 1,
       "closed": 2,
       "wins": 1,
@@ -1008,10 +1033,10 @@
     {
       "label": "top$180k 🔥свежий",
       "addr": "0x50c8…caa2",
-      "total": -9.42,
+      "total": -9.54,
       "realized": -9.42,
-      "unreal": 0,
-      "open": 1,
+      "unreal": -0.12,
+      "open": 2,
       "closed": 2,
       "wins": 0,
       "losses": 2
@@ -3542,6 +3567,12 @@
       "t": "2026-07-09T04:00:08.832Z",
       "eq": 298.69,
       "pnl": -1.31,
+      "open": 7
+    },
+    {
+      "t": "2026-07-09T04:06:06.613Z",
+      "eq": 298.93,
+      "pnl": -1.07,
       "open": 7
     }
   ]
