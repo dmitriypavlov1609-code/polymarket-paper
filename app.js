@@ -151,7 +151,25 @@ function renderStatic(){
     else $("digest").innerHTML='<div class="empty">Первая сводка появится в течение часа</div>';
   }
   if($("log"))$("log").innerHTML=(s.log||[]).slice(-14).reverse().map(l=>"• "+l).join("<br>");
+  renderRisk();
   renderAnalytics();
+}
+function renderRisk(){
+  if(!$("riskbanner"))return;const s=STATE;if(!s){$("riskbanner").innerHTML="";return;}
+  const bank=s.startBalance||300, now=Date.now();
+  const cl=h=>(s.closed||[]).filter(c=>new Date(c.exitTs||c.ts||0).getTime()>=now-h*3600e3).reduce((a,c)=>a+(c.pnl||0),0);
+  const day=cl(24), week=cl(168), peak=s.peakEquity||s.startBalance, dd=((peak-(s.equity||bank))/peak*100);
+  const exp=(s.open||[]).reduce((a,p)=>a+(p.cost||0),0);
+  if(s.halt&&s.halt.until&&now<new Date(s.halt.until).getTime()){
+    $("riskbanner").innerHTML='<div style="background:#fdecea;border:1px solid #f5b5b0;border-left:3px solid var(--red);border-radius:10px;padding:12px 16px;margin-bottom:14px;color:#b3261e;font-size:13px"><b>⛔ Торговля остановлена</b> — '+s.halt.reason+'<br><span style="color:#8a8f98">до '+new Date(s.halt.until).toLocaleString("ru-RU",{timeZone:"Europe/Moscow",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})+' МСК</span></div>';
+  } else {
+    const chip=(lbl,val,lim,warn)=>'<span style="display:inline-block;background:var(--soft);border:1px solid var(--line)'+(warn?";border-color:#f5b5b0":"")+';border-radius:8px;padding:5px 11px;margin-right:8px;font-size:12px;color:var(--dim)">'+lbl+' <b class="'+cls(val)+'">'+money(val)+'</b> <span style="color:#b0b6c0">/ лимит '+lim+'</span></span>';
+    $("riskbanner").innerHTML='<div style="margin-bottom:14px">'
+      +chip("День",day,"-$"+(bank*0.03).toFixed(0),day<=-bank*0.03)
+      +chip("Неделя",week,"-$"+(bank*0.08).toFixed(0),week<=-bank*0.08)
+      +'<span style="display:inline-block;background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:5px 11px;margin-right:8px;font-size:12px;color:var(--dim)">Просадка <b>'+dd.toFixed(1)+'%</b> <span style="color:#b0b6c0">/ 15%</span></span>'
+      +'<span style="display:inline-block;background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:5px 11px;font-size:12px;color:var(--dim)">Экспозиция <b>$'+exp.toFixed(0)+'</b> <span style="color:#b0b6c0">/ $'+(bank*0.25).toFixed(0)+'</span></span></div>';
+  }
 }
 const CHARTS={};
 function mkChart(id,cfg){if(CHARTS[id])CHARTS[id].destroy();const el=document.getElementById(id);if(!el||!window.Chart)return;Chart.defaults.color="#8b98a9";Chart.defaults.font.size=11;CHARTS[id]=new Chart(el,cfg);}
