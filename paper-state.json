@@ -1,6 +1,6 @@
 {
   "startBalance": 300,
-  "cash": 258.68,
+  "cash": 261.45,
   "equity": 298.83,
   "totalPnl": -1.17,
   "open": [
@@ -28,31 +28,6 @@
         "posPnl": 1432
       },
       "topPeak": 13190.1904
-    },
-    {
-      "title": "UFC 329: Max Holloway vs. Conor McGregor (Welterweight, Main Card)",
-      "side": "Conor McGregor",
-      "asset": "12937069564920440485423856944961863118985999089649348190709599100219960110712",
-      "entry": 0.345,
-      "size": 10,
-      "cost": 3.45,
-      "bid": 0.33,
-      "value": 3.3,
-      "pnl": -0.15,
-      "cat": "Спорт",
-      "followAddr": "0xa6a872ded6039c17a9e5c81b706c04e76fbeba32",
-      "followLabel": "top-UFC $417k (лотерейка)",
-      "ts": "2026-07-06T16:55:53.089Z",
-      "follow": {
-        "label": "top-UFC $417k (лотерейка)",
-        "addr": "0xa6a8…ba32",
-        "entry": 0.352,
-        "book": 247096,
-        "wr": 72,
-        "overallPnl": 667363,
-        "posPnl": -12269
-      },
-      "topPeak": 260037.9449
     },
     {
       "title": "Will Spain win the 2026 FIFA World Cup?",
@@ -105,32 +80,6 @@
       "topPeak": 11671.3075
     },
     {
-      "title": "President Trump to Attend World Cup Final?",
-      "side": "Yes",
-      "asset": "86680247297404227698835375487849042651771548951718649081182622616196290047519",
-      "entry": 0.925,
-      "size": 6,
-      "cost": 5.55,
-      "bid": 0.9,
-      "value": 5.4,
-      "pnl": -0.15,
-      "cat": "Спорт",
-      "followAddr": "0xf7429705e25b619338412967f0a70260b6e1e039",
-      "followLabel": "top$292k 🔥свежий",
-      "ts": "2026-07-07T11:27:41.434Z",
-      "follow": {
-        "label": "top$292k 🔥свежий",
-        "addr": "0xf742…e039",
-        "entry": 0.911,
-        "book": 242666,
-        "wr": null,
-        "overallPnl": null,
-        "posPnl": -55
-      },
-      "topPeak": 7663.6249,
-      "tookProfit": true
-    },
-    {
       "title": "Will no qualifying diplomatic US-Iran meeting occur by September 30, 2026?",
       "side": "No",
       "asset": "101196087194368016189458797815389873667514776317865121691440084473605225222305",
@@ -154,6 +103,21 @@
         "posPnl": -159
       },
       "topPeak": 3133.6404
+    },
+    {
+      "title": "Will Novak Djokovic be the 2026 Men’s Wimbledon winner?",
+      "side": "Yes",
+      "asset": "76401283960595615390184184900688459220932027979297923774897873075255891504243",
+      "entry": 0.114,
+      "size": 52,
+      "cost": 5.93,
+      "bid": 0.114,
+      "value": 5.93,
+      "pnl": 0,
+      "cat": "Спорт",
+      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
+      "followLabel": "top464k",
+      "ts": "2026-07-09T19:09:33.587Z"
     }
   ],
   "closed": [
@@ -571,6 +535,38 @@
       "followAddr": "0x50c80ae7a66e49701dc9388bd13574ba03e0caa2",
       "asset": "104569072543003809697076861535152529964585436065702610929072863634059060835854",
       "reason": "топ сократил >50% ($3635→$1622)"
+    },
+    {
+      "title": "President Trump to Attend World Cup Final?",
+      "side": "Yes",
+      "entry": 0.925,
+      "exit": 0.9,
+      "size": 6,
+      "cost": 5.55,
+      "pnl": -0.15,
+      "proceeds": 5.4,
+      "entryTs": "2026-07-07T11:27:41.434Z",
+      "exitTs": "2026-07-09T19:09:33.513Z",
+      "followLabel": "top$292k 🔥свежий",
+      "followAddr": "0xf7429705e25b619338412967f0a70260b6e1e039",
+      "asset": "86680247297404227698835375487849042651771548951718649081182622616196290047519",
+      "reason": "замена на качество (освободить спорт-слот)"
+    },
+    {
+      "title": "UFC 329: Max Holloway vs. Conor McGregor (Welterweight, Main Card)",
+      "side": "Conor McGregor",
+      "entry": 0.345,
+      "exit": 0.33,
+      "size": 10,
+      "cost": 3.45,
+      "pnl": -0.15,
+      "proceeds": 3.3,
+      "entryTs": "2026-07-06T16:55:53.089Z",
+      "exitTs": "2026-07-09T19:09:33.587Z",
+      "followLabel": "top-UFC $417k (лотерейка)",
+      "followAddr": "0xa6a872ded6039c17a9e5c81b706c04e76fbeba32",
+      "asset": "12937069564920440485423856944961863118985999089649348190709599100219960110712",
+      "reason": "замена на качество (освободить спорт-слот)"
     }
   ],
   "log": [
@@ -733,7 +729,10 @@
     "ВХОД: «S&P 500 (SPX) Up or Down on July 9?» Up @0.64 $12 за top$180k yield 56%",
     "ВЫХОД вслед за топом (топ сократил >50% ($4020→$1990)): «SPY (SPY) Up or Down on July 9?» @0.68 +$0.84",
     "ТЕЙК-ПРОФИТ 50%: «President Trump to Attend World Cu» @0.90 +$-0.15",
-    "ВЫХОД вслед за топом (топ сократил >50% ($3635→$1622)): «S&P 500 (SPX) Up or Down on July 9?» @0.61 $-0.36"
+    "ВЫХОД вслед за топом (топ сократил >50% ($3635→$1622)): «S&P 500 (SPX) Up or Down on July 9?» @0.61 $-0.36",
+    "ЗАКРЫТО (замена на качество): «President Trump to Attend World » $-0.15",
+    "ЗАКРЫТО (замена на качество): «UFC 329: Max Holloway vs. Conor » $-0.15",
+    "ВХОД: «Djokovic выиграет Уимблдон» Yes @0.114 $52 (лаг -3.3пп, ниже цены лидера) за top464k"
   ],
   "tops": [
     {
