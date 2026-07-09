@@ -26,32 +26,59 @@ const TIMEWIN={"Всё время":Infinity,"24ч":24,"3 дня":72,"7 дней"
 
 async function bidOf(asset){const b=await jget(CLOB+"/book?token_id="+asset);return b?Math.max(0,...(b.bids||[]).map(o=>+o.price)):0;}
 
+const AV=["🐋","🦈","🐬","🐙","🐳","🦑"];
+const avatarFor=a=>AV[(parseInt((a||"0x0").slice(2,6),16)||0)%AV.length];
+const catEN=c=>({"Крипта":"CRYPTO","Спорт":"SPORTS","Политика":"POLITICS","Технологии":"TECH","Прочее":"OTHER"}[c]||c);
 function renderOpen(){
   if(!$("open"))return;
   const winH=TIMEWIN[TIMEF]||Infinity, now=Date.now();
   let list=OPENLIVE.filter(p=>FILTER==="Все"||p.cat===FILTER)
     .filter(p=>winH===Infinity||(p.ts&&(now-new Date(p.ts).getTime())<=winH*3600e3));
   list.sort((a,b)=>{const ta=new Date(a.ts||0).getTime(),tb=new Date(b.ts||0).getTime();return SORTDIR==="new"?tb-ta:ta-tb;});
-  if(!list.length){$("open").innerHTML='<div class="empty">Нет ставок'+(FILTER!=="Все"?" в «"+FILTER+"»":"")+(TIMEF!=="Всё время"?" за "+TIMEF:"")+'</div>';return;}
+  if(!list.length){$("open").innerHTML='<tr><td colspan="6"><div class="empty">Нет ставок'+(FILTER!=="Все"?" в «"+FILTER+"»":"")+(TIMEF!=="Всё время"?" за "+TIMEF:"")+' — жду качественный сигнал</div></td></tr>';return;}
   let h='';
   for(const p of list){
-    h+='<div class="card" style="margin-bottom:10px">';
-    h+='<div style="display:flex;justify-content:space-between;align-items:baseline"><div><b>'+p.title+'</b> <span class="badge">'+p.cat+'</span></div><div class="'+cls(p.pnl)+'" style="font-weight:700">'+money(p.pnl)+'</div></div>';
-    h+='<div style="font-size:13px;color:var(--dim);margin:4px 0 3px">Мы: <span class="side-'+(/yes/i.test(p.side)?"yes":"no")+'">'+p.side+'</span> ×'+p.size+' · вход $'+p.entry.toFixed(3)+' → тек. $'+p.bid.toFixed(3)+'</div>';
-    h+='<div style="font-size:12px;color:var(--dim);margin-bottom:6px">🗓 вход (МСК): <b>'+msk(p.ts)+'</b> · выход: <span style="color:var(--dim)">открыта</span></div>';
-    const f=p.follow;
+    const yes=/yes/i.test(p.side);
+    const c=p.pnl>0?"up":p.pnl<0?"down":"flat";
+    // ── ячейка кита: ВХОД (цена/сумма) + показатели ──
+    const f=p.follow;let wcell;
     if(f){
-      h+='<div style="font-size:12px;border-top:1px solid var(--line);padding-top:6px">🐋 <b>'+f.label+'</b> <span style="color:var(--dim)">'+f.addr+'</span>';
-      h+=' · капитал <b>$'+(f.book>=1000?(f.book/1000).toFixed(0)+'k':f.book)+'</b>';
-      if(f.wr!=null) h+=' · WR <b>'+f.wr+'%</b>';
-      if(f.entry!=null) h+=' · его вход <b>$'+f.entry.toFixed(3)+'</b>';
-      if(f.posPnl!=null) h+=' · на позиции <b class="'+cls(f.posPnl)+'">'+(f.posPnl>=0?"+":"")+'$'+Math.abs(f.posPnl).toLocaleString()+'</b>';
-      if(f.overallPnl!=null) h+=' · всего <b class="'+cls(f.overallPnl)+'">'+(f.overallPnl>=0?"+":"")+'$'+(Math.abs(f.overallPnl)/1000).toFixed(0)+'k</b>';
-      h+='</div>';
-    } else h+='<div style="font-size:12px;color:var(--dim);border-top:1px solid var(--line);padding-top:6px">🐋 кит не привязан</div>';
-    h+='</div>';
+      wcell='<div class="whale-ref"><div><span class="avatar" style="display:inline-grid;vertical-align:middle;margin-right:6px">'+avatarFor(p.followAddr)+'</span><span class="wl">'+f.label+'</span> <span class="wm">'+f.addr+'</span></div>'
+        +'<div style="margin-top:4px">вошёл <span class="wentry">'+(f.entry!=null?"@"+f.entry.toFixed(3):"?")+'</span>'
+        +(f.book!=null?' · <span class="wm">капитал</span> <b>$'+(f.book>=1000?(f.book/1000).toFixed(0)+"k":f.book)+'</b>':'')
+        +(f.wr!=null?' · WR <b>'+f.wr+'%</b>':'')+'</div>'
+        +(f.posPnl!=null||f.overallPnl!=null?'<div style="margin-top:2px">'
+            +(f.posPnl!=null?'<span class="wm">на позиции</span> <b class="'+(f.posPnl>=0?"up":"down")+'">'+(f.posPnl>=0?"+":"")+'$'+Math.abs(f.posPnl).toLocaleString()+'</b>':'')
+            +(f.overallPnl!=null?' · <span class="wm">всего</span> <b class="'+(f.overallPnl>=0?"up":"down")+'">'+(f.overallPnl>=0?"+":"")+'$'+(Math.abs(f.overallPnl)/1000).toFixed(0)+'k</b>':'')
+          +'</div>':'')
+        +'</div>';
+    } else wcell='<span class="whale-ref">'+avatarFor(p.followAddr)+' '+(p.followLabel||"—")+'</span>';
+    h+='<tr>'
+      +'<td data-l="Рынок"><div class="market">'+p.title+'<br><span class="cat">'+catEN(p.cat)+'</span></div></td>'
+      +'<td data-l="Сторона"><span class="side '+(yes?"yes":"no")+'">'+p.side.slice(0,10)+'</span></td>'
+      +'<td data-l="Наш вход" class="num">'+(p.entry*100).toFixed(0)+'¢ · $'+p.cost.toFixed(2)+'<div class="wm" style="font-size:10px;color:var(--mist)">'+msk(p.ts)+'</div></td>'
+      +'<td data-l="Сейчас" class="num">'+(p.bid*100).toFixed(0)+'¢</td>'
+      +'<td data-l="PnL" class="num pnl '+c+'">'+(p.pnl>=0?"+":"")+money(p.pnl).replace("-","")+'</td>'
+      +'<td data-l="Кит">'+wcell+'</td>'
+      +'</tr>';
   }
   $("open").innerHTML=h;
+}
+// ростер на дашборде: за кем идём + наш P&L с ним
+function renderRoster(){
+  if(!$("roster")||!STATE)return;
+  const ts=(STATE.topStats||[]).filter(t=>t.open+t.closed>0).sort((a,b)=>b.total-a.total);
+  if(!ts.length){$("roster").innerHTML='<div class="empty">Пока нет активных китов</div>';return;}
+  const maxAbs=Math.max(...ts.map(t=>Math.abs(t.total)),1);
+  $("roster").innerHTML=ts.slice(0,8).map(t=>{
+    const c=t.total>=0?"var(--up)":"var(--down)";const w=Math.round(Math.abs(t.total)/maxAbs*100);
+    const wr=t.closed?Math.round(t.wins/t.closed*100):null;
+    return '<div class="whale-card"><span class="avatar">'+avatarFor(t.addr)+'</span>'
+      +'<div class="info"><div class="name">'+(t.label||"top").replace(/ 🔥.*/,"")+'</div>'
+      +'<div class="addr">'+(t.addr||"")+' · '+(t.open+t.closed)+' поз'+(wr!=null?" · WR "+wr+"%":"")+'</div>'
+      +'<div class="depth"><i style="width:'+w+'%;background:'+(t.total>=0?"linear-gradient(90deg,var(--glow),var(--up))":"var(--down)")+'"></i></div></div>'
+      +'<div class="roi" style="color:'+c+'">'+(t.total>=0?"+":"")+'$'+t.total.toFixed(2)+'<small>наш P&L</small></div></div>';
+  }).join("");
 }
 
 async function loadLive(){
@@ -67,14 +94,22 @@ async function loadLive(){
   const spent=(s.open||[]).reduce((a,p)=>a+p.cost,0)+(s.closed||[]).reduce((a,c)=>a+c.cost,0);
   const cash=+(s.startBalance-spent+closedProceeds).toFixed(2);
   const equity=+(cash+openVal).toFixed(2), eqPnl=+(equity-s.startBalance).toFixed(2);
-  if($("equity"))$("equity").innerHTML='<span class="'+cls(eqPnl)+'">'+money(equity)+'</span>';
+  const pct=(eqPnl/s.startBalance*100);
+  const upcl=n=>n>0?"up":n<0?"down":"flat";
+  if($("equity"))$("equity").textContent=money(equity);
+  if($("equity-delta")){$("equity-delta").textContent=(pct>=0?"+":"")+pct.toFixed(1)+"% от старта";$("equity-delta").className="delta "+upcl(eqPnl);}
   if($("cash"))$("cash").textContent=money(cash);
-  if($("pnl"))$("pnl").innerHTML='<span class="'+cls(eqPnl)+'">'+money(eqPnl)+' ('+(eqPnl>=0?"+":"")+(eqPnl/s.startBalance*100).toFixed(1)+'%)</span>';
+  if($("pnl")){$("pnl").textContent=(eqPnl>=0?"+":"")+money(eqPnl).replace("-","");$("pnl").className="value pnl "+upcl(eqPnl);}
+  if($("pnl-delta")){$("pnl-delta").textContent=(pct>=0?"+":"")+pct.toFixed(1)+"%";$("pnl-delta").className="delta "+upcl(eqPnl);}
   if($("opencnt"))$("opencnt").textContent=OPENLIVE.length;
+  const exp=(s.open||[]).reduce((a,p)=>a+p.cost,0), expPct=exp/s.startBalance*100;
+  if($("exp-delta")){$("exp-delta").innerHTML='экспозиция '+expPct.toFixed(0)+'% / 25%'+(expPct>=24?' <span style="color:var(--amber)">· у лимита</span>':'');$("exp-delta").className="delta flat";}
+  drawSpark();
   if($("tabs")){const cats=["Все",...new Set(OPENLIVE.map(p=>p.cat))];
-    $("tabs").innerHTML=cats.map(c=>'<span class="tab'+(c===FILTER?' on':'')+'" onclick="setFilter(\''+c+'\')">'+c+'</span>').join('');}
+    $("tabs").innerHTML=cats.map(c=>'<span class="chip'+(c===FILTER?' on':'')+'" onclick="setFilter(\''+c+'\')">'+c+'</span>').join('');}
   buildTimeChips();
   renderOpen();
+  renderRoster();
   if($("updated"))$("updated").textContent=new Date().toLocaleTimeString("ru-RU");
 
   renderMyWhales();
@@ -155,36 +190,47 @@ function renderStatic(){
   renderAnalytics();
 }
 function renderRisk(){
-  if(!$("riskbanner"))return;const s=STATE;if(!s){$("riskbanner").innerHTML="";return;}
+  if(!$("riskbanner")&&!$("halt"))return;const s=STATE;if(!s)return;
   const bank=s.startBalance||300, now=Date.now();
   const cl=h=>(s.closed||[]).filter(c=>new Date(c.exitTs||c.ts||0).getTime()>=now-h*3600e3).reduce((a,c)=>a+(c.pnl||0),0);
-  const day=cl(24), week=cl(168), peak=s.peakEquity||s.startBalance, dd=((peak-(s.equity||bank))/peak*100);
-  const exp=(s.open||[]).reduce((a,p)=>a+(p.cost||0),0);
-  if(s.halt&&s.halt.until&&now<new Date(s.halt.until).getTime()){
-    $("riskbanner").innerHTML='<div style="background:#fdecea;border:1px solid #f5b5b0;border-left:3px solid var(--red);border-radius:10px;padding:12px 16px;margin-bottom:14px;color:#b3261e;font-size:13px"><b>⛔ Торговля остановлена</b> — '+s.halt.reason+'<br><span style="color:#8a8f98">до '+new Date(s.halt.until).toLocaleString("ru-RU",{timeZone:"Europe/Moscow",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})+' МСК</span></div>';
-  } else {
-    const chip=(lbl,val,lim,warn)=>'<span style="display:inline-block;background:var(--soft);border:1px solid var(--line)'+(warn?";border-color:#f5b5b0":"")+';border-radius:8px;padding:5px 11px;margin-right:8px;font-size:12px;color:var(--dim)">'+lbl+' <b class="'+cls(val)+'">'+money(val)+'</b> <span style="color:#b0b6c0">/ лимит '+lim+'</span></span>';
-    $("riskbanner").innerHTML='<div style="margin-bottom:14px">'
-      +chip("День",day,"-$"+(bank*0.03).toFixed(0),day<=-bank*0.03)
-      +chip("Неделя",week,"-$"+(bank*0.08).toFixed(0),week<=-bank*0.08)
-      +'<span style="display:inline-block;background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:5px 11px;margin-right:8px;font-size:12px;color:var(--dim)">Просадка <b>'+dd.toFixed(1)+'%</b> <span style="color:#b0b6c0">/ 15%</span></span>'
-      +'<span style="display:inline-block;background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:5px 11px;font-size:12px;color:var(--dim)">Экспозиция <b>$'+exp.toFixed(0)+'</b> <span style="color:#b0b6c0">/ $'+(bank*0.25).toFixed(0)+'</span></span></div>';
+  const day=cl(24), week=cl(168), peak=s.peakEquity||s.startBalance, dd=Math.max(0,(peak-(s.equity||bank))/peak*100);
+  const exp=(s.open||[]).reduce((a,p)=>a+(p.cost||0),0), expPct=exp/bank*100;
+  const halted=s.halt&&s.halt.until&&now<new Date(s.halt.until).getTime();
+  if($("halt"))$("halt").innerHTML=halted?'<div class="halt"><b>⛔ Торговля остановлена</b> — '+s.halt.reason+' <span style="color:var(--mist)">· до '+new Date(s.halt.until).toLocaleString("ru-RU",{timeZone:"Europe/Moscow",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})+' МСК</span></div>':'';
+  if($("riskbanner")){
+    const dpct=day/bank*100, wpct=week/bank*100;
+    const st=(lbl,pct,lim,bad)=>'<span><b>'+lbl+'</b> '+(pct>=0?"+":"")+pct.toFixed(1)+'% / '+lim+'% <span class="'+(bad?"warn":"ok")+'">'+(bad?"⚠":"✓")+'</span></span>';
+    $("riskbanner").innerHTML='<span style="color:var(--foam);font-weight:600">Риск-контроль:</span>'
+      +st("день",dpct,3,day<=-bank*0.03)+st("неделя",wpct,8,week<=-bank*0.08)
+      +'<span><b>просадка</b> '+dd.toFixed(1)+'% / 15% <span class="'+(dd>=15?"warn":"ok")+'">'+(dd>=15?"⚠":"✓")+'</span></span>'
+      +'<span><b>экспозиция</b> '+expPct.toFixed(0)+'% / 25% '+(expPct>=24?'<span class="warn">⚠ у лимита</span>':'<span class="ok">✓</span>')+'</span>';
   }
 }
+// спарклайн эквити из equityCurve
+function drawSpark(){
+  const ec=(STATE&&STATE.equityCurve)||[];if(!$("sparkline")||ec.length<2)return;
+  const vs=ec.slice(-40).map(p=>p.eq), mn=Math.min(...vs), mx=Math.max(...vs), rng=(mx-mn)||1;
+  const pts=vs.map((v,i)=>[i/(vs.length-1)*200, 34-((v-mn)/rng)*30]);
+  const line=pts.map((p,i)=>(i?"L":"M")+p[0].toFixed(1)+","+p[1].toFixed(1)).join(" ");
+  $("sparkline").setAttribute("d",line);
+  if($("sparkfill"))$("sparkfill").setAttribute("d",line+" L200,38 L0,38 Z");
+  const up=vs[vs.length-1]>=vs[0];
+  $("sparkline").setAttribute("stroke",up?"#35d69a":"#ff6b87");
+}
 const CHARTS={};
-function mkChart(id,cfg){if(CHARTS[id])CHARTS[id].destroy();const el=document.getElementById(id);if(!el||!window.Chart)return;Chart.defaults.color="#8b98a9";Chart.defaults.font.size=11;CHARTS[id]=new Chart(el,cfg);}
+function mkChart(id,cfg){if(CHARTS[id])CHARTS[id].destroy();const el=document.getElementById(id);if(!el||!window.Chart)return;Chart.defaults.color="#8aa5bd";Chart.defaults.font.size=11;Chart.defaults.font.family="'JetBrains Mono',monospace";CHARTS[id]=new Chart(el,cfg);}
 function renderAnalytics(){
   if(!STATE||!$("chEquity"))return;const s=STATE;
   const ec=s.equityCurve||[];
   const labels=ec.map(p=>{const t=new Date(p.t);return String(t.getHours()).padStart(2,"0")+":"+String(t.getMinutes()).padStart(2,"0");});
-  mkChart("chEquity",{type:"line",data:{labels,datasets:[{data:ec.map(p=>p.eq),borderColor:"#2f6bff",backgroundColor:"rgba(47,107,255,.08)",fill:true,tension:.3,pointRadius:0,borderWidth:2}]},
-    options:{plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{maxTicksLimit:8}},y:{grid:{color:"#f0f0f0"},ticks:{callback:v=>"$"+v}}}}});
+  mkChart("chEquity",{type:"line",data:{labels,datasets:[{data:ec.map(p=>p.eq),borderColor:"#63e6ff",backgroundColor:"rgba(99,230,255,.10)",fill:true,tension:.3,pointRadius:0,borderWidth:2}]},
+    options:{plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{maxTicksLimit:8}},y:{grid:{color:"#16324f"},ticks:{callback:v=>"$"+v}}}}});
   const ts=(s.topStats||[]).filter(t=>t.open+t.closed>0).slice(0,10);
-  mkChart("chWhales",{type:"bar",data:{labels:ts.map(t=>(t.label||"top").replace(/ 🔥.*/,"").slice(0,16)),datasets:[{data:ts.map(t=>t.total),backgroundColor:ts.map(t=>t.total>=0?"#15a34a":"#e5484d"),borderRadius:4}]},
-    options:{indexAxis:"y",plugins:{legend:{display:false}},scales:{x:{grid:{color:"#f0f0f0"},ticks:{callback:v=>"$"+v}},y:{grid:{display:false}}}}});
+  mkChart("chWhales",{type:"bar",data:{labels:ts.map(t=>(t.label||"top").replace(/ 🔥.*/,"").slice(0,16)),datasets:[{data:ts.map(t=>t.total),backgroundColor:ts.map(t=>t.total>=0?"#35d69a":"#ff6b87"),borderRadius:4}]},
+    options:{indexAxis:"y",plugins:{legend:{display:false}},scales:{x:{grid:{color:"#16324f"},ticks:{callback:v=>"$"+v}},y:{grid:{display:false}}}}});
   const byCat={};for(const p of (s.open||[]))byCat[p.cat||"Прочее"]=(byCat[p.cat||"Прочее"]||0)+(p.cost||0);
   const ck=Object.keys(byCat);
-  mkChart("chCat",{type:"doughnut",data:{labels:ck,datasets:[{data:ck.map(k=>+byCat[k].toFixed(2)),backgroundColor:["#2f6bff","#15a34a","#f0883e","#a371f7","#e5484d","#b0b6c0"],borderColor:"#ffffff",borderWidth:2}]},
+  mkChart("chCat",{type:"doughnut",data:{labels:ck,datasets:[{data:ck.map(k=>+byCat[k].toFixed(2)),backgroundColor:["#63e6ff","#35d69a","#f5b95c","#a371f7","#ff6b87","#8aa5bd"],borderColor:"#0e2440",borderWidth:2}]},
     options:{plugins:{legend:{position:"right",labels:{boxWidth:10,padding:8}}}}});
   const wa=(s.topStats||[]).filter(t=>t.open+t.closed>0);
   if($("whaleAnalytics")){
@@ -196,12 +242,12 @@ function renderAnalytics(){
     }).join("");else $("whaleAnalytics").innerHTML='<div class="empty">Аналитика появится после первых сделок</div>';
   }
 }
-function setFilter(c){FILTER=c;if($("tabs"))$("tabs").querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.textContent===c));renderOpen();}
+function setFilter(c){FILTER=c;if($("tabs"))$("tabs").querySelectorAll(".chip").forEach(t=>t.classList.toggle("on",t.textContent===c));renderOpen();}
 function buildTimeChips(){
   if(!$("timefilter"))return;
   const periods=Object.keys(TIMEWIN);
-  let th=periods.map(t=>'<span class="tab'+(t===TIMEF?" on":"")+'" onclick="setTimeFilter(\''+t+'\')">'+(t==="Всё время"?"🕐 "+t:t)+'</span>').join("");
-  th+='<span class="tab" onclick="toggleSort()" title="порядок по времени входа">'+(SORTDIR==="new"?"↓ новые сверху":"↑ старые сверху")+'</span>';
+  let th=periods.map(t=>'<span class="chip'+(t===TIMEF?" on":"")+'" onclick="setTimeFilter(\''+t+'\')">'+(t==="Всё время"?"🕐 "+t:t)+'</span>').join("");
+  th+='<span class="chip" onclick="toggleSort()" title="порядок по времени входа">'+(SORTDIR==="new"?"↓ новые":"↑ старые")+'</span>';
   $("timefilter").innerHTML=th;
 }
 function setTimeFilter(t){TIMEF=t;buildTimeChips();renderOpen();}

@@ -4,32 +4,73 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>🐋 Дашборд · Whale Paper Trading</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>🐋 Whale Paper Trading</h1>
-  <div class="sub"><span class="dot"></span>Дисциплинированный copy-trading · риск ≤2%/поз, экспозиция ≤25% · счёт $300 · <span class="live">24/7</span></div>
-  <div id="riskbanner"></div>
-
-  <nav class="nav">
-    <a class="navtab on" href="/">📈 Дашборд</a>
-    <a class="navtab" href="/stats">📊 Статистика</a>
-    <a class="navtab" href="/whales">🐋 Киты</a>
-  </nav>
-
-  <div class="cards">
-    <div class="card"><div class="lbl">Эквити</div><div class="val" id="equity">…</div></div>
-    <div class="card"><div class="lbl">Кэш</div><div class="val" id="cash">…</div></div>
-    <div class="card"><div class="lbl">Total PnL</div><div class="val" id="pnl">…</div></div>
-    <div class="card"><div class="lbl">Открытых</div><div class="val" id="opencnt">…</div></div>
+<header class="wrap">
+  <div class="topbar">
+    <div class="brand">
+      <div class="sonar" aria-hidden="true">🐋</div>
+      <div>
+        <h1>Whale Paper Trading</h1>
+        <div class="sub">copy-trading · риск ≤ <b>2%</b>/поз · экспозиция ≤ <b>25%</b> · режим <b>PAPER</b> · 24/7</div>
+      </div>
+    </div>
+    <nav aria-label="Навигация">
+      <a class="active" href="/">Дашборд</a>
+      <a href="/stats">Статистика</a>
+      <a href="/whales">Киты</a>
+    </nav>
   </div>
+</header>
 
-  <h2>Текущие ставки <span class="live">live</span></h2>
-  <div class="tabs" id="tabs"></div>
-  <div class="tabs" id="timefilter" style="margin-top:-2px"></div>
-  <div id="open"></div>
+<main class="wrap">
+  <section class="stats" aria-label="Метрики">
+    <div class="stat">
+      <div class="label">Эквити</div><div class="value" id="equity">…</div><div class="delta flat" id="equity-delta">—</div>
+      <svg class="spark" id="spark" viewBox="0 0 200 38" preserveAspectRatio="none" aria-hidden="true">
+        <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#63e6ff" stop-opacity=".28"/><stop offset="1" stop-color="#63e6ff" stop-opacity="0"/></linearGradient></defs>
+        <path id="sparkfill" d="" fill="url(#g1)"/><path id="sparkline" d="" fill="none" stroke="#63e6ff" stroke-width="1.6"/>
+      </svg>
+    </div>
+    <div class="stat"><div class="label">Кэш</div><div class="value" id="cash">…</div><div class="delta flat">свободно для входа</div></div>
+    <div class="stat"><div class="label">Total PnL</div><div class="value" id="pnl">…</div><div class="delta flat" id="pnl-delta">—</div></div>
+    <div class="stat"><div class="label">Открытых</div><div class="value" id="opencnt">…</div><div class="delta flat" id="exp-delta">—</div></div>
+  </section>
 
-  <div class="foot">Обновлено: <span id="updated">—</span> · позиции и киты — вживую</div>
+  <div id="halt"></div>
+  <div class="risk" role="status" id="riskbanner"></div>
+
+  <div class="grid">
+    <section>
+      <div class="sec">
+        <h2><span class="live-dot" aria-hidden="true"></span>Текущие ставки live</h2>
+        <span class="meta">обновлено <span id="updated">—</span></span>
+      </div>
+      <div class="chips" id="tabs"></div>
+      <div class="chips" id="timefilter"></div>
+      <div class="panel">
+        <table>
+          <thead><tr><th>Рынок</th><th>Сторона</th><th>Наш вход</th><th>Сейчас</th><th>PnL</th><th>Кит: вход и показатели</th></tr></thead>
+          <tbody id="open"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <aside>
+      <div class="sec"><h2>За кем идём</h2><span class="meta">наш P&L с ним</span></div>
+      <div class="panel" id="roster"></div>
+    </aside>
+  </div>
+</main>
+
+<footer class="wrap">
+  <div class="paper">PAPER MODE — виртуальные сделки, реальные средства не задействованы</div>
+  <div style="margin-top:6px">Прогнозные рынки несут риск полной потери капитала. Не финансовая рекомендация.</div>
+</footer>
 <script src="/app.js"></script>
 </body>
 </html>

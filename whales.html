@@ -4,32 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>🐋 Киты · Whale Paper Trading</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>🐋 Whale Paper Trading</h1>
-  <div class="sub"><span class="dot"></span>Киты и лидерборд polycop.fun · счёт $300 · <span class="live">24/7</span></div>
-
-  <nav class="nav">
-    <a class="navtab" href="/">📈 Дашборд</a>
-    <a class="navtab" href="/stats">📊 Статистика</a>
-    <a class="navtab on" href="/whales">🐋 Киты</a>
-  </nav>
-
-  <div class="cards">
-    <div class="card"><div class="lbl">Эквити</div><div class="val" id="equity">…</div></div>
-    <div class="card"><div class="lbl">Кэш</div><div class="val" id="cash">…</div></div>
-    <div class="card"><div class="lbl">Total PnL</div><div class="val" id="pnl">…</div></div>
-    <div class="card"><div class="lbl">Открытых</div><div class="val" id="opencnt">…</div></div>
+<header class="wrap">
+  <div class="topbar">
+    <div class="brand"><div class="sonar">🐋</div><div><h1>Whale Paper Trading</h1><div class="sub">киты, за кем следим · режим <b>PAPER</b> · 24/7</div></div></div>
+    <nav><a href="/">Дашборд</a><a href="/stats">Статистика</a><a class="active" href="/whales">Киты</a></nav>
   </div>
+</header>
+<main class="wrap" style="padding-bottom:56px">
+  <section class="stats">
+    <div class="stat"><div class="label">Эквити</div><div class="value" id="equity">…</div></div>
+    <div class="stat"><div class="label">Кэш</div><div class="value" id="cash">…</div></div>
+    <div class="stat"><div class="label">Total PnL</div><div class="value" id="pnl">…</div></div>
+    <div class="stat"><div class="label">Открытых</div><div class="value" id="opencnt">…</div></div>
+  </section>
 
-  <h2>🐋 Наши киты <span class="live">live</span></h2>
+  <div class="sec"><h2>🐋 Наши киты — сколько заработали, на чём, когда</h2></div>
   <div class="grid2" id="whales"></div>
 
-  <h2>🏆 Топы лидерборда (сортируется — клик по столбцу)</h2>
-  <div id="tops"></div>
-
-  <div class="foot">Обновлено: <span id="updated">—</span></div>
+  <div class="sec"><h2>🏆 Топы лидерборда</h2><span class="meta">сортировка — клик по столбцу</span></div>
+  <div class="panel" id="tops"></div>
+  <div style="margin-top:16px" class="meta">Обновлено: <span id="updated">—</span></div>
+</main>
 <script src="/app.js"></script>
 </body>
 </html>

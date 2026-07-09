@@ -4,55 +4,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>📊 Статистика · Whale Paper Trading</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/style.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 <body>
-  <h1>🐋 Whale Paper Trading</h1>
-  <div class="sub"><span class="dot"></span>Статистика и аналитика · счёт $300 · <span class="live">24/7</span></div>
-
-  <nav class="nav">
-    <a class="navtab" href="/">📈 Дашборд</a>
-    <a class="navtab on" href="/stats">📊 Статистика</a>
-    <a class="navtab" href="/whales">🐋 Киты</a>
-  </nav>
-
-  <div class="cards">
-    <div class="card"><div class="lbl">Эквити</div><div class="val" id="equity">…</div></div>
-    <div class="card"><div class="lbl">Кэш</div><div class="val" id="cash">…</div></div>
-    <div class="card"><div class="lbl">Total PnL</div><div class="val" id="pnl">…</div></div>
-    <div class="card"><div class="lbl">Открытых</div><div class="val" id="opencnt">…</div></div>
+<header class="wrap">
+  <div class="topbar">
+    <div class="brand"><div class="sonar">🐋</div><div><h1>Whale Paper Trading</h1><div class="sub">статистика и аналитика · режим <b>PAPER</b> · 24/7</div></div></div>
+    <nav><a href="/">Дашборд</a><a class="active" href="/stats">Статистика</a><a href="/whales">Киты</a></nav>
   </div>
+</header>
+<main class="wrap" style="padding-bottom:56px">
+  <section class="stats">
+    <div class="stat"><div class="label">День</div><div class="value" id="s_day">—</div></div>
+    <div class="stat"><div class="label">Неделя</div><div class="value" id="s_week">—</div></div>
+    <div class="stat"><div class="label">Месяц</div><div class="value" id="s_month">—</div></div>
+    <div class="stat"><div class="label">Сделок / Winrate</div><div class="value"><span id="s_trades">—</span> · <span id="s_wr">—</span></div></div>
+  </section>
 
-  <div class="stats">
-    <div class="stat">День<b id="s_day">—</b></div>
-    <div class="stat">Неделя<b id="s_week">—</b></div>
-    <div class="stat">Месяц<b id="s_month">—</b></div>
-    <div class="stat">Сделок<b id="s_trades">—</b></div>
-    <div class="stat">Winrate<b id="s_wr">—</b></div>
-  </div>
-
-  <h2>📊 Аналитика</h2>
+  <div class="sec"><h2>📊 Аналитика</h2></div>
   <div class="charts">
     <div class="chartcard wide"><div class="ct">Кривая эквити (старт $300)</div><canvas id="chEquity" height="90"></canvas></div>
     <div class="chartcard"><div class="ct">💰 Заработок по китам (наш P&L)</div><canvas id="chWhales" height="150"></canvas></div>
     <div class="chartcard"><div class="ct">🧭 Распределение по категориям</div><canvas id="chCat" height="150"></canvas></div>
   </div>
 
-  <h2>🎯 Наш P&L по топам (сортируется — клик по столбцу)</h2>
-  <div id="topstats"></div>
+  <div class="sec"><h2>🎯 Наш P&L по топам</h2><span class="meta">сортировка — клик по столбцу</span></div>
+  <div class="panel" id="topstats"></div>
   <div id="whaleAnalytics" style="margin-top:12px"></div>
 
-  <h2>✅ Закрытые сделки</h2>
-  <div id="closed"></div>
+  <div class="sec"><h2>✅ Закрытые сделки</h2></div>
+  <div class="panel" id="closed"></div>
 
-  <h2>🕐 Часовая сводка</h2>
+  <div class="sec"><h2>🕐 Часовая сводка</h2></div>
   <div id="digest"></div>
 
-  <h2>📝 Журнал решений</h2>
+  <div class="sec"><h2>📝 Журнал решений</h2></div>
   <div class="log" id="log">Загрузка…</div>
-
-  <div class="foot">Обновлено: <span id="updated">—</span></div>
+  <div style="margin-top:16px" class="meta">Обновлено: <span id="updated">—</span></div>
+</main>
 <script src="/app.js"></script>
 </body>
 </html>
