@@ -1,26 +1,40 @@
-// АВТО-ВХОД follow-tops: сканирует лидерборд polycop, находит крупные МНОГОДНЕВНЫЕ
-// направленные позиции топов, заходит близко к их цене, размер ∝ конвикции.
-// Запуск: node paper-enter.js            (обычный цикл — доливает до целевого числа позиций)
-//         node paper-enter.js reset300   (сброс банка на $300 и свежий набор)
+// АВТО-ВХОД follow-tops по СПЕКУ (polymarket_agent_prompt.md): дисциплинированный copy-trading.
+// Только свежие входы проверенных лидеров, жёсткий риск-менеджмент, сохранение капитала важнее прибыли.
+// Запуск: node paper-enter.js  |  node paper-enter.js reset300
 import { readFileSync, writeFileSync } from "node:fs";
 
-const jget = async (u) => { for (let i = 0; i < 3; i++) { try { const r = await fetch(u); if (r.ok) return await r.json(); } catch {} await new Promise(s => setTimeout(s, 1000)); } return null; };
+const jget = async (u) => { for (let i = 0; i < 3; i++) { try { const r = await fetch(u); if (r.ok) return await r.json(); } catch {} await new Promise(s => setTimeout(s, 900)); } return null; };
 
 const RESET = process.argv[2] === "reset300";
 let st;
 if (RESET) {
-  st = { startBalance: 300, cash: 300, equity: 300, totalPnl: 0, open: [], closed: [], log: ["🔄 РЕСТАРТ банка $300 — follow-tops, упор на многодневные рынки"], tops: [], whales: [], stats: {}, updated: new Date().toISOString() };
+  st = { startBalance: 300, cash: 300, equity: 300, peakEquity: 300, totalPnl: 0, halt: null, open: [], closed: [], log: ["🔄 РЕСТАРТ банка $300 — дисциплинированный copy-trading по спеку"], tops: [], whales: [], stats: {}, updated: new Date().toISOString() };
 } else {
   st = JSON.parse(readFileSync("paper-state.json", "utf8"));
 }
 
-const MAX_OPEN = 12;
-const MAX_DEPLOY = st.startBalance * 0.70;   // держим ~30% кэша сухим порохом
+// ── РИСК-СТОП: если торговля остановлена (дневной/недельный/просадка) — не входим ──
+if (st.halt && st.halt.until && Date.now() < new Date(st.halt.until).getTime()) {
+  console.log(`+0 позиций | ⛔ ТОРГОВЛЯ ОСТАНОВЛЕНА (${st.halt.reason}) до ${st.halt.until}`);
+  process.exit(0);
+}
+
+const BANK = st.equity || st.startBalance;         // текущий банкролл
+const MAX_POS = BANK * 0.02;                         // ≤2% банка на позицию
+const MAX_EXPOSURE = BANK * 0.25;                    // ≤25% суммарная экспозиция
+const MAX_OPEN = 15;
+const MAX_CAT = 3;                                   // ≤3 позиции на категорию (коррелир. риск)
+const MAX_PER_TOP = 3;
+const FRESH_MIN = 20;                                // детект свежих сделок лидера за N минут (~<10-15 мин лаг при cron 6мин)
+const LAG_PP = 0.03;                                 // цена сдвинулась ≤3 п.п. от входа лидера
+const PRICE_MIN = 0.05, PRICE_MAX = 0.95;            // блэклист крайних цен
+const MIN_HOURS = 48;                                // ≥48ч до разрешения (без паники последних часов / лайв-матчей)
+const MIN_VOL = 10000;                               // суточный объём рынка ≥ $10k
+const MIN_LEADER_USD = 500;                          // лидер вложил заметно
+
 const heldAssets = new Set((st.open || []).map(p => p.asset));
-// рынок-ключ = нормализованный заголовок без хвоста вопроса (чтобы не влезать во ВСТРЕЧНУЮ сторону того же рынка)
 const mkey0 = (t) => (t || "").replace(/\?.*$/, "").trim().toLowerCase();
 const heldMarkets = new Set((st.open || []).map(p => mkey0(p.title)));
-// КУЛДАУН: не перезаходить в рынок, который закрыли за последние 8ч (защита от петли вход↔выход)
 const COOLDOWN_H = 8;
 const cdCut = Date.now() - COOLDOWN_H * 3600e3;
 const recentlyClosed = new Set((st.closed || []).filter(c => c.asset && new Date(c.exitTs || 0).getTime() > cdCut).map(c => c.asset));
@@ -29,157 +43,129 @@ const recentlyClosedMkt = new Set((st.closed || []).filter(c => new Date(c.exitT
 function category(title) {
   const t = (title || "").toLowerCase();
   if (/bitcoin|btc|ethereum|eth|solana| sol |xrp|dogecoin|crypto/.test(t)) return "Крипта";
-  // СПОРТ проверяем ДО политики: матчи/турниры/проп-ставки ('advance' не должно ловиться как 'vance')
   if (/\bvs\.?\b| vs |spread|half.?time|corners|o\/u| total|to advance|leading at|end in a draw|win on 20\d\d|\bufc\b|\bfifa\b|world cup|\bleague\b|\bnba\b|\bnfl\b|\bnhl\b|wimbledon|\batp\b|\bwta\b|to score|assist|goal/.test(t)) return "Спорт";
   if (/election|president|trump|\bvance\b|congress|senate|governor|primary|democrat|republican|putin|zelensky|mamdani|nyc mayor|nominee/.test(t)) return "Политика";
   if (/\bai\b|openai|xai|gpt|tesla|model|grok|llm|agi/.test(t)) return "Технологии";
   if (/\bwin\b|championship|\btitle\b|\bcup\b/.test(t)) return "Спорт";
   return "Прочее";
 }
-// многодневный низкодисперсный? (крипто-диапазоны, политика, макро с горизонтом) — НЕ спорт-матч-одиночка
-function multiDay(title) {
-  const t = (title || "").toLowerCase();
-  if (/vs\.| vs |corners|assist|to score|wimbledon|match|game \d/.test(t)) return false; // одиночный матч
-  return true;
-}
-
-// конвикция топа → размер бумаги. single-event = ЛОТЕРЕЙНЫЙ потолок (диверсифицируем как кит)
-function sizeFor(convUsd, topPnl, isSingle) {
-  let base = convUsd >= 200000 ? 30 : convUsd >= 80000 ? 24 : convUsd >= 30000 ? 20 : convUsd >= 10000 ? 16 : 12;
-  if (topPnl >= 1000000) base *= 1.1;
-  if (isSingle) base = Math.min(base, 14);   // одиночный матч — только мелко
-  return Math.round(base);
-}
 
 const lb = await jget("https://polycop.fun/api/leaderboard");
 if (!lb || !lb.data) { console.log("нет лидерборда"); process.exit(1); }
 
-// СКОР копируемости (из анализа): copyPnL × консистентность² × направленность × знак ROI.
-// Ловим тех, за кем копир РЕАЛЬНО зарабатывает стабильно, а не просто с большим PnL.
+// Отбор 5-10 лидеров: стабильные, направленные, положит. ROI, низкий loss_rate
 const copyScore = (t) => {
   const cb = t.copy_backtest_pnl || 0, loss = t.copy_loss_rate ?? 99, hedge = t.hedged_pct || 0, roi = t.roi ? t.roi * 100 : 0;
   const wr = (t.win_rate > 1 ? t.win_rate : (t.win_rate || 0) * 100);
-  // ужесточено: только СТАБИЛЬНЫЕ топы. loss<13 (у элиты медиана 8%), направленные, положит ROI
   if (cb < 150000 || loss > 13 || hedge > 55 || roi <= 0) return -1;
   return (cb / 1000) * Math.pow(1 - loss / 100, 2) * (1 - hedge / 100) * (0.7 + wr / 200);
 };
-const tops = lb.data
-  .map(t => ({ ...t, _sc: copyScore(t) }))
-  .filter(t => t._sc > 0)
-  .sort((a, b) => b._sc - a._sc)
-  .slice(0, 20);
+const tops = lb.data.map(t => ({ ...t, _sc: copyScore(t) })).filter(t => t._sc > 0).sort((a, b) => b._sc - a._sc).slice(0, 10);
 
-// собираем кандидатов по всем топам
-const cands = [];
-const FRESH_HOURS = 20;                 // «свежий вход» — сделка топа за последние N часов
-const sinceTs = Math.floor(Date.now() / 1000) - FRESH_HOURS * 3600;
+// сканируем позиции всех лидеров: строим карту рынок→{asset→Set(лидеров)} для проверки конфликта сторон
+const mktAssets = {};   // mkey -> { asset -> Set(topAddr) }
+const posByTop = {};
 for (const t of tops) {
-  const pos = await jget(`https://data-api.polymarket.com/positions?user=${t.address}&sizeThreshold=2000`);
-  // карта asset → текущая цена/конвикция из книги топа
-  const curMap = {};
-  for (const x of (Array.isArray(pos) ? pos : [])) curMap[x.asset] = { cur: +x.curPrice, cv: +x.currentValue, title: x.title, side: x.outcome, avg: +x.avgPrice };
+  const pos = await jget(`https://data-api.polymarket.com/positions?user=${t.address}&sizeThreshold=1000`);
+  posByTop[t.address] = Array.isArray(pos) ? pos : [];
+  for (const x of posByTop[t.address]) {
+    if (!(+x.currentValue >= 1000)) continue;
+    const mk = mkey0(x.title);
+    (mktAssets[mk] = mktAssets[mk] || {});
+    (mktAssets[mk][x.asset] = mktAssets[mk][x.asset] || new Set()).add(t.address);
+  }
+}
+// сколько лидеров стоят на ПРОТИВОПОЛОЖНОЙ стороне рынка (другой asset того же mkey)
+const opposedCount = (mk, asset) => {
+  const m = mktAssets[mk]; if (!m) return 0;
+  const s = new Set();
+  for (const [a, tset] of Object.entries(m)) if (a !== asset) for (const tp of tset) s.add(tp);
+  return s.size;
+};
 
-  // (A) СВЕЖИЕ ВХОДЫ — главный эдж: топ ТОЛЬКО купил, цена ещё у его цены входа
-  const act = await jget(`https://data-api.polymarket.com/activity?user=${t.address}&limit=120`);
-  const freshByAsset = {};
+// собираем СВЕЖИЕ кандидаты (сделка лидера за FRESH_MIN минут)
+const sinceTs = Math.floor(Date.now() / 1000) - FRESH_MIN * 60;
+const raw = [];
+for (const t of tops) {
+  const curMap = {};
+  for (const x of posByTop[t.address]) curMap[x.asset] = { cur: +x.curPrice, cv: +x.currentValue, avg: +x.avgPrice };
+  const act = await jget(`https://data-api.polymarket.com/activity?user=${t.address}&limit=60`);
+  const fresh = {};
   for (const e of (Array.isArray(act) ? act : [])) {
     if (e.type !== "TRADE" || e.side !== "BUY" || e.timestamp < sinceTs) continue;
-    const f = freshByAsset[e.asset] || (freshByAsset[e.asset] = { usd: 0, price: +e.price, title: e.title, outcome: e.outcome });
-    f.usd += Number(e.usdcSize || 0); f.price = +e.price;
+    const f = fresh[e.asset] || (fresh[e.asset] = { usd: 0, price: +e.price, title: e.title, outcome: e.outcome, ts: e.timestamp });
+    f.usd += Number(e.usdcSize || 0); f.price = +e.price; f.ts = Math.max(f.ts, e.timestamp);
   }
-  for (const [asset, f] of Object.entries(freshByAsset)) {
+  for (const [asset, f] of Object.entries(fresh)) {
     const m = curMap[asset];
-    if (!m || m.cv < 2500) continue;                    // топ ДОЛЖЕН всё ещё держать позицию (иначе тут же выйдем = черн)
-    const cur = m.cur;
+    if (!m || m.cv < 2000) continue;                                  // лидер ещё держит
     if (heldAssets.has(asset) || heldMarkets.has(mkey0(f.title))) continue;
-    if (recentlyClosed.has(asset) || recentlyClosedMkt.has(mkey0(f.title))) continue;   // кулдаун
-    if (!(cur >= 0.12 && cur <= 0.96)) continue;
-    const lag = f.price > 0 ? (cur - f.price) / f.price : 1;
-    if (lag > 0.08) continue;                            // свежий, но цена уже ушла вверх >8% → эдж съеден
-    if (f.usd < 800) continue;                            // топ вложил заметно
-    const yield_ = (1 / cur - 1) * 100;
-    const isSingle = !multiDay(f.title);
-    if (isSingle && f.usd < 15000) continue;             // одиночные матчи — только очень крупный свежий вход
-    cands.push({
-      asset, title: f.title, side: f.outcome, cur, avg: f.price,
-      cv: (m ? m.cv : f.usd), yield_, lag, mkey: (f.title || "").replace(/\?.*/, "").slice(0, 40), isSingle,
-      topAddr: t.address, topPnl: Math.round(t.actual_pnl || 0),
-      topLabel: "top$" + Math.round((t.actual_pnl || 0) / 1000) + "k 🔥свежий",
-      cat: category(f.title), conv: (m ? m.cv : f.usd), fresh: true,
-    });
-  }
-
-  // (B) СОСТАРИВШИЕСЯ КНИГИ — вторичный сигнал (для консенсуса), строгий lag/yield
-  for (const x of (Array.isArray(pos) ? pos : [])) {
-    const cv = +x.currentValue, cur = +x.curPrice, avg = +x.avgPrice;
-    if (!(cv >= 2500)) continue;
-    if (!(cur >= 0.25 && cur <= 0.9)) continue;
-    const isSingle = !multiDay(x.title);
-    if (isSingle && cv < 30000) continue;
-    const lag = avg > 0 ? (cur - avg) / avg : 1;
-    if (Math.abs(lag) > 0.2) continue;
-    const yield_ = (1 / cur - 1) * 100;
-    if (yield_ < 8) continue;
-    if (heldAssets.has(x.asset)) continue;
-    if (heldMarkets.has(mkey0(x.title))) continue;
-    if (recentlyClosed.has(x.asset) || recentlyClosedMkt.has(mkey0(x.title))) continue;   // кулдаун
-    cands.push({
-      asset: x.asset, title: x.title, side: x.outcome, cur, avg,
-      cv, yield_, lag, mkey: (x.title || "").replace(/\?.*/, "").slice(0, 40), isSingle,
-      topAddr: t.address, topPnl: Math.round(t.actual_pnl || 0),
-      topLabel: "top$" + Math.round((t.actual_pnl || 0) / 1000) + "k",
-      cat: category(x.title), conv: cv, fresh: false,
-    });
+    if (recentlyClosed.has(asset) || recentlyClosedMkt.has(mkey0(f.title))) continue;
+    if (f.usd < MIN_LEADER_USD) continue;
+    raw.push({ asset, title: f.title, side: f.outcome, cur: m.cur, avg: f.price, usd: f.usd,
+      topAddr: t.address, topPnl: Math.round(t.actual_pnl || 0), topLabel: "top$" + Math.round((t.actual_pnl || 0) / 1000) + "k 🔥", cat: category(f.title) });
   }
 }
-// приоритет: консенсус по рынку (несколько топов) → большая конвикция → больший yield
-const byMarket = {};
-for (const c of cands) { (byMarket[c.mkey] = byMarket[c.mkey] || []).push(c); }
-const ranked = [];
-for (const [mk, arr] of Object.entries(byMarket)) {
-  arr.sort((a, b) => (b.fresh - a.fresh) || (b.conv - a.conv));   // свежий вход — представитель рынка
-  const best = arr[0];
-  best.consensus = new Set(arr.map(c => c.topAddr)).size;         // консенсус = число РАЗНЫХ топов
-  best.fresh = arr.some(c => c.fresh);
-  best.conv = arr.reduce((s, c) => s + c.conv, 0);
-  ranked.push(best);
-}
-// приоритет: СВЕЖИЙ вход топа → консенсус разных топов → конвикция → апсайд
-ranked.sort((a, b) => (b.fresh - a.fresh) || (b.consensus - a.consensus) || (b.conv - a.conv) || (b.yield_ - a.yield_));
 
-// диверсификация: не более 3 позиций на категорию
+// дедуп по рынку (один кандидат на рынок, самый свежий крупный)
+const byMkt = {};
+for (const c of raw) { const k = mkey0(c.title); if (!byMkt[k] || c.usd > byMkt[k].usd) byMkt[k] = c; }
+const cands = Object.values(byMkt);
+
+// ── жёсткие фильтры входа (все обязательны) ──
 let deployed = (st.open || []).reduce((a, p) => a + p.cost, 0);
 const catCount = {}; for (const p of (st.open || [])) catCount[p.cat] = (catCount[p.cat] || 0) + 1;
-const topCount = {}; for (const p of (st.open || [])) topCount[p.followAddr] = (topCount[p.followAddr] || 0) + 1;   // сколько уже за каждым топом
-const added = [];
-for (const c of ranked) {
+const topCount = {}; for (const p of (st.open || [])) topCount[p.followAddr] = (topCount[p.followAddr] || 0) + 1;
+const added = [], rej = {};
+const bump = k => rej[k] = (rej[k] || 0) + 1;
+
+for (const c of cands) {
   if ((st.open || []).length >= MAX_OPEN) break;
-  if ((catCount[c.cat] || 0) >= 4) continue;
-  if ((topCount[c.topAddr] || 0) >= 3) continue;   // не больше 3 позиций за одним топом (диверсификация, не кластер)
-  if (heldMarkets.has(mkey0(c.title))) continue;   // страховка от встречной стороны в этом же проходе
-  const size = sizeFor(c.conv, c.topPnl, c.isSingle);
+  const mk = mkey0(c.title);
+  // 1) цена в допустимом диапазоне
+  if (!(c.cur >= PRICE_MIN && c.cur <= PRICE_MAX)) { bump("цена вне 5-95¢"); continue; }
+  // 2) лаг ≤3 п.п. абсолютных от входа лидера
+  if (Math.abs(c.cur - c.avg) > LAG_PP) { bump("лаг >3пп"); continue; }
+  // 3) конфликт: ≥2 лидера на встречной стороне → пропуск
+  if (opposedCount(mk, c.asset) >= 2) { bump("≥2 лидера против"); continue; }
+  // 4) потолки диверсификации
+  if ((catCount[c.cat] || 0) >= MAX_CAT) { bump("потолок категории"); continue; }
+  if ((topCount[c.topAddr] || 0) >= MAX_PER_TOP) { bump("потолок на топа"); continue; }
+  if (heldMarkets.has(mk)) { bump("уже держим рынок"); continue; }
+  // 5) рынок: ≥48ч до резолва + объём ≥ $10k (gamma). Читаем и активный, и closed.
+  let g = await jget(`https://gamma-api.polymarket.com/markets?clob_token_ids=${c.asset}`);
+  let mObj = Array.isArray(g) ? g[0] : g;
+  if (!mObj) { bump("нет данных рынка"); continue; }
+  const end = mObj.endDate ? new Date(mObj.endDate).getTime() : 0;
+  if (!end || (end - Date.now()) < MIN_HOURS * 3600e3) { bump("<48ч до резолва"); continue; }
+  const vol = Number(mObj.volume24hr || mObj.volumeClob || mObj.volume || 0);
+  if (vol && vol < MIN_VOL) { bump("объём <$10k"); continue; }
+  // 6) ликвидность: наш (маленький) ордер не двигает цену >1пп — проверяем глубину asks в пределах 1пп
+  const size = Math.max(1, Math.floor(Math.min(MAX_POS, MAX_EXPOSURE - deployed) / c.cur));
+  if (size < 1 || deployed + size * c.cur > MAX_EXPOSURE + 0.01) { bump("лимит экспозиции 25%"); continue; }
+  const book = await jget(`https://clob.polymarket.com/book?token_id=${c.asset}`);
+  const asks = book ? (book.asks || []).map(o => ({ p: +o.price, s: +o.size })).filter(o => o.p <= c.cur + 0.01) : [];
+  const depth = asks.reduce((a, o) => a + o.s, 0);
+  if (book && depth < size) { bump("мало ликвидности"); continue; }
+  // ── ВХОД ──
   const cost = +(size * c.cur).toFixed(2);
-  if (deployed + cost > MAX_DEPLOY) continue;
   const p = {
-    title: c.title, side: c.side, asset: c.asset,
-    entry: +c.cur.toFixed(3), size, cost,
-    bid: c.cur, value: cost, pnl: 0, cat: c.cat,
-    followAddr: c.topAddr,
-    followLabel: c.topLabel + (c.consensus > 1 ? ` ×${c.consensus}` : ""),
-    ts: new Date().toISOString(),
+    title: c.title, side: c.side, asset: c.asset, entry: +c.cur.toFixed(3), size, cost,
+    bid: c.cur, value: cost, pnl: 0, cat: c.cat, followAddr: c.topAddr,
+    followLabel: c.topLabel, ts: new Date().toISOString(),
   };
   st.open.push(p);
-  heldMarkets.add(mkey0(c.title));
-  deployed += cost;
-  catCount[c.cat] = (catCount[c.cat] || 0) + 1;
-  topCount[c.topAddr] = (topCount[c.topAddr] || 0) + 1;
-  (st.log = st.log || []).push(`ВХОД: «${c.title.slice(0,40)}» ${c.side} @${c.cur.toFixed(2)} $${size} за ${c.topLabel}${c.consensus>1?` (консенсус ×${c.consensus})`:""} yield ${c.yield_.toFixed(0)}%`);
+  heldMarkets.add(mk); deployed += cost;
+  catCount[c.cat] = (catCount[c.cat] || 0) + 1; topCount[c.topAddr] = (topCount[c.topAddr] || 0) + 1;
+  (st.log = st.log || []).push(`ВХОД: «${c.title.slice(0,40)}» ${c.side} @${c.cur.toFixed(3)} $${size} (лаг ${((c.cur-c.avg)*100).toFixed(1)}пп) за ${c.topLabel}`);
   added.push(p);
 }
 
 st.cash = +(st.startBalance - (st.open || []).reduce((a, p) => a + p.cost, 0) - (st.closed || []).reduce((a, c) => a + c.cost, 0) + (st.closed || []).reduce((a, c) => a + (c.exit * c.size), 0)).toFixed(2);
 st.equity = +(st.cash + (st.open || []).reduce((a, p) => a + p.value, 0)).toFixed(2);
+st.peakEquity = Math.max(st.peakEquity || st.startBalance, st.equity);
 st.updated = new Date().toISOString();
 writeFileSync("paper-state.json", JSON.stringify(st, null, 2));
-console.log(`+${added.length} позиций | открыто ${st.open.length} | вложено $${deployed.toFixed(2)} | кэш $${st.cash} | эквити $${st.equity}`);
+const rejStr = Object.entries(rej).map(([k, n]) => k + ":" + n).join(", ");
+console.log(`+${added.length} позиций | кандидатов свежих ${cands.length} | открыто ${st.open.length} | экспозиция $${deployed.toFixed(2)}/${MAX_EXPOSURE.toFixed(0)} | кэш $${st.cash}${rejStr ? " | отказы: " + rejStr : ""}`);
 for (const p of added) console.log(`  ${p.cat.padEnd(9)} ${p.side} @${p.entry} $${p.size}  ${p.title.slice(0,42)}  ← ${p.followLabel}`);

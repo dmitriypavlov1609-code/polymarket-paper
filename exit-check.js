@@ -42,8 +42,33 @@ for (const { p, reason } of exits) {
   closedSet.add(p);
 }
 if (closedSet.size) st.open = (st.open || []).filter(p => !closedSet.has(p));
+
+// ── ЧАСТИЧНЫЙ ТЕЙК-ПРОФИТ: 50% позиции, если цена ≥90¢ и до резолва ещё далеко (>48ч) ──
+let tp = 0;
+for (const p of st.open || []) {
+  if (p.tookProfit) continue;
+  if ((p.bid || p.entry) < 0.88) continue;                 // дешёвый гейт
+  const b = await jget(`https://clob.polymarket.com/book?token_id=${p.asset}`);
+  const bids = b ? (b.bids || []).map(o => +o.price).filter(x => x > 0) : [];
+  const bid = bids.length ? Math.max(...bids) : null;
+  if (bid === null || bid < 0.90) continue;
+  const g = await jget(`https://gamma-api.polymarket.com/markets?clob_token_ids=${p.asset}`);
+  const m = Array.isArray(g) ? g[0] : g;
+  const end = m && m.endDate ? new Date(m.endDate).getTime() : 0;
+  if (!end || (end - Date.now()) < 48 * 3600e3) continue;   // близко к резолву — не частично, а по резолву
+  const half = Math.floor(p.size / 2);
+  if (half < 1) continue;
+  const costHalf = +(p.cost * (half / p.size)).toFixed(2);
+  const proceeds = +(half * bid).toFixed(2);
+  const pnl = +(proceeds - costHalf).toFixed(2);
+  (st.closed = st.closed || []).push({ title: p.title, side: p.side, entry: p.entry, exit: +bid.toFixed(3), size: half, cost: costHalf, pnl, proceeds, entryTs: p.ts || null, exitTs: new Date().toISOString(), followLabel: p.followLabel || "", followAddr: p.followAddr || "", asset: p.asset, reason: "тейк-профит 50% @90¢+" });
+  (st.log = st.log || []).push(`ТЕЙК-ПРОФИТ 50%: «${(p.title || "").slice(0, 34)}» @${bid.toFixed(2)} +$${pnl}`);
+  p.size -= half; p.cost = +(p.cost - costHalf).toFixed(2); p.value = +(p.size * bid).toFixed(2); p.tookProfit = true;
+  tp++;
+}
+
 // пересчёт кэша/эквити
 st.cash = +(st.startBalance - (st.open || []).reduce((a, p) => a + p.cost, 0) - (st.closed || []).reduce((a, c) => a + c.cost, 0) + (st.closed || []).reduce((a, c) => a + (c.exit * c.size), 0)).toFixed(2);
 st.equity = +(st.cash + (st.open || []).reduce((a, p) => a + (p.value || p.cost), 0)).toFixed(2);
 writeFileSync("paper-state.json", JSON.stringify(st, null, 2));
-console.log(`exit-check: держат ${ok} (свежих в грейсе ${skippedFresh}) | закрыто ${closedSet.size}${closedSet.size ? " → " + [...closedSet].map(p => (p.title || "").slice(0, 18)).join(", ") : ""}`);
+console.log(`exit-check: держат ${ok} (свежих в грейсе ${skippedFresh}) | закрыто ${closedSet.size}${tp ? " | тейк-профит " + tp : ""}${closedSet.size ? " → " + [...closedSet].map(p => (p.title || "").slice(0, 18)).join(", ") : ""}`);

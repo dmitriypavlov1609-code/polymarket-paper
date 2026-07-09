@@ -14,6 +14,7 @@ async function cycle() {
   run("git stash -q; git pull -q --no-rebase origin main; git stash pop -q");
   console.log("1) " + run("node exit-check.js"));
   console.log("2) " + run("node paper-update.js").split("\n").pop());
+  console.log("R) " + run("node risk-guard.js"));
   console.log("3) " + run("node paper-enter.js").split("\n")[0]);
   console.log("2b) " + run("node paper-update.js").split("\n").pop());
   console.log("5) " + run("node digest.js"));
