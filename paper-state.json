@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 261.45,
-  "equity": 298.61,
-  "totalPnl": -1.39,
+  "equity": 298.5,
+  "totalPnl": -1.5,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 72991,
+        "book": 73082,
         "wr": 66,
         "overallPnl": 237173,
         "posPnl": 1432
@@ -61,9 +61,9 @@
       "entry": 0.669,
       "size": 16,
       "cost": 10.71,
-      "bid": 0.678,
-      "value": 10.85,
-      "pnl": 0.14,
+      "bid": 0.672,
+      "value": 10.75,
+      "pnl": 0.04,
       "cat": "Спорт",
       "followAddr": "0x1c66c88a4be1ca1081d93c6e1fd5b5b5847ce371",
       "followLabel": "top$177k",
@@ -72,10 +72,10 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 22838,
+        "book": 22924,
         "wr": null,
         "overallPnl": null,
-        "posPnl": -1480
+        "posPnl": -1395
       },
       "topPeak": 11671.3075
     },
@@ -86,9 +86,9 @@
       "entry": 0.888,
       "size": 12,
       "cost": 10.66,
-      "bid": 0.857,
-      "value": 10.28,
-      "pnl": -0.38,
+      "bid": 0.856,
+      "value": 10.27,
+      "pnl": -0.39,
       "cat": "Прочее",
       "followAddr": "0xd1091712f4ed0e17261feb174f5c080977506fa0",
       "followLabel": "top$173k",
@@ -97,10 +97,10 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 244622,
+        "book": 244605,
         "wr": 57,
         "overallPnl": 172863,
-        "posPnl": -159
+        "posPnl": -161
       },
       "topPeak": 3133.6404
     },
@@ -815,12 +815,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 95354,
+      "book": 95570,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 7806,
+          "usd": 7834,
           "cat": "Крипта"
         },
         {
@@ -841,7 +841,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 596073,
+      "book": 595724,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -856,9 +856,9 @@
           "cat": "Крипта"
         },
         {
-          "m": "Bitcoin dip to $57,500 in July",
+          "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 24802,
+          "usd": 24630,
           "cat": "Крипта"
         }
       ]
@@ -867,7 +867,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 238619,
+      "book": 238640,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -897,7 +897,7 @@
     "trades": 31,
     "winrate": 23
   },
-  "updated": "2026-07-09T20:00:31.322Z",
+  "updated": "2026-07-09T20:06:16.887Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -946,9 +946,9 @@
     {
       "label": "top$177k",
       "addr": "0x1c66…e371",
-      "total": 0.14,
+      "total": 0.04,
       "realized": 0,
-      "unreal": 0.14,
+      "unreal": 0.04,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1001,9 +1001,9 @@
     {
       "label": "top$173k",
       "addr": "0xd109…6fa0",
-      "total": -0.38,
+      "total": -0.39,
       "realized": 0,
-      "unreal": -0.38,
+      "unreal": -0.39,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1441,12 +1441,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-08T01:42:06.377Z",
-      "eq": 307.99,
-      "pnl": 7.99,
-      "open": 5
-    },
     {
       "t": "2026-07-08T01:48:05.426Z",
       "eq": 308,
@@ -3839,6 +3833,12 @@
       "t": "2026-07-09T20:00:07.062Z",
       "eq": 298.61,
       "pnl": -1.39,
+      "open": 5
+    },
+    {
+      "t": "2026-07-09T20:06:06.754Z",
+      "eq": 298.5,
+      "pnl": -1.5,
       "open": 5
     }
   ],
