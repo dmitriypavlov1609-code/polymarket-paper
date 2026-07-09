@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🐋 Whale Paper Trading — как это работает</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--abyss:#061220;--abyss-2:#0a1c30;--surface:#0e2440;--surface-2:#122c4d;--line:#1c3d63;--line-soft:#16324f;
+  --foam:#e9f2fa;--mist:#8aa5bd;--glow:#63e6ff;--glow-dim:rgba(99,230,255,.14);--up:#35d69a;--down:#ff6b87;--amber:#f5b95c;
+  --mono:'JetBrains Mono',monospace;--body:'Manrope',sans-serif;--display:'Unbounded','Manrope',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--body);color:var(--foam);overflow:hidden;height:100vh;
+  background:radial-gradient(1200px 600px at 75% -10%,rgba(99,230,255,.08),transparent 60%),
+    radial-gradient(900px 500px at -10% 40%,rgba(53,214,154,.06),transparent 55%),
+    linear-gradient(180deg,var(--abyss-2) 0%,var(--abyss) 55%,#040c17 100%);-webkit-font-smoothing:antialiased}
+.deck{height:100vh;position:relative}
+.slide{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;
+  padding:6vh 8vw;opacity:0;transition:opacity .4s}
+.slide.on{display:flex;opacity:1;animation:fade .5s}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.kicker{font-family:var(--mono);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--glow);margin-bottom:18px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(30px,6vw,64px);line-height:1.05;letter-spacing:-.01em}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(24px,4.2vw,44px);line-height:1.1;margin-bottom:26px}
+.lead{font-size:clamp(16px,2.2vw,22px);color:var(--mist);max-width:900px;line-height:1.6;margin-top:22px}
+.grid{display:grid;gap:16px;margin-top:10px}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:linear-gradient(180deg,var(--surface),rgba(14,36,64,.6));border:1px solid var(--line-soft);
+  border-radius:16px;padding:22px 24px}
+.card .t{font-family:var(--display);font-weight:600;font-size:19px;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.card .d{color:var(--mist);font-size:15px;line-height:1.55}
+.card b{color:var(--foam)} .card .num{font-family:var(--mono);color:var(--glow)}
+.mono{font-family:var(--mono)}
+.pill{display:inline-block;font-family:var(--mono);font-size:13px;color:var(--glow);background:var(--glow-dim);
+  border:1px solid var(--glow);border-radius:999px;padding:6px 14px;margin:4px 6px 4px 0}
+.pill.g{color:var(--up);background:rgba(53,214,154,.12);border-color:var(--up)}
+.pill.a{color:var(--amber);background:rgba(245,185,92,.12);border-color:var(--amber)}
+.flow{font-family:var(--mono);font-size:clamp(12px,1.5vw,16px);color:var(--mist);line-height:2;
+  background:rgba(10,28,48,.6);border:1px solid var(--line-soft);border-radius:14px;padding:22px 26px;margin-top:14px;white-space:pre-wrap}
+.flow .h{color:var(--glow)} .flow .u{color:var(--up)}
+ul{list-style:none;margin-top:10px} li{padding:9px 0;font-size:clamp(15px,2vw,19px);color:var(--foam);display:flex;gap:12px;align-items:flex-start}
+li::before{content:"▸";color:var(--glow);font-weight:700} li b{color:var(--glow)} li span{color:var(--mist)}
+.big{font-family:var(--mono);font-weight:700;font-size:clamp(26px,5vw,48px);color:var(--glow);margin-top:6px}
+.sonar{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-size:32px;
+  background:radial-gradient(circle at 50% 40%,#12314f,#0a1c30 70%);border:1px solid var(--line);margin-bottom:24px}
+.foot{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:space-between;
+  padding:16px 8vw;font-family:var(--mono);font-size:12px;color:var(--mist)}
+.dots{display:flex;gap:8px} .dot{width:8px;height:8px;border-radius:50%;background:var(--line);cursor:pointer;transition:.2s}
+.dot.on{background:var(--glow);width:22px;border-radius:6px}
+.nav{font-family:var(--mono);font-size:12px;color:var(--mist)} .nav b{color:var(--foam)}
+.arrow{position:fixed;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:rgba(10,28,48,.6);color:var(--foam);cursor:pointer;font-size:20px;
+  display:grid;place-items:center;z-index:5;user-select:none}
+.arrow:hover{border-color:var(--glow);color:var(--glow)} .arrow.l{left:20px} .arrow.r{right:20px}
+@media(max-width:700px){.g2,.g3{grid-template-columns:1fr}.arrow{display:none}}
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+  <section class="slide">
+    <div class="sonar">🐋</div>
+    <div class="kicker">Copy-trading на Polymarket · Paper $300</div>
+    <h1>Whale Paper Trading</h1>
+    <div class="lead">Автономный агент, который следует за проверенными успешными трейдерами прогнозных рынков и копирует их сделки с жёстким риск-менеджментом. Цель — не максимум прибыли, а <b style="color:var(--glow)">стабильный +EV при контролируемых просадках</b>.</div>
+    <div style="margin-top:30px"><span class="pill">24/7 автономно</span><span class="pill g">дисциплина &gt; активность</span><span class="pill a">сохранение капитала</span></div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">01 · Идея</div>
+    <h2>За кем и как мы идём</h2>
+    <div class="grid g2">
+      <div class="card"><div class="t">🎯 Кого копируем</div><div class="d">Топ-<b>10 лидеров</b> по «копируемости»: стабильный ROI, <span class="num">loss&lt;13%</span>, направленные (не маркет-мейкеры). Пересматриваем каждый цикл.</div></div>
+      <div class="card"><div class="t">⚡ Что копируем</div><div class="d">Только <b>СВЕЖИЕ входы</b> лидера — когда он ТОЛЬКО купил и цена ещё у его цены. Эдж не съеден рынком.</div></div>
+      <div class="card"><div class="t">🚫 Что НЕ берём</div><div class="d">Лайв-матчи (монетки), догон-фавориты, тонкие рынки, крайние цены. Даже трейдер №1 теряет на лайв-матчах.</div></div>
+      <div class="card"><div class="t">💰 На чём</div><div class="d">Виртуальные <span class="num">$300</span> (paper-режим). Реальные средства не задействованы — сначала доказываем стратегию.</div></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">02 · Инфраструктура</div>
+    <h2>Где всё крутится</h2>
+    <div class="grid g2">
+      <div class="card"><div class="t">🖥 Сервер (VPS, Москва)</div><div class="d"><b>CRON</b> каждые <span class="num">6 минут</span> запускает торговый цикл. <b>xray</b> — прокси для обхода геоблока Polymarket. Всё лёгкое: только cron + прокси.</div></div>
+      <div class="card"><div class="t">☁️ Vercel</div><div class="d">Витрина — дашборд из <b>3 страниц</b>. Читает данные напрямую из raw GitHub, обновляется каждые <span class="num">20 сек</span> без пересборки.</div></div>
+    </div>
+    <div class="lead">Важно: <b style="color:var(--glow)">данные и дизайн разделены</b> — данные живут в git, интерфейс на Vercel. Поэтому правки не мешают торговле, а перегруз сервера исключён.</div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">03 · Движок</div>
+    <h2>Один движок — 6 модулей</h2>
+    <div class="lead" style="margin-top:0;margin-bottom:8px">Каждые 6 минут <span class="mono" style="color:var(--glow)">cycle.js</span> по очереди запускает:</div>
+    <ul>
+      <li><b>exit-check</b> <span>— вышел ли лидер → выходим следом · тейк-профит 50% на ≥90¢</span></li>
+      <li><b>paper-update</b> <span>— марка цен, резолвы, показатели китов, статистика, кривая эквити</span></li>
+      <li><b>risk-guard</b> <span>— лимиты день 3% / неделя 8% / просадка 15% → стоп</span></li>
+      <li><b>paper-enter</b> <span>— сканит лидерборд, ищет свежие качественные входы по спеку</span></li>
+      <li><b>digest</b> <span>— часовая сводка</span></li>
+      <li><b>git pull → push</b> <span>— подтягивает правки, публикует данные</span></li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">04 · Поток данных</div>
+    <h2>Как данные ходят</h2>
+    <div class="flow"><span class="h">polycop.fun</span>      → лидерборд трейдеров
+<span class="h">data-api.polymarket</span> → позиции и сделки лидеров      ┐
+<span class="h">clob.polymarket</span>     → стакан (ликвидность)          ├→ ДВИЖОК (6 мин)
+<span class="h">gamma-api</span>           → резолвы рынков                ┘        │
+                                                          │ git push
+                                                          ▼
+                          <span class="u">paper-state.json</span>  →  GitHub (raw)
+                                                          │
+                                          дашборд читает каждые 20с ◄┘</div>
+    <div class="lead"><span class="mono" style="color:var(--up)">paper-state.json</span> — единственный источник истины. Живёт на сервере, публикуется в GitHub, оттуда его напрямую тянет дашборд.</div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">05 · Стратегия</div>
+    <h2>Правила входа (все обязательны)</h2>
+    <div class="grid g3">
+      <div class="card"><div class="t">📅 Время</div><div class="d">≥ <span class="num">48ч</span> до резолва · свежая сделка лидера · лаг ≤ <span class="num">3 п.п.</span> от его цены</div></div>
+      <div class="card"><div class="t">💧 Рынок</div><div class="d">Цена <span class="num">5–95¢</span> · объём ≥ <span class="num">$10k</span> · глубина стакана (ордер не двигает цену)</div></div>
+      <div class="card"><div class="t">🤝 Консенсус</div><div class="d">Нет конфликта: если ≥2 лидера на встречной стороне — пропуск</div></div>
+    </div>
+    <div style="margin-top:18px"><span class="pill">размер ≤ 2% банка</span><span class="pill">экспозиция ≤ 25%</span><span class="pill">≤ 3 на категорию</span><span class="pill">никакого мартингейла</span></div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">06 · Риск</div>
+    <h2>Три рубежа защиты</h2>
+    <div class="grid g3">
+      <div class="card"><div class="t">🛑 День</div><div class="big">−3%</div><div class="d">убыток за сутки → стоп на 24 часа</div></div>
+      <div class="card"><div class="t">🛑 Неделя</div><div class="big">−8%</div><div class="d">→ стоп до конца недели + отчёт</div></div>
+      <div class="card"><div class="t">🛑 Просадка</div><div class="big">−15%</div><div class="d">от пика → полная остановка, ручное возобновление</div></div>
+    </div>
+    <div class="lead">При любой техошибке (не проверить ликвидность, сбой API) — <b style="color:var(--glow)">сделка отменяется</b>, а не исполняется вслепую. Правила всегда важнее возможной прибыли.</div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">07 · Интерфейс</div>
+    <h2>Дашборд — 3 страницы</h2>
+    <div class="grid g3">
+      <div class="card"><div class="t">📈 Дашборд</div><div class="d">Метрики + риск-плашка + текущие ставки таблицей с <b>входом кита и его показателями</b> (цена, капитал, WR, PnL)</div></div>
+      <div class="card"><div class="t">📊 Статистика</div><div class="d">Графики: кривая эквити, заработок по китам, категории. P&L по топам, закрытые сделки, журнал</div></div>
+      <div class="card"><div class="t">🐋 Киты</div><div class="d">По каждому киту — сколько заработали, на чём и когда. Лидерборд с сортировкой</div></div>
+    </div>
+    <div class="lead">Тёмная неоновая тема, данные live каждые 20 секунд.</div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Итог</div>
+    <h1>Дисциплина, а не азарт</h1>
+    <div class="lead">Автономный агент, который <b style="color:var(--glow)">проверяет рынок каждые 6 минут</b>, входит только в качественные сигналы лидеров, жёстко режет риск и честно показывает результат. Нет сигнала — сидит на кэше. Сохранение капитала важнее любой отдельной сделки.</div>
+    <div style="margin-top:28px"><span class="pill g">✓ автономно 24/7</span><span class="pill g">✓ 6 модулей, 1 движок</span><span class="pill g">✓ 3 рубежа риска</span><span class="pill g">✓ полная прозрачность</span></div>
+    <div class="lead mono" style="font-size:14px;color:var(--amber);margin-top:24px">PAPER MODE — виртуальные сделки. Прогнозные рынки несут риск полной потери капитала.</div>
+  </section>
+
+</div>
+
+<div class="arrow l" onclick="go(-1)">‹</div>
+<div class="arrow r" onclick="go(1)">›</div>
+<div class="foot">
+  <div class="nav">🐋 Whale Paper Trading · <b id="cur">1</b>/<span id="tot">10</span></div>
+  <div class="dots" id="dots"></div>
+  <div class="nav">← → для навигации</div>
+</div>
+
+<script>
+const sl=[...document.querySelectorAll(".slide")];let i=0;
+const dots=document.getElementById("dots");
+sl.forEach((_,k)=>{const d=document.createElement("div");d.className="dot";d.onclick=()=>show(k);dots.appendChild(d)});
+document.getElementById("tot").textContent=sl.length;
+function show(k){i=Math.max(0,Math.min(sl.length-1,k));sl.forEach((s,n)=>s.classList.toggle("on",n===i));
+  [...dots.children].forEach((d,n)=>d.classList.toggle("on",n===i));document.getElementById("cur").textContent=i+1}
+function go(d){show(i+d)}
+addEventListener("keydown",e=>{if(e.key==="ArrowRight"||e.key===" ")go(1);if(e.key==="ArrowLeft")go(-1)});
+let sx=0;addEventListener("touchstart",e=>sx=e.touches[0].clientX);
+addEventListener("touchend",e=>{const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)go(dx<0?1:-1)});
+show(0);
+</script>
+</body>
+</html>
