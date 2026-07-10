@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 261.45,
-  "equity": 294.52,
-  "totalPnl": -5.48,
+  "cash": 257.97,
+  "equity": 293.31,
+  "totalPnl": -6.69,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 44347,
+        "book": 44348,
         "wr": 66,
         "overallPnl": 237011,
         "posPnl": 1568
@@ -47,7 +47,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 307665,
+        "book": 313460,
         "wr": 65,
         "overallPnl": 1498983,
         "posPnl": 5959
@@ -86,9 +86,9 @@
       "entry": 0.888,
       "size": 12,
       "cost": 10.66,
-      "bid": 0.881,
-      "value": 10.57,
-      "pnl": -0.09,
+      "bid": 0.871,
+      "value": 10.45,
+      "pnl": -0.21,
       "cat": "Прочее",
       "followAddr": "0xd1091712f4ed0e17261feb174f5c080977506fa0",
       "followLabel": "top$173k",
@@ -97,37 +97,36 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 50176,
+        "book": 50135,
         "wr": 56,
         "overallPnl": 171759,
-        "posPnl": -40
+        "posPnl": -82
       },
       "topPeak": 3133.6404
     },
     {
-      "title": "Will Novak Djokovic be the 2026 Men’s Wimbledon winner?",
-      "side": "Yes",
-      "asset": "76401283960595615390184184900688459220932027979297923774897873075255891504243",
-      "entry": 0.114,
-      "size": 52,
-      "cost": 5.93,
-      "bid": 0.047,
-      "value": 2.44,
-      "pnl": -3.49,
+      "title": "Wimbledon ATP: Jannik Sinner vs Novak Djokovic",
+      "side": "Novak Djokovic",
+      "asset": "1959412866692185789324499315644486550124994570117004262795754352991182983341",
+      "entry": 0.085,
+      "size": 69,
+      "cost": 5.87,
+      "bid": 0.07,
+      "value": 4.83,
+      "pnl": -1.04,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
-      "followLabel": "top464k",
-      "ts": "2026-07-09T19:09:33.587Z",
+      "followLabel": "top$1499k 🔥",
+      "ts": "2026-07-10T16:06:14.926Z",
       "follow": {
-        "label": "top464k",
+        "label": "top$1499k 🔥",
         "addr": "0x6501…1220",
-        "entry": 0.146,
-        "book": 307665,
+        "entry": 0.117,
+        "book": 313460,
         "wr": 65,
         "overallPnl": 1498983,
-        "posPnl": -5932
-      },
-      "topPeak": 9154.9127
+        "posPnl": -3510
+      }
     }
   ],
   "closed": [
@@ -577,6 +576,22 @@
       "followAddr": "0xa6a872ded6039c17a9e5c81b706c04e76fbeba32",
       "asset": "12937069564920440485423856944961863118985999089649348190709599100219960110712",
       "reason": "замена на качество (освободить спорт-слот)"
+    },
+    {
+      "title": "Will Novak Djokovic be the 2026 Men’s Wimbledon winner?",
+      "side": "Yes",
+      "entry": 0.114,
+      "exit": 0.046,
+      "size": 52,
+      "cost": 5.93,
+      "pnl": -3.54,
+      "proceeds": 2.39,
+      "entryTs": "2026-07-09T19:09:33.587Z",
+      "exitTs": "2026-07-10T16:06:03.563Z",
+      "followLabel": "top464k",
+      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
+      "asset": "76401283960595615390184184900688459220932027979297923774897873075255891504243",
+      "reason": "топ сократил >50% ($9155→$3501)"
     }
   ],
   "log": [
@@ -742,7 +757,9 @@
     "ВЫХОД вслед за топом (топ сократил >50% ($3635→$1622)): «S&P 500 (SPX) Up or Down on July 9?» @0.61 $-0.36",
     "ЗАКРЫТО (замена на качество): «President Trump to Attend World » $-0.15",
     "ЗАКРЫТО (замена на качество): «UFC 329: Max Holloway vs. Conor » $-0.15",
-    "ВХОД: «Djokovic выиграет Уимблдон» Yes @0.114 $52 (лаг -3.3пп, ниже цены лидера) за top464k"
+    "ВХОД: «Djokovic выиграет Уимблдон» Yes @0.114 $52 (лаг -3.3пп, ниже цены лидера) за top464k",
+    "ВЫХОД вслед за топом (топ сократил >50% ($9155→$3501)): «Will Novak Djokovic be the 2026 Men’» @0.05 $-3.54",
+    "ВХОД: «Wimbledon ATP: Jannik Sinner vs Novak Dj» Novak Djokovic @0.085 $69 (лаг -0.2пп) за top$1499k 🔥"
   ],
   "tops": [
     {
@@ -815,18 +832,18 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 91063,
+      "book": 89486,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8380,
+          "usd": 8394,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 5825,
+          "usd": 5792,
           "cat": "Крипта"
         },
         {
@@ -841,8 +858,14 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 703717,
+      "book": 702833,
       "top": [
+        {
+          "m": "Bitcoin be above $64,000 on July 10",
+          "side": "YES",
+          "usd": 65767,
+          "cat": "Крипта"
+        },
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
@@ -852,13 +875,7 @@
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 39676,
-          "cat": "Крипта"
-        },
-        {
-          "m": "Bitcoin dip to $57,500 in July",
-          "side": "NO",
-          "usd": 31625,
+          "usd": 39453,
           "cat": "Крипта"
         }
       ]
@@ -867,7 +884,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 242114,
+      "book": 242016,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -891,13 +908,13 @@
     }
   ],
   "stats": {
-    "day": -0.3,
-    "week": -1.5,
-    "month": -1.5,
-    "trades": 31,
-    "winrate": 23
+    "day": -3.84,
+    "week": -5.04,
+    "month": -5.04,
+    "trades": 32,
+    "winrate": 22
   },
-  "updated": "2026-07-10T16:00:14.858Z",
+  "updated": "2026-07-10T16:06:18.117Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -966,17 +983,6 @@
       "losses": 1
     },
     {
-      "label": "top$173k",
-      "addr": "0xd109…6fa0",
-      "total": -0.09,
-      "realized": 0,
-      "unreal": -0.09,
-      "open": 1,
-      "closed": 0,
-      "wins": 0,
-      "losses": 0
-    },
-    {
       "label": "top-UFC $417k (лотерейка)",
       "addr": "0xa6a8…ba32",
       "total": -0.15,
@@ -986,6 +992,17 @@
       "closed": 1,
       "wins": 0,
       "losses": 1
+    },
+    {
+      "label": "top$173k",
+      "addr": "0xd109…6fa0",
+      "total": -0.21,
+      "realized": 0,
+      "unreal": -0.21,
+      "open": 1,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
     },
     {
       "label": "top$313k loss3%",
@@ -1032,17 +1049,6 @@
       "losses": 8
     },
     {
-      "label": "top$941k loss10%",
-      "addr": "0x6501…1220",
-      "total": -8.03,
-      "realized": -4.83,
-      "unreal": -3.2,
-      "open": 2,
-      "closed": 2,
-      "wins": 1,
-      "losses": 1
-    },
-    {
       "label": "top$175k",
       "addr": "0x50c8…caa2",
       "total": -8.94,
@@ -1052,6 +1058,17 @@
       "closed": 4,
       "wins": 1,
       "losses": 3
+    },
+    {
+      "label": "top$941k loss10%",
+      "addr": "0x6501…1220",
+      "total": -9.12,
+      "realized": -8.37,
+      "unreal": -0.75,
+      "open": 2,
+      "closed": 3,
+      "wins": 1,
+      "losses": 2
     }
   ],
   "digest": [
@@ -1441,12 +1458,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-08T21:54:06.460Z",
-      "eq": 298.82,
-      "pnl": -1.18,
-      "open": 6
-    },
     {
       "t": "2026-07-08T22:00:07.955Z",
       "eq": 298.82,
@@ -3840,6 +3851,12 @@
       "eq": 294.58,
       "pnl": -5.42,
       "open": 5
+    },
+    {
+      "t": "2026-07-10T16:06:10.766Z",
+      "eq": 294.35,
+      "pnl": -5.65,
+      "open": 4
     }
   ],
   "peakEquity": 301.44
