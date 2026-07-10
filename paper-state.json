@@ -72,10 +72,10 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 24546,
+        "book": 24529,
         "wr": null,
         "overallPnl": null,
-        "posPnl": -2590
+        "posPnl": -2607
       },
       "topPeak": 11824.9897
     },
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 50232,
+        "book": 50256,
         "wr": 56,
         "overallPnl": 171759,
         "posPnl": -106
@@ -826,7 +826,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 89911,
+      "book": 89829,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -852,7 +852,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 602333,
+      "book": 602299,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -878,7 +878,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 242644,
+      "book": 242534,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -908,7 +908,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-10T18:36:08.095Z",
+  "updated": "2026-07-10T18:42:07.899Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1452,12 +1452,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-09T00:36:06.799Z",
-      "eq": 298.85,
-      "pnl": -1.15,
-      "open": 6
-    },
     {
       "t": "2026-07-09T00:42:06.524Z",
       "eq": 298.85,
@@ -3851,11 +3845,17 @@
       "eq": 288.97,
       "pnl": -11.03,
       "open": 4
+    },
+    {
+      "t": "2026-07-10T18:42:05.904Z",
+      "eq": 288.97,
+      "pnl": -11.03,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
   "halt": {
     "reason": "дневной убыток $-9.30 ≥3% банка",
-    "until": "2026-07-11T18:36:05.984Z"
+    "until": "2026-07-11T18:42:05.974Z"
   }
 }
