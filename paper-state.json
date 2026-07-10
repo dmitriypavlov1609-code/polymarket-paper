@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 44469,
+        "book": 44475,
         "wr": 66,
         "overallPnl": 237011,
         "posPnl": 1650
@@ -47,7 +47,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 299362,
+        "book": 297836,
         "wr": 65,
         "overallPnl": 1498983,
         "posPnl": 6347
@@ -826,7 +826,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 90105,
+      "book": 89929,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -852,12 +852,12 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 587342,
+      "book": 594181,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 51991,
+          "usd": 52333,
           "cat": "Крипта"
         },
         {
@@ -878,7 +878,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 242483,
+      "book": 242434,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -908,7 +908,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-10T18:12:08.069Z",
+  "updated": "2026-07-10T18:18:08.753Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1452,12 +1452,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-09T00:12:06.267Z",
-      "eq": 298.85,
-      "pnl": -1.15,
-      "open": 6
-    },
     {
       "t": "2026-07-09T00:18:06.023Z",
       "eq": 298.85,
@@ -3851,11 +3845,17 @@
       "eq": 288.94,
       "pnl": -11.06,
       "open": 4
+    },
+    {
+      "t": "2026-07-10T18:18:06.108Z",
+      "eq": 288.94,
+      "pnl": -11.06,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
   "halt": {
     "reason": "дневной убыток $-9.30 ≥3% банка",
-    "until": "2026-07-11T18:12:06.101Z"
+    "until": "2026-07-11T18:18:06.179Z"
   }
 }
