@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 61637,
+        "book": 61630,
         "wr": 66,
         "overallPnl": 237011,
         "posPnl": 1559
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 49895,
+        "book": 49932,
         "wr": 56,
         "overallPnl": 171759,
         "posPnl": -148
@@ -815,7 +815,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 84240,
+      "book": 84247,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -841,7 +841,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 672093,
+      "book": 671627,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -858,7 +858,7 @@
         {
           "m": "Bitcoin dip to $57,500 in July",
           "side": "NO",
-          "usd": 29497,
+          "usd": 29116,
           "cat": "Крипта"
         }
       ]
@@ -867,7 +867,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 246050,
+      "book": 244216,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -897,7 +897,7 @@
     "trades": 31,
     "winrate": 23
   },
-  "updated": "2026-07-10T10:00:15.429Z",
+  "updated": "2026-07-10T10:06:12.678Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1441,12 +1441,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-08T15:54:07.844Z",
-      "eq": 298.83,
-      "pnl": -1.17,
-      "open": 7
-    },
     {
       "t": "2026-07-08T16:00:08.018Z",
       "eq": 298.73,
@@ -3837,6 +3831,12 @@
     },
     {
       "t": "2026-07-10T10:00:07.630Z",
+      "eq": 297.85,
+      "pnl": -2.15,
+      "open": 5
+    },
+    {
+      "t": "2026-07-10T10:06:05.747Z",
       "eq": 297.85,
       "pnl": -2.15,
       "open": 5
