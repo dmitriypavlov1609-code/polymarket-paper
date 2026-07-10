@@ -47,10 +47,10 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 87528,
+        "book": 87812,
         "wr": 65,
         "overallPnl": 1498983,
-        "posPnl": 10422
+        "posPnl": 10325
       },
       "topPeak": 20517.8836
     },
@@ -72,7 +72,7 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 27603,
+        "book": 27625,
         "wr": null,
         "overallPnl": null,
         "posPnl": -2420
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 47513,
+        "book": 47538,
         "wr": 56,
         "overallPnl": 171759,
         "posPnl": -80
@@ -827,7 +827,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 89312,
+      "book": 89366,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -853,7 +853,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 651505,
+      "book": 651783,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -909,7 +909,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-10T21:54:07.666Z",
+  "updated": "2026-07-10T22:00:08.709Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1453,12 +1453,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-09T03:54:07.892Z",
-      "eq": 298.81,
-      "pnl": -1.19,
-      "open": 7
-    },
     {
       "t": "2026-07-09T04:00:08.832Z",
       "eq": 298.69,
@@ -3852,11 +3846,17 @@
       "eq": 289.63,
       "pnl": -10.37,
       "open": 4
+    },
+    {
+      "t": "2026-07-10T22:00:06.834Z",
+      "eq": 289.63,
+      "pnl": -10.37,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
   "halt": {
     "reason": "дневной убыток $-9.00 ≥3% банка",
-    "until": "2026-07-11T21:54:05.796Z"
+    "until": "2026-07-11T22:00:06.905Z"
   }
 }
