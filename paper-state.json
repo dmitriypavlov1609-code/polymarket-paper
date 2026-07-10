@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 257.97,
-  "equity": 289.96,
-  "totalPnl": -10.04,
+  "cash": 258.38,
+  "equity": 288.85,
+  "totalPnl": -11.15,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 44399,
+        "book": 44373,
         "wr": 66,
         "overallPnl": 237011,
         "posPnl": 1604
@@ -47,7 +47,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 305703,
+        "book": 303165,
         "wr": 65,
         "overallPnl": 1498983,
         "posPnl": 5959
@@ -97,37 +97,12 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 50132,
+        "book": 50177,
         "wr": 56,
         "overallPnl": 171759,
         "posPnl": -106
       },
       "topPeak": 3133.6404
-    },
-    {
-      "title": "Wimbledon ATP: Jannik Sinner vs Novak Djokovic",
-      "side": "Novak Djokovic",
-      "asset": "1959412866692185789324499315644486550124994570117004262795754352991182983341",
-      "entry": 0.085,
-      "size": 69,
-      "cost": 5.87,
-      "bid": 0.022,
-      "value": 1.52,
-      "pnl": -4.35,
-      "cat": "Спорт",
-      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
-      "followLabel": "top$1499k 🔥",
-      "ts": "2026-07-10T16:06:14.926Z",
-      "follow": {
-        "label": "top$1499k 🔥",
-        "addr": "0x6501…1220",
-        "entry": 0.117,
-        "book": 305703,
-        "wr": 65,
-        "overallPnl": 1498983,
-        "posPnl": -13599
-      },
-      "topPeak": 4552.8616
     }
   ],
   "closed": [
@@ -593,6 +568,22 @@
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "asset": "76401283960595615390184184900688459220932027979297923774897873075255891504243",
       "reason": "топ сократил >50% ($9155→$3501)"
+    },
+    {
+      "title": "Wimbledon ATP: Jannik Sinner vs Novak Djokovic",
+      "side": "Novak Djokovic",
+      "entry": 0.085,
+      "exit": 0.006,
+      "size": 69,
+      "cost": 5.87,
+      "pnl": -5.46,
+      "proceeds": 0.41,
+      "entryTs": "2026-07-10T16:06:14.926Z",
+      "exitTs": "2026-07-10T17:06:03.201Z",
+      "followLabel": "top$1499k 🔥",
+      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
+      "asset": "1959412866692185789324499315644486550124994570117004262795754352991182983341",
+      "reason": "топ сократил >50% ($4553→$1662)"
     }
   ],
   "log": [
@@ -760,7 +751,9 @@
     "ЗАКРЫТО (замена на качество): «UFC 329: Max Holloway vs. Conor » $-0.15",
     "ВХОД: «Djokovic выиграет Уимблдон» Yes @0.114 $52 (лаг -3.3пп, ниже цены лидера) за top464k",
     "ВЫХОД вслед за топом (топ сократил >50% ($9155→$3501)): «Will Novak Djokovic be the 2026 Men’» @0.05 $-3.54",
-    "ВХОД: «Wimbledon ATP: Jannik Sinner vs Novak Dj» Novak Djokovic @0.085 $69 (лаг -0.2пп) за top$1499k 🔥"
+    "ВХОД: «Wimbledon ATP: Jannik Sinner vs Novak Dj» Novak Djokovic @0.085 $69 (лаг -0.2пп) за top$1499k 🔥",
+    "ВЫХОД вслед за топом (топ сократил >50% ($4553→$1662)): «Wimbledon ATP: Jannik Sinner vs Nova» @0.01 $-5.46",
+    "⛔ РИСК-СТОП: дневной убыток $-9.30 ≥3% банка → торговля до 2026-07-11T17:06"
   ],
   "tops": [
     {
@@ -833,12 +826,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 90248,
+      "book": 90316,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8318,
+          "usd": 8283,
           "cat": "Крипта"
         },
         {
@@ -848,9 +841,9 @@
           "cat": "Крипта"
         },
         {
-          "m": "Bitcoin dip to $55,000 in July",
+          "m": "Bitcoin dip to $57,500 in July",
           "side": "NO",
-          "usd": 5148,
+          "usd": 5183,
           "cat": "Крипта"
         }
       ]
@@ -859,7 +852,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 581667,
+      "book": 582069,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -876,7 +869,7 @@
         {
           "m": "Bitcoin dip to $57,500 in July",
           "side": "NO",
-          "usd": 31625,
+          "usd": 32044,
           "cat": "Крипта"
         }
       ]
@@ -885,7 +878,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 242898,
+      "book": 242919,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -909,13 +902,13 @@
     }
   ],
   "stats": {
-    "day": -3.84,
-    "week": -5.04,
-    "month": -5.04,
-    "trades": 32,
-    "winrate": 22
+    "day": -9.3,
+    "week": -10.5,
+    "month": -10.5,
+    "trades": 33,
+    "winrate": 21
   },
-  "updated": "2026-07-10T17:00:13.916Z",
+  "updated": "2026-07-10T17:06:08.910Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1063,13 +1056,13 @@
     {
       "label": "top$941k loss10%",
       "addr": "0x6501…1220",
-      "total": -12.43,
-      "realized": -8.37,
-      "unreal": -4.06,
-      "open": 2,
-      "closed": 3,
+      "total": -13.54,
+      "realized": -13.83,
+      "unreal": 0.29,
+      "open": 1,
+      "closed": 4,
       "wins": 1,
-      "losses": 2
+      "losses": 3
     }
   ],
   "digest": [
@@ -1459,12 +1452,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-08T22:54:06.098Z",
-      "eq": 298.86,
-      "pnl": -1.14,
-      "open": 6
-    },
     {
       "t": "2026-07-08T23:00:06.255Z",
       "eq": 298.86,
@@ -3858,7 +3845,17 @@
       "eq": 289.96,
       "pnl": -10.04,
       "open": 5
+    },
+    {
+      "t": "2026-07-10T17:06:06.119Z",
+      "eq": 288.85,
+      "pnl": -11.15,
+      "open": 4
     }
   ],
-  "peakEquity": 301.44
+  "peakEquity": 301.44,
+  "halt": {
+    "reason": "дневной убыток $-9.30 ≥3% банка",
+    "until": "2026-07-11T17:06:06.184Z"
+  }
 }
