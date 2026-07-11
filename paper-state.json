@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 44887,
+        "book": 44902,
         "wr": 66,
         "overallPnl": 238722,
         "posPnl": 2149
@@ -97,10 +97,10 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 47330,
+        "book": 47262,
         "wr": null,
         "overallPnl": null,
-        "posPnl": -180
+        "posPnl": -176
       },
       "topPeak": 3133.6404
     }
@@ -827,7 +827,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 73783,
+      "book": 73786,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -853,12 +853,12 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 671545,
+      "book": 672670,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 50965,
+          "usd": 51649,
           "cat": "Крипта"
         },
         {
@@ -879,7 +879,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 239007,
+      "book": 239102,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -909,7 +909,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-11T08:06:07.457Z",
+  "updated": "2026-07-11T08:12:07.917Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1453,12 +1453,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-09T16:12:07.070Z",
-      "eq": 298.76,
-      "pnl": -1.24,
-      "open": 6
-    },
     {
       "t": "2026-07-09T16:18:07.221Z",
       "eq": 298.76,
@@ -3852,11 +3846,17 @@
       "eq": 289.59,
       "pnl": -10.41,
       "open": 4
+    },
+    {
+      "t": "2026-07-11T08:12:05.908Z",
+      "eq": 289.59,
+      "pnl": -10.41,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
   "halt": {
     "reason": "дневной убыток $-9.00 ≥3% банка",
-    "until": "2026-07-12T08:06:05.946Z"
+    "until": "2026-07-12T08:12:05.969Z"
   }
 }
