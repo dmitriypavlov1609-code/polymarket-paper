@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 258.38,
-  "equity": 289.62,
-  "totalPnl": -10.38,
+  "equity": 289.6,
+  "totalPnl": -10.4,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -86,9 +86,9 @@
       "entry": 0.888,
       "size": 12,
       "cost": 10.66,
-      "bid": 0.853,
-      "value": 10.24,
-      "pnl": -0.42,
+      "bid": 0.852,
+      "value": 10.22,
+      "pnl": -0.44,
       "cat": "Прочее",
       "followAddr": "0xd1091712f4ed0e17261feb174f5c080977506fa0",
       "followLabel": "top$173k",
@@ -827,12 +827,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 74393,
+      "book": 74368,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 6696,
+          "usd": 6699,
           "cat": "Крипта"
         },
         {
@@ -853,12 +853,12 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 662855,
+      "book": 662235,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 51649,
+          "usd": 50965,
           "cat": "Крипта"
         },
         {
@@ -879,7 +879,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 238759,
+      "book": 238699,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -909,7 +909,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-11T06:24:07.395Z",
+  "updated": "2026-07-11T06:30:08.091Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1000,17 +1000,6 @@
       "losses": 4
     },
     {
-      "label": "top$173k",
-      "addr": "0xd109…6fa0",
-      "total": -0.42,
-      "realized": 0,
-      "unreal": -0.42,
-      "open": 1,
-      "closed": 0,
-      "wins": 0,
-      "losses": 0
-    },
-    {
       "label": "top$237k loss12%",
       "addr": "",
       "total": -0.43,
@@ -1020,6 +1009,17 @@
       "closed": 2,
       "wins": 0,
       "losses": 2
+    },
+    {
+      "label": "top$173k",
+      "addr": "0xd109…6fa0",
+      "total": -0.44,
+      "realized": 0,
+      "unreal": -0.44,
+      "open": 1,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
     },
     {
       "label": "top$177k",
@@ -1067,14 +1067,6 @@
     }
   ],
   "digest": [
-    {
-      "ts": "2026-07-09T06:12:16.514Z",
-      "equity": 300.51,
-      "pnl": 0.51,
-      "open": 8,
-      "cash": 237.8,
-      "line": "эквити $300.51 (PnL +$0.51) · открыто 8 · кэш $237.80 · за час закрыто 0 (W0/L0) · лидеры: top$292k 🔥свежий +$4.92, top$647k 🔥свежий ×3 +$4.34 · минус: top$180k 🔥свежий $-7.74, top$941k loss10% $-4.35"
-    },
     {
       "ts": "2026-07-09T07:12:17.208Z",
       "equity": 300.86,
@@ -1450,15 +1442,17 @@
       "open": 4,
       "cash": 258.38,
       "line": "эквити $289.67 (PnL $-10.33) · открыто 4 · кэш $258.38 · за час закрыто 0 (W0/L0) · лидеры: top$292k 🔥свежий +$4.8, top$647k 🔥свежий ×3 +$4.34 · минус: top$941k loss10% $-13.16, top$175k $-8.94"
+    },
+    {
+      "ts": "2026-07-11T06:30:08.158Z",
+      "equity": 289.6,
+      "pnl": -10.4,
+      "open": 4,
+      "cash": 258.38,
+      "line": "эквити $289.60 (PnL $-10.4) · открыто 4 · кэш $258.38 · за час закрыто 0 (W0/L0) · лидеры: top$292k 🔥свежий +$4.8, top$647k 🔥свежий ×3 +$4.34 · минус: top$941k loss10% $-13.16, top$175k $-8.94"
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-09T14:30:07.963Z",
-      "eq": 298.83,
-      "pnl": -1.17,
-      "open": 6
-    },
     {
       "t": "2026-07-09T14:36:07.227Z",
       "eq": 298.83,
@@ -3852,11 +3846,17 @@
       "eq": 289.62,
       "pnl": -10.38,
       "open": 4
+    },
+    {
+      "t": "2026-07-11T06:30:06.174Z",
+      "eq": 289.6,
+      "pnl": -10.4,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
   "halt": {
     "reason": "дневной убыток $-9.00 ≥3% банка",
-    "until": "2026-07-12T06:24:05.987Z"
+    "until": "2026-07-12T06:30:06.246Z"
   }
 }
