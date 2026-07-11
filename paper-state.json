@@ -22,12 +22,12 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 45057,
+        "book": 45079,
         "wr": 66,
         "overallPnl": 238245,
-        "posPnl": 2160
+        "posPnl": 2183
       },
-      "topPeak": 13587.4853
+      "topPeak": 13598.8366
     },
     {
       "title": "Will Spain win the 2026 FIFA World Cup?",
@@ -827,12 +827,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 76005,
+      "book": 76056,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8380,
+          "usd": 8286,
           "cat": "Крипта"
         },
         {
@@ -853,7 +853,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 662359,
+      "book": 662457,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -879,7 +879,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 238594,
+      "book": 238656,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -909,7 +909,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-11T06:12:07.061Z",
+  "updated": "2026-07-11T06:18:07.607Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1453,12 +1453,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-09T14:18:07.539Z",
-      "eq": 298.92,
-      "pnl": -1.08,
-      "open": 6
-    },
     {
       "t": "2026-07-09T14:24:06.788Z",
       "eq": 298.83,
@@ -3852,11 +3846,17 @@
       "eq": 289.62,
       "pnl": -10.38,
       "open": 4
+    },
+    {
+      "t": "2026-07-11T06:18:05.901Z",
+      "eq": 289.62,
+      "pnl": -10.38,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
   "halt": {
     "reason": "дневной убыток $-9.00 ≥3% банка",
-    "until": "2026-07-12T06:12:05.158Z"
+    "until": "2026-07-12T06:18:05.966Z"
   }
 }
