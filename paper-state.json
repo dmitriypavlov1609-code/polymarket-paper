@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 44324,
+        "book": 44312,
         "wr": 66,
         "overallPnl": 238722,
-        "posPnl": 2013
+        "posPnl": 2001
       },
       "topPeak": 15869.0932
     },
@@ -97,10 +97,10 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 45536,
+        "book": 45642,
         "wr": null,
         "overallPnl": null,
-        "posPnl": -187
+        "posPnl": -183
       },
       "topPeak": 3133.6404
     }
@@ -827,12 +827,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 74065,
+      "book": 74534,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 6746,
+          "usd": 6742,
           "cat": "Крипта"
         },
         {
@@ -853,12 +853,12 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 689158,
+      "book": 682937,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 51649,
+          "usd": 50965,
           "cat": "Крипта"
         },
         {
@@ -879,7 +879,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 236108,
+      "book": 236119,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -909,7 +909,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-11T14:30:08.932Z",
+  "updated": "2026-07-11T14:36:08.894Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1453,12 +1453,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-09T22:36:06.090Z",
-      "eq": 297.42,
-      "pnl": -2.58,
-      "open": 5
-    },
     {
       "t": "2026-07-09T22:42:06.218Z",
       "eq": 297.4,
@@ -3852,11 +3846,17 @@
       "eq": 289.28,
       "pnl": -10.72,
       "open": 4
+    },
+    {
+      "t": "2026-07-11T14:36:06.237Z",
+      "eq": 289.28,
+      "pnl": -10.72,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
   "halt": {
     "reason": "дневной убыток $-9.00 ≥3% банка",
-    "until": "2026-07-12T14:30:06.544Z"
+    "until": "2026-07-12T14:36:06.302Z"
   }
 }
