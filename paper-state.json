@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 258.38,
-  "equity": 289.58,
-  "totalPnl": -10.42,
+  "equity": 289.59,
+  "totalPnl": -10.41,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.583,
-      "value": 9.33,
-      "pnl": 0.59,
+      "bid": 0.584,
+      "value": 9.34,
+      "pnl": 0.6,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 45016,
+        "book": 45027,
         "wr": 66,
         "overallPnl": 238722,
-        "posPnl": 2126
+        "posPnl": 2138
       },
       "topPeak": 13632.8905
     },
@@ -97,10 +97,10 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 47328,
+        "book": 47326,
         "wr": null,
         "overallPnl": null,
-        "posPnl": -180
+        "posPnl": -176
       },
       "topPeak": 3133.6404
     }
@@ -827,12 +827,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 74719,
+      "book": 74348,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 6717,
+          "usd": 6699,
           "cat": "Крипта"
         },
         {
@@ -853,7 +853,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 670659,
+      "book": 670849,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -879,7 +879,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 238908,
+      "book": 239740,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -909,7 +909,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-11T07:24:07.113Z",
+  "updated": "2026-07-11T07:30:07.034Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -958,9 +958,9 @@
     {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
-      "total": 0.59,
+      "total": 0.6,
       "realized": 0,
-      "unreal": 0.59,
+      "unreal": 0.6,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1067,14 +1067,6 @@
     }
   ],
   "digest": [
-    {
-      "ts": "2026-07-09T07:12:17.208Z",
-      "equity": 300.86,
-      "pnl": 0.86,
-      "open": 8,
-      "cash": 237.8,
-      "line": "эквити $300.86 (PnL +$0.86) · открыто 8 · кэш $237.80 · за час закрыто 0 (W0/L0) · лидеры: top$292k 🔥свежий +$4.92, top$647k 🔥свежий ×3 +$4.34 · минус: top$180k 🔥свежий $-7.38, top$941k loss10% $-4.35"
-    },
     {
       "ts": "2026-07-09T08:12:18.189Z",
       "equity": 301.73,
@@ -1450,15 +1442,17 @@
       "open": 4,
       "cash": 258.38,
       "line": "эквити $289.60 (PnL $-10.4) · открыто 4 · кэш $258.38 · за час закрыто 0 (W0/L0) · лидеры: top$292k 🔥свежий +$4.8, top$647k 🔥свежий ×3 +$4.34 · минус: top$941k loss10% $-13.16, top$175k $-8.94"
+    },
+    {
+      "ts": "2026-07-11T07:30:07.099Z",
+      "equity": 289.59,
+      "pnl": -10.41,
+      "open": 4,
+      "cash": 258.38,
+      "line": "эквити $289.59 (PnL $-10.41) · открыто 4 · кэш $258.38 · за час закрыто 0 (W0/L0) · лидеры: top$292k 🔥свежий +$4.8, top$647k 🔥свежий ×3 +$4.34 · минус: top$941k loss10% $-13.16, top$175k $-8.94"
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-09T15:30:07.155Z",
-      "eq": 298.74,
-      "pnl": -1.26,
-      "open": 6
-    },
     {
       "t": "2026-07-09T15:36:23.184Z",
       "eq": 298.74,
@@ -3852,11 +3846,17 @@
       "eq": 289.58,
       "pnl": -10.42,
       "open": 4
+    },
+    {
+      "t": "2026-07-11T07:30:05.460Z",
+      "eq": 289.59,
+      "pnl": -10.41,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
   "halt": {
     "reason": "дневной убыток $-9.00 ≥3% банка",
-    "until": "2026-07-12T07:24:05.566Z"
+    "until": "2026-07-12T07:30:05.529Z"
   }
 }
