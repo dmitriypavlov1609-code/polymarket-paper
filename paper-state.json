@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 44650,
+        "book": 44661,
         "wr": 66,
         "overallPnl": 238245,
-        "posPnl": 1842
+        "posPnl": 1854
       },
       "topPeak": 13269.6494
     },
@@ -47,12 +47,12 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 89907,
+        "book": 90004,
         "wr": 65,
         "overallPnl": 1549776,
-        "posPnl": 10519
+        "posPnl": 10616
       },
-      "topPeak": 20517.8836
+      "topPeak": 20614.8948
     },
     {
       "title": "Will France win the 2026 FIFA World Cup?",
@@ -72,7 +72,7 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 27268,
+        "book": 27273,
         "wr": null,
         "overallPnl": null,
         "posPnl": -2370
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 47458,
+        "book": 47449,
         "wr": 56,
         "overallPnl": 169717,
         "posPnl": -72
@@ -827,7 +827,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 74546,
+      "book": 74503,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -853,7 +853,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 673497,
+      "book": 673519,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -879,7 +879,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 244072,
+      "book": 244088,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -909,7 +909,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-11T02:06:06.800Z",
+  "updated": "2026-07-11T02:12:07.642Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1453,12 +1453,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-09T08:06:07.466Z",
-      "eq": 301.6,
-      "pnl": 1.6,
-      "open": 8
-    },
     {
       "t": "2026-07-09T08:12:07.744Z",
       "eq": 301.73,
@@ -3852,11 +3846,17 @@
       "eq": 289.69,
       "pnl": -10.31,
       "open": 4
+    },
+    {
+      "t": "2026-07-11T02:12:06.193Z",
+      "eq": 289.69,
+      "pnl": -10.31,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
   "halt": {
     "reason": "дневной убыток $-9.00 ≥3% банка",
-    "until": "2026-07-12T02:06:05.374Z"
+    "until": "2026-07-12T02:12:06.259Z"
   }
 }
