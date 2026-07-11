@@ -47,7 +47,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 88006,
+        "book": 88386,
         "wr": 65,
         "overallPnl": 1549873,
         "posPnl": 10519
@@ -72,7 +72,7 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 27186,
+        "book": 27213,
         "wr": null,
         "overallPnl": null,
         "posPnl": -2319
@@ -827,12 +827,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 76056,
+      "book": 74393,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8286,
+          "usd": 6696,
           "cat": "Крипта"
         },
         {
@@ -853,7 +853,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 662457,
+      "book": 662855,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -879,7 +879,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 238656,
+      "book": 238759,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -909,7 +909,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-11T06:18:07.607Z",
+  "updated": "2026-07-11T06:24:07.395Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1453,12 +1453,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-09T14:24:06.788Z",
-      "eq": 298.83,
-      "pnl": -1.17,
-      "open": 6
-    },
     {
       "t": "2026-07-09T14:30:07.963Z",
       "eq": 298.83,
@@ -3852,11 +3846,17 @@
       "eq": 289.62,
       "pnl": -10.38,
       "open": 4
+    },
+    {
+      "t": "2026-07-11T06:24:05.917Z",
+      "eq": 289.62,
+      "pnl": -10.38,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
   "halt": {
     "reason": "дневной убыток $-9.00 ≥3% банка",
-    "until": "2026-07-12T06:18:05.966Z"
+    "until": "2026-07-12T06:24:05.987Z"
   }
 }
