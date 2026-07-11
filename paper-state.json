@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 44742,
+        "book": 44749,
         "wr": 66,
         "overallPnl": 238722,
-        "posPnl": 2421
+        "posPnl": 2433
       },
       "topPeak": 15707.905
     },
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 46576,
+        "book": 46672,
         "wr": null,
         "overallPnl": null,
         "posPnl": -187
@@ -827,7 +827,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 73216,
+      "book": 73195,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -853,7 +853,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 680502,
+      "book": 681285,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -879,7 +879,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 235994,
+      "book": 235984,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -909,7 +909,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-11T12:12:07.772Z",
+  "updated": "2026-07-11T12:18:08.030Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1453,12 +1453,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-09T20:18:06.084Z",
-      "eq": 298.67,
-      "pnl": -1.33,
-      "open": 5
-    },
     {
       "t": "2026-07-09T20:24:06.481Z",
       "eq": 298.45,
@@ -3852,11 +3846,17 @@
       "eq": 289.29,
       "pnl": -10.71,
       "open": 4
+    },
+    {
+      "t": "2026-07-11T12:18:05.561Z",
+      "eq": 289.29,
+      "pnl": -10.71,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
   "halt": {
     "reason": "дневной убыток $-9.00 ≥3% банка",
-    "until": "2026-07-12T12:12:05.850Z"
+    "until": "2026-07-12T12:18:05.623Z"
   }
 }
