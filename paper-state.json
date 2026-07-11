@@ -22,12 +22,12 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 44310,
+        "book": 46691,
         "wr": 66,
         "overallPnl": 238722,
-        "posPnl": 1979
+        "posPnl": 4453
       },
-      "topPeak": 15707.905
+      "topPeak": 15869.0932
     },
     {
       "title": "Will Spain win the 2026 FIFA World Cup?",
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 46589,
+        "book": 46598,
         "wr": null,
         "overallPnl": null,
         "posPnl": -187
@@ -827,7 +827,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 73153,
+      "book": 73108,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -853,7 +853,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 681849,
+      "book": 682351,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -879,7 +879,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 236018,
+      "book": 236029,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -909,7 +909,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-11T12:54:08.411Z",
+  "updated": "2026-07-11T13:00:09.287Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1453,12 +1453,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-09T21:00:07.608Z",
-      "eq": 298.5,
-      "pnl": -1.5,
-      "open": 5
-    },
     {
       "t": "2026-07-09T21:06:06.521Z",
       "eq": 298.56,
@@ -3852,11 +3846,17 @@
       "eq": 289.25,
       "pnl": -10.75,
       "open": 4
+    },
+    {
+      "t": "2026-07-11T13:00:06.580Z",
+      "eq": 289.25,
+      "pnl": -10.75,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
   "halt": {
     "reason": "дневной убыток $-9.00 ≥3% банка",
-    "until": "2026-07-12T12:54:06.298Z"
+    "until": "2026-07-12T13:00:06.646Z"
   }
 }
