@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.58,
-      "value": 9.28,
-      "pnl": 0.54,
+      "bid": 0.582,
+      "value": 9.31,
+      "pnl": 0.57,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 44681,
+        "book": 44722,
         "wr": 66,
         "overallPnl": 238538,
-        "posPnl": 2399
+        "posPnl": 2433
       },
       "topPeak": 16232.3342
     },
@@ -36,9 +36,9 @@
       "entry": 0.127,
       "size": 8,
       "cost": 1.02,
-      "bid": 0.2,
-      "value": 1.6,
-      "pnl": 0.58,
+      "bid": 0.199,
+      "value": 1.59,
+      "pnl": 0.57,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k loss10%",
@@ -47,10 +47,10 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 93782,
+        "book": 93685,
         "wr": 64,
         "overallPnl": 1590709,
-        "posPnl": 9452
+        "posPnl": 9355
       },
       "topPeak": 21099.9512
     },
@@ -61,9 +61,9 @@
       "entry": 0.669,
       "size": 16,
       "cost": 10.71,
-      "bid": 0.613,
-      "value": 9.81,
-      "pnl": -0.9,
+      "bid": 0.612,
+      "value": 9.79,
+      "pnl": -0.92,
       "cat": "Спорт",
       "followAddr": "0x1c66c88a4be1ca1081d93c6e1fd5b5b5847ce371",
       "followLabel": "top$177k",
@@ -72,7 +72,7 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 18482,
+        "book": 18476,
         "wr": null,
         "overallPnl": null,
         "posPnl": -2590
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 22320,
+        "book": 22328,
         "wr": 56,
         "overallPnl": 166346,
         "posPnl": -330
@@ -827,7 +827,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 75529,
+      "book": 75478,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -853,12 +853,12 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 670558,
+      "book": 670702,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 53017,
+          "usd": 52675,
           "cat": "Крипта"
         },
         {
@@ -879,7 +879,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 228573,
+      "book": 228574,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -909,7 +909,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-12T05:36:07.831Z",
+  "updated": "2026-07-12T05:42:07.954Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -958,9 +958,9 @@
     {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
-      "total": 0.54,
+      "total": 0.57,
       "realized": 0,
-      "unreal": 0.54,
+      "unreal": 0.57,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1013,9 +1013,9 @@
     {
       "label": "top$177k",
       "addr": "0x1c66…e371",
-      "total": -0.9,
+      "total": -0.92,
       "realized": 0,
-      "unreal": -0.9,
+      "unreal": -0.92,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1057,9 +1057,9 @@
     {
       "label": "top$941k loss10%",
       "addr": "0x6501…1220",
-      "total": -13.25,
+      "total": -13.26,
       "realized": -13.83,
-      "unreal": 0.58,
+      "unreal": 0.57,
       "open": 1,
       "closed": 4,
       "wins": 1,
@@ -1453,12 +1453,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-10T13:42:06.563Z",
-      "eq": 298.06,
-      "pnl": -1.94,
-      "open": 5
-    },
     {
       "t": "2026-07-10T13:48:06.048Z",
       "eq": 298.17,
@@ -3849,6 +3843,12 @@
     },
     {
       "t": "2026-07-12T05:36:06.075Z",
+      "eq": 288.81,
+      "pnl": -11.19,
+      "open": 4
+    },
+    {
+      "t": "2026-07-12T05:42:06.238Z",
       "eq": 288.81,
       "pnl": -11.19,
       "open": 4
