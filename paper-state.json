@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 44592,
+        "book": 44640,
         "wr": 66,
         "overallPnl": 238538,
-        "posPnl": 2353
+        "posPnl": 2342
       },
       "topPeak": 16232.3342
     },
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 22285,
+        "book": 22237,
         "wr": 56,
         "overallPnl": 166346,
         "posPnl": -316
@@ -827,12 +827,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 74445,
+      "book": 74394,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8808,
+          "usd": 8813,
           "cat": "Крипта"
         },
         {
@@ -853,7 +853,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 675696,
+      "book": 676594,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -879,7 +879,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 228596,
+      "book": 228563,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -909,7 +909,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-12T06:48:07.248Z",
+  "updated": "2026-07-12T06:54:08.636Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1453,12 +1453,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-10T14:54:06.085Z",
-      "eq": 297.71,
-      "pnl": -2.29,
-      "open": 5
-    },
     {
       "t": "2026-07-10T15:00:06.881Z",
       "eq": 297.75,
@@ -3849,6 +3843,12 @@
     },
     {
       "t": "2026-07-12T06:48:05.672Z",
+      "eq": 288.83,
+      "pnl": -11.17,
+      "open": 4
+    },
+    {
+      "t": "2026-07-12T06:54:06.519Z",
       "eq": 288.83,
       "pnl": -11.17,
       "open": 4
