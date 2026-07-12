@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 258.38,
-  "equity": 289.03,
-  "totalPnl": -10.97,
+  "equity": 289.02,
+  "totalPnl": -10.98,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 44597,
+        "book": 44611,
         "wr": 66,
         "overallPnl": 238538,
         "posPnl": 2308
@@ -61,9 +61,9 @@
       "entry": 0.669,
       "size": 16,
       "cost": 10.71,
-      "bid": 0.614,
-      "value": 9.82,
-      "pnl": -0.89,
+      "bid": 0.613,
+      "value": 9.81,
+      "pnl": -0.9,
       "cat": "Спорт",
       "followAddr": "0x1c66c88a4be1ca1081d93c6e1fd5b5b5847ce371",
       "followLabel": "top$177k",
@@ -827,7 +827,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 76392,
+      "book": 76792,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -853,7 +853,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 713452,
+      "book": 713491,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -870,7 +870,7 @@
         {
           "m": "Bitcoin reach $66,000 July 6-12",
           "side": "NO",
-          "usd": 35269,
+          "usd": 35416,
           "cat": "Крипта"
         }
       ]
@@ -909,7 +909,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-12T10:54:08.968Z",
+  "updated": "2026-07-12T11:00:08.915Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1024,9 +1024,9 @@
     {
       "label": "top$177k",
       "addr": "0x1c66…e371",
-      "total": -0.89,
+      "total": -0.9,
       "realized": 0,
-      "unreal": -0.89,
+      "unreal": -0.9,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1453,12 +1453,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-10T19:00:06.359Z",
-      "eq": 288.95,
-      "pnl": -11.05,
-      "open": 4
-    },
     {
       "t": "2026-07-10T19:06:05.330Z",
       "eq": 288.92,
@@ -3851,6 +3845,12 @@
       "t": "2026-07-12T10:54:06.141Z",
       "eq": 289.03,
       "pnl": -10.97,
+      "open": 4
+    },
+    {
+      "t": "2026-07-12T11:00:06.217Z",
+      "eq": 289.02,
+      "pnl": -10.98,
       "open": 4
     }
   ],
