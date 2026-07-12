@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 253.83,
-  "equity": 284.28,
-  "totalPnl": -15.72,
+  "cash": 242.93,
+  "equity": 283.81,
+  "totalPnl": -16.19,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.58,
-      "value": 9.28,
-      "pnl": 0.54,
+      "bid": 0.578,
+      "value": 9.25,
+      "pnl": 0.51,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 71059,
+        "book": 71041,
         "wr": 66,
         "overallPnl": 238538,
-        "posPnl": 1979
+        "posPnl": 1956
       },
       "topPeak": 16232.3342
     },
@@ -97,12 +97,60 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 21981,
+        "book": 22047,
         "wr": 56,
         "overallPnl": 166346,
-        "posPnl": -330
+        "posPnl": -325
       },
       "topPeak": 3133.6404
+    },
+    {
+      "title": "Arizona Diamondbacks vs. Los Angeles Dodgers",
+      "side": "Los Angeles Dodgers",
+      "asset": "60139972300221913536069675166642347490255868023069085808053866317554669881968",
+      "entry": 0.755,
+      "size": 7,
+      "cost": 5.29,
+      "bid": 0.74,
+      "value": 5.18,
+      "pnl": -0.11,
+      "cat": "Спорт",
+      "followAddr": "0x69c5c6f6a4dda665991c203bc8d5df3e006b1e01",
+      "followLabel": "top$268k 🔥",
+      "ts": "2026-07-12T21:54:10.482Z",
+      "follow": {
+        "label": "top$268k 🔥",
+        "addr": "0x69c5…1e01",
+        "entry": 0.757,
+        "book": 91679,
+        "wr": 46,
+        "overallPnl": 267741,
+        "posPnl": -62
+      }
+    },
+    {
+      "title": "Will Samuel Alito announce his retirement by September 30, 2026?",
+      "side": "Yes",
+      "asset": "102963946476301464155846348149714317918722387635971948099097519511899201326439",
+      "entry": 0.17,
+      "size": 33,
+      "cost": 5.61,
+      "bid": 0.16,
+      "value": 5.28,
+      "pnl": -0.33,
+      "cat": "Прочее",
+      "followAddr": "0x69c5c6f6a4dda665991c203bc8d5df3e006b1e01",
+      "followLabel": "top$268k 🔥",
+      "ts": "2026-07-12T21:54:10.624Z",
+      "follow": {
+        "label": "top$268k 🔥",
+        "addr": "0x69c5…1e01",
+        "entry": 0.173,
+        "book": 91679,
+        "wr": 46,
+        "overallPnl": 267741,
+        "posPnl": -571
+      }
     }
   ],
   "closed": [
@@ -773,7 +821,9 @@
     "⛔ РИСК-СТОП: дневной убыток $-9.00 ≥3% банка → торговля до 2026-07-11T19:12",
     "✅ Риск-стоп снят — лимиты в норме, торговля возобновлена",
     "ВХОД: «Wimbledon ATP: Jannik Sinner vs Alexande» Alexander Zverev @0.405 $14 (лаг 0.5пп) за top$1591k 🔥",
-    "ВЫХОД вслед за топом (топ сократил >50% ($24739→$8246)): «Wimbledon ATP: Jannik Sinner vs Alex» @0.08 $-4.55"
+    "ВЫХОД вслед за топом (топ сократил >50% ($24739→$8246)): «Wimbledon ATP: Jannik Sinner vs Alex» @0.08 $-4.55",
+    "ВХОД: «Arizona Diamondbacks vs. Los Angeles Dod» Los Angeles Dodgers @0.755 $7 (лаг -0.2пп) за top$268k 🔥",
+    "ВХОД: «Will Samuel Alito announce his retiremen» Yes @0.170 $33 (лаг 1.3пп) за top$268k 🔥"
   ],
   "tops": [
     {
@@ -846,12 +896,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 84217,
+      "book": 84138,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8786,
+          "usd": 8827,
           "cat": "Крипта"
         },
         {
@@ -863,7 +913,7 @@
         {
           "m": "Bitcoin dip to $55,000 in July",
           "side": "NO",
-          "usd": 6210,
+          "usd": 6140,
           "cat": "Крипта"
         }
       ]
@@ -872,12 +922,12 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 668309,
+      "book": 668054,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 52333,
+          "usd": 53017,
           "cat": "Крипта"
         },
         {
@@ -889,7 +939,7 @@
         {
           "m": "Bitcoin reach $66,000 July 6-12",
           "side": "NO",
-          "usd": 35608,
+          "usd": 35766,
           "cat": "Крипта"
         }
       ]
@@ -898,7 +948,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 227796,
+      "book": 227707,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -928,7 +978,7 @@
     "trades": 34,
     "winrate": 21
   },
-  "updated": "2026-07-12T21:48:12.846Z",
+  "updated": "2026-07-12T21:54:14.086Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -977,9 +1027,9 @@
     {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
-      "total": 0.54,
+      "total": 0.51,
       "realized": 0,
-      "unreal": 0.54,
+      "unreal": 0.51,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1028,6 +1078,17 @@
       "closed": 2,
       "wins": 0,
       "losses": 2
+    },
+    {
+      "label": "top$268k 🔥",
+      "addr": "0x69c5…1e01",
+      "total": -0.44,
+      "realized": 0,
+      "unreal": -0.44,
+      "open": 2,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
     },
     {
       "label": "top$173k",
@@ -1472,12 +1533,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-11T05:48:05.888Z",
-      "eq": 289.57,
-      "pnl": -10.43,
-      "open": 4
-    },
     {
       "t": "2026-07-11T05:54:06.360Z",
       "eq": 289.57,
@@ -3870,6 +3925,12 @@
       "t": "2026-07-12T21:48:06.402Z",
       "eq": 284.26,
       "pnl": -15.74,
+      "open": 4
+    },
+    {
+      "t": "2026-07-12T21:54:06.512Z",
+      "eq": 284.25,
+      "pnl": -15.75,
       "open": 4
     }
   ],
