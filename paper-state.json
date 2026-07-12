@@ -1,6 +1,6 @@
 {
   "startBalance": 300,
-  "cash": 252.71,
+  "cash": 253.83,
   "equity": 284.25,
   "totalPnl": -15.75,
   "open": [
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 44602,
+        "book": 44618,
         "wr": 66,
         "overallPnl": 238538,
         "posPnl": 2319
@@ -47,7 +47,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 157941,
+        "book": 149235,
         "wr": 64,
         "overallPnl": 1590709,
         "posPnl": 9452
@@ -97,37 +97,12 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 21432,
+        "book": 21092,
         "wr": 56,
         "overallPnl": 166346,
         "posPnl": -333
       },
       "topPeak": 3133.6404
-    },
-    {
-      "title": "Wimbledon ATP: Jannik Sinner vs Alexander Zverev",
-      "side": "Alexander Zverev",
-      "asset": "11136519494712022976764044225367902156688884544497870522015602622698913523968",
-      "entry": 0.405,
-      "size": 14,
-      "cost": 5.67,
-      "bid": 0.08,
-      "value": 1.12,
-      "pnl": -4.55,
-      "cat": "Спорт",
-      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
-      "followLabel": "top$1591k 🔥",
-      "ts": "2026-07-12T16:30:10.588Z",
-      "follow": {
-        "label": "top$1591k 🔥",
-        "addr": "0x6501…1220",
-        "entry": 0.4,
-        "book": 157941,
-        "wr": 64,
-        "overallPnl": 1590709,
-        "posPnl": -21808
-      },
-      "topPeak": 24738.9288
     }
   ],
   "closed": [
@@ -609,6 +584,22 @@
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "asset": "1959412866692185789324499315644486550124994570117004262795754352991182983341",
       "reason": "топ сократил >50% ($4553→$1662)"
+    },
+    {
+      "title": "Wimbledon ATP: Jannik Sinner vs Alexander Zverev",
+      "side": "Alexander Zverev",
+      "entry": 0.405,
+      "exit": 0.08,
+      "size": 14,
+      "cost": 5.67,
+      "pnl": -4.55,
+      "proceeds": 1.12,
+      "entryTs": "2026-07-12T16:30:10.588Z",
+      "exitTs": "2026-07-12T18:12:03.093Z",
+      "followLabel": "top$1591k 🔥",
+      "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
+      "asset": "11136519494712022976764044225367902156688884544497870522015602622698913523968",
+      "reason": "топ сократил >50% ($24739→$8246)"
     }
   ],
   "log": [
@@ -781,7 +772,8 @@
     "⛔ РИСК-СТОП: дневной убыток $-9.30 ≥3% банка → торговля до 2026-07-11T17:06",
     "⛔ РИСК-СТОП: дневной убыток $-9.00 ≥3% банка → торговля до 2026-07-11T19:12",
     "✅ Риск-стоп снят — лимиты в норме, торговля возобновлена",
-    "ВХОД: «Wimbledon ATP: Jannik Sinner vs Alexande» Alexander Zverev @0.405 $14 (лаг 0.5пп) за top$1591k 🔥"
+    "ВХОД: «Wimbledon ATP: Jannik Sinner vs Alexande» Alexander Zverev @0.405 $14 (лаг 0.5пп) за top$1591k 🔥",
+    "ВЫХОД вслед за топом (топ сократил >50% ($24739→$8246)): «Wimbledon ATP: Jannik Sinner vs Alex» @0.08 $-4.55"
   ],
   "tops": [
     {
@@ -854,7 +846,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 81629,
+      "book": 81651,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -880,7 +872,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 653710,
+      "book": 654403,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -897,7 +889,7 @@
         {
           "m": "Bitcoin reach $66,000 July 6-12",
           "side": "NO",
-          "usd": 35514,
+          "usd": 35608,
           "cat": "Крипта"
         }
       ]
@@ -906,7 +898,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 231327,
+      "book": 231326,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -930,13 +922,13 @@
     }
   ],
   "stats": {
-    "day": 0,
-    "week": -10.5,
-    "month": -10.5,
-    "trades": 33,
+    "day": -4.55,
+    "week": -15.05,
+    "month": -15.05,
+    "trades": 34,
     "winrate": 21
   },
-  "updated": "2026-07-12T18:06:13.201Z",
+  "updated": "2026-07-12T18:12:12.845Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1085,12 +1077,12 @@
       "label": "top$941k loss10%",
       "addr": "0x6501…1220",
       "total": -17.8,
-      "realized": -13.83,
-      "unreal": -3.97,
-      "open": 2,
-      "closed": 4,
+      "realized": -18.38,
+      "unreal": 0.58,
+      "open": 1,
+      "closed": 5,
       "wins": 1,
-      "losses": 3
+      "losses": 4
     }
   ],
   "digest": [
@@ -1480,12 +1472,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-11T02:12:06.193Z",
-      "eq": 289.69,
-      "pnl": -10.31,
-      "open": 4
-    },
     {
       "t": "2026-07-11T02:18:05.972Z",
       "eq": 289.68,
@@ -3879,6 +3865,12 @@
       "eq": 284.25,
       "pnl": -15.75,
       "open": 5
+    },
+    {
+      "t": "2026-07-12T18:12:05.767Z",
+      "eq": 284.25,
+      "pnl": -15.75,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
