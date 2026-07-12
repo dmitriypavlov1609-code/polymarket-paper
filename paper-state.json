@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 44635,
+        "book": 44594,
         "wr": 66,
         "overallPnl": 238538,
         "posPnl": 2308
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 22063,
+        "book": 22051,
         "wr": 56,
         "overallPnl": 166346,
         "posPnl": -305
@@ -827,7 +827,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 78029,
+      "book": 78079,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -844,7 +844,7 @@
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 5994,
+          "usd": 6003,
           "cat": "Крипта"
         }
       ]
@@ -853,7 +853,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 712305,
+      "book": 712277,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -879,7 +879,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 228961,
+      "book": 228958,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -909,7 +909,7 @@
     "trades": 33,
     "winrate": 21
   },
-  "updated": "2026-07-12T11:48:08.062Z",
+  "updated": "2026-07-12T11:54:07.416Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1453,12 +1453,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-10T19:54:06.538Z",
-      "eq": 288.77,
-      "pnl": -11.23,
-      "open": 4
-    },
     {
       "t": "2026-07-10T20:00:06.467Z",
       "eq": 288.75,
@@ -3849,6 +3843,12 @@
     },
     {
       "t": "2026-07-12T11:48:06.107Z",
+      "eq": 289.01,
+      "pnl": -10.99,
+      "open": 4
+    },
+    {
+      "t": "2026-07-12T11:54:05.618Z",
       "eq": 289.01,
       "pnl": -10.99,
       "open": 4
