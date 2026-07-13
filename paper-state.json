@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 71229,
+        "book": 71240,
         "wr": null,
         "overallPnl": null,
         "posPnl": 1979
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 22173,
+        "book": 22174,
         "wr": null,
         "overallPnl": null,
         "posPnl": -312
@@ -122,7 +122,7 @@
         "label": "top$268k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.178,
-        "book": 66373,
+        "book": 66355,
         "wr": 47,
         "overallPnl": 288836,
         "posPnl": 1723
@@ -890,7 +890,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 81004,
+      "book": 81028,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -916,7 +916,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 603946,
+      "book": 603545,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -942,7 +942,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 197782,
+      "book": 197722,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -972,7 +972,7 @@
     "trades": 35,
     "winrate": 20
   },
-  "updated": "2026-07-13T07:42:13.488Z",
+  "updated": "2026-07-13T07:48:13.506Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1527,12 +1527,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-11T15:42:05.781Z",
-      "eq": 289.36,
-      "pnl": -10.64,
-      "open": 4
-    },
     {
       "t": "2026-07-11T15:48:05.436Z",
       "eq": 289.36,
@@ -3923,6 +3917,12 @@
     },
     {
       "t": "2026-07-13T07:42:05.678Z",
+      "eq": 280.72,
+      "pnl": -19.28,
+      "open": 5
+    },
+    {
+      "t": "2026-07-13T07:48:06.713Z",
       "eq": 280.72,
       "pnl": -19.28,
       "open": 5
