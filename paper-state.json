@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 244.26,
-  "equity": 279.75,
-  "totalPnl": -20.25,
+  "cash": 238.73,
+  "equity": 279.73,
+  "totalPnl": -20.27,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 71251,
+        "book": 71243,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 1922
+        "posPnl": 1933
       },
       "topPeak": 16232.3342
     },
@@ -47,7 +47,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.103,
-        "book": 86536,
+        "book": 86156,
         "wr": 65,
         "overallPnl": 1657893,
         "posPnl": 10228
@@ -72,7 +72,7 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 17903,
+        "book": 17874,
         "wr": null,
         "overallPnl": null,
         "posPnl": -2625
@@ -122,12 +122,36 @@
         "label": "top$268k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.178,
-        "book": 56732,
+        "book": 58034,
         "wr": 49,
         "overallPnl": 296419,
         "posPnl": -5542
       },
       "topPeak": 52067.532
+    },
+    {
+      "title": "Will LeBron James play for the Philadelphia 76ers in 2026-27?",
+      "side": "Yes",
+      "asset": "75083988390277121768686920804826665792234222050775941532408375203298640433019",
+      "entry": 0.108,
+      "size": 51,
+      "cost": 5.53,
+      "bid": 0.108,
+      "value": 5.51,
+      "pnl": -0.02,
+      "cat": "Прочее",
+      "followAddr": "0x69c5c6f6a4dda665991c203bc8d5df3e006b1e01",
+      "followLabel": "top$296k 🔥",
+      "ts": "2026-07-13T13:54:10.753Z",
+      "follow": {
+        "label": "top$296k 🔥",
+        "addr": "0x69c5…1e01",
+        "entry": 0.125,
+        "book": 58034,
+        "wr": 49,
+        "overallPnl": 296419,
+        "posPnl": -737
+      }
     }
   ],
   "closed": [
@@ -817,7 +841,8 @@
     "ВЫХОД вслед за топом (топ сократил >50% ($24739→$8246)): «Wimbledon ATP: Jannik Sinner vs Alex» @0.08 $-4.55",
     "ВХОД: «Arizona Diamondbacks vs. Los Angeles Dod» Los Angeles Dodgers @0.755 $7 (лаг -0.2пп) за top$268k 🔥",
     "ВХОД: «Will Samuel Alito announce his retiremen» Yes @0.170 $33 (лаг 1.3пп) за top$268k 🔥",
-    "ВЫХОД вслед за топом (топ сократил >50% ($15689→$6441)): «Arizona Diamondbacks vs. Los Angeles» @0.19 $-3.96"
+    "ВЫХОД вслед за топом (топ сократил >50% ($15689→$6441)): «Arizona Diamondbacks vs. Los Angeles» @0.19 $-3.96",
+    "ВХОД: «Will LeBron James play for the Philadelp» Yes @0.108 $51 (лаг -1.2пп) за top$296k 🔥"
   ],
   "tops": [
     {
@@ -890,12 +915,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 85603,
+      "book": 87116,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 9073,
+          "usd": 9082,
           "cat": "Крипта"
         },
         {
@@ -916,12 +941,12 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 534412,
+      "book": 530660,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 59858,
+          "usd": 60542,
           "cat": "Крипта"
         },
         {
@@ -942,7 +967,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 201367,
+      "book": 198950,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -972,7 +997,7 @@
     "trades": 35,
     "winrate": 20
   },
-  "updated": "2026-07-13T13:48:13.806Z",
+  "updated": "2026-07-13T13:54:14.161Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1109,10 +1134,10 @@
     {
       "label": "top$268k 🔥",
       "addr": "0x69c5…1e01",
-      "total": -4.62,
+      "total": -4.64,
       "realized": -3.96,
-      "unreal": -0.66,
-      "open": 1,
+      "unreal": -0.68,
+      "open": 2,
       "closed": 1,
       "wins": 0,
       "losses": 1
@@ -1527,12 +1552,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-11T21:48:05.864Z",
-      "eq": 289.18,
-      "pnl": -10.82,
-      "open": 4
-    },
     {
       "t": "2026-07-11T21:54:05.981Z",
       "eq": 289.19,
@@ -3923,6 +3942,12 @@
     },
     {
       "t": "2026-07-13T13:48:06.564Z",
+      "eq": 279.75,
+      "pnl": -20.25,
+      "open": 5
+    },
+    {
+      "t": "2026-07-13T13:54:06.806Z",
       "eq": 279.75,
       "pnl": -20.25,
       "open": 5
