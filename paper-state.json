@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 92710,
+        "book": 92739,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 2281
+        "posPnl": 2269
       },
       "topPeak": 16232.3342
     },
@@ -97,10 +97,10 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 21883,
+        "book": 21932,
         "wr": null,
         "overallPnl": null,
-        "posPnl": -483
+        "posPnl": -485
       },
       "topPeak": 3133.6404
     },
@@ -122,7 +122,7 @@
         "label": "top$268k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.178,
-        "book": 58845,
+        "book": 58693,
         "wr": 49,
         "overallPnl": 296419,
         "posPnl": -5542
@@ -147,10 +147,10 @@
         "label": "top$296k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.125,
-        "book": 58845,
+        "book": 58693,
         "wr": 49,
         "overallPnl": 296419,
-        "posPnl": -1282
+        "posPnl": -1434
       },
       "topPeak": 5032.8836
     }
@@ -916,7 +916,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 86630,
+      "book": 87237,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -933,7 +933,7 @@
         {
           "m": "Bitcoin dip to $55,000 in July",
           "side": "NO",
-          "usd": 5539,
+          "usd": 5471,
           "cat": "Крипта"
         }
       ]
@@ -942,7 +942,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 485193,
+      "book": 485854,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -968,7 +968,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 198664,
+      "book": 200042,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -998,7 +998,7 @@
     "trades": 35,
     "winrate": 20
   },
-  "updated": "2026-07-13T16:36:14.303Z",
+  "updated": "2026-07-13T16:42:14.043Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1553,12 +1553,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-12T00:36:05.257Z",
-      "eq": 288.91,
-      "pnl": -11.09,
-      "open": 4
-    },
     {
       "t": "2026-07-12T00:42:05.677Z",
       "eq": 288.93,
@@ -3949,6 +3943,12 @@
     },
     {
       "t": "2026-07-13T16:36:07.554Z",
+      "eq": 278.2,
+      "pnl": -21.8,
+      "open": 6
+    },
+    {
+      "t": "2026-07-13T16:42:06.789Z",
       "eq": 278.2,
       "pnl": -21.8,
       "open": 6
