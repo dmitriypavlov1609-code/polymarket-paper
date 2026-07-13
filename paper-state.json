@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.503,
-        "book": 71193,
+        "book": 71226,
         "wr": 66,
         "overallPnl": 238538,
-        "posPnl": 1956
+        "posPnl": 1945
       },
       "topPeak": 16232.3342
     },
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 22187,
+        "book": 22235,
         "wr": 56,
         "overallPnl": 166346,
         "posPnl": -319
@@ -122,7 +122,7 @@
         "label": "top$268k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.173,
-        "book": 60781,
+        "book": 60771,
         "wr": 46,
         "overallPnl": 267741,
         "posPnl": -5351
@@ -890,7 +890,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 86299,
+      "book": 86324,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -916,7 +916,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 669765,
+      "book": 669993,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -933,7 +933,7 @@
         {
           "m": "Bitcoin reach $66,000 July 6-12",
           "side": "NO",
-          "usd": 36740,
+          "usd": 36774,
           "cat": "Крипта"
         }
       ]
@@ -972,7 +972,7 @@
     "trades": 35,
     "winrate": 20
   },
-  "updated": "2026-07-12T23:54:13.147Z",
+  "updated": "2026-07-13T00:00:15.461Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1527,12 +1527,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-11T07:54:05.293Z",
-      "eq": 289.55,
-      "pnl": -10.45,
-      "open": 4
-    },
     {
       "t": "2026-07-11T08:00:05.916Z",
       "eq": 289.57,
@@ -3923,6 +3917,12 @@
     },
     {
       "t": "2026-07-12T23:54:06.191Z",
+      "eq": 279.33,
+      "pnl": -20.67,
+      "open": 5
+    },
+    {
+      "t": "2026-07-13T00:00:06.425Z",
       "eq": 279.33,
       "pnl": -20.67,
       "open": 5
