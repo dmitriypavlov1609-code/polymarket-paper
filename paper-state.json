@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 238.73,
-  "equity": 278.29,
-  "totalPnl": -21.71,
+  "equity": 278.31,
+  "totalPnl": -21.69,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.61,
-      "value": 9.76,
-      "pnl": 1.02,
+      "bid": 0.611,
+      "value": 9.78,
+      "pnl": 1.04,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 93220,
+        "book": 93240,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 2614
+        "posPnl": 2626
       },
       "topPeak": 16232.3342
     },
@@ -72,7 +72,7 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 18461,
+        "book": 18423,
         "wr": null,
         "overallPnl": null,
         "posPnl": -2642
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 22112,
+        "book": 22138,
         "wr": null,
         "overallPnl": null,
         "posPnl": -493
@@ -122,7 +122,7 @@
         "label": "top$268k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.178,
-        "book": 56096,
+        "book": 54384,
         "wr": 49,
         "overallPnl": 296419,
         "posPnl": -5542
@@ -147,7 +147,7 @@
         "label": "top$296k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.125,
-        "book": 56096,
+        "book": 54384,
         "wr": 49,
         "overallPnl": 296419,
         "posPnl": -1827
@@ -843,7 +843,8 @@
     "ВХОД: «Arizona Diamondbacks vs. Los Angeles Dod» Los Angeles Dodgers @0.755 $7 (лаг -0.2пп) за top$268k 🔥",
     "ВХОД: «Will Samuel Alito announce his retiremen» Yes @0.170 $33 (лаг 1.3пп) за top$268k 🔥",
     "ВЫХОД вслед за топом (топ сократил >50% ($15689→$6441)): «Arizona Diamondbacks vs. Los Angeles» @0.19 $-3.96",
-    "ВХОД: «Will LeBron James play for the Philadelp» Yes @0.108 $51 (лаг -1.2пп) за top$296k 🔥"
+    "ВХОД: «Will LeBron James play for the Philadelp» Yes @0.108 $51 (лаг -1.2пп) за top$296k 🔥",
+    "⛔ РИСК-СТОП: недельный убыток $-27.97 ≥8% банка → торговля до 2026-07-19T23:59"
   ],
   "tops": [
     {
@@ -916,7 +917,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 96795,
+      "book": 96868,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -942,7 +943,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 501503,
+      "book": 500688,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -968,7 +969,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 197105,
+      "book": 196847,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -993,12 +994,12 @@
   ],
   "stats": {
     "day": -3.96,
-    "week": -22.37,
+    "week": -27.97,
     "month": -19.01,
     "trades": 35,
     "winrate": 20
   },
-  "updated": "2026-07-13T21:12:13.618Z",
+  "updated": "2026-07-13T21:18:10.431Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1047,9 +1048,9 @@
     {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
-      "total": 1.02,
+      "total": 1.04,
       "realized": 0,
-      "unreal": 1.02,
+      "unreal": 1.04,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1553,12 +1554,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-12T05:12:05.426Z",
-      "eq": 288.84,
-      "pnl": -11.16,
-      "open": 4
-    },
     {
       "t": "2026-07-12T05:18:06.255Z",
       "eq": 288.81,
@@ -3952,8 +3947,17 @@
       "eq": 278.29,
       "pnl": -21.71,
       "open": 6
+    },
+    {
+      "t": "2026-07-13T21:18:07.399Z",
+      "eq": 278.31,
+      "pnl": -21.69,
+      "open": 6
     }
   ],
   "peakEquity": 301.44,
-  "halt": null
+  "halt": {
+    "reason": "недельный убыток $-27.97 ≥8% банка",
+    "until": "2026-07-19T23:59:00.000Z"
+  }
 }
