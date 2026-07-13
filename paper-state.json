@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 92892,
+        "book": 92882,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 2331
+        "posPnl": 2306
       },
       "topPeak": 16232.3342
     },
@@ -72,7 +72,7 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.765,
-        "book": 17841,
+        "book": 17835,
         "wr": null,
         "overallPnl": null,
         "posPnl": -2625
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 22246,
+        "book": 22238,
         "wr": null,
         "overallPnl": null,
         "posPnl": -490
@@ -122,7 +122,7 @@
         "label": "top$268k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.178,
-        "book": 60556,
+        "book": 60562,
         "wr": 49,
         "overallPnl": 296419,
         "posPnl": -3120
@@ -147,7 +147,7 @@
         "label": "top$296k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.125,
-        "book": 60556,
+        "book": 60562,
         "wr": 49,
         "overallPnl": 296419,
         "posPnl": -1434
@@ -916,12 +916,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 96373,
+      "book": 95192,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 9101,
+          "usd": 9082,
           "cat": "Крипта"
         },
         {
@@ -942,7 +942,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 476996,
+      "book": 484155,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -968,7 +968,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 202140,
+      "book": 201978,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -998,7 +998,7 @@
     "trades": 35,
     "winrate": 20
   },
-  "updated": "2026-07-13T18:42:13.197Z",
+  "updated": "2026-07-13T18:48:13.886Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1553,12 +1553,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-12T02:42:05.497Z",
-      "eq": 288.89,
-      "pnl": -11.11,
-      "open": 4
-    },
     {
       "t": "2026-07-12T02:48:06.051Z",
       "eq": 288.9,
@@ -3949,6 +3943,12 @@
     },
     {
       "t": "2026-07-13T18:42:06.144Z",
+      "eq": 278.82,
+      "pnl": -21.18,
+      "open": 6
+    },
+    {
+      "t": "2026-07-13T18:48:06.727Z",
       "eq": 278.82,
       "pnl": -21.18,
       "open": 6
