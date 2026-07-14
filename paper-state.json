@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 238.73,
-  "equity": 275.38,
-  "totalPnl": -24.62,
+  "cash": 241.54,
+  "equity": 275.01,
+  "totalPnl": -24.99,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.591,
-      "value": 9.46,
-      "pnl": 0.72,
+      "bid": 0.592,
+      "value": 9.47,
+      "pnl": 0.73,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 92997,
+        "book": 93011,
         "wr": null,
         "overallPnl": null,
         "posPnl": 2405
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 22126,
+        "book": 22116,
         "wr": 55,
         "overallPnl": 144072,
         "posPnl": -664
@@ -111,9 +111,9 @@
       "entry": 0.17,
       "size": 33,
       "cost": 5.61,
-      "bid": 0.12,
-      "value": 3.96,
-      "pnl": -1.65,
+      "bid": 0.11,
+      "value": 3.63,
+      "pnl": -1.98,
       "cat": "Прочее",
       "followAddr": "0x69c5c6f6a4dda665991c203bc8d5df3e006b1e01",
       "followLabel": "top$268k 🔥",
@@ -122,37 +122,12 @@
         "label": "top$268k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.178,
-        "book": 78847,
+        "book": 75860,
         "wr": null,
         "overallPnl": null,
-        "posPnl": -12807
+        "posPnl": -15229
       },
       "topPeak": 52067.532
-    },
-    {
-      "title": "Will LeBron James play for the Philadelphia 76ers in 2026-27?",
-      "side": "Yes",
-      "asset": "75083988390277121768686920804826665792234222050775941532408375203298640433019",
-      "entry": 0.108,
-      "size": 51,
-      "cost": 5.53,
-      "bid": 0.056,
-      "value": 2.86,
-      "pnl": -2.67,
-      "cat": "Прочее",
-      "followAddr": "0x69c5c6f6a4dda665991c203bc8d5df3e006b1e01",
-      "followLabel": "top$296k 🔥",
-      "ts": "2026-07-13T13:54:10.753Z",
-      "follow": {
-        "label": "top$296k 🔥",
-        "addr": "0x69c5…1e01",
-        "entry": 0.125,
-        "book": 78847,
-        "wr": null,
-        "overallPnl": null,
-        "posPnl": -2894
-      },
-      "topPeak": 5032.8836
     }
   ],
   "closed": [
@@ -666,6 +641,22 @@
       "followAddr": "0x69c5c6f6a4dda665991c203bc8d5df3e006b1e01",
       "asset": "60139972300221913536069675166642347490255868023069085808053866317554669881968",
       "reason": "топ сократил >50% ($15689→$6441)"
+    },
+    {
+      "title": "Will LeBron James play for the Philadelphia 76ers in 2026-27?",
+      "side": "Yes",
+      "entry": 0.108,
+      "exit": 0.055,
+      "size": 51,
+      "cost": 5.53,
+      "pnl": -2.72,
+      "proceeds": 2.81,
+      "entryTs": "2026-07-13T13:54:10.753Z",
+      "exitTs": "2026-07-14T17:12:03.917Z",
+      "followLabel": "top$296k 🔥",
+      "followAddr": "0x69c5c6f6a4dda665991c203bc8d5df3e006b1e01",
+      "asset": "75083988390277121768686920804826665792234222050775941532408375203298640433019",
+      "reason": "топ сократил >50% ($5033→$2440)"
     }
   ],
   "log": [
@@ -844,7 +835,8 @@
     "ВХОД: «Will Samuel Alito announce his retiremen» Yes @0.170 $33 (лаг 1.3пп) за top$268k 🔥",
     "ВЫХОД вслед за топом (топ сократил >50% ($15689→$6441)): «Arizona Diamondbacks vs. Los Angeles» @0.19 $-3.96",
     "ВХОД: «Will LeBron James play for the Philadelp» Yes @0.108 $51 (лаг -1.2пп) за top$296k 🔥",
-    "⛔ РИСК-СТОП: недельный убыток $-27.97 ≥8% банка → торговля до 2026-07-19T23:59"
+    "⛔ РИСК-СТОП: недельный убыток $-27.97 ≥8% банка → торговля до 2026-07-19T23:59",
+    "ВЫХОД вслед за топом (топ сократил >50% ($5033→$2440)): «Will LeBron James play for the Phila» @0.06 $-2.72"
   ],
   "tops": [
     {
@@ -917,12 +909,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 93884,
+      "book": 94007,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 8874,
+          "usd": 8878,
           "cat": "Крипта"
         },
         {
@@ -943,7 +935,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 585635,
+      "book": 592183,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -954,7 +946,7 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 49522,
+          "usd": 50205,
           "cat": "Крипта"
         },
         {
@@ -969,7 +961,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 189686,
+      "book": 190117,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -993,13 +985,13 @@
     }
   ],
   "stats": {
-    "day": 0,
-    "week": -51.04,
-    "month": -19.01,
-    "trades": 35,
-    "winrate": 20
+    "day": -2.72,
+    "week": -53.76,
+    "month": -21.73,
+    "trades": 36,
+    "winrate": 19
   },
-  "updated": "2026-07-14T17:06:09.495Z",
+  "updated": "2026-07-14T17:12:09.839Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1048,9 +1040,9 @@
     {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
-      "total": 0.72,
+      "total": 0.73,
       "realized": 0,
-      "unreal": 0.72,
+      "unreal": 0.73,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1136,13 +1128,13 @@
     {
       "label": "top$268k 🔥",
       "addr": "0x69c5…1e01",
-      "total": -8.28,
-      "realized": -3.96,
-      "unreal": -4.32,
-      "open": 2,
-      "closed": 1,
+      "total": -8.66,
+      "realized": -6.68,
+      "unreal": -1.98,
+      "open": 1,
+      "closed": 2,
       "wins": 0,
-      "losses": 1
+      "losses": 2
     },
     {
       "label": "top$175k",
@@ -1554,12 +1546,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-13T00:24:06.316Z",
-      "eq": 279.24,
-      "pnl": -20.76,
-      "open": 5
-    },
     {
       "t": "2026-07-13T00:30:06.175Z",
       "eq": 279.27,
@@ -3953,6 +3939,12 @@
       "eq": 275.38,
       "pnl": -24.62,
       "open": 6
+    },
+    {
+      "t": "2026-07-14T17:12:06.931Z",
+      "eq": 275.01,
+      "pnl": -24.99,
+      "open": 5
     }
   ],
   "peakEquity": 301.44,
