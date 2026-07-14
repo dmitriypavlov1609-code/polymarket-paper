@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 92950,
+        "book": 92990,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 2405
+        "posPnl": 2429
       },
       "topPeak": 16232.3342
     },
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 21599,
+        "book": 21597,
         "wr": 55,
         "overallPnl": 144072,
         "posPnl": -758
@@ -917,7 +917,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 97048,
+      "book": 97229,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -943,12 +943,12 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 513876,
+      "book": 514527,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 59085,
+          "usd": 59768,
           "cat": "Крипта"
         },
         {
@@ -969,7 +969,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 192548,
+      "book": 192631,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -999,7 +999,7 @@
     "trades": 35,
     "winrate": 20
   },
-  "updated": "2026-07-14T07:15:09.637Z",
+  "updated": "2026-07-14T07:21:09.561Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1554,12 +1554,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-12T15:06:06.393Z",
-      "eq": 288.98,
-      "pnl": -11.02,
-      "open": 4
-    },
     {
       "t": "2026-07-12T15:12:05.439Z",
       "eq": 288.98,
@@ -3950,6 +3944,12 @@
     },
     {
       "t": "2026-07-14T07:15:06.473Z",
+      "eq": 277.33,
+      "pnl": -22.67,
+      "open": 6
+    },
+    {
+      "t": "2026-07-14T07:21:06.517Z",
       "eq": 277.33,
       "pnl": -22.67,
       "open": 6
