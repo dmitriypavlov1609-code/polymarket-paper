@@ -47,7 +47,7 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.164,
-        "book": 186853,
+        "book": 187233,
         "wr": 65,
         "overallPnl": 1656439,
         "posPnl": 80483
@@ -72,7 +72,7 @@
         "label": "top$177k",
         "addr": "0x1c66…e371",
         "entry": 0.803,
-        "book": 31862,
+        "book": 31891,
         "wr": null,
         "overallPnl": null,
         "posPnl": 4221
@@ -98,7 +98,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 21490,
+        "book": 21623,
         "wr": 55,
         "overallPnl": 144072,
         "posPnl": -744
@@ -927,7 +927,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 95098,
+      "book": 95155,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -953,7 +953,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 564050,
+      "book": 564732,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -979,7 +979,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 219491,
+      "book": 219609,
       "top": [
         {
           "m": "Bitcoin reach $65,000 on July 14",
@@ -1009,7 +1009,7 @@
     "trades": 37,
     "winrate": 22
   },
-  "updated": "2026-07-14T22:24:11.815Z",
+  "updated": "2026-07-14T22:30:09.136Z",
   "topStats": [
     {
       "label": "top$177k",
@@ -1564,12 +1564,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-13T05:42:06.474Z",
-      "eq": 280.95,
-      "pnl": -19.05,
-      "open": 5
-    },
     {
       "t": "2026-07-13T05:48:06.086Z",
       "eq": 280.95,
@@ -3960,6 +3954,12 @@
     },
     {
       "t": "2026-07-14T22:24:06.013Z",
+      "eq": 283.06,
+      "pnl": -16.94,
+      "open": 5
+    },
+    {
+      "t": "2026-07-14T22:30:06.050Z",
       "eq": 283.06,
       "pnl": -16.94,
       "open": 5
