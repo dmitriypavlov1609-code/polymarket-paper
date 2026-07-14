@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 238.73,
-  "equity": 277.17,
-  "totalPnl": -22.83,
+  "equity": 277.16,
+  "totalPnl": -22.84,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 93004,
+        "book": 93011,
         "wr": null,
         "overallPnl": null,
         "posPnl": 2491
@@ -86,9 +86,9 @@
       "entry": 0.888,
       "size": 12,
       "cost": 10.66,
-      "bid": 0.682,
-      "value": 8.18,
-      "pnl": -2.48,
+      "bid": 0.681,
+      "value": 8.17,
+      "pnl": -2.49,
       "cat": "Прочее",
       "followAddr": "0xd1091712f4ed0e17261feb174f5c080977506fa0",
       "followLabel": "top$173k",
@@ -97,10 +97,10 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 21556,
+        "book": 21557,
         "wr": 55,
         "overallPnl": 144072,
-        "posPnl": -772
+        "posPnl": -771
       },
       "topPeak": 3133.6404
     },
@@ -122,7 +122,7 @@
         "label": "top$268k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.178,
-        "book": 49674,
+        "book": 49666,
         "wr": null,
         "overallPnl": null,
         "posPnl": -7964
@@ -147,7 +147,7 @@
         "label": "top$296k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.125,
-        "book": 49674,
+        "book": 49666,
         "wr": null,
         "overallPnl": null,
         "posPnl": -1478
@@ -917,18 +917,18 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 95074,
+      "book": 95681,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 9055,
+          "usd": 9064,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 7774,
+          "usd": 7815,
           "cat": "Крипта"
         },
         {
@@ -943,7 +943,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 511694,
+      "book": 511853,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -954,13 +954,13 @@
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 47783,
+          "usd": 48034,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 30539,
+          "usd": 30570,
           "cat": "Крипта"
         }
       ]
@@ -969,7 +969,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 196552,
+      "book": 196636,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -980,7 +980,7 @@
         {
           "m": "Bitcoin dip to $20,000 by December 31, 2",
           "side": "NO",
-          "usd": 15952,
+          "usd": 16002,
           "cat": "Крипта"
         },
         {
@@ -999,7 +999,7 @@
     "trades": 35,
     "winrate": 20
   },
-  "updated": "2026-07-14T06:12:09.273Z",
+  "updated": "2026-07-14T06:18:09.888Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1125,9 +1125,9 @@
     {
       "label": "top$173k",
       "addr": "0xd109…6fa0",
-      "total": -2.48,
+      "total": -2.49,
       "realized": 0,
-      "unreal": -2.48,
+      "unreal": -2.49,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1554,12 +1554,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-12T14:12:05.510Z",
-      "eq": 288.87,
-      "pnl": -11.13,
-      "open": 4
-    },
     {
       "t": "2026-07-12T14:18:06.038Z",
       "eq": 288.89,
@@ -3952,6 +3946,12 @@
       "t": "2026-07-14T06:12:06.117Z",
       "eq": 277.17,
       "pnl": -22.83,
+      "open": 6
+    },
+    {
+      "t": "2026-07-14T06:18:06.800Z",
+      "eq": 277.16,
+      "pnl": -22.84,
       "open": 6
     }
   ],
