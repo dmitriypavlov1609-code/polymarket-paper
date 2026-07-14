@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 238.73,
-  "equity": 277.31,
-  "totalPnl": -22.69,
+  "equity": 277.41,
+  "totalPnl": -22.59,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 93115,
+        "book": 93153,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 2516
+        "posPnl": 2553
       },
       "topPeak": 16232.3342
     },
@@ -86,9 +86,9 @@
       "entry": 0.888,
       "size": 12,
       "cost": 10.66,
-      "bid": 0.681,
-      "value": 8.17,
-      "pnl": -2.49,
+      "bid": 0.689,
+      "value": 8.27,
+      "pnl": -2.39,
       "cat": "Прочее",
       "followAddr": "0xd1091712f4ed0e17261feb174f5c080977506fa0",
       "followLabel": "top$173k",
@@ -97,7 +97,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 21549,
+        "book": 21570,
         "wr": 55,
         "overallPnl": 144072,
         "posPnl": -774
@@ -122,7 +122,7 @@
         "label": "top$268k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.178,
-        "book": 49705,
+        "book": 49702,
         "wr": null,
         "overallPnl": null,
         "posPnl": -7964
@@ -147,7 +147,7 @@
         "label": "top$296k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.125,
-        "book": 49705,
+        "book": 49702,
         "wr": null,
         "overallPnl": null,
         "posPnl": -1391
@@ -917,7 +917,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 95873,
+      "book": 95779,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -943,7 +943,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 512025,
+      "book": 512223,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -969,7 +969,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 196781,
+      "book": 196714,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -980,7 +980,7 @@
         {
           "m": "Bitcoin dip to $20,000 by December 31, 2",
           "side": "NO",
-          "usd": 16002,
+          "usd": 15960,
           "cat": "Крипта"
         },
         {
@@ -999,7 +999,7 @@
     "trades": 35,
     "winrate": 20
   },
-  "updated": "2026-07-14T06:36:09.613Z",
+  "updated": "2026-07-14T06:42:13.520Z",
   "topStats": [
     {
       "label": "top$292k 🔥свежий",
@@ -1125,9 +1125,9 @@
     {
       "label": "top$173k",
       "addr": "0xd109…6fa0",
-      "total": -2.49,
+      "total": -2.39,
       "realized": 0,
-      "unreal": -2.49,
+      "unreal": -2.39,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1554,12 +1554,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-12T14:36:05.641Z",
-      "eq": 288.9,
-      "pnl": -11.1,
-      "open": 4
-    },
     {
       "t": "2026-07-12T14:42:05.890Z",
       "eq": 288.8,
@@ -3952,6 +3946,12 @@
       "t": "2026-07-14T06:36:06.791Z",
       "eq": 277.31,
       "pnl": -22.69,
+      "open": 6
+    },
+    {
+      "t": "2026-07-14T06:42:07.114Z",
+      "eq": 277.41,
+      "pnl": -22.59,
       "open": 6
     }
   ],
