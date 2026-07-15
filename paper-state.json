@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 260.46,
-  "equity": 286.16,
-  "totalPnl": -13.84,
+  "equity": 286.48,
+  "totalPnl": -13.52,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.801,
-      "value": 12.82,
-      "pnl": 4.08,
+      "bid": 0.821,
+      "value": 13.14,
+      "pnl": 4.4,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,12 +22,12 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 113892,
+        "book": 114107,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 7540
+        "posPnl": 7752
       },
-      "topPeak": 20081.2183
+      "topPeak": 20293.1443
     },
     {
       "title": "Will Spain win the 2026 FIFA World Cup?",
@@ -72,7 +72,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 21431,
+        "book": 21422,
         "wr": 55,
         "overallPnl": 143700,
         "posPnl": -755
@@ -908,7 +908,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 69769,
+      "book": 70126,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -934,7 +934,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 465541,
+      "book": 465325,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -960,7 +960,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 181156,
+      "book": 181320,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -990,7 +990,7 @@
     "trades": 39,
     "winrate": 23
   },
-  "updated": "2026-07-15T16:42:07.815Z",
+  "updated": "2026-07-15T16:48:07.605Z",
   "topStats": [
     {
       "label": "top$177k",
@@ -1015,6 +1015,17 @@
       "losses": 3
     },
     {
+      "label": "top$237k",
+      "addr": "0xc8b9…b836",
+      "total": 4.4,
+      "realized": 0,
+      "unreal": 4.4,
+      "open": 1,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
       "label": "top$647k 🔥свежий ×3",
       "addr": "0x2805…76ed",
       "total": 4.34,
@@ -1023,17 +1034,6 @@
       "open": 0,
       "closed": 1,
       "wins": 1,
-      "losses": 0
-    },
-    {
-      "label": "top$237k",
-      "addr": "0xc8b9…b836",
-      "total": 4.08,
-      "realized": 0,
-      "unreal": 4.08,
-      "open": 1,
-      "closed": 0,
-      "wins": 0,
       "losses": 0
     },
     {
@@ -1545,12 +1545,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-13T23:36:05.892Z",
-      "eq": 276.62,
-      "pnl": -23.38,
-      "open": 6
-    },
     {
       "t": "2026-07-13T23:42:06.163Z",
       "eq": 276.67,
@@ -3943,6 +3937,12 @@
       "t": "2026-07-15T16:42:05.852Z",
       "eq": 286.16,
       "pnl": -13.84,
+      "open": 3
+    },
+    {
+      "t": "2026-07-15T16:48:05.799Z",
+      "eq": 286.48,
+      "pnl": -13.52,
       "open": 3
     }
   ],
