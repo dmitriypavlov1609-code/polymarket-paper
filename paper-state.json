@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 249.16,
-  "equity": 283.07,
-  "totalPnl": -16.93,
+  "cash": 257.16,
+  "equity": 283.08,
+  "totalPnl": -16.92,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 100164,
+        "book": 100147,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 2306
+        "posPnl": 2294
       },
       "topPeak": 16232.3342
     },
@@ -47,38 +47,12 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.164,
-        "book": 186092,
+        "book": 187993,
         "wr": 65,
         "overallPnl": 1656439,
         "posPnl": 80483
       },
       "topPeak": 112140.8521
-    },
-    {
-      "title": "Will France win the 2026 FIFA World Cup?",
-      "side": "No",
-      "asset": "32270411694523539495262303868629477861017829722282576458031815333486368239544",
-      "entry": 0.669,
-      "size": 8,
-      "cost": 5.35,
-      "bid": 0.999,
-      "value": 7.99,
-      "pnl": 2.64,
-      "cat": "Спорт",
-      "followAddr": "0x1c66c88a4be1ca1081d93c6e1fd5b5b5847ce371",
-      "followLabel": "top$177k",
-      "ts": "2026-07-07T10:09:23.731Z",
-      "follow": {
-        "label": "top$177k",
-        "addr": "0x1c66…e371",
-        "entry": null,
-        "book": 10292,
-        "wr": null,
-        "overallPnl": null,
-        "posPnl": null
-      },
-      "topPeak": 21507.0385,
-      "tookProfit": true
     },
     {
       "title": "Will no qualifying diplomatic US-Iran meeting occur by September 30, 2026?",
@@ -98,7 +72,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 21541,
+        "book": 21564,
         "wr": 55,
         "overallPnl": 144072,
         "posPnl": -743
@@ -123,7 +97,7 @@
         "label": "top$268k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.178,
-        "book": 40357,
+        "book": 40488,
         "wr": null,
         "overallPnl": null,
         "posPnl": -15229
@@ -674,6 +648,20 @@
       "followAddr": "0x1c66c88a4be1ca1081d93c6e1fd5b5b5847ce371",
       "asset": "32270411694523539495262303868629477861017829722282576458031815333486368239544",
       "reason": "тейк-профит 50% @90¢+"
+    },
+    {
+      "title": "Will France win the 2026 FIFA World Cup?",
+      "side": "No",
+      "entry": 0.669,
+      "exit": 1,
+      "size": 8,
+      "cost": 5.35,
+      "pnl": 2.65,
+      "entryTs": "2026-07-07T10:09:23.731Z",
+      "exitTs": "2026-07-15T00:07:37.000Z",
+      "followLabel": "top$177k",
+      "followAddr": "0x1c66c88a4be1ca1081d93c6e1fd5b5b5847ce371",
+      "asset": "32270411694523539495262303868629477861017829722282576458031815333486368239544"
     }
   ],
   "log": [
@@ -854,7 +842,8 @@
     "ВХОД: «Will LeBron James play for the Philadelp» Yes @0.108 $51 (лаг -1.2пп) за top$296k 🔥",
     "⛔ РИСК-СТОП: недельный убыток $-27.97 ≥8% банка → торговля до 2026-07-19T23:59",
     "ВЫХОД вслед за топом (топ сократил >50% ($5033→$2440)): «Will LeBron James play for the Phila» @0.06 $-2.72",
-    "ТЕЙК-ПРОФИТ 50%: «Will France win the 2026 FIFA Worl» @0.95 +$2.26"
+    "ТЕЙК-ПРОФИТ 50%: «Will France win the 2026 FIFA Worl» @0.95 +$2.26",
+    "РЕЗОЛВ: «Will France win the 2026 FIFA World Cup?» 🟢ВЫИГРЫШ +$2.65"
   ],
   "tops": [
     {
@@ -927,12 +916,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 80810,
+      "book": 80311,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 7248,
+          "usd": 7256,
           "cat": "Крипта"
         },
         {
@@ -953,7 +942,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 587549,
+      "book": 588411,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -970,7 +959,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 29219,
+          "usd": 29250,
           "cat": "Крипта"
         }
       ]
@@ -979,7 +968,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 183541,
+      "book": 183559,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1003,23 +992,23 @@
     }
   ],
   "stats": {
-    "day": -0.46,
-    "week": -27.36,
-    "month": -19.47,
-    "trades": 37,
-    "winrate": 22
+    "day": 2.19,
+    "week": -24.71,
+    "month": -16.82,
+    "trades": 38,
+    "winrate": 24
   },
-  "updated": "2026-07-15T00:12:13.114Z",
+  "updated": "2026-07-15T00:18:13.046Z",
   "topStats": [
     {
       "label": "top$177k",
       "addr": "0x1c66…e371",
-      "total": 4.9,
-      "realized": 2.26,
-      "unreal": 2.64,
-      "open": 1,
-      "closed": 1,
-      "wins": 1,
+      "total": 4.91,
+      "realized": 4.91,
+      "unreal": 0,
+      "open": 0,
+      "closed": 2,
+      "wins": 2,
       "losses": 0
     },
     {
@@ -1564,12 +1553,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-13T07:30:05.735Z",
-      "eq": 280.72,
-      "pnl": -19.28,
-      "open": 5
-    },
     {
       "t": "2026-07-13T07:36:06.265Z",
       "eq": 280.72,
@@ -3963,6 +3946,12 @@
       "eq": 283.07,
       "pnl": -16.93,
       "open": 5
+    },
+    {
+      "t": "2026-07-15T00:18:11.170Z",
+      "eq": 283.08,
+      "pnl": -16.92,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
