@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 99967,
+        "book": 99964,
         "wr": null,
         "overallPnl": null,
         "posPnl": 2281
@@ -49,7 +49,7 @@
         "entry": 0.164,
         "book": 184952,
         "wr": 66,
-        "overallPnl": 1795419,
+        "overallPnl": 1793137,
         "posPnl": 80483
       },
       "topPeak": 112140.8521
@@ -72,7 +72,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 21219,
+        "book": 21196,
         "wr": 55,
         "overallPnl": 144140,
         "posPnl": -743
@@ -847,6 +847,14 @@
   ],
   "tops": [
     {
+      "addr": "0x09b4…7320",
+      "copyPnl": 6744,
+      "realPnl": 7443,
+      "loss": 9,
+      "roi": 962,
+      "hedged": 0
+    },
+    {
       "addr": "0xb61b…8a06",
       "copyPnl": 2256,
       "realPnl": 2370,
@@ -859,15 +867,15 @@
       "copyPnl": 1965,
       "realPnl": 2031,
       "loss": 3,
-      "roi": 7555,
+      "roi": 7551,
       "hedged": 0
     },
     {
       "addr": "0x6501…1220",
-      "copyPnl": 1659,
-      "realPnl": 1795,
+      "copyPnl": 1657,
+      "realPnl": 1793,
       "loss": 8,
-      "roi": 1443,
+      "roi": 1441,
       "hedged": 0
     },
     {
@@ -880,10 +888,10 @@
     },
     {
       "addr": "0x5b4e…0232",
-      "copyPnl": 1214,
-      "realPnl": 1398,
-      "loss": 13,
-      "roi": 751,
+      "copyPnl": 1209,
+      "realPnl": 1399,
+      "loss": 14,
+      "roi": 746,
       "hedged": 0
     },
     {
@@ -895,19 +903,11 @@
       "hedged": 0
     },
     {
-      "addr": "0xcc50…4c82",
-      "copyPnl": 576,
-      "realPnl": 699,
-      "loss": 18,
-      "roi": 567,
-      "hedged": 0
-    },
-    {
-      "addr": "0x7ddd…c933",
-      "copyPnl": 489,
-      "realPnl": 527,
-      "loss": 7,
-      "roi": 1235,
+      "addr": "0x954d…6f01",
+      "copyPnl": 593,
+      "realPnl": 611,
+      "loss": 3,
+      "roi": 9288,
       "hedged": 0
     }
   ],
@@ -916,7 +916,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 74794,
+      "book": 74940,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -942,7 +942,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 505912,
+      "book": 506124,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -968,7 +968,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 179695,
+      "book": 179704,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -998,7 +998,7 @@
     "trades": 38,
     "winrate": 24
   },
-  "updated": "2026-07-15T03:54:07.572Z",
+  "updated": "2026-07-15T04:00:09.006Z",
   "topStats": [
     {
       "label": "top$177k",
@@ -1553,12 +1553,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-13T11:12:06.769Z",
-      "eq": 279.41,
-      "pnl": -20.59,
-      "open": 5
-    },
     {
       "t": "2026-07-13T11:18:06.481Z",
       "eq": 279.45,
@@ -3949,6 +3943,12 @@
     },
     {
       "t": "2026-07-15T03:54:06.111Z",
+      "eq": 283.1,
+      "pnl": -16.9,
+      "open": 4
+    },
+    {
+      "t": "2026-07-15T04:00:07.608Z",
       "eq": 283.1,
       "pnl": -16.9,
       "open": 4
