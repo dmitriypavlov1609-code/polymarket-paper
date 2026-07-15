@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 257.16,
-  "equity": 283.05,
-  "totalPnl": -16.95,
+  "cash": 260.46,
+  "equity": 282.72,
+  "totalPnl": -17.28,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 108273,
+        "book": 108298,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 2195
+        "posPnl": 2208
       },
       "topPeak": 16232.3342
     },
@@ -72,37 +72,12 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 21132,
+        "book": 21118,
         "wr": 55,
         "overallPnl": 144140,
         "posPnl": -755
       },
       "topPeak": 3133.6404
-    },
-    {
-      "title": "Will Samuel Alito announce his retirement by September 30, 2026?",
-      "side": "Yes",
-      "asset": "102963946476301464155846348149714317918722387635971948099097519511899201326439",
-      "entry": 0.17,
-      "size": 33,
-      "cost": 5.61,
-      "bid": 0.11,
-      "value": 3.63,
-      "pnl": -1.98,
-      "cat": "Прочее",
-      "followAddr": "0x69c5c6f6a4dda665991c203bc8d5df3e006b1e01",
-      "followLabel": "top$268k 🔥",
-      "ts": "2026-07-12T21:54:10.624Z",
-      "follow": {
-        "label": "top$268k 🔥",
-        "addr": "0x69c5…1e01",
-        "entry": 0.178,
-        "book": 38569,
-        "wr": null,
-        "overallPnl": null,
-        "posPnl": -15229
-      },
-      "topPeak": 52067.532
     }
   ],
   "closed": [
@@ -662,6 +637,22 @@
       "followLabel": "top$177k",
       "followAddr": "0x1c66c88a4be1ca1081d93c6e1fd5b5b5847ce371",
       "asset": "32270411694523539495262303868629477861017829722282576458031815333486368239544"
+    },
+    {
+      "title": "Will Samuel Alito announce his retirement by September 30, 2026?",
+      "side": "Yes",
+      "entry": 0.17,
+      "exit": 0.1,
+      "size": 33,
+      "cost": 5.61,
+      "pnl": -2.31,
+      "proceeds": 3.3,
+      "entryTs": "2026-07-12T21:54:10.624Z",
+      "exitTs": "2026-07-15T09:54:03.767Z",
+      "followLabel": "top$268k 🔥",
+      "followAddr": "0x69c5c6f6a4dda665991c203bc8d5df3e006b1e01",
+      "asset": "102963946476301464155846348149714317918722387635971948099097519511899201326439",
+      "reason": "топ сократил >50% ($52068→$25428)"
     }
   ],
   "log": [
@@ -843,7 +834,8 @@
     "⛔ РИСК-СТОП: недельный убыток $-27.97 ≥8% банка → торговля до 2026-07-19T23:59",
     "ВЫХОД вслед за топом (топ сократил >50% ($5033→$2440)): «Will LeBron James play for the Phila» @0.06 $-2.72",
     "ТЕЙК-ПРОФИТ 50%: «Will France win the 2026 FIFA Worl» @0.95 +$2.26",
-    "РЕЗОЛВ: «Will France win the 2026 FIFA World Cup?» 🟢ВЫИГРЫШ +$2.65"
+    "РЕЗОЛВ: «Will France win the 2026 FIFA World Cup?» 🟢ВЫИГРЫШ +$2.65",
+    "ВЫХОД вслед за топом (топ сократил >50% ($52068→$25428)): «Will Samuel Alito announce his retir» @0.10 $-2.31"
   ],
   "tops": [
     {
@@ -916,7 +908,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 73297,
+      "book": 73509,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -942,7 +934,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 530381,
+      "book": 530669,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -968,7 +960,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 203056,
+      "book": 203023,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -992,13 +984,13 @@
     }
   ],
   "stats": {
-    "day": 2.19,
-    "week": -22.37,
-    "month": -16.82,
-    "trades": 38,
-    "winrate": 24
+    "day": -0.12,
+    "week": -24.68,
+    "month": -19.13,
+    "trades": 39,
+    "winrate": 23
   },
-  "updated": "2026-07-15T09:48:07.788Z",
+  "updated": "2026-07-15T09:54:08.089Z",
   "topStats": [
     {
       "label": "top$177k",
@@ -1133,17 +1125,6 @@
       "losses": 0
     },
     {
-      "label": "top$268k 🔥",
-      "addr": "0x69c5…1e01",
-      "total": -8.66,
-      "realized": -6.68,
-      "unreal": -1.98,
-      "open": 1,
-      "closed": 2,
-      "wins": 0,
-      "losses": 2
-    },
-    {
       "label": "top$175k",
       "addr": "0x50c8…caa2",
       "total": -8.94,
@@ -1152,6 +1133,17 @@
       "open": 0,
       "closed": 4,
       "wins": 1,
+      "losses": 3
+    },
+    {
+      "label": "top$268k 🔥",
+      "addr": "0x69c5…1e01",
+      "total": -8.99,
+      "realized": -8.99,
+      "unreal": 0,
+      "open": 0,
+      "closed": 3,
+      "wins": 0,
       "losses": 3
     },
     {
@@ -1553,12 +1545,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-13T17:06:07.173Z",
-      "eq": 278.42,
-      "pnl": -21.58,
-      "open": 6
-    },
     {
       "t": "2026-07-13T17:12:07.574Z",
       "eq": 278.42,
@@ -3952,6 +3938,12 @@
       "eq": 283.05,
       "pnl": -16.95,
       "open": 4
+    },
+    {
+      "t": "2026-07-15T09:54:06.412Z",
+      "eq": 282.72,
+      "pnl": -17.28,
+      "open": 3
     }
   ],
   "peakEquity": 301.44,
