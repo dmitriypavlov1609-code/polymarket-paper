@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 100062,
+        "book": 100081,
         "wr": null,
         "overallPnl": null,
         "posPnl": 2208
@@ -72,7 +72,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 21547,
+        "book": 21507,
         "wr": 55,
         "overallPnl": 144140,
         "posPnl": -744
@@ -97,7 +97,7 @@
         "label": "top$268k 🔥",
         "addr": "0x69c5…1e01",
         "entry": 0.178,
-        "book": 39973,
+        "book": 39941,
         "wr": null,
         "overallPnl": null,
         "posPnl": -15229
@@ -916,7 +916,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 76781,
+      "book": 76703,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -927,7 +927,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 6169,
+          "usd": 6182,
           "cat": "Крипта"
         },
         {
@@ -942,7 +942,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 513222,
+      "book": 513624,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -959,7 +959,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 29498,
+          "usd": 29560,
           "cat": "Крипта"
         }
       ]
@@ -968,7 +968,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 179789,
+      "book": 179832,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -998,7 +998,7 @@
     "trades": 38,
     "winrate": 24
   },
-  "updated": "2026-07-15T02:30:07.846Z",
+  "updated": "2026-07-15T02:36:06.891Z",
   "topStats": [
     {
       "label": "top$177k",
@@ -1553,12 +1553,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-13T09:48:06.178Z",
-      "eq": 279.4,
-      "pnl": -20.6,
-      "open": 5
-    },
     {
       "t": "2026-07-13T09:54:06.264Z",
       "eq": 279.4,
@@ -3949,6 +3943,12 @@
     },
     {
       "t": "2026-07-15T02:30:06.499Z",
+      "eq": 283.07,
+      "pnl": -16.93,
+      "open": 4
+    },
+    {
+      "t": "2026-07-15T02:36:05.103Z",
       "eq": 283.07,
       "pnl": -16.93,
       "open": 4
