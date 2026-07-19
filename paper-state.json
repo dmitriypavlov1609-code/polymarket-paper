@@ -72,7 +72,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 8468,
+        "book": 8462,
         "wr": 57,
         "overallPnl": 60493,
         "posPnl": -734
@@ -908,7 +908,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 64581,
+      "book": 64700,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
@@ -925,7 +925,7 @@
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
           "side": "YES",
-          "usd": 6183,
+          "usd": 6145,
           "cat": "Прочее"
         }
       ]
@@ -934,7 +934,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 572239,
+      "book": 572133,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -945,7 +945,7 @@
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 38417,
+          "usd": 38518,
           "cat": "Крипта"
         },
         {
@@ -960,7 +960,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 165616,
+      "book": 165437,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -990,7 +990,7 @@
     "trades": 39,
     "winrate": 23
   },
-  "updated": "2026-07-19T12:24:07.492Z",
+  "updated": "2026-07-19T12:30:07.857Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1545,12 +1545,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-14T05:48:06.186Z",
-      "eq": 277.11,
-      "pnl": -22.89,
-      "open": 6
-    },
     {
       "t": "2026-07-14T05:54:06.842Z",
       "eq": 277.11,
@@ -3941,6 +3935,12 @@
     },
     {
       "t": "2026-07-19T12:24:05.789Z",
+      "eq": 288,
+      "pnl": -12,
+      "open": 3
+    },
+    {
+      "t": "2026-07-19T12:30:05.974Z",
       "eq": 288,
       "pnl": -12,
       "open": 3
