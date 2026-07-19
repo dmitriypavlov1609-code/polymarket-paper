@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 131078,
+        "book": 131077,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10598
@@ -72,7 +72,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 8737,
+        "book": 8720,
         "wr": 57,
         "overallPnl": 60493,
         "posPnl": -547
@@ -908,24 +908,24 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 64843,
+      "book": 64554,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 6407,
-          "cat": "Прочее"
-        },
-        {
-          "m": "WTI Crude Oil (WTI) hit (HIGH) $95 in Ju",
-          "side": "YES",
-          "usd": 5953,
+          "usd": 6401,
           "cat": "Прочее"
         },
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
           "side": "YES",
           "usd": 5848,
+          "cat": "Прочее"
+        },
+        {
+          "m": "WTI Crude Oil (WTI) hit (HIGH) $95 in Ju",
+          "side": "YES",
+          "usd": 5803,
           "cat": "Прочее"
         }
       ]
@@ -934,18 +934,18 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 586068,
+      "book": 587240,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 46941,
+          "usd": 47702,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 38544,
+          "usd": 38569,
           "cat": "Крипта"
         },
         {
@@ -960,7 +960,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 165719,
+      "book": 165603,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -985,12 +985,12 @@
   ],
   "stats": {
     "day": 0,
-    "week": -8.63,
+    "week": -4.08,
     "month": -19.13,
     "trades": 39,
     "winrate": 23
   },
-  "updated": "2026-07-19T18:06:07.423Z",
+  "updated": "2026-07-19T18:12:08.008Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1545,12 +1545,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-14T12:18:06.290Z",
-      "eq": 277.03,
-      "pnl": -22.97,
-      "open": 6
-    },
     {
       "t": "2026-07-14T12:24:06.554Z",
       "eq": 277.03,
@@ -3941,6 +3935,12 @@
     },
     {
       "t": "2026-07-19T18:06:05.575Z",
+      "eq": 288.63,
+      "pnl": -11.37,
+      "open": 3
+    },
+    {
+      "t": "2026-07-19T18:12:06.250Z",
       "eq": 288.63,
       "pnl": -11.37,
       "open": 3
