@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 130832,
+        "book": 130830,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10512
@@ -908,7 +908,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 64737,
+      "book": 64797,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
@@ -925,7 +925,7 @@
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
           "side": "YES",
-          "usd": 6145,
+          "usd": 6183,
           "cat": "Прочее"
         }
       ]
@@ -934,7 +934,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 572439,
+      "book": 572088,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -945,7 +945,7 @@
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 38595,
+          "usd": 38468,
           "cat": "Крипта"
         },
         {
@@ -960,7 +960,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 165496,
+      "book": 165616,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -990,7 +990,7 @@
     "trades": 39,
     "winrate": 23
   },
-  "updated": "2026-07-19T12:36:08.438Z",
+  "updated": "2026-07-19T12:42:07.495Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1545,12 +1545,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-14T06:00:08.206Z",
-      "eq": 277.12,
-      "pnl": -22.88,
-      "open": 6
-    },
     {
       "t": "2026-07-14T06:06:07.233Z",
       "eq": 277.17,
@@ -3941,6 +3935,12 @@
     },
     {
       "t": "2026-07-19T12:36:06.568Z",
+      "eq": 288,
+      "pnl": -12,
+      "open": 3
+    },
+    {
+      "t": "2026-07-19T12:42:05.794Z",
       "eq": 288,
       "pnl": -12,
       "open": 3
