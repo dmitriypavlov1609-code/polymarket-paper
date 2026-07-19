@@ -22,12 +22,12 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 130980,
+        "book": 130991,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 10598
+        "posPnl": 10611
       },
-      "topPeak": 23139.3595
+      "topPeak": 23151.6808
     },
     {
       "title": "Will Spain win the 2026 FIFA World Cup?",
@@ -72,7 +72,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 8548,
+        "book": 8518,
         "wr": 57,
         "overallPnl": 60493,
         "posPnl": -708
@@ -908,12 +908,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 64851,
+      "book": 64842,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 6590,
+          "usd": 6596,
           "cat": "Прочее"
         },
         {
@@ -934,7 +934,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 571787,
+      "book": 571859,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -960,7 +960,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 165778,
+      "book": 165733,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -990,7 +990,7 @@
     "trades": 39,
     "winrate": 23
   },
-  "updated": "2026-07-19T14:18:07.151Z",
+  "updated": "2026-07-19T14:24:07.119Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1545,12 +1545,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-14T08:03:05.908Z",
-      "eq": 276.88,
-      "pnl": -23.12,
-      "open": 6
-    },
     {
       "t": "2026-07-14T08:15:06.988Z",
       "eq": 276.89,
@@ -3941,6 +3935,12 @@
     },
     {
       "t": "2026-07-19T14:18:05.441Z",
+      "eq": 288.17,
+      "pnl": -11.83,
+      "open": 3
+    },
+    {
+      "t": "2026-07-19T14:24:05.367Z",
       "eq": 288.17,
       "pnl": -11.83,
       "open": 3
