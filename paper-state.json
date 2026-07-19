@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 260.46,
-  "equity": 288.94,
-  "totalPnl": -11.06,
+  "equity": 289.21,
+  "totalPnl": -10.79,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.907,
-      "value": 14.51,
-      "pnl": 5.77,
+      "bid": 0.908,
+      "value": 14.53,
+      "pnl": 5.79,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 131005,
+        "book": 131007,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 10537
+        "posPnl": 10561
       },
       "topPeak": 23225.6084
     },
@@ -36,9 +36,9 @@
       "entry": 0.127,
       "size": 8,
       "cost": 1.02,
-      "bid": 0.593,
-      "value": 4.74,
-      "pnl": 3.72,
+      "bid": 0.624,
+      "value": 4.99,
+      "pnl": 3.97,
       "cat": "Спорт",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "followLabel": "top$941k loss10%",
@@ -47,12 +47,12 @@
         "label": "top$941k loss10%",
         "addr": "0x6501…1220",
         "entry": 0.164,
-        "book": 272599,
+        "book": 261966,
         "wr": 66,
         "overallPnl": 2065419,
-        "posPnl": 81062
+        "posPnl": 88679
       },
-      "topPeak": 114069.3277
+      "topPeak": 120336.8731
     },
     {
       "title": "Will no qualifying diplomatic US-Iran meeting occur by September 30, 2026?",
@@ -72,7 +72,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 8796,
+        "book": 8837,
         "wr": 57,
         "overallPnl": 60493,
         "posPnl": -445
@@ -908,18 +908,18 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 63708,
+      "book": 63363,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 6327,
+          "usd": 6315,
           "cat": "Прочее"
         },
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
           "side": "YES",
-          "usd": 5922,
+          "usd": 5848,
           "cat": "Прочее"
         },
         {
@@ -934,7 +934,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 588502,
+      "book": 588468,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -960,7 +960,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 170445,
+      "book": 170448,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -990,14 +990,14 @@
     "trades": 39,
     "winrate": 23
   },
-  "updated": "2026-07-19T19:12:07.595Z",
+  "updated": "2026-07-19T19:18:07.008Z",
   "topStats": [
     {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
-      "total": 5.77,
+      "total": 5.79,
       "realized": 0,
-      "unreal": 5.77,
+      "unreal": 5.79,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1149,9 +1149,9 @@
     {
       "label": "top$941k loss10%",
       "addr": "0x6501…1220",
-      "total": -14.66,
+      "total": -14.41,
       "realized": -18.38,
-      "unreal": 3.72,
+      "unreal": 3.97,
       "open": 1,
       "closed": 5,
       "wins": 1,
@@ -1545,12 +1545,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-14T13:24:07.699Z",
-      "eq": 276.68,
-      "pnl": -23.32,
-      "open": 6
-    },
     {
       "t": "2026-07-14T13:30:07.803Z",
       "eq": 276.68,
@@ -3943,6 +3937,12 @@
       "t": "2026-07-19T19:12:05.777Z",
       "eq": 288.94,
       "pnl": -11.06,
+      "open": 3
+    },
+    {
+      "t": "2026-07-19T19:18:05.249Z",
+      "eq": 289.21,
+      "pnl": -10.79,
       "open": 3
     }
   ],
