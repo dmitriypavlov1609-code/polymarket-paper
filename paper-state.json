@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 130985,
+        "book": 130980,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10598
@@ -908,7 +908,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 64663,
+      "book": 64851,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
@@ -919,13 +919,13 @@
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $95 in Ju",
           "side": "YES",
-          "usd": 6212,
+          "usd": 6276,
           "cat": "Прочее"
         },
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
           "side": "YES",
-          "usd": 5885,
+          "usd": 5922,
           "cat": "Прочее"
         }
       ]
@@ -934,18 +934,18 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 572227,
+      "book": 571787,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 46941,
+          "usd": 46174,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 38468,
+          "usd": 38493,
           "cat": "Крипта"
         },
         {
@@ -960,7 +960,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 165659,
+      "book": 165778,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -990,7 +990,7 @@
     "trades": 39,
     "winrate": 23
   },
-  "updated": "2026-07-19T14:12:07.944Z",
+  "updated": "2026-07-19T14:18:07.151Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1545,12 +1545,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-14T07:51:06.370Z",
-      "eq": 277.19,
-      "pnl": -22.81,
-      "open": 6
-    },
     {
       "t": "2026-07-14T08:03:05.908Z",
       "eq": 276.88,
@@ -3941,6 +3935,12 @@
     },
     {
       "t": "2026-07-19T14:12:06.202Z",
+      "eq": 288.17,
+      "pnl": -11.83,
+      "open": 3
+    },
+    {
+      "t": "2026-07-19T14:18:05.441Z",
       "eq": 288.17,
       "pnl": -11.83,
       "open": 3
