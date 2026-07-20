@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 260.46,
-  "equity": 292.49,
-  "totalPnl": -7.51,
+  "equity": 292.54,
+  "totalPnl": -7.46,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.926,
-      "value": 14.82,
-      "pnl": 6.08,
+      "bid": 0.929,
+      "value": 14.86,
+      "pnl": 6.12,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 131307,
+        "book": 131296,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 10795
+        "posPnl": 10783
       },
       "topPeak": 23385.785
     },
@@ -61,9 +61,9 @@
       "entry": 0.888,
       "size": 12,
       "cost": 10.66,
-      "bid": 0.768,
-      "value": 9.22,
-      "pnl": -1.44,
+      "bid": 0.769,
+      "value": 9.23,
+      "pnl": -1.43,
       "cat": "Прочее",
       "followAddr": "0xd1091712f4ed0e17261feb174f5c080977506fa0",
       "followLabel": "top$173k",
@@ -72,10 +72,10 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 17314,
+        "book": 17312,
         "wr": 57,
         "overallPnl": 60493,
-        "posPnl": -469
+        "posPnl": -467
       },
       "topPeak": 3133.6404
     }
@@ -835,7 +835,8 @@
     "ВЫХОД вслед за топом (топ сократил >50% ($5033→$2440)): «Will LeBron James play for the Phila» @0.06 $-2.72",
     "ТЕЙК-ПРОФИТ 50%: «Will France win the 2026 FIFA Worl» @0.95 +$2.26",
     "РЕЗОЛВ: «Will France win the 2026 FIFA World Cup?» 🟢ВЫИГРЫШ +$2.65",
-    "ВЫХОД вслед за топом (топ сократил >50% ($52068→$25428)): «Will Samuel Alito announce his retir» @0.10 $-2.31"
+    "ВЫХОД вслед за топом (топ сократил >50% ($52068→$25428)): «Will Samuel Alito announce his retir» @0.10 $-2.31",
+    "✅ Риск-стоп снят — лимиты в норме, торговля возобновлена"
   ],
   "tops": [
     {
@@ -908,7 +909,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 64700,
+      "book": 64592,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
@@ -934,7 +935,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 596422,
+      "book": 596194,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -945,7 +946,7 @@
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 38188,
+          "usd": 38163,
           "cat": "Крипта"
         },
         {
@@ -960,7 +961,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 176272,
+      "book": 176418,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -990,14 +991,14 @@
     "trades": 39,
     "winrate": 23
   },
-  "updated": "2026-07-19T23:54:06.778Z",
+  "updated": "2026-07-20T00:00:10.826Z",
   "topStats": [
     {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
-      "total": 6.08,
+      "total": 6.12,
       "realized": 0,
-      "unreal": 6.08,
+      "unreal": 6.12,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1116,9 +1117,9 @@
     {
       "label": "top$173k",
       "addr": "0xd109…6fa0",
-      "total": -1.44,
+      "total": -1.43,
       "realized": 0,
-      "unreal": -1.44,
+      "unreal": -1.43,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1545,12 +1546,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-14T18:06:06.268Z",
-      "eq": 275.03,
-      "pnl": -24.97,
-      "open": 5
-    },
     {
       "t": "2026-07-14T18:12:06.124Z",
       "eq": 275.05,
@@ -3944,11 +3939,14 @@
       "eq": 292.49,
       "pnl": -7.51,
       "open": 3
+    },
+    {
+      "t": "2026-07-20T00:00:06.504Z",
+      "eq": 292.54,
+      "pnl": -7.46,
+      "open": 3
     }
   ],
   "peakEquity": 301.44,
-  "halt": {
-    "reason": "недельный убыток $-27.97 ≥8% банка",
-    "until": "2026-07-19T23:59:00.000Z"
-  }
+  "halt": null
 }
