@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 262.61,
-  "equity": 296.38,
-  "totalPnl": -3.62,
+  "cash": 266.61,
+  "equity": 296.49,
+  "totalPnl": -3.51,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 131144,
+        "book": 131149,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10869
@@ -47,38 +47,12 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13882,
+        "book": 13891,
         "wr": 59,
         "overallPnl": 63728,
         "posPnl": -462
       },
       "topPeak": 3133.6404
-    },
-    {
-      "title": "Generali Open: Alexandre Muller vs Mariano Navone",
-      "side": "Mariano Navone",
-      "asset": "23223298172597134497291010280641361739800681909026403850764755297932236646989",
-      "entry": 0.835,
-      "size": 4,
-      "cost": 3.34,
-      "bid": 0.999,
-      "value": 4,
-      "pnl": 0.66,
-      "cat": "Спорт",
-      "followAddr": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
-      "followLabel": "top$535k 🔥",
-      "ts": "2026-07-20T07:18:07.950Z",
-      "follow": {
-        "label": "top$535k 🔥",
-        "addr": "0x56ac…d77e",
-        "entry": 0.83,
-        "book": 24966,
-        "wr": 60,
-        "overallPnl": 534924,
-        "posPnl": 1677
-      },
-      "topPeak": 9889.053,
-      "tookProfit": true
     },
     {
       "title": "Livesport Prague Open: Veronika Podrez vs Carol Young Suh Lee",
@@ -87,9 +61,9 @@
       "entry": 0.434,
       "size": 13,
       "cost": 5.65,
-      "bid": 0.431,
-      "value": 5.6,
-      "pnl": -0.05,
+      "bid": 0.439,
+      "value": 5.71,
+      "pnl": 0.06,
       "cat": "Спорт",
       "followAddr": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
       "followLabel": "top$535k 🔥",
@@ -98,10 +72,10 @@
         "label": "top$535k 🔥",
         "addr": "0x56ac…d77e",
         "entry": 0.433,
-        "book": 24966,
+        "book": 25002,
         "wr": 60,
         "overallPnl": 534924,
-        "posPnl": -11
+        "posPnl": 11
       },
       "topPeak": 3063.225
     }
@@ -725,6 +699,20 @@
       "followAddr": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
       "asset": "23223298172597134497291010280641361739800681909026403850764755297932236646989",
       "reason": "тейк-профит 50% @90¢+"
+    },
+    {
+      "title": "Generali Open: Alexandre Muller vs Mariano Navone",
+      "side": "Mariano Navone",
+      "entry": 0.835,
+      "exit": 1,
+      "size": 4,
+      "cost": 3.34,
+      "pnl": 0.66,
+      "entryTs": "2026-07-20T07:18:07.950Z",
+      "exitTs": "2026-07-20T11:07:15.000Z",
+      "followLabel": "top$535k 🔥",
+      "followAddr": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
+      "asset": "23223298172597134497291010280641361739800681909026403850764755297932236646989"
     }
   ],
   "log": [
@@ -914,7 +902,8 @@
     "ВХОД: «Hamburg European Open, Qualification: Va» Varvara Lepchenko @0.338 $17 (лаг 1.6пп) за top$535k 🔥",
     "ВХОД: «Livesport Prague Open: Veronika Podrez v» Veronika Podrez @0.434 $13 (лаг 0.2пп) за top$535k 🔥",
     "ВЫХОД вслед за топом (топ сократил >50% ($11218→$5440)): «Hamburg European Open, Qualification» @0.51 +$2.88",
-    "ТЕЙК-ПРОФИТ 50%: «Generali Open: Alexandre Muller vs» @0.92 +$0.26"
+    "ТЕЙК-ПРОФИТ 50%: «Generali Open: Alexandre Muller vs» @0.92 +$0.26",
+    "РЕЗОЛВ: «Generali Open: Alexandre Muller vs Mariano Navone» 🟢ВЫИГРЫШ +$0.66"
   ],
   "tops": [
     {
@@ -987,7 +976,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 58428,
+      "book": 58314,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -1013,7 +1002,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 520479,
+      "book": 519984,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -1039,7 +1028,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 148199,
+      "book": 148201,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1063,13 +1052,13 @@
     }
   ],
   "stats": {
-    "day": 10.12,
-    "week": 10,
-    "month": -9.01,
-    "trades": 42,
-    "winrate": 29
+    "day": 10.78,
+    "week": 10.66,
+    "month": -8.35,
+    "trades": 43,
+    "winrate": 30
   },
-  "updated": "2026-07-20T11:06:12.552Z",
+  "updated": "2026-07-20T11:12:12.442Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1129,12 +1118,12 @@
     {
       "label": "top$535k 🔥",
       "addr": "0x56ac…d77e",
-      "total": 3.75,
-      "realized": 3.14,
-      "unreal": 0.61,
-      "open": 2,
-      "closed": 2,
-      "wins": 2,
+      "total": 3.86,
+      "realized": 3.8,
+      "unreal": 0.06,
+      "open": 1,
+      "closed": 3,
+      "wins": 3,
       "losses": 0
     },
     {
@@ -1635,12 +1624,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-15T05:18:05.583Z",
-      "eq": 283.08,
-      "pnl": -16.92,
-      "open": 4
-    },
     {
       "t": "2026-07-15T05:24:05.528Z",
       "eq": 283.08,
@@ -4034,6 +4017,12 @@
       "eq": 296.38,
       "pnl": -3.62,
       "open": 4
+    },
+    {
+      "t": "2026-07-20T11:12:06.616Z",
+      "eq": 296.49,
+      "pnl": -3.51,
+      "open": 3
     }
   ],
   "peakEquity": 301.44,
