@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 251.23,
-  "equity": 298.02,
-  "totalPnl": -1.98,
+  "cash": 259.85,
+  "equity": 294.82,
+  "totalPnl": -5.18,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 131188,
+        "book": 131191,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10869
@@ -61,9 +61,9 @@
       "entry": 0.835,
       "size": 7,
       "cost": 5.84,
-      "bid": 0.77,
-      "value": 5.39,
-      "pnl": -0.45,
+      "bid": 0.73,
+      "value": 5.11,
+      "pnl": -0.73,
       "cat": "Спорт",
       "followAddr": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
       "followLabel": "top$535k 🔥",
@@ -72,37 +72,12 @@
         "label": "top$535k 🔥",
         "addr": "0x56ac…d77e",
         "entry": 0.83,
-        "book": 29437,
+        "book": 27152,
         "wr": 60,
         "overallPnl": 534924,
-        "posPnl": -1337
+        "posPnl": -1039
       },
       "topPeak": 8261.49
-    },
-    {
-      "title": "Hamburg European Open, Qualification: Varvara Lepchenko vs Elina Avanesyan",
-      "side": "Varvara Lepchenko",
-      "asset": "6317697432498108675535203513014357222339429209331990117978257996349125811722",
-      "entry": 0.338,
-      "size": 17,
-      "cost": 5.74,
-      "bid": 0.679,
-      "value": 11.54,
-      "pnl": 5.8,
-      "cat": "Спорт",
-      "followAddr": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
-      "followLabel": "top$535k 🔥",
-      "ts": "2026-07-20T07:30:09.301Z",
-      "follow": {
-        "label": "top$535k 🔥",
-        "addr": "0x56ac…d77e",
-        "entry": 0.322,
-        "book": 29437,
-        "wr": 60,
-        "overallPnl": 534924,
-        "posPnl": 3845
-      },
-      "topPeak": 11217.7698
     },
     {
       "title": "Livesport Prague Open: Veronika Podrez vs Carol Young Suh Lee",
@@ -122,7 +97,7 @@
         "label": "top$535k 🔥",
         "addr": "0x56ac…d77e",
         "entry": 0.433,
-        "book": 29437,
+        "book": 27152,
         "wr": 60,
         "overallPnl": 534924,
         "posPnl": 11
@@ -716,6 +691,22 @@
       "followLabel": "top$941k loss10%",
       "followAddr": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "asset": "4394372887385518214471608448209527405727552777602031099972143344338178308080"
+    },
+    {
+      "title": "Hamburg European Open, Qualification: Varvara Lepchenko vs Elina Avanesyan",
+      "side": "Varvara Lepchenko",
+      "entry": 0.338,
+      "exit": 0.507,
+      "size": 17,
+      "cost": 5.74,
+      "pnl": 2.88,
+      "proceeds": 8.62,
+      "entryTs": "2026-07-20T07:30:09.301Z",
+      "exitTs": "2026-07-20T09:54:03.028Z",
+      "followLabel": "top$535k 🔥",
+      "followAddr": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
+      "asset": "6317697432498108675535203513014357222339429209331990117978257996349125811722",
+      "reason": "топ сократил >50% ($11218→$5440)"
     }
   ],
   "log": [
@@ -903,7 +894,8 @@
     "РЕЗОЛВ: «Will Spain win the 2026 FIFA World Cup?» 🟢ВЫИГРЫШ +$6.98",
     "ВХОД: «Generali Open: Alexandre Muller vs Maria» Mariano Navone @0.835 $7 (лаг 0.5пп) за top$535k 🔥",
     "ВХОД: «Hamburg European Open, Qualification: Va» Varvara Lepchenko @0.338 $17 (лаг 1.6пп) за top$535k 🔥",
-    "ВХОД: «Livesport Prague Open: Veronika Podrez v» Veronika Podrez @0.434 $13 (лаг 0.2пп) за top$535k 🔥"
+    "ВХОД: «Livesport Prague Open: Veronika Podrez v» Veronika Podrez @0.434 $13 (лаг 0.2пп) за top$535k 🔥",
+    "ВЫХОД вслед за топом (топ сократил >50% ($11218→$5440)): «Hamburg European Open, Qualification» @0.51 +$2.88"
   ],
   "tops": [
     {
@@ -976,7 +968,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 57518,
+      "book": 57437,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -993,7 +985,7 @@
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
           "side": "YES",
-          "usd": 4856,
+          "usd": 4734,
           "cat": "Прочее"
         }
       ]
@@ -1002,7 +994,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 511801,
+      "book": 511885,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -1052,13 +1044,13 @@
     }
   ],
   "stats": {
-    "day": 6.98,
-    "week": 6.86,
-    "month": -12.15,
-    "trades": 40,
-    "winrate": 25
+    "day": 9.86,
+    "week": 9.74,
+    "month": -9.27,
+    "trades": 41,
+    "winrate": 27
   },
-  "updated": "2026-07-20T09:48:12.247Z",
+  "updated": "2026-07-20T09:54:11.330Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1067,17 +1059,6 @@
       "realized": 0,
       "unreal": 6.17,
       "open": 1,
-      "closed": 0,
-      "wins": 0,
-      "losses": 0
-    },
-    {
-      "label": "top$535k 🔥",
-      "addr": "0x56ac…d77e",
-      "total": 5.34,
-      "realized": 0,
-      "unreal": 5.34,
-      "open": 3,
       "closed": 0,
       "wins": 0,
       "losses": 0
@@ -1122,6 +1103,17 @@
       "realized": 4.07,
       "unreal": 0,
       "open": 0,
+      "closed": 1,
+      "wins": 1,
+      "losses": 0
+    },
+    {
+      "label": "top$535k 🔥",
+      "addr": "0x56ac…d77e",
+      "total": 2.14,
+      "realized": 2.88,
+      "unreal": -0.74,
+      "open": 2,
       "closed": 1,
       "wins": 1,
       "losses": 0
@@ -1238,14 +1230,6 @@
     }
   ],
   "digest": [
-    {
-      "ts": "2026-07-14T20:24:10.038Z",
-      "equity": 282.25,
-      "pnl": -17.75,
-      "open": 5,
-      "cash": 241.54,
-      "line": "эквити $282.25 (PnL $-17.75) · открыто 5 · кэш $241.54 · за час закрыто 0 (W0/L0) · лидеры: top$292k 🔥свежий +$4.8, top$177k +$4.6 · минус: top$941k loss10% $-15.28, top$175k $-8.94"
-    },
     {
       "ts": "2026-07-14T21:24:12.208Z",
       "equity": 282.99,
@@ -1621,15 +1605,17 @@
       "open": 4,
       "cash": 256.88,
       "line": "эквити $295.96 (PnL $-4.04) · открыто 4 · кэш $256.88 · за час закрыто 0 (W0/L0) · лидеры: top$237k +$5.87, top$177k +$4.91 · минус: top$1142k 🔥свежий ×2 $-11.4, top$268k 🔥 $-8.99"
+    },
+    {
+      "ts": "2026-07-20T09:54:11.390Z",
+      "equity": 294.82,
+      "pnl": -5.18,
+      "open": 4,
+      "cash": 259.85,
+      "line": "эквити $294.82 (PnL $-5.18) · открыто 4 · кэш $259.85 · за час закрыто 1 (W1/L0) · лидеры: top$237k +$6.17, top$177k +$4.91 · минус: top$1142k 🔥свежий ×2 $-11.4, top$268k 🔥 $-8.99"
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-15T04:00:07.608Z",
-      "eq": 283.1,
-      "pnl": -16.9,
-      "open": 4
-    },
     {
       "t": "2026-07-15T04:06:06.760Z",
       "eq": 283.09,
@@ -4023,6 +4009,12 @@
       "eq": 298.06,
       "pnl": -1.94,
       "open": 5
+    },
+    {
+      "t": "2026-07-20T09:54:05.935Z",
+      "eq": 294.82,
+      "pnl": -5.18,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
