@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 268.46,
-  "equity": 292.62,
-  "totalPnl": -7.38,
+  "cash": 262.62,
+  "equity": 292.59,
+  "totalPnl": -7.41,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 131194,
+        "book": 131183,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10869
@@ -47,12 +47,36 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13698,
+        "book": 13699,
         "wr": 59,
         "overallPnl": 63728,
         "posPnl": -464
       },
       "topPeak": 3133.6404
+    },
+    {
+      "title": "Generali Open: Alexandre Muller vs Mariano Navone",
+      "side": "Mariano Navone",
+      "asset": "23223298172597134497291010280641361739800681909026403850764755297932236646989",
+      "entry": 0.835,
+      "size": 7,
+      "cost": 5.84,
+      "bid": 0.83,
+      "value": 5.81,
+      "pnl": -0.03,
+      "cat": "Спорт",
+      "followAddr": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
+      "followLabel": "top$535k 🔥",
+      "ts": "2026-07-20T07:18:07.950Z",
+      "follow": {
+        "label": "top$535k 🔥",
+        "addr": "0x56ac…d77e",
+        "entry": 0.83,
+        "book": 19974,
+        "wr": 60,
+        "overallPnl": 534924,
+        "posPnl": 49
+      }
     }
   ],
   "closed": [
@@ -826,7 +850,8 @@
     "РЕЗОЛВ: «Will France win the 2026 FIFA World Cup?» 🟢ВЫИГРЫШ +$2.65",
     "ВЫХОД вслед за топом (топ сократил >50% ($52068→$25428)): «Will Samuel Alito announce his retir» @0.10 $-2.31",
     "✅ Риск-стоп снят — лимиты в норме, торговля возобновлена",
-    "РЕЗОЛВ: «Will Spain win the 2026 FIFA World Cup?» 🟢ВЫИГРЫШ +$6.98"
+    "РЕЗОЛВ: «Will Spain win the 2026 FIFA World Cup?» 🟢ВЫИГРЫШ +$6.98",
+    "ВХОД: «Generali Open: Alexandre Muller vs Maria» Mariano Navone @0.835 $7 (лаг 0.5пп) за top$535k 🔥"
   ],
   "tops": [
     {
@@ -899,18 +924,18 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 63537,
+      "book": 63629,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
           "side": "YES",
-          "usd": 7093,
+          "usd": 7052,
           "cat": "Прочее"
         },
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 5967,
+          "usd": 6016,
           "cat": "Прочее"
         },
         {
@@ -925,7 +950,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 482531,
+      "book": 482675,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -936,7 +961,7 @@
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 39357,
+          "usd": 39282,
           "cat": "Крипта"
         },
         {
@@ -951,7 +976,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 147102,
+      "book": 147090,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -962,7 +987,7 @@
         {
           "m": "Bitcoin dip to $20,000 by December 31, 2",
           "side": "NO",
-          "usd": 15844,
+          "usd": 15827,
           "cat": "Крипта"
         },
         {
@@ -981,7 +1006,7 @@
     "trades": 40,
     "winrate": 25
   },
-  "updated": "2026-07-20T07:12:09.574Z",
+  "updated": "2026-07-20T07:18:10.175Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1048,6 +1073,17 @@
       "closed": 2,
       "wins": 1,
       "losses": 1
+    },
+    {
+      "label": "top$535k 🔥",
+      "addr": "0x56ac…d77e",
+      "total": -0.03,
+      "realized": 0,
+      "unreal": -0.03,
+      "open": 1,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
     },
     {
       "label": "top$855k",
@@ -1536,12 +1572,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-15T01:24:06.018Z",
-      "eq": 283.07,
-      "pnl": -16.93,
-      "open": 4
-    },
     {
       "t": "2026-07-15T01:30:05.980Z",
       "eq": 283.07,
@@ -3932,6 +3962,12 @@
     },
     {
       "t": "2026-07-20T07:12:05.056Z",
+      "eq": 292.62,
+      "pnl": -7.38,
+      "open": 2
+    },
+    {
+      "t": "2026-07-20T07:18:04.925Z",
       "eq": 292.62,
       "pnl": -7.38,
       "open": 2
