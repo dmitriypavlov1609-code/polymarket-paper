@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 131168,
+        "book": 131173,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10845
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13775,
+        "book": 13764,
         "wr": 59,
         "overallPnl": 63728,
         "posPnl": -467
@@ -899,7 +899,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 63366,
+      "book": 63533,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
@@ -910,7 +910,7 @@
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 5906,
+          "usd": 6138,
           "cat": "Прочее"
         },
         {
@@ -925,7 +925,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 480885,
+      "book": 480778,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -951,7 +951,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 147292,
+      "book": 147020,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -981,7 +981,7 @@
     "trades": 40,
     "winrate": 25
   },
-  "updated": "2026-07-20T06:36:09.982Z",
+  "updated": "2026-07-20T06:42:09.341Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1536,12 +1536,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-15T00:48:06.073Z",
-      "eq": 283.08,
-      "pnl": -16.92,
-      "open": 4
-    },
     {
       "t": "2026-07-15T00:54:06.010Z",
       "eq": 283.07,
@@ -3932,6 +3926,12 @@
     },
     {
       "t": "2026-07-20T06:36:05.420Z",
+      "eq": 292.59,
+      "pnl": -7.41,
+      "open": 2
+    },
+    {
+      "t": "2026-07-20T06:42:05.074Z",
       "eq": 292.59,
       "pnl": -7.41,
       "open": 2
