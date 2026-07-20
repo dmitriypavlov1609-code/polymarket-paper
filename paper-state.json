@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 268.46,
-  "equity": 292.56,
-  "totalPnl": -7.44,
+  "equity": 292.46,
+  "totalPnl": -7.54,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.93,
-      "value": 14.88,
-      "pnl": 6.14,
+      "bid": 0.924,
+      "value": 14.78,
+      "pnl": 6.04,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 131213,
+        "book": 131196,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10845
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13922,
+        "book": 13860,
         "wr": 59,
         "overallPnl": 63728,
         "posPnl": -472
@@ -899,7 +899,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 64475,
+      "book": 64728,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
@@ -925,18 +925,18 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 583522,
+      "book": 581940,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 46539,
+          "usd": 44971,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 38493,
+          "usd": 38213,
           "cat": "Крипта"
         },
         {
@@ -951,7 +951,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 174981,
+      "book": 175337,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -981,14 +981,14 @@
     "trades": 40,
     "winrate": 25
   },
-  "updated": "2026-07-20T02:30:09.428Z",
+  "updated": "2026-07-20T02:36:09.396Z",
   "topStats": [
     {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
-      "total": 6.14,
+      "total": 6.04,
       "realized": 0,
-      "unreal": 6.14,
+      "unreal": 6.04,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1536,12 +1536,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-14T20:42:06.010Z",
-      "eq": 282.52,
-      "pnl": -17.48,
-      "open": 5
-    },
     {
       "t": "2026-07-14T20:48:06.880Z",
       "eq": 282.79,
@@ -3934,6 +3928,12 @@
       "t": "2026-07-20T02:30:05.219Z",
       "eq": 292.56,
       "pnl": -7.44,
+      "open": 2
+    },
+    {
+      "t": "2026-07-20T02:36:05.249Z",
+      "eq": 292.46,
+      "pnl": -7.54,
       "open": 2
     }
   ],
