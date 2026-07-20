@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 263.9,
-  "equity": 293.77,
-  "totalPnl": -6.23,
+  "cash": 258.26,
+  "equity": 293.73,
+  "totalPnl": -6.27,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 131176,
+        "book": 131171,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10869
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 14110,
+        "book": 14100,
         "wr": 59,
         "overallPnl": 63728,
         "posPnl": -410
@@ -72,12 +72,36 @@
         "label": "top$535k 🔥",
         "addr": "0x56ac…d77e",
         "entry": 0.6,
-        "book": 32852,
+        "book": 41758,
         "wr": 60,
         "overallPnl": 534924,
         "posPnl": 84
       },
       "topPeak": 3425.6976
+    },
+    {
+      "title": "Estoril Open: Frederico Ferreira Silva vs Luca Van Assche",
+      "side": "Luca Van Assche",
+      "asset": "96023540397628112837546047977193371301749440336882454902113868095059101184845",
+      "entry": 0.805,
+      "size": 7,
+      "cost": 5.64,
+      "bid": 0.8,
+      "value": 5.6,
+      "pnl": -0.04,
+      "cat": "Спорт",
+      "followAddr": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
+      "followLabel": "top$535k 🔥",
+      "ts": "2026-07-20T12:54:08.612Z",
+      "follow": {
+        "label": "top$535k 🔥",
+        "addr": "0x56ac…d77e",
+        "entry": 0.8,
+        "book": 41758,
+        "wr": 60,
+        "overallPnl": 534924,
+        "posPnl": -60
+      }
     }
   ],
   "closed": [
@@ -921,7 +945,8 @@
     "ТЕЙК-ПРОФИТ 50%: «Generali Open: Alexandre Muller vs» @0.92 +$0.26",
     "РЕЗОЛВ: «Generali Open: Alexandre Muller vs Mariano Navone» 🟢ВЫИГРЫШ +$0.66",
     "ВХОД: «Generali Open: Facundo Acosta vs Federic» Facundo Acosta @0.605 $9 (лаг 0.5пп) за top$535k 🔥",
-    "ВЫХОД вслед за топом (топ сократил >50% ($3254→$1590)): «Livesport Prague Open: Veronika Podr» @0.21 $-2.91"
+    "ВЫХОД вслед за топом (топ сократил >50% ($3254→$1590)): «Livesport Prague Open: Veronika Podr» @0.21 $-2.91",
+    "ВХОД: «Estoril Open: Frederico Ferreira Silva v» Luca Van Assche @0.805 $7 (лаг 0.5пп) за top$535k 🔥"
   ],
   "tops": [
     {
@@ -994,7 +1019,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 58642,
+      "book": 57986,
       "top": [
         {
           "m": "Bitcoin reach $75,000 in July",
@@ -1011,7 +1036,7 @@
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
           "side": "YES",
-          "usd": 5263,
+          "usd": 5100,
           "cat": "Прочее"
         }
       ]
@@ -1020,7 +1045,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 522662,
+      "book": 521868,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -1031,7 +1056,7 @@
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 38084,
+          "usd": 38025,
           "cat": "Крипта"
         },
         {
@@ -1046,7 +1071,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 155332,
+      "book": 155359,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1057,7 +1082,7 @@
         {
           "m": "Bitcoin dip to $20,000 by December 31, 2",
           "side": "NO",
-          "usd": 15852,
+          "usd": 15860,
           "cat": "Крипта"
         },
         {
@@ -1076,7 +1101,7 @@
     "trades": 44,
     "winrate": 30
   },
-  "updated": "2026-07-20T12:48:10.942Z",
+  "updated": "2026-07-20T12:54:11.316Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1147,10 +1172,10 @@
     {
       "label": "top$535k 🔥",
       "addr": "0x56ac…d77e",
-      "total": 0.93,
+      "total": 0.89,
       "realized": 0.89,
-      "unreal": 0.04,
-      "open": 1,
+      "unreal": 0,
+      "open": 2,
       "closed": 4,
       "wins": 3,
       "losses": 1
@@ -1256,14 +1281,6 @@
     }
   ],
   "digest": [
-    {
-      "ts": "2026-07-14T23:24:07.461Z",
-      "equity": 283.06,
-      "pnl": -16.94,
-      "open": 5,
-      "cash": 249.16,
-      "line": "эквити $283.06 (PnL $-16.94) · открыто 5 · кэш $249.16 · за час закрыто 0 (W0/L0) · лидеры: top$177k +$4.9, top$292k 🔥свежий +$4.8 · минус: top$941k loss10% $-14.75, top$175k $-8.94"
-    },
     {
       "ts": "2026-07-15T00:24:06.817Z",
       "equity": 283.08,
@@ -1639,15 +1656,17 @@
       "open": 3,
       "cash": 263.9,
       "line": "эквити $293.52 (PnL $-6.48) · открыто 3 · кэш $263.90 · за час закрыто 2 (W1/L1) · лидеры: top$237k +$6.17, top$177k +$4.91 · минус: top$1142k 🔥свежий ×2 $-11.4, top$268k 🔥 $-8.99"
+    },
+    {
+      "ts": "2026-07-20T12:54:11.374Z",
+      "equity": 293.73,
+      "pnl": -6.27,
+      "open": 4,
+      "cash": 258.26,
+      "line": "эквити $293.73 (PnL $-6.27) · открыто 4 · кэш $258.26 · за час закрыто 0 (W0/L0) · лидеры: top$237k +$6.17, top$177k +$4.91 · минус: top$1142k 🔥свежий ×2 $-11.4, top$268k 🔥 $-8.99"
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-15T07:00:06.803Z",
-      "eq": 283.08,
-      "pnl": -16.92,
-      "open": 4
-    },
     {
       "t": "2026-07-15T07:06:06.001Z",
       "eq": 283.08,
@@ -4038,6 +4057,12 @@
     },
     {
       "t": "2026-07-20T12:48:05.599Z",
+      "eq": 293.77,
+      "pnl": -6.23,
+      "open": 3
+    },
+    {
+      "t": "2026-07-20T12:54:05.301Z",
       "eq": 293.77,
       "pnl": -6.23,
       "open": 3
