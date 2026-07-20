@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 131197,
+        "book": 131182,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10857
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13852,
+        "book": 13849,
         "wr": 59,
         "overallPnl": 63728,
         "posPnl": -462
@@ -899,12 +899,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 63097,
+      "book": 62932,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
           "side": "YES",
-          "usd": 6849,
+          "usd": 6727,
           "cat": "Прочее"
         },
         {
@@ -925,7 +925,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 477086,
+      "book": 477497,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -951,7 +951,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 147035,
+      "book": 147030,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -981,7 +981,7 @@
     "trades": 40,
     "winrate": 25
   },
-  "updated": "2026-07-20T05:36:09.386Z",
+  "updated": "2026-07-20T05:42:09.885Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1536,12 +1536,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-14T23:48:06.215Z",
-      "eq": 283.06,
-      "pnl": -16.94,
-      "open": 5
-    },
     {
       "t": "2026-07-14T23:54:06.547Z",
       "eq": 283.07,
@@ -3932,6 +3926,12 @@
     },
     {
       "t": "2026-07-20T05:36:05.211Z",
+      "eq": 292.66,
+      "pnl": -7.34,
+      "open": 2
+    },
+    {
+      "t": "2026-07-20T05:42:05.806Z",
       "eq": 292.66,
       "pnl": -7.34,
       "open": 2
