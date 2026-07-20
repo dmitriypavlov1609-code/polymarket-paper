@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 263.49,
-  "equity": 291.43,
-  "totalPnl": -8.57,
+  "cash": 267.49,
+  "equity": 291.42,
+  "totalPnl": -8.58,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.919,
-      "value": 14.7,
-      "pnl": 5.96,
+      "bid": 0.918,
+      "value": 14.69,
+      "pnl": 5.95,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 130984,
+        "book": 130983,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10697
@@ -47,38 +47,12 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13930,
+        "book": 13957,
         "wr": 59,
         "overallPnl": 63728,
-        "posPnl": -485
+        "posPnl": -452
       },
       "topPeak": 3133.6404
-    },
-    {
-      "title": "Estoril Open: Frederico Ferreira Silva vs Luca Van Assche",
-      "side": "Luca Van Assche",
-      "asset": "96023540397628112837546047977193371301749440336882454902113868095059101184845",
-      "entry": 0.805,
-      "size": 4,
-      "cost": 3.22,
-      "bid": 0.999,
-      "value": 4,
-      "pnl": 0.78,
-      "cat": "Спорт",
-      "followAddr": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
-      "followLabel": "top$535k 🔥",
-      "ts": "2026-07-20T12:54:08.612Z",
-      "follow": {
-        "label": "top$535k 🔥",
-        "addr": "0x56ac…d77e",
-        "entry": 0.8,
-        "book": 49440,
-        "wr": 60,
-        "overallPnl": 534924,
-        "posPnl": 2404
-      },
-      "topPeak": 12018.65,
-      "tookProfit": true
     }
   ],
   "closed": [
@@ -762,6 +736,20 @@
       "followAddr": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
       "asset": "96023540397628112837546047977193371301749440336882454902113868095059101184845",
       "reason": "тейк-профит 50% @90¢+"
+    },
+    {
+      "title": "Estoril Open: Frederico Ferreira Silva vs Luca Van Assche",
+      "side": "Luca Van Assche",
+      "entry": 0.805,
+      "exit": 1,
+      "size": 4,
+      "cost": 3.22,
+      "pnl": 0.78,
+      "entryTs": "2026-07-20T12:54:08.612Z",
+      "exitTs": "2026-07-20T19:02:57.000Z",
+      "followLabel": "top$535k 🔥",
+      "followAddr": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
+      "asset": "96023540397628112837546047977193371301749440336882454902113868095059101184845"
     }
   ],
   "log": [
@@ -957,7 +945,8 @@
     "ВЫХОД вслед за топом (топ сократил >50% ($3254→$1590)): «Livesport Prague Open: Veronika Podr» @0.21 $-2.91",
     "ВХОД: «Estoril Open: Frederico Ferreira Silva v» Luca Van Assche @0.805 $7 (лаг 0.5пп) за top$535k 🔥",
     "ВЫХОД вслед за топом (топ сократил >50% ($3593→$1420)): «Generali Open: Facundo Acosta vs Fed» @0.25 $-3.2",
-    "ТЕЙК-ПРОФИТ 50%: «Estoril Open: Frederico Ferreira S» @0.99 +$0.55"
+    "ТЕЙК-ПРОФИТ 50%: «Estoril Open: Frederico Ferreira S» @0.99 +$0.55",
+    "РЕЗОЛВ: «Estoril Open: Frederico Ferreira Silva vs Luca Van Assche» 🟢ВЫИГРЫШ +$0.78"
   ],
   "tops": [
     {
@@ -1030,12 +1019,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 57330,
+      "book": 57372,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
           "side": "YES",
-          "usd": 6036,
+          "usd": 5995,
           "cat": "Прочее"
         },
         {
@@ -1056,7 +1045,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 519339,
+      "book": 519391,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -1082,7 +1071,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 159278,
+      "book": 159164,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1106,20 +1095,20 @@
     }
   ],
   "stats": {
-    "day": 5.22,
-    "week": 5.1,
-    "month": -13.91,
-    "trades": 46,
-    "winrate": 30
+    "day": 6,
+    "week": 5.88,
+    "month": -13.13,
+    "trades": 47,
+    "winrate": 32
   },
-  "updated": "2026-07-20T19:06:11.302Z",
+  "updated": "2026-07-20T19:12:11.405Z",
   "topStats": [
     {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
-      "total": 5.96,
+      "total": 5.95,
       "realized": 0,
-      "unreal": 5.96,
+      "unreal": 5.95,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1228,11 +1217,11 @@
       "label": "top$535k 🔥",
       "addr": "0x56ac…d77e",
       "total": -0.98,
-      "realized": -1.76,
-      "unreal": 0.78,
-      "open": 1,
-      "closed": 6,
-      "wins": 4,
+      "realized": -0.98,
+      "unreal": 0,
+      "open": 0,
+      "closed": 7,
+      "wins": 5,
       "losses": 2
     },
     {
@@ -1678,12 +1667,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-15T13:18:05.318Z",
-      "eq": 282.67,
-      "pnl": -17.33,
-      "open": 3
-    },
     {
       "t": "2026-07-15T13:24:05.509Z",
       "eq": 282.67,
@@ -4077,6 +4060,12 @@
       "eq": 291.44,
       "pnl": -8.56,
       "open": 3
+    },
+    {
+      "t": "2026-07-20T19:12:06.221Z",
+      "eq": 291.42,
+      "pnl": -8.58,
+      "open": 2
     }
   ],
   "peakEquity": 301.44,
