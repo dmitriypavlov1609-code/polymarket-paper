@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 262.62,
-  "equity": 292.59,
-  "totalPnl": -7.41,
+  "cash": 256.88,
+  "equity": 292.56,
+  "totalPnl": -7.44,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 131189,
+        "book": 131195,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10869
@@ -36,9 +36,9 @@
       "entry": 0.888,
       "size": 12,
       "cost": 10.66,
-      "bid": 0.771,
-      "value": 9.25,
-      "pnl": -1.41,
+      "bid": 0.772,
+      "value": 9.26,
+      "pnl": -1.4,
       "cat": "Прочее",
       "followAddr": "0xd1091712f4ed0e17261feb174f5c080977506fa0",
       "followLabel": "top$173k",
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13683,
+        "book": 13688,
         "wr": 59,
         "overallPnl": 63728,
         "posPnl": -464
@@ -72,10 +72,34 @@
         "label": "top$535k 🔥",
         "addr": "0x56ac…d77e",
         "entry": 0.83,
-        "book": 24135,
+        "book": 24343,
         "wr": 60,
         "overallPnl": 534924,
         "posPnl": 49
+      }
+    },
+    {
+      "title": "Hamburg European Open, Qualification: Varvara Lepchenko vs Elina Avanesyan",
+      "side": "Varvara Lepchenko",
+      "asset": "6317697432498108675535203513014357222339429209331990117978257996349125811722",
+      "entry": 0.338,
+      "size": 17,
+      "cost": 5.74,
+      "bid": 0.335,
+      "value": 5.7,
+      "pnl": -0.04,
+      "cat": "Спорт",
+      "followAddr": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
+      "followLabel": "top$535k 🔥",
+      "ts": "2026-07-20T07:30:09.301Z",
+      "follow": {
+        "label": "top$535k 🔥",
+        "addr": "0x56ac…d77e",
+        "entry": 0.322,
+        "book": 24343,
+        "wr": 60,
+        "overallPnl": 534924,
+        "posPnl": 201
       }
     }
   ],
@@ -851,7 +875,8 @@
     "ВЫХОД вслед за топом (топ сократил >50% ($52068→$25428)): «Will Samuel Alito announce his retir» @0.10 $-2.31",
     "✅ Риск-стоп снят — лимиты в норме, торговля возобновлена",
     "РЕЗОЛВ: «Will Spain win the 2026 FIFA World Cup?» 🟢ВЫИГРЫШ +$6.98",
-    "ВХОД: «Generali Open: Alexandre Muller vs Maria» Mariano Navone @0.835 $7 (лаг 0.5пп) за top$535k 🔥"
+    "ВХОД: «Generali Open: Alexandre Muller vs Maria» Mariano Navone @0.835 $7 (лаг 0.5пп) за top$535k 🔥",
+    "ВХОД: «Hamburg European Open, Qualification: Va» Varvara Lepchenko @0.338 $17 (лаг 1.6пп) за top$535k 🔥"
   ],
   "tops": [
     {
@@ -924,18 +949,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 63718,
+      "book": 63207,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
           "side": "YES",
-          "usd": 7052,
-          "cat": "Прочее"
-        },
-        {
-          "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
-          "side": "YES",
-          "usd": 5857,
+          "usd": 6686,
           "cat": "Прочее"
         },
         {
@@ -943,6 +962,12 @@
           "side": "NO",
           "usd": 5797,
           "cat": "Крипта"
+        },
+        {
+          "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
+          "side": "YES",
+          "usd": 5679,
+          "cat": "Прочее"
         }
       ]
     },
@@ -950,7 +975,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 482850,
+      "book": 482535,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -976,7 +1001,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 147545,
+      "book": 147814,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1006,7 +1031,7 @@
     "trades": 40,
     "winrate": 25
   },
-  "updated": "2026-07-20T07:24:09.803Z",
+  "updated": "2026-07-20T07:30:11.847Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1075,17 +1100,6 @@
       "losses": 1
     },
     {
-      "label": "top$535k 🔥",
-      "addr": "0x56ac…d77e",
-      "total": -0.03,
-      "realized": 0,
-      "unreal": -0.03,
-      "open": 1,
-      "closed": 0,
-      "wins": 0,
-      "losses": 0
-    },
-    {
       "label": "top$855k",
       "addr": "0x0c78…77f1",
       "total": -0.06,
@@ -1095,6 +1109,17 @@
       "closed": 1,
       "wins": 0,
       "losses": 1
+    },
+    {
+      "label": "top$535k 🔥",
+      "addr": "0x56ac…d77e",
+      "total": -0.07,
+      "realized": 0,
+      "unreal": -0.07,
+      "open": 2,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
     },
     {
       "label": "top-UFC $417k (лотерейка)",
@@ -1143,9 +1168,9 @@
     {
       "label": "top$173k",
       "addr": "0xd109…6fa0",
-      "total": -1.41,
+      "total": -1.4,
       "realized": 0,
-      "unreal": -1.41,
+      "unreal": -1.4,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1572,12 +1597,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-15T01:36:05.513Z",
-      "eq": 283.07,
-      "pnl": -16.93,
-      "open": 4
-    },
     {
       "t": "2026-07-15T01:42:05.564Z",
       "eq": 283.07,
@@ -3970,6 +3989,12 @@
       "t": "2026-07-20T07:24:05.300Z",
       "eq": 292.59,
       "pnl": -7.41,
+      "open": 3
+    },
+    {
+      "t": "2026-07-20T07:30:06.278Z",
+      "eq": 292.6,
+      "pnl": -7.4,
       "open": 3
     }
   ],
