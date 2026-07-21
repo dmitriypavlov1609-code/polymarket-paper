@@ -47,10 +47,10 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13697,
+        "book": 13654,
         "wr": 56,
         "overallPnl": 146896,
-        "posPnl": -476
+        "posPnl": -479
       },
       "topPeak": 3133.6404
     }
@@ -1037,12 +1037,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 55714,
+      "book": 55593,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
           "side": "YES",
-          "usd": 5710,
+          "usd": 5670,
           "cat": "Прочее"
         },
         {
@@ -1063,7 +1063,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 530996,
+      "book": 530826,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -1074,7 +1074,7 @@
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 36852,
+          "usd": 36755,
           "cat": "Крипта"
         },
         {
@@ -1089,7 +1089,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 160901,
+      "book": 160919,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1119,7 +1119,7 @@
     "trades": 48,
     "winrate": 31
   },
-  "updated": "2026-07-21T02:24:10.425Z",
+  "updated": "2026-07-21T02:30:11.058Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1685,12 +1685,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-15T21:00:06.017Z",
-      "eq": 287.23,
-      "pnl": -12.77,
-      "open": 3
-    },
     {
       "t": "2026-07-15T21:06:05.706Z",
       "eq": 287.23,
@@ -4083,6 +4077,12 @@
       "t": "2026-07-21T02:24:04.503Z",
       "eq": 287.28,
       "pnl": -12.72,
+      "open": 2
+    },
+    {
+      "t": "2026-07-21T02:30:05.349Z",
+      "eq": 287.27,
+      "pnl": -12.73,
       "open": 2
     }
   ],
