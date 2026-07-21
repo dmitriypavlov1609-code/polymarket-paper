@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 263.23,
-  "equity": 287.2,
-  "totalPnl": -12.8,
+  "equity": 287.07,
+  "totalPnl": -12.93,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.92,
-      "value": 14.72,
-      "pnl": 5.98,
+      "bid": 0.912,
+      "value": 14.59,
+      "pnl": 5.85,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 130993,
+        "book": 130984,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 10611
+        "posPnl": 10598
       },
       "topPeak": 23410.4276
     },
@@ -47,10 +47,10 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13860,
+        "book": 13862,
         "wr": 56,
         "overallPnl": 146970,
-        "posPnl": -464
+        "posPnl": -462
       },
       "topPeak": 3133.6404
     }
@@ -1037,7 +1037,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 55633,
+      "book": 55535,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
@@ -1063,18 +1063,18 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 517422,
+      "book": 518848,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 39182,
+          "usd": 40057,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 35659,
+          "usd": 35887,
           "cat": "Крипта"
         },
         {
@@ -1089,7 +1089,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 156002,
+      "book": 155792,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1119,14 +1119,14 @@
     "trades": 48,
     "winrate": 31
   },
-  "updated": "2026-07-21T04:48:10.912Z",
+  "updated": "2026-07-21T04:54:10.586Z",
   "topStats": [
     {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
-      "total": 5.98,
+      "total": 5.85,
       "realized": 0,
-      "unreal": 5.98,
+      "unreal": 5.85,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1299,14 +1299,6 @@
     }
   ],
   "digest": [
-    {
-      "ts": "2026-07-15T15:24:06.945Z",
-      "equity": 283.12,
-      "pnl": -16.88,
-      "open": 3,
-      "cash": 260.46,
-      "line": "эквити $283.12 (PnL $-16.88) · открыто 3 · кэш $260.46 · за час закрыто 0 (W0/L0) · лидеры: top$177k +$4.91, top$292k 🔥свежий +$4.8 · минус: top$941k loss10% $-14.75, top$268k 🔥 $-8.99"
-    },
     {
       "ts": "2026-07-15T16:24:07.205Z",
       "equity": 285.5,
@@ -1682,15 +1674,17 @@
       "open": 2,
       "cash": 263.23,
       "line": "эквити $287.39 (PnL $-12.61) · открыто 2 · кэш $263.23 · за час закрыто 0 (W0/L0) · лидеры: top$237k +$6.17, top$177k +$4.91 · минус: top$1142k 🔥свежий ×2 $-11.4, top$268k 🔥 $-8.99"
+    },
+    {
+      "ts": "2026-07-21T04:54:10.670Z",
+      "equity": 287.07,
+      "pnl": -12.93,
+      "open": 2,
+      "cash": 263.23,
+      "line": "эквити $287.07 (PnL $-12.93) · открыто 2 · кэш $263.23 · за час закрыто 0 (W0/L0) · лидеры: top$237k +$5.85, top$177k +$4.91 · минус: top$1142k 🔥свежий ×2 $-11.4, top$268k 🔥 $-8.99"
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-19T12:54:06.179Z",
-      "eq": 288.02,
-      "pnl": -11.98,
-      "open": 3
-    },
     {
       "t": "2026-07-19T13:00:05.473Z",
       "eq": 287.97,
@@ -4083,6 +4077,12 @@
       "t": "2026-07-21T04:48:05.380Z",
       "eq": 287.2,
       "pnl": -12.8,
+      "open": 2
+    },
+    {
+      "t": "2026-07-21T04:54:04.822Z",
+      "eq": 287.07,
+      "pnl": -12.93,
       "open": 2
     }
   ],
