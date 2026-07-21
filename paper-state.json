@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 263.23,
-  "equity": 287.41,
-  "totalPnl": -12.59,
+  "equity": 287.31,
+  "totalPnl": -12.69,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 145038,
+        "book": 145057,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10832
@@ -36,9 +36,9 @@
       "entry": 0.888,
       "size": 12,
       "cost": 10.66,
-      "bid": 0.775,
-      "value": 9.3,
-      "pnl": -1.36,
+      "bid": 0.767,
+      "value": 9.2,
+      "pnl": -1.46,
       "cat": "Прочее",
       "followAddr": "0xd1091712f4ed0e17261feb174f5c080977506fa0",
       "followLabel": "top$173k",
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 14034,
+        "book": 13987,
         "wr": 56,
         "overallPnl": 146970,
         "posPnl": -443
@@ -1038,7 +1038,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 53335,
+      "book": 53295,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
@@ -1055,7 +1055,7 @@
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 4811,
+          "usd": 4805,
           "cat": "Прочее"
         }
       ]
@@ -1064,7 +1064,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 608476,
+      "book": 608538,
       "top": [
         {
           "m": "Bitcoin reach $67,500 in July",
@@ -1075,7 +1075,7 @@
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 31477,
+          "usd": 31238,
           "cat": "Крипта"
         },
         {
@@ -1090,12 +1090,12 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 146446,
+      "book": 146217,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
           "side": "NO",
-          "usd": 23600,
+          "usd": 23612,
           "cat": "Крипта"
         },
         {
@@ -1120,7 +1120,7 @@
     "trades": 48,
     "winrate": 31
   },
-  "updated": "2026-07-21T15:48:06.577Z",
+  "updated": "2026-07-21T15:54:06.435Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1246,9 +1246,9 @@
     {
       "label": "top$173k",
       "addr": "0xd109…6fa0",
-      "total": -1.36,
+      "total": -1.46,
       "realized": 0,
-      "unreal": -1.36,
+      "unreal": -1.46,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1300,14 +1300,6 @@
     }
   ],
   "digest": [
-    {
-      "ts": "2026-07-19T15:54:07.410Z",
-      "equity": 288.17,
-      "pnl": -11.83,
-      "open": 3,
-      "cash": 260.46,
-      "line": "эквити $288.17 (PnL $-11.83) · открыто 3 · кэш $260.46 · за час закрыто 0 (W0/L0) · лидеры: top$237k +$5.84, top$177k +$4.91 · минус: top$941k loss10% $-14.67, top$268k 🔥 $-8.99"
-    },
     {
       "ts": "2026-07-19T16:54:07.528Z",
       "equity": 288.16,
@@ -1683,15 +1675,17 @@
       "open": 2,
       "cash": 263.23,
       "line": "эквити $287.60 (PnL $-12.4) · открыто 2 · кэш $263.23 · за час закрыто 0 (W0/L0) · лидеры: top$237k +$6.14, top$177k +$4.91 · минус: top$1142k 🔥свежий ×2 $-11.4, top$268k 🔥 $-8.99"
+    },
+    {
+      "ts": "2026-07-21T15:54:06.500Z",
+      "equity": 287.31,
+      "pnl": -12.69,
+      "open": 2,
+      "cash": 263.23,
+      "line": "эквити $287.31 (PnL $-12.69) · открыто 2 · кэш $263.23 · за час закрыто 0 (W0/L0) · лидеры: top$237k +$6.14, top$177k +$4.91 · минус: top$1142k 🔥свежий ×2 $-11.4, top$268k 🔥 $-8.99"
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-19T23:54:05.112Z",
-      "eq": 292.49,
-      "pnl": -7.51,
-      "open": 3
-    },
     {
       "t": "2026-07-20T00:00:06.504Z",
       "eq": 292.54,
@@ -4084,6 +4078,12 @@
       "t": "2026-07-21T15:48:05.112Z",
       "eq": 287.41,
       "pnl": -12.59,
+      "open": 2
+    },
+    {
+      "t": "2026-07-21T15:54:05.128Z",
+      "eq": 287.31,
+      "pnl": -12.69,
       "open": 2
     }
   ],
