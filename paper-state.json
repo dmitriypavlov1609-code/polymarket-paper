@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 263.23,
-  "equity": 287.36,
-  "totalPnl": -12.64,
+  "equity": 287.35,
+  "totalPnl": -12.65,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -36,9 +36,9 @@
       "entry": 0.888,
       "size": 12,
       "cost": 10.66,
-      "bid": 0.771,
-      "value": 9.25,
-      "pnl": -1.41,
+      "bid": 0.77,
+      "value": 9.24,
+      "pnl": -1.42,
       "cat": "Прочее",
       "followAddr": "0xd1091712f4ed0e17261feb174f5c080977506fa0",
       "followLabel": "top$173k",
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13819,
+        "book": 13824,
         "wr": 56,
         "overallPnl": 146970,
         "posPnl": -462
@@ -1037,7 +1037,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 55034,
+      "book": 55188,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
@@ -1054,7 +1054,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 4572,
+          "usd": 4562,
           "cat": "Крипта"
         }
       ]
@@ -1063,18 +1063,18 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 525972,
+      "book": 524713,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 40057,
+          "usd": 37046,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 35531,
+          "usd": 35015,
           "cat": "Крипта"
         },
         {
@@ -1089,7 +1089,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 155955,
+      "book": 156315,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1119,7 +1119,7 @@
     "trades": 48,
     "winrate": 31
   },
-  "updated": "2026-07-21T05:48:10.955Z",
+  "updated": "2026-07-21T05:54:10.430Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1245,9 +1245,9 @@
     {
       "label": "top$173k",
       "addr": "0xd109…6fa0",
-      "total": -1.41,
+      "total": -1.42,
       "realized": 0,
-      "unreal": -1.41,
+      "unreal": -1.42,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1299,14 +1299,6 @@
     }
   ],
   "digest": [
-    {
-      "ts": "2026-07-15T16:24:07.205Z",
-      "equity": 285.5,
-      "pnl": -14.5,
-      "open": 3,
-      "cash": 260.46,
-      "line": "эквити $285.50 (PnL $-14.5) · открыто 3 · кэш $260.46 · за час закрыто 0 (W0/L0) · лидеры: top$177k +$4.91, top$292k 🔥свежий +$4.8 · минус: top$941k loss10% $-14.75, top$268k 🔥 $-8.99"
-    },
     {
       "ts": "2026-07-15T17:24:06.875Z",
       "equity": 284.08,
@@ -1682,15 +1674,17 @@
       "open": 2,
       "cash": 263.23,
       "line": "эквити $287.07 (PnL $-12.93) · открыто 2 · кэш $263.23 · за час закрыто 0 (W0/L0) · лидеры: top$237k +$5.85, top$177k +$4.91 · минус: top$1142k 🔥свежий ×2 $-11.4, top$268k 🔥 $-8.99"
+    },
+    {
+      "ts": "2026-07-21T05:54:10.496Z",
+      "equity": 287.35,
+      "pnl": -12.65,
+      "open": 2,
+      "cash": 263.23,
+      "line": "эквити $287.35 (PnL $-12.65) · открыто 2 · кэш $263.23 · за час закрыто 0 (W0/L0) · лидеры: top$237k +$6.14, top$177k +$4.91 · минус: top$1142k 🔥свежий ×2 $-11.4, top$268k 🔥 $-8.99"
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-19T13:54:06.079Z",
-      "eq": 288.09,
-      "pnl": -11.91,
-      "open": 3
-    },
     {
       "t": "2026-07-19T14:00:06.353Z",
       "eq": 288.1,
@@ -4083,6 +4077,12 @@
       "t": "2026-07-21T05:48:04.985Z",
       "eq": 287.36,
       "pnl": -12.64,
+      "open": 2
+    },
+    {
+      "t": "2026-07-21T05:54:04.891Z",
+      "eq": 287.35,
+      "pnl": -12.65,
       "open": 2
     }
   ],
