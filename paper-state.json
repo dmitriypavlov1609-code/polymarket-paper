@@ -1037,12 +1037,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 55933,
+      "book": 55826,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
           "side": "YES",
-          "usd": 5629,
+          "usd": 5670,
           "cat": "Прочее"
         },
         {
@@ -1054,7 +1054,7 @@
         {
           "m": "Bitcoin reach $75,000 in July",
           "side": "NO",
-          "usd": 4572,
+          "usd": 4576,
           "cat": "Крипта"
         }
       ]
@@ -1063,18 +1063,18 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 524732,
+      "book": 525176,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 40932,
+          "usd": 41807,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 36111,
+          "usd": 36304,
           "cat": "Крипта"
         },
         {
@@ -1089,7 +1089,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 160881,
+      "book": 160883,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1119,7 +1119,7 @@
     "trades": 48,
     "winrate": 31
   },
-  "updated": "2026-07-21T01:30:10.786Z",
+  "updated": "2026-07-21T01:36:10.265Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1685,12 +1685,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-15T20:06:05.237Z",
-      "eq": 287.21,
-      "pnl": -12.79,
-      "open": 3
-    },
     {
       "t": "2026-07-15T20:12:05.243Z",
       "eq": 287.21,
@@ -4081,6 +4075,12 @@
     },
     {
       "t": "2026-07-21T01:30:05.171Z",
+      "eq": 287.32,
+      "pnl": -12.68,
+      "open": 2
+    },
+    {
+      "t": "2026-07-21T01:36:04.808Z",
       "eq": 287.32,
       "pnl": -12.68,
       "open": 2
