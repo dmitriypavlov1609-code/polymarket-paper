@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 145071,
+        "book": 145116,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10832
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 14070,
+        "book": 14102,
         "wr": 56,
         "overallPnl": 146970,
         "posPnl": -384
@@ -1038,12 +1038,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 55619,
+      "book": 55665,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
           "side": "YES",
-          "usd": 6524,
+          "usd": 6563,
           "cat": "Прочее"
         },
         {
@@ -1055,7 +1055,7 @@
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 4487,
+          "usd": 4402,
           "cat": "Прочее"
         }
       ]
@@ -1064,7 +1064,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 560126,
+      "book": 560195,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -1090,7 +1090,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 157610,
+      "book": 157332,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1120,7 +1120,7 @@
     "trades": 48,
     "winrate": 31
   },
-  "updated": "2026-07-21T11:36:06.985Z",
+  "updated": "2026-07-21T11:42:07.413Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1686,12 +1686,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-19T19:42:06.338Z",
-      "eq": 289.09,
-      "pnl": -10.91,
-      "open": 3
-    },
     {
       "t": "2026-07-19T19:48:05.680Z",
       "eq": 289.14,
@@ -4085,11 +4079,17 @@
       "eq": 287.65,
       "pnl": -12.35,
       "open": 2
+    },
+    {
+      "t": "2026-07-21T11:42:05.729Z",
+      "eq": 287.65,
+      "pnl": -12.35,
+      "open": 2
     }
   ],
   "peakEquity": 301.44,
   "halt": {
     "reason": "дневной убыток $-9.04 ≥3% банка",
-    "until": "2026-07-22T11:36:05.585Z"
+    "until": "2026-07-22T11:42:05.793Z"
   }
 }
