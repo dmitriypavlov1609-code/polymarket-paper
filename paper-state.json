@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 143867,
+        "book": 144581,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10832
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13977,
+        "book": 13978,
         "wr": 56,
         "overallPnl": 146970,
         "posPnl": -384
@@ -964,7 +964,8 @@
     "ТЕЙК-ПРОФИТ 50%: «Estoril Open: Frederico Ferreira S» @0.99 +$0.55",
     "РЕЗОЛВ: «Estoril Open: Frederico Ferreira Silva vs Luca Van Assche» 🟢ВЫИГРЫШ +$0.78",
     "ВХОД: «Pittsburgh Pirates vs. New York Yankees» Pittsburgh Pirates @0.475 $12 (лаг -0.5пп) за top$535k 🔥",
-    "ВЫХОД вслед за топом (топ сократил >50% ($7876→$2030)): «Pittsburgh Pirates vs. New York Yank» @0.12 $-4.26"
+    "ВЫХОД вслед за топом (топ сократил >50% ($7876→$2030)): «Pittsburgh Pirates vs. New York Yank» @0.12 $-4.26",
+    "⛔ РИСК-СТОП: дневной убыток $-9.04 ≥3% банка → торговля до 2026-07-22T11:12"
   ],
   "tops": [
     {
@@ -1037,7 +1038,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 54430,
+      "book": 54573,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
@@ -1063,7 +1064,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 559568,
+      "book": 559625,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -1089,7 +1090,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 157522,
+      "book": 157674,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1113,13 +1114,13 @@
     }
   ],
   "stats": {
-    "day": -8.38,
+    "day": -9.04,
     "week": 1.62,
     "month": -17.39,
     "trades": 48,
     "winrate": 31
   },
-  "updated": "2026-07-21T11:06:12.088Z",
+  "updated": "2026-07-21T11:12:06.507Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1685,12 +1686,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-19T19:12:05.777Z",
-      "eq": 288.94,
-      "pnl": -11.06,
-      "open": 3
-    },
     {
       "t": "2026-07-19T19:18:05.249Z",
       "eq": 289.21,
@@ -4084,8 +4079,17 @@
       "eq": 287.65,
       "pnl": -12.35,
       "open": 2
+    },
+    {
+      "t": "2026-07-21T11:12:04.996Z",
+      "eq": 287.65,
+      "pnl": -12.35,
+      "open": 2
     }
   ],
   "peakEquity": 301.44,
-  "halt": null
+  "halt": {
+    "reason": "дневной убыток $-9.04 ≥3% банка",
+    "until": "2026-07-22T11:12:05.063Z"
+  }
 }
