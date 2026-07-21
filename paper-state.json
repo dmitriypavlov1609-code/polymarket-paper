@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
   "cash": 263.23,
-  "equity": 287.39,
-  "totalPnl": -12.61,
+  "equity": 287.2,
+  "totalPnl": -12.8,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -11,9 +11,9 @@
       "entry": 0.546,
       "size": 16,
       "cost": 8.74,
-      "bid": 0.932,
-      "value": 14.91,
-      "pnl": 6.17,
+      "bid": 0.92,
+      "value": 14.72,
+      "pnl": 5.98,
       "cat": "Политика",
       "followAddr": "0xc8b9a30184244d427169cf62485dde6041b2b836",
       "followLabel": "top$237k",
@@ -968,6 +968,22 @@
   ],
   "tops": [
     {
+      "addr": "0x2e25…d49e",
+      "copyPnl": 2081,
+      "realPnl": 2133,
+      "loss": 2,
+      "roi": 1715,
+      "hedged": 0
+    },
+    {
+      "addr": "0xe549…2d54",
+      "copyPnl": 2055,
+      "realPnl": 2089,
+      "loss": 2,
+      "roi": 2370,
+      "hedged": 0
+    },
+    {
       "addr": "0x6501…1220",
       "copyPnl": 2013,
       "realPnl": 2083,
@@ -984,11 +1000,11 @@
       "hedged": 0
     },
     {
-      "addr": "0x50f0…5355",
-      "copyPnl": 1159,
-      "realPnl": 1193,
+      "addr": "0x5b4e…0232",
+      "copyPnl": 1090,
+      "realPnl": 1127,
       "loss": 3,
-      "roi": 1503,
+      "roi": 1313,
       "hedged": 0
     },
     {
@@ -1013,22 +1029,6 @@
       "realPnl": 579,
       "loss": 5,
       "roi": 1121,
-      "hedged": 0
-    },
-    {
-      "addr": "0xd776…ffeb",
-      "copyPnl": 436,
-      "realPnl": 455,
-      "loss": 4,
-      "roi": 1057,
-      "hedged": 0
-    },
-    {
-      "addr": "0xbacd…ab35",
-      "copyPnl": 393,
-      "realPnl": 420,
-      "loss": 7,
-      "roi": 727,
       "hedged": 0
     }
   ],
@@ -1119,14 +1119,14 @@
     "trades": 48,
     "winrate": 31
   },
-  "updated": "2026-07-21T03:54:11.017Z",
+  "updated": "2026-07-21T04:00:11.528Z",
   "topStats": [
     {
       "label": "top$237k",
       "addr": "0xc8b9…b836",
-      "total": 6.17,
+      "total": 5.98,
       "realized": 0,
-      "unreal": 6.17,
+      "unreal": 5.98,
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -1685,12 +1685,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-19T12:00:06.391Z",
-      "eq": 287.96,
-      "pnl": -12.04,
-      "open": 3
-    },
     {
       "t": "2026-07-19T12:06:05.491Z",
       "eq": 288.01,
@@ -4083,6 +4077,12 @@
       "t": "2026-07-21T03:54:05.046Z",
       "eq": 287.39,
       "pnl": -12.61,
+      "open": 2
+    },
+    {
+      "t": "2026-07-21T04:00:05.751Z",
+      "eq": 287.07,
+      "pnl": -12.93,
       "open": 2
     }
   ],
