@@ -1038,7 +1038,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 52474,
+      "book": 52674,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $85 in Ju",
@@ -1055,7 +1055,7 @@
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 4634,
+          "usd": 4854,
           "cat": "Прочее"
         }
       ]
@@ -1064,24 +1064,24 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 586620,
+      "book": 587157,
       "top": [
         {
           "m": "Bitcoin reach $67,500 in July",
           "side": "YES",
-          "usd": 40035,
+          "usd": 38960,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 31854,
+          "usd": 32192,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 25846,
+          "usd": 26797,
           "cat": "Крипта"
         }
       ]
@@ -1090,7 +1090,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 145655,
+      "book": 145287,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1120,7 +1120,7 @@
     "trades": 48,
     "winrate": 31
   },
-  "updated": "2026-07-21T17:12:07.021Z",
+  "updated": "2026-07-21T17:18:06.555Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1686,12 +1686,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-20T01:18:09.647Z",
-      "eq": 292.47,
-      "pnl": -7.53,
-      "open": 3
-    },
     {
       "t": "2026-07-20T01:24:09.975Z",
       "eq": 292.56,
@@ -4082,6 +4076,12 @@
     },
     {
       "t": "2026-07-21T17:12:05.482Z",
+      "eq": 287.46,
+      "pnl": -12.54,
+      "open": 2
+    },
+    {
+      "t": "2026-07-21T17:18:05.041Z",
       "eq": 287.46,
       "pnl": -12.54,
       "open": 2
