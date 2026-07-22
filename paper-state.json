@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 165685,
+        "book": 165855,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10783
@@ -1038,12 +1038,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 46606,
+      "book": 46564,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 5893,
+          "usd": 5912,
           "cat": "Прочее"
         },
         {
@@ -1064,12 +1064,12 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 643551,
+      "book": 644269,
       "top": [
         {
           "m": "Bitcoin reach $67,000 on July 21",
           "side": "NO",
-          "usd": 49610,
+          "usd": 51497,
           "cat": "Крипта"
         },
         {
@@ -1081,7 +1081,7 @@
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 33452,
+          "usd": 33894,
           "cat": "Крипта"
         }
       ]
@@ -1090,7 +1090,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 152354,
+      "book": 152044,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1120,7 +1120,7 @@
     "trades": 48,
     "winrate": 31
   },
-  "updated": "2026-07-22T03:12:06.281Z",
+  "updated": "2026-07-22T03:18:06.293Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1686,12 +1686,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-20T10:48:06.629Z",
-      "eq": 296.39,
-      "pnl": -3.61,
-      "open": 4
-    },
     {
       "t": "2026-07-20T10:54:06.660Z",
       "eq": 296.39,
@@ -4082,6 +4076,12 @@
     },
     {
       "t": "2026-07-22T03:12:04.849Z",
+      "eq": 287.1,
+      "pnl": -12.9,
+      "open": 2
+    },
+    {
+      "t": "2026-07-22T03:18:04.867Z",
       "eq": 287.1,
       "pnl": -12.9,
       "open": 2
