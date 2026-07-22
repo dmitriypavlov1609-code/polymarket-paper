@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 257.59,
-  "equity": 287.28,
-  "totalPnl": -12.72,
+  "cash": 251.88,
+  "equity": 287.24,
+  "totalPnl": -12.76,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 145142,
+        "book": 145147,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10931
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13757,
+        "book": 13756,
         "wr": 56,
         "overallPnl": 147061,
         "posPnl": -539
@@ -72,12 +72,36 @@
         "label": "top$370k 🔥",
         "addr": "0x9648…6825",
         "entry": 0.816,
-        "book": 1432094,
+        "book": 1431943,
         "wr": 66,
         "overallPnl": 370242,
         "posPnl": 360
       },
       "topPeak": 32042.6106
+    },
+    {
+      "title": "Pittsburgh Pirates vs. New York Yankees",
+      "side": "New York Yankees",
+      "asset": "43370473959069633217176661997641552386084065233051894913246669274510191973197",
+      "entry": 0.635,
+      "size": 9,
+      "cost": 5.71,
+      "bid": 0.63,
+      "value": 5.67,
+      "pnl": -0.04,
+      "cat": "Спорт",
+      "followAddr": "0x69c5c6f6a4dda665991c203bc8d5df3e006b1e01",
+      "followLabel": "top$619k 🔥",
+      "ts": "2026-07-22T16:48:10.344Z",
+      "follow": {
+        "label": "top$619k 🔥",
+        "addr": "0x69c5…1e01",
+        "entry": 0.64,
+        "book": 299546,
+        "wr": 47,
+        "overallPnl": 619084,
+        "posPnl": -842
+      }
     }
   ],
   "closed": [
@@ -992,7 +1016,8 @@
     "ВЫХОД вслед за топом (топ сократил >50% ($7876→$2030)): «Pittsburgh Pirates vs. New York Yank» @0.12 $-4.26",
     "⛔ РИСК-СТОП: дневной убыток $-9.04 ≥3% банка → торговля до 2026-07-22T11:12",
     "✅ Риск-стоп снят — лимиты в норме, торговля возобновлена",
-    "ВХОД: «Bab el-Mandeb Strait effectively closed » No @0.805 $7 (лаг 2.5пп) за top$370k 🔥"
+    "ВХОД: «Bab el-Mandeb Strait effectively closed » No @0.805 $7 (лаг 2.5пп) за top$370k 🔥",
+    "ВХОД: «Pittsburgh Pirates vs. New York Yankees» New York Yankees @0.635 $9 (лаг -0.5пп) за top$619k 🔥"
   ],
   "tops": [
     {
@@ -1065,18 +1090,18 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 55388,
+      "book": 55271,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 8223,
+          "usd": 8161,
           "cat": "Прочее"
         },
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $95 in Ju",
           "side": "YES",
-          "usd": 6911,
+          "usd": 6890,
           "cat": "Прочее"
         },
         {
@@ -1091,24 +1116,24 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 607810,
+      "book": 615972,
       "top": [
         {
           "m": "Bitcoin reach $67,500 in July",
           "side": "YES",
-          "usd": 35913,
+          "usd": 34807,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 33275,
+          "usd": 33314,
           "cat": "Крипта"
         },
         {
-          "m": "Bitcoin dip to $62,500 in July",
+          "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 31106,
+          "usd": 30136,
           "cat": "Крипта"
         }
       ]
@@ -1117,7 +1142,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 164240,
+      "book": 164016,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1147,7 +1172,7 @@
     "trades": 48,
     "winrate": 31
   },
-  "updated": "2026-07-22T16:42:12.467Z",
+  "updated": "2026-07-22T16:48:13.268Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1315,12 +1340,12 @@
       "losses": 3
     },
     {
-      "label": "top$268k 🔥",
+      "label": "top$619k 🔥",
       "addr": "0x69c5…1e01",
-      "total": -8.99,
+      "total": -9.03,
       "realized": -8.99,
-      "unreal": 0,
-      "open": 0,
+      "unreal": -0.04,
+      "open": 1,
       "closed": 3,
       "wins": 0,
       "losses": 3
@@ -1724,12 +1749,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-21T00:18:05.108Z",
-      "eq": 287.41,
-      "pnl": -12.59,
-      "open": 2
-    },
     {
       "t": "2026-07-21T00:24:05.710Z",
       "eq": 287.41,
@@ -4120,6 +4139,12 @@
     },
     {
       "t": "2026-07-22T16:42:05.944Z",
+      "eq": 287.28,
+      "pnl": -12.72,
+      "open": 3
+    },
+    {
+      "t": "2026-07-22T16:48:05.622Z",
       "eq": 287.28,
       "pnl": -12.72,
       "open": 3
