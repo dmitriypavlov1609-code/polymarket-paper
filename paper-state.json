@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 145119,
+        "book": 145128,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10869
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13752,
+        "book": 13784,
         "wr": 56,
         "overallPnl": 147061,
         "posPnl": -539
@@ -965,7 +965,8 @@
     "РЕЗОЛВ: «Estoril Open: Frederico Ferreira Silva vs Luca Van Assche» 🟢ВЫИГРЫШ +$0.78",
     "ВХОД: «Pittsburgh Pirates vs. New York Yankees» Pittsburgh Pirates @0.475 $12 (лаг -0.5пп) за top$535k 🔥",
     "ВЫХОД вслед за топом (топ сократил >50% ($7876→$2030)): «Pittsburgh Pirates vs. New York Yank» @0.12 $-4.26",
-    "⛔ РИСК-СТОП: дневной убыток $-9.04 ≥3% банка → торговля до 2026-07-22T11:12"
+    "⛔ РИСК-СТОП: дневной убыток $-9.04 ≥3% банка → торговля до 2026-07-22T11:12",
+    "✅ Риск-стоп снят — лимиты в норме, торговля возобновлена"
   ],
   "tops": [
     {
@@ -1038,18 +1039,18 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 56026,
+      "book": 56626,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $95 in Ju",
           "side": "YES",
-          "usd": 8515,
+          "usd": 8782,
           "cat": "Прочее"
         },
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 8369,
+          "usd": 8754,
           "cat": "Прочее"
         },
         {
@@ -1064,7 +1065,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 606106,
+      "book": 606307,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
@@ -1075,13 +1076,13 @@
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 32127,
+          "usd": 33126,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $67,500 in July",
           "side": "YES",
-          "usd": 28567,
+          "usd": 27474,
           "cat": "Крипта"
         }
       ]
@@ -1090,7 +1091,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 160754,
+      "book": 160071,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1120,7 +1121,7 @@
     "trades": 48,
     "winrate": 31
   },
-  "updated": "2026-07-22T11:42:07.472Z",
+  "updated": "2026-07-22T11:48:12.412Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1686,12 +1687,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-20T19:18:05.582Z",
-      "eq": 291.42,
-      "pnl": -8.58,
-      "open": 2
-    },
     {
       "t": "2026-07-20T19:24:05.667Z",
       "eq": 291.4,
@@ -4085,11 +4080,14 @@
       "eq": 287.17,
       "pnl": -12.83,
       "open": 2
+    },
+    {
+      "t": "2026-07-22T11:48:05.728Z",
+      "eq": 287.17,
+      "pnl": -12.83,
+      "open": 2
     }
   ],
   "peakEquity": 301.44,
-  "halt": {
-    "reason": "дневной убыток $-9.04 ≥3% банка",
-    "until": "2026-07-22T11:48:05.303Z"
-  }
+  "halt": null
 }
