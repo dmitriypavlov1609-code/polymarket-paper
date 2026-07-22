@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 263.23,
-  "equity": 287.18,
-  "totalPnl": -12.82,
+  "cash": 257.59,
+  "equity": 287.14,
+  "totalPnl": -12.86,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 145203,
+        "book": 145205,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10968
@@ -53,6 +53,30 @@
         "posPnl": -539
       },
       "topPeak": 3133.6404
+    },
+    {
+      "title": "Bab el-Mandeb Strait effectively closed by August 31?",
+      "side": "No",
+      "asset": "8310650677069487821478025416478130051168635736368290554555541536659374960027",
+      "entry": 0.805,
+      "size": 7,
+      "cost": 5.64,
+      "bid": 0.8,
+      "value": 5.6,
+      "pnl": -0.04,
+      "cat": "Прочее",
+      "followAddr": "0x96489abcb9f583d6835c8ef95ffc923d05a86825",
+      "followLabel": "top$370k 🔥",
+      "ts": "2026-07-22T14:48:10.378Z",
+      "follow": {
+        "label": "top$370k 🔥",
+        "addr": "0x9648…6825",
+        "entry": 0.816,
+        "book": 1412669,
+        "wr": 66,
+        "overallPnl": 370242,
+        "posPnl": -416
+      }
     }
   ],
   "closed": [
@@ -966,7 +990,8 @@
     "ВХОД: «Pittsburgh Pirates vs. New York Yankees» Pittsburgh Pirates @0.475 $12 (лаг -0.5пп) за top$535k 🔥",
     "ВЫХОД вслед за топом (топ сократил >50% ($7876→$2030)): «Pittsburgh Pirates vs. New York Yank» @0.12 $-4.26",
     "⛔ РИСК-СТОП: дневной убыток $-9.04 ≥3% банка → торговля до 2026-07-22T11:12",
-    "✅ Риск-стоп снят — лимиты в норме, торговля возобновлена"
+    "✅ Риск-стоп снят — лимиты в норме, торговля возобновлена",
+    "ВХОД: «Bab el-Mandeb Strait effectively closed » No @0.805 $7 (лаг 2.5пп) за top$370k 🔥"
   ],
   "tops": [
     {
@@ -1039,18 +1064,18 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 56256,
+      "book": 56155,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 8088,
+          "usd": 8106,
           "cat": "Прочее"
         },
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $95 in Ju",
           "side": "YES",
-          "usd": 7256,
+          "usd": 7191,
           "cat": "Прочее"
         },
         {
@@ -1065,7 +1090,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 635594,
+      "book": 636015,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
@@ -1076,7 +1101,7 @@
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 34926,
+          "usd": 35080,
           "cat": "Крипта"
         },
         {
@@ -1091,7 +1116,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 156852,
+      "book": 156708,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1121,7 +1146,7 @@
     "trades": 48,
     "winrate": 31
   },
-  "updated": "2026-07-22T14:42:12.059Z",
+  "updated": "2026-07-22T14:48:13.363Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1188,6 +1213,17 @@
       "closed": 2,
       "wins": 1,
       "losses": 1
+    },
+    {
+      "label": "top$370k 🔥",
+      "addr": "0x9648…6825",
+      "total": -0.04,
+      "realized": 0,
+      "unreal": -0.04,
+      "open": 1,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
     },
     {
       "label": "top$855k",
@@ -1687,12 +1723,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-20T22:18:05.896Z",
-      "eq": 291.26,
-      "pnl": -8.74,
-      "open": 3
-    },
     {
       "t": "2026-07-20T22:24:05.623Z",
       "eq": 291.26,
@@ -4083,6 +4113,12 @@
     },
     {
       "t": "2026-07-22T14:42:05.530Z",
+      "eq": 287.18,
+      "pnl": -12.82,
+      "open": 2
+    },
+    {
+      "t": "2026-07-22T14:48:05.848Z",
       "eq": 287.18,
       "pnl": -12.82,
       "open": 2
