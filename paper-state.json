@@ -1038,18 +1038,18 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 48473,
+      "book": 48704,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 6541,
+          "usd": 6651,
           "cat": "Прочее"
         },
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $95 in Ju",
           "side": "YES",
-          "usd": 5480,
+          "usd": 5501,
           "cat": "Прочее"
         },
         {
@@ -1064,12 +1064,12 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 596856,
+      "book": 596837,
       "top": [
         {
           "m": "Bitcoin reach $72,500 in July",
           "side": "NO",
-          "usd": 34235,
+          "usd": 34312,
           "cat": "Крипта"
         },
         {
@@ -1081,7 +1081,7 @@
         {
           "m": "Bitcoin reach $67,500 in July",
           "side": "YES",
-          "usd": 27474,
+          "usd": 26373,
           "cat": "Крипта"
         }
       ]
@@ -1090,7 +1090,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 143693,
+      "book": 143579,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1120,7 +1120,7 @@
     "trades": 48,
     "winrate": 31
   },
-  "updated": "2026-07-22T07:06:06.529Z",
+  "updated": "2026-07-22T07:12:07.443Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1686,12 +1686,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-20T14:42:06.177Z",
-      "eq": 290.34,
-      "pnl": -9.66,
-      "open": 3
-    },
     {
       "t": "2026-07-20T14:48:06.563Z",
       "eq": 290.34,
@@ -4082,6 +4076,12 @@
     },
     {
       "t": "2026-07-22T07:06:05.044Z",
+      "eq": 287.25,
+      "pnl": -12.75,
+      "open": 2
+    },
+    {
+      "t": "2026-07-22T07:12:05.899Z",
       "eq": 287.25,
       "pnl": -12.75,
       "open": 2
