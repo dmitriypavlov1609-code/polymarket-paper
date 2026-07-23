@@ -73,8 +73,8 @@
         "addr": "0x9648…6825",
         "entry": 0.816,
         "book": 1432134,
-        "wr": null,
-        "overallPnl": null,
+        "wr": 64,
+        "overallPnl": 296763,
         "posPnl": -32
       },
       "topPeak": 32042.6106
@@ -98,8 +98,8 @@
         "addr": "0x9648…6825",
         "entry": 0.826,
         "book": 1432134,
-        "wr": null,
-        "overallPnl": null,
+        "wr": 64,
+        "overallPnl": 296763,
         "posPnl": -35721
       },
       "topPeak": 211073.1434
@@ -1056,13 +1056,78 @@
     "ВХОД: «Will the U.S. invade Iran before 2027?» No @0.715 $7 (лаг 0.5пп) за top$370k 🔥",
     "ВЫХОД вслед за топом (топ сократил >50% ($35250→$13250)): «Los Angeles Dodgers vs. Philadelphia» @0.24 $-2.58"
   ],
-  "tops": [],
+  "tops": [
+    {
+      "addr": "0xe549…2d54",
+      "copyPnl": 2055,
+      "realPnl": 2089,
+      "loss": 2,
+      "roi": 2370,
+      "hedged": 0
+    },
+    {
+      "addr": "0x6501…1220",
+      "copyPnl": 2013,
+      "realPnl": 2083,
+      "loss": 3,
+      "roi": 1532,
+      "hedged": 0
+    },
+    {
+      "addr": "0x50f0…5355",
+      "copyPnl": 1159,
+      "realPnl": 1193,
+      "loss": 3,
+      "roi": 1503,
+      "hedged": 0
+    },
+    {
+      "addr": "0xc31d…4ebe",
+      "copyPnl": 798,
+      "realPnl": 816,
+      "loss": 2,
+      "roi": 1974,
+      "hedged": 0
+    },
+    {
+      "addr": "0xcf6c…7e66",
+      "copyPnl": 700,
+      "realPnl": 745,
+      "loss": 6,
+      "roi": 669,
+      "hedged": 0
+    },
+    {
+      "addr": "0x7ddd…c933",
+      "copyPnl": 684,
+      "realPnl": 707,
+      "loss": 3,
+      "roi": 1341,
+      "hedged": 0
+    },
+    {
+      "addr": "0x088b…21cc",
+      "copyPnl": 626,
+      "realPnl": 652,
+      "loss": 4,
+      "roi": 1270,
+      "hedged": 0
+    },
+    {
+      "addr": "0xde7b…5f4b",
+      "copyPnl": 543,
+      "realPnl": 596,
+      "loss": 9,
+      "roi": 639,
+      "hedged": 0
+    }
+  ],
   "whales": [
     {
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 60147,
+      "book": 60200,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
@@ -1088,7 +1153,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 241824,
+      "book": 242091,
       "top": [
         {
           "m": "Bitcoin reach $67,500 in July",
@@ -1099,7 +1164,7 @@
         {
           "m": "Bitcoin reach $68,000 July 20-26",
           "side": "NO",
-          "usd": 14656,
+          "usd": 14827,
           "cat": "Крипта"
         },
         {
@@ -1114,7 +1179,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 158151,
+      "book": 158093,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1144,7 +1209,7 @@
     "trades": 50,
     "winrate": 30
   },
-  "updated": "2026-07-23T04:40:08.213Z",
+  "updated": "2026-07-23T04:42:12.511Z",
   "topStats": [
     {
       "label": "top$237k",
