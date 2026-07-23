@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 144949,
+        "book": 144902,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 11091
+        "posPnl": 11042
       },
       "topPeak": 23718.4595
     },
@@ -72,7 +72,7 @@
         "label": "top$370k 🔥",
         "addr": "0x9648…6825",
         "entry": 0.816,
-        "book": 1437754,
+        "book": 1437453,
         "wr": 64,
         "overallPnl": 296763,
         "posPnl": -805
@@ -97,12 +97,12 @@
         "label": "top$370k 🔥",
         "addr": "0x9648…6825",
         "entry": 0.822,
-        "book": 1437754,
+        "book": 1437453,
         "wr": 64,
         "overallPnl": 296763,
         "posPnl": -35677
       },
-      "topPeak": 212107.7712
+      "topPeak": 214165.7297
     }
   ],
   "closed": [
@@ -1127,7 +1127,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 68127,
+      "book": 69155,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
@@ -1138,7 +1138,7 @@
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $95 in Ju",
           "side": "YES",
-          "usd": 10297,
+          "usd": 9843,
           "cat": "Прочее"
         },
         {
@@ -1153,7 +1153,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 291448,
+      "book": 291704,
       "top": [
         {
           "m": "Bitcoin reach $67,500 in July",
@@ -1170,7 +1170,7 @@
         {
           "m": "Bitcoin reach $68,000 July 20-26",
           "side": "NO",
-          "usd": 13014,
+          "usd": 13312,
           "cat": "Крипта"
         }
       ]
@@ -1179,7 +1179,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 163877,
+      "book": 163766,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1209,7 +1209,7 @@
     "trades": 50,
     "winrate": 30
   },
-  "updated": "2026-07-23T10:17:12.416Z",
+  "updated": "2026-07-23T10:20:20.482Z",
   "topStats": [
     {
       "label": "top$237k",
