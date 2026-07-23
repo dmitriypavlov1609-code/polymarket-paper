@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 145594,
+        "book": 145580,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 10968
+        "posPnl": 10956
       },
       "topPeak": 23570.6042
     },
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13602,
+        "book": 13616,
         "wr": null,
         "overallPnl": null,
         "posPnl": -532
@@ -72,7 +72,7 @@
         "label": "top$370k 🔥",
         "addr": "0x9648…6825",
         "entry": 0.816,
-        "book": 1419866,
+        "book": 1420092,
         "wr": null,
         "overallPnl": null,
         "posPnl": -416
@@ -97,7 +97,7 @@
         "label": "top$370k 🔥",
         "addr": "0x9648…6825",
         "entry": 0.826,
-        "book": 1419866,
+        "book": 1420092,
         "wr": null,
         "overallPnl": null,
         "posPnl": -35721
@@ -1062,18 +1062,18 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 60187,
+      "book": 59864,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 9543,
+          "usd": 9451,
           "cat": "Прочее"
         },
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $95 in Ju",
           "side": "YES",
-          "usd": 9161,
+          "usd": 9064,
           "cat": "Прочее"
         },
         {
@@ -1088,24 +1088,24 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 265628,
+      "book": 266773,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 16573,
+          "usd": 17030,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $68,000 July 20-26",
           "side": "NO",
-          "usd": 15209,
+          "usd": 15542,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $67,500 in July",
           "side": "YES",
-          "usd": 14530,
+          "usd": 13864,
           "cat": "Крипта"
         }
       ]
@@ -1114,7 +1114,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 171429,
+      "book": 170084,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1144,7 +1144,7 @@
     "trades": 50,
     "winrate": 30
   },
-  "updated": "2026-07-23T01:30:09.993Z",
+  "updated": "2026-07-23T01:40:08.198Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1732,12 +1732,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-21T08:54:04.963Z",
-      "eq": 287.37,
-      "pnl": -12.63,
-      "open": 2
-    },
     {
       "t": "2026-07-21T09:00:06.108Z",
       "eq": 287.37,
@@ -4128,6 +4122,12 @@
     },
     {
       "t": "2026-07-23T01:25:55.610Z",
+      "eq": 281.32,
+      "pnl": -18.68,
+      "open": 4
+    },
+    {
+      "t": "2026-07-23T01:37:19.291Z",
       "eq": 281.32,
       "pnl": -18.68,
       "open": 4
