@@ -1,8 +1,8 @@
 {
   "startBalance": 300,
-  "cash": 244.18,
-  "equity": 283.92,
-  "totalPnl": -16.08,
+  "cash": 246.82,
+  "equity": 281.46,
+  "totalPnl": -18.54,
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 145656,
+        "book": 145658,
         "wr": null,
         "overallPnl": null,
         "posPnl": 11005
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 13579,
+        "book": 13580,
         "wr": 56,
         "overallPnl": 147061,
         "posPnl": -533
@@ -61,9 +61,9 @@
       "entry": 0.805,
       "size": 7,
       "cost": 5.64,
-      "bid": 0.8,
-      "value": 5.6,
-      "pnl": -0.04,
+      "bid": 0.81,
+      "value": 5.67,
+      "pnl": 0.03,
       "cat": "Прочее",
       "followAddr": "0x96489abcb9f583d6835c8ef95ffc923d05a86825",
       "followLabel": "top$370k 🔥",
@@ -72,37 +72,12 @@
         "label": "top$370k 🔥",
         "addr": "0x9648…6825",
         "entry": 0.816,
-        "book": 1432872,
+        "book": 1435963,
         "wr": 66,
         "overallPnl": 370242,
-        "posPnl": -222
+        "posPnl": -32
       },
       "topPeak": 32042.6106
-    },
-    {
-      "title": "Los Angeles Dodgers vs. Philadelphia Phillies",
-      "side": "Philadelphia Phillies",
-      "asset": "76182451270582648146291432802782921930032451788753513742456335529422359074001",
-      "entry": 0.475,
-      "size": 11,
-      "cost": 5.22,
-      "bid": 0.47,
-      "value": 5.17,
-      "pnl": -0.05,
-      "cat": "Спорт",
-      "followAddr": "0x59f4a4b19fcaa99a4df2e7cdda4919aa5afbc1f1",
-      "followLabel": "top$368k 🔥",
-      "ts": "2026-07-22T21:30:13.705Z",
-      "follow": {
-        "label": "top$368k 🔥",
-        "addr": "0x59f4…c1f1",
-        "entry": 0.47,
-        "book": 48500,
-        "wr": 41,
-        "overallPnl": 367600,
-        "posPnl": 5250
-      },
-      "topPeak": 35249.9816
     },
     {
       "title": "Will the U.S. invade Iran before 2027?",
@@ -121,13 +96,13 @@
       "follow": {
         "label": "top$370k 🔥",
         "addr": "0x9648…6825",
-        "entry": 0.827,
-        "book": 1432872,
+        "entry": 0.826,
+        "book": 1435963,
         "wr": 66,
         "overallPnl": 370242,
-        "posPnl": -32788
+        "posPnl": -32769
       },
-      "topPeak": 208431.7403
+      "topPeak": 211073.1434
     }
   ],
   "closed": [
@@ -857,6 +832,22 @@
       "followAddr": "0x69c5c6f6a4dda665991c203bc8d5df3e006b1e01",
       "asset": "43370473959069633217176661997641552386084065233051894913246669274510191973197",
       "reason": "топ сократил >50% ($123806→$51375)"
+    },
+    {
+      "title": "Los Angeles Dodgers vs. Philadelphia Phillies",
+      "side": "Philadelphia Phillies",
+      "entry": 0.475,
+      "exit": 0.24,
+      "size": 11,
+      "cost": 5.22,
+      "pnl": -2.58,
+      "proceeds": 2.64,
+      "entryTs": "2026-07-22T21:30:13.705Z",
+      "exitTs": "2026-07-23T00:00:03.277Z",
+      "followLabel": "top$368k 🔥",
+      "followAddr": "0x59f4a4b19fcaa99a4df2e7cdda4919aa5afbc1f1",
+      "asset": "76182451270582648146291432802782921930032451788753513742456335529422359074001",
+      "reason": "топ сократил >50% ($35250→$13250)"
     }
   ],
   "log": [
@@ -1062,7 +1053,8 @@
     "ВХОД: «Pittsburgh Pirates vs. New York Yankees» New York Yankees @0.635 $9 (лаг -0.5пп) за top$619k 🔥",
     "ВЫХОД вслед за топом (топ сократил >50% ($123806→$51375)): «Pittsburgh Pirates vs. New York Yank» @0.28 $-3.19",
     "ВХОД: «Los Angeles Dodgers vs. Philadelphia Phi» Philadelphia Phillies @0.475 $11 (лаг 0.5пп) за top$368k 🔥",
-    "ВХОД: «Will the U.S. invade Iran before 2027?» No @0.715 $7 (лаг 0.5пп) за top$370k 🔥"
+    "ВХОД: «Will the U.S. invade Iran before 2027?» No @0.715 $7 (лаг 0.5пп) за top$370k 🔥",
+    "ВЫХОД вслед за топом (топ сократил >50% ($35250→$13250)): «Los Angeles Dodgers vs. Philadelphia» @0.24 $-2.58"
   ],
   "tops": [
     {
@@ -1135,7 +1127,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 60963,
+      "book": 61158,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $95 in Ju",
@@ -1146,7 +1138,7 @@
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $90 in Ju",
           "side": "YES",
-          "usd": 8975,
+          "usd": 9030,
           "cat": "Прочее"
         },
         {
@@ -1161,24 +1153,24 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 257263,
+      "book": 256542,
       "top": [
         {
           "m": "Bitcoin reach $70,000 in July",
           "side": "NO",
-          "usd": 16573,
-          "cat": "Крипта"
-        },
-        {
-          "m": "Bitcoin reach $68,000 July 20-26",
-          "side": "NO",
-          "usd": 15101,
+          "usd": 16345,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $67,500 in July",
           "side": "YES",
-          "usd": 14310,
+          "usd": 14747,
+          "cat": "Крипта"
+        },
+        {
+          "m": "Bitcoin reach $68,000 July 20-26",
+          "side": "NO",
+          "usd": 14440,
           "cat": "Крипта"
         }
       ]
@@ -1187,7 +1179,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 166985,
+      "book": 168119,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1211,13 +1203,13 @@
     }
   ],
   "stats": {
-    "day": -3.19,
-    "week": -1.45,
-    "month": -20.58,
-    "trades": 49,
-    "winrate": 31
+    "day": -5.77,
+    "week": -4.03,
+    "month": -23.16,
+    "trades": 50,
+    "winrate": 30
   },
-  "updated": "2026-07-22T23:54:37.140Z",
+  "updated": "2026-07-23T00:00:17.741Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1286,12 +1278,12 @@
       "losses": 1
     },
     {
-      "label": "top$368k 🔥",
-      "addr": "0x59f4…c1f1",
-      "total": -0.05,
+      "label": "top$370k 🔥",
+      "addr": "0x9648…6825",
+      "total": 0,
       "realized": 0,
-      "unreal": -0.05,
-      "open": 1,
+      "unreal": 0,
+      "open": 2,
       "closed": 0,
       "wins": 0,
       "losses": 0
@@ -1306,17 +1298,6 @@
       "closed": 1,
       "wins": 0,
       "losses": 1
-    },
-    {
-      "label": "top$370k 🔥",
-      "addr": "0x9648…6825",
-      "total": -0.07,
-      "realized": 0,
-      "unreal": -0.07,
-      "open": 2,
-      "closed": 0,
-      "wins": 0,
-      "losses": 0
     },
     {
       "label": "top-UFC $417k (лотерейка)",
@@ -1374,6 +1355,17 @@
       "losses": 0
     },
     {
+      "label": "top$368k 🔥",
+      "addr": "0x59f4…c1f1",
+      "total": -2.58,
+      "realized": -2.58,
+      "unreal": 0,
+      "open": 0,
+      "closed": 1,
+      "wins": 0,
+      "losses": 1
+    },
+    {
       "label": "top$535k 🔥",
       "addr": "0x56ac…d77e",
       "total": -5.24,
@@ -1419,14 +1411,6 @@
     }
   ],
   "digest": [
-    {
-      "ts": "2026-07-20T23:54:10.523Z",
-      "equity": 287.42,
-      "pnl": -12.58,
-      "open": 2,
-      "cash": 263.23,
-      "line": "эквити $287.42 (PnL $-12.58) · открыто 2 · кэш $263.23 · за час закрыто 1 (W0/L1) · лидеры: top$237k +$6.14, top$177k +$4.91 · минус: top$1142k 🔥свежий ×2 $-11.4, top$268k 🔥 $-8.99"
-    },
     {
       "ts": "2026-07-21T00:54:11.435Z",
       "equity": 287.44,
@@ -1802,15 +1786,17 @@
       "open": 5,
       "cash": 244.18,
       "line": "эквити $285.60 (PnL $-14.4) · открыто 5 · кэш $244.18 · за час закрыто 0 (W0/L0) · лидеры: top$237k +$6.22, top$177k +$4.91 · минус: top$268k 🔥 $-12.18, top$1142k 🔥свежий ×2 $-11.4"
+    },
+    {
+      "ts": "2026-07-23T00:00:17.807Z",
+      "equity": 281.46,
+      "pnl": -18.54,
+      "open": 4,
+      "cash": 246.82,
+      "line": "эквити $281.46 (PnL $-18.54) · открыто 4 · кэш $246.82 · за час закрыто 1 (W0/L1) · лидеры: top$237k +$6.24, top$177k +$4.91 · минус: top$268k 🔥 $-12.18, top$1142k 🔥свежий ×2 $-11.4"
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-21T07:30:04.808Z",
-      "eq": 287.37,
-      "pnl": -12.63,
-      "open": 2
-    },
     {
       "t": "2026-07-21T07:36:05.120Z",
       "eq": 287.37,
@@ -4204,6 +4190,12 @@
       "eq": 283.92,
       "pnl": -16.08,
       "open": 5
+    },
+    {
+      "t": "2026-07-23T00:00:10.937Z",
+      "eq": 281.46,
+      "pnl": -18.54,
+      "open": 4
     }
   ],
   "peakEquity": 301.44,
