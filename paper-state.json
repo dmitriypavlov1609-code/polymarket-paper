@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 151741,
+        "book": 151662,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10783
@@ -47,10 +47,10 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 8255,
+        "book": 8248,
         "wr": null,
         "overallPnl": null,
-        "posPnl": -668
+        "posPnl": -675
       },
       "topPeak": 3133.6404
     },
@@ -72,10 +72,10 @@
         "label": "top$370k 🔥",
         "addr": "0x9648…6825",
         "entry": 0.827,
-        "book": 1446072,
+        "book": 1446197,
         "wr": 59,
         "overallPnl": 303120,
-        "posPnl": -89
+        "posPnl": -358
       },
       "topPeak": 46037.9264
     },
@@ -97,7 +97,7 @@
         "label": "top$370k 🔥",
         "addr": "0x9648…6825",
         "entry": 0.822,
-        "book": 1446072,
+        "book": 1446197,
         "wr": 59,
         "overallPnl": 303120,
         "posPnl": -38745
@@ -1098,6 +1098,14 @@
       "hedged": 0
     },
     {
+      "addr": "0x447d…5eea",
+      "copyPnl": 528,
+      "realPnl": 571,
+      "loss": 8,
+      "roi": 676,
+      "hedged": 0
+    },
+    {
       "addr": "0x076d…8d4c",
       "copyPnl": 497,
       "realPnl": 528,
@@ -1112,14 +1120,6 @@
       "loss": 7,
       "roi": 754,
       "hedged": 0
-    },
-    {
-      "addr": "0xa3c5…6930",
-      "copyPnl": 337,
-      "realPnl": 347,
-      "loss": 3,
-      "roi": 1573,
-      "hedged": 0
     }
   ],
   "whales": [
@@ -1127,7 +1127,7 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 56896,
+      "book": 56937,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $95 in Ju",
@@ -1153,7 +1153,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 263954,
+      "book": 263829,
       "top": [
         {
           "m": "Ethereum reach $2,100 in July",
@@ -1179,7 +1179,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 164115,
+      "book": 164260,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1209,7 +1209,7 @@
     "trades": 50,
     "winrate": 30
   },
-  "updated": "2026-07-24T02:24:12.150Z",
+  "updated": "2026-07-24T02:30:11.849Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1797,12 +1797,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-22T08:24:05.090Z",
-      "eq": 287.2,
-      "pnl": -12.8,
-      "open": 2
-    },
     {
       "t": "2026-07-22T08:30:05.494Z",
       "eq": 287.2,
@@ -4193,6 +4187,12 @@
     },
     {
       "t": "2026-07-24T02:24:06.128Z",
+      "eq": 280.77,
+      "pnl": -19.23,
+      "open": 4
+    },
+    {
+      "t": "2026-07-24T02:30:05.526Z",
       "eq": 280.77,
       "pnl": -19.23,
       "open": 4
