@@ -22,7 +22,7 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 150933,
+        "book": 150940,
         "wr": null,
         "overallPnl": null,
         "posPnl": 10783
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 8305,
+        "book": 8336,
         "wr": null,
         "overallPnl": null,
         "posPnl": -603
@@ -72,7 +72,7 @@
         "label": "top$370k 🔥",
         "addr": "0x9648…6825",
         "entry": 0.825,
-        "book": 1439612,
+        "book": 1440156,
         "wr": 64,
         "overallPnl": 296763,
         "posPnl": 1511
@@ -97,7 +97,7 @@
         "label": "top$370k 🔥",
         "addr": "0x9648…6825",
         "entry": 0.822,
-        "book": 1439612,
+        "book": 1440156,
         "wr": 64,
         "overallPnl": 296763,
         "posPnl": -38745
@@ -1127,12 +1127,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 58199,
+      "book": 58166,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $95 in Ju",
           "side": "YES",
-          "usd": 11091,
+          "usd": 10793,
           "cat": "Прочее"
         },
         {
@@ -1153,18 +1153,18 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 258277,
+      "book": 263211,
       "top": [
         {
           "m": "Ethereum reach $2,100 in July",
           "side": "NO",
-          "usd": 16452,
+          "usd": 16268,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin reach $66,000 on July 23",
           "side": "NO",
-          "usd": 14851,
+          "usd": 14935,
           "cat": "Крипта"
         },
         {
@@ -1179,7 +1179,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 164549,
+      "book": 164876,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1209,7 +1209,7 @@
     "trades": 50,
     "winrate": 30
   },
-  "updated": "2026-07-24T01:24:11.873Z",
+  "updated": "2026-07-24T01:30:12.740Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1797,12 +1797,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-22T07:24:05.022Z",
-      "eq": 287.14,
-      "pnl": -12.86,
-      "open": 2
-    },
     {
       "t": "2026-07-22T07:30:06.139Z",
       "eq": 287.17,
@@ -4193,6 +4187,12 @@
     },
     {
       "t": "2026-07-24T01:24:05.400Z",
+      "eq": 281.39,
+      "pnl": -18.61,
+      "open": 4
+    },
+    {
+      "t": "2026-07-24T01:30:06.442Z",
       "eq": 281.39,
       "pnl": -18.61,
       "open": 4
