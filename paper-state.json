@@ -1,8 +1,13 @@
 {
   "startBalance": 300,
   "cash": 241.51,
+<<<<<<< Updated upstream
   "equity": 280.45,
   "totalPnl": -19.55,
+=======
+  "equity": 278.72,
+  "totalPnl": -21.28,
+>>>>>>> Stashed changes
   "open": [
     {
       "title": "Will Larry Rhoden win the 2026 South Dakota Governor Republican primary election?",
@@ -22,7 +27,11 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
+<<<<<<< Updated upstream
         "book": 160735,
+=======
+        "book": 152667,
+>>>>>>> Stashed changes
         "wr": null,
         "overallPnl": null,
         "posPnl": 10759
@@ -111,9 +120,15 @@
       "entry": 0.59,
       "size": 9,
       "cost": 5.31,
+<<<<<<< Updated upstream
       "bid": 0.55,
       "value": 4.95,
       "pnl": -0.36,
+=======
+      "bid": 0.34,
+      "value": 3.06,
+      "pnl": -2.25,
+>>>>>>> Stashed changes
       "cat": "Спорт",
       "followAddr": "0x076daa87c4fe1a85402a9b6b8e0a866224388d4c",
       "followLabel": "top$528k 🔥",
@@ -122,10 +137,17 @@
         "label": "top$528k 🔥",
         "addr": "0x076d…8d4c",
         "entry": 0.585,
+<<<<<<< Updated upstream
         "book": 21355,
         "wr": 48,
         "overallPnl": 528009,
         "posPnl": 216
+=======
+        "book": 13374,
+        "wr": 48,
+        "overallPnl": 528009,
+        "posPnl": -5315
+>>>>>>> Stashed changes
       },
       "topPeak": 13157.7255
     }
@@ -1153,12 +1175,20 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
+<<<<<<< Updated upstream
       "book": 51730,
+=======
+      "book": 52097,
+>>>>>>> Stashed changes
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $95 in Ju",
           "side": "YES",
+<<<<<<< Updated upstream
           "usd": 8946,
+=======
+          "usd": 8768,
+>>>>>>> Stashed changes
           "cat": "Прочее"
         },
         {
@@ -1179,11 +1209,16 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
+<<<<<<< Updated upstream
       "book": 317104,
+=======
+      "book": 283281,
+>>>>>>> Stashed changes
       "top": [
         {
           "m": "Bitcoin Up or Down on July 24",
           "side": "NO",
+<<<<<<< Updated upstream
           "usd": 21081,
           "cat": "Крипта"
         },
@@ -1197,6 +1232,15 @@
           "m": "XRP reach $1.40 in July",
           "side": "NO",
           "usd": 13565,
+=======
+          "usd": 15679,
+          "cat": "Крипта"
+        },
+        {
+          "m": "Bitcoin be above $64,000 on July 24",
+          "side": "YES",
+          "usd": 14440,
+>>>>>>> Stashed changes
           "cat": "Крипта"
         }
       ]
@@ -1205,7 +1249,11 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
+<<<<<<< Updated upstream
       "book": 159784,
+=======
+      "book": 162972,
+>>>>>>> Stashed changes
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1235,7 +1283,11 @@
     "trades": 50,
     "winrate": 30
   },
+<<<<<<< Updated upstream
   "updated": "2026-07-24T13:23:49.039Z",
+=======
+  "updated": "2026-07-24T12:00:07.002Z",
+>>>>>>> Stashed changes
   "topStats": [
     {
       "label": "top$237k",
@@ -1381,11 +1433,30 @@
       "losses": 8
     },
     {
+<<<<<<< Updated upstream
       "label": "top$173k",
       "addr": "0xd109…6fa0",
       "total": -2.5,
       "realized": 0,
       "unreal": -2.5,
+=======
+      "label": "top$528k 🔥",
+      "addr": "0x076d…8d4c",
+      "total": -2.25,
+      "realized": 0,
+      "unreal": -2.25,
+      "open": 1,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
+      "label": "top$173k",
+      "addr": "0xd109…6fa0",
+      "total": -2.34,
+      "realized": 0,
+      "unreal": -2.34,
+>>>>>>> Stashed changes
       "open": 1,
       "closed": 0,
       "wins": 0,
@@ -4229,9 +4300,15 @@
       "open": 5
     },
     {
+<<<<<<< Updated upstream
       "t": "2026-07-24T13:23:41.935Z",
       "eq": 280.45,
       "pnl": -19.55,
+=======
+      "t": "2026-07-24T12:00:07.002Z",
+      "eq": 278.72,
+      "pnl": -21.28,
+>>>>>>> Stashed changes
       "open": 5
     }
   ],
