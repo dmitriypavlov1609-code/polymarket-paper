@@ -1,6 +1,6 @@
 {
   "startBalance": 300,
-  "cash": 246.82,
+  "cash": 241.51,
   "equity": 281.04,
   "totalPnl": -18.96,
   "open": [
@@ -22,10 +22,10 @@
         "label": "top$237k",
         "addr": "0xc8b9…b836",
         "entry": 0.509,
-        "book": 152754,
+        "book": 152691,
         "wr": null,
         "overallPnl": null,
-        "posPnl": 10783
+        "posPnl": 10734
       },
       "topPeak": 23718.4595
     },
@@ -47,7 +47,7 @@
         "label": "top$173k",
         "addr": "0xd109…6fa0",
         "entry": 0.907,
-        "book": 8132,
+        "book": 8134,
         "wr": null,
         "overallPnl": null,
         "posPnl": -722
@@ -72,7 +72,7 @@
         "label": "top$370k 🔥",
         "addr": "0x9648…6825",
         "entry": 0.827,
-        "book": 1443582,
+        "book": 1443577,
         "wr": 59,
         "overallPnl": 303120,
         "posPnl": 1526
@@ -97,12 +97,36 @@
         "label": "top$370k 🔥",
         "addr": "0x9648…6825",
         "entry": 0.819,
-        "book": 1443582,
+        "book": 1443577,
         "wr": 59,
         "overallPnl": 303120,
         "posPnl": -35639
       },
       "topPeak": 222595.3564
+    },
+    {
+      "title": "Hamburg European Open: Mayar Sherif vs Paula Badosa",
+      "side": "Paula Badosa",
+      "asset": "107599647723951492903151431314714661522315610557016670063545345618252711402233",
+      "entry": 0.59,
+      "size": 9,
+      "cost": 5.31,
+      "bid": 0.59,
+      "value": 5.31,
+      "pnl": 0,
+      "cat": "Спорт",
+      "followAddr": "0x076daa87c4fe1a85402a9b6b8e0a866224388d4c",
+      "followLabel": "top$528k 🔥",
+      "ts": "2026-07-24T11:06:11.115Z",
+      "follow": {
+        "label": "top$528k 🔥",
+        "addr": "0x076d…8d4c",
+        "entry": 0.587,
+        "book": 14295,
+        "wr": 48,
+        "overallPnl": 528009,
+        "posPnl": 36
+      }
     }
   ],
   "closed": [
@@ -1054,7 +1078,8 @@
     "ВЫХОД вслед за топом (топ сократил >50% ($123806→$51375)): «Pittsburgh Pirates vs. New York Yank» @0.28 $-3.19",
     "ВХОД: «Los Angeles Dodgers vs. Philadelphia Phi» Philadelphia Phillies @0.475 $11 (лаг 0.5пп) за top$368k 🔥",
     "ВХОД: «Will the U.S. invade Iran before 2027?» No @0.715 $7 (лаг 0.5пп) за top$370k 🔥",
-    "ВЫХОД вслед за топом (топ сократил >50% ($35250→$13250)): «Los Angeles Dodgers vs. Philadelphia» @0.24 $-2.58"
+    "ВЫХОД вслед за топом (топ сократил >50% ($35250→$13250)): «Los Angeles Dodgers vs. Philadelphia» @0.24 $-2.58",
+    "ВХОД: «Hamburg European Open: Mayar Sherif vs P» Paula Badosa @0.590 $9 (лаг 1.0пп) за top$528k 🔥"
   ],
   "tops": [
     {
@@ -1127,12 +1152,12 @@
       "label": "BTC-NO",
       "addr": "0x72a0…c059",
       "stat": "$332K · WR77%",
-      "book": 51724,
+      "book": 51765,
       "top": [
         {
           "m": "WTI Crude Oil (WTI) hit (HIGH) $95 in Ju",
           "side": "YES",
-          "usd": 8512,
+          "usd": 8519,
           "cat": "Прочее"
         },
         {
@@ -1153,7 +1178,7 @@
       "label": "ETH-whale",
       "addr": "0x06dc…4524",
       "stat": "$762K · WR73%",
-      "book": 279959,
+      "book": 280357,
       "top": [
         {
           "m": "Ethereum reach $2,100 in July",
@@ -1164,13 +1189,13 @@
         {
           "m": "Bitcoin Up or Down on July 24",
           "side": "NO",
-          "usd": 14765,
+          "usd": 14870,
           "cat": "Крипта"
         },
         {
           "m": "Bitcoin be above $64,000 on July 24",
           "side": "YES",
-          "usd": 14307,
+          "usd": 14294,
           "cat": "Крипта"
         }
       ]
@@ -1179,7 +1204,7 @@
       "label": "floor-whale",
       "addr": "0xcc50…4c82",
       "stat": "copyPnL $514K · 0% hedge",
-      "book": 162508,
+      "book": 162628,
       "top": [
         {
           "m": "Bitcoin dip to $15,000 by December 31, 2",
@@ -1209,7 +1234,7 @@
     "trades": 50,
     "winrate": 30
   },
-  "updated": "2026-07-24T11:00:14.407Z",
+  "updated": "2026-07-24T11:06:14.172Z",
   "topStats": [
     {
       "label": "top$237k",
@@ -1284,6 +1309,17 @@
       "realized": 0,
       "unreal": 0.21,
       "open": 2,
+      "closed": 0,
+      "wins": 0,
+      "losses": 0
+    },
+    {
+      "label": "top$528k 🔥",
+      "addr": "0x076d…8d4c",
+      "total": 0,
+      "realized": 0,
+      "unreal": 0,
+      "open": 1,
       "closed": 0,
       "wins": 0,
       "losses": 0
@@ -1797,12 +1833,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "t": "2026-07-22T17:00:06.605Z",
-      "eq": 287.33,
-      "pnl": -12.67,
-      "open": 4
-    },
     {
       "t": "2026-07-22T17:06:13.605Z",
       "eq": 287.44,
@@ -4193,6 +4223,12 @@
     },
     {
       "t": "2026-07-24T11:00:06.671Z",
+      "eq": 281.04,
+      "pnl": -18.96,
+      "open": 4
+    },
+    {
+      "t": "2026-07-24T11:06:06.426Z",
       "eq": 281.04,
       "pnl": -18.96,
       "open": 4
