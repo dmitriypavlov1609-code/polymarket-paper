@@ -1015,8 +1015,13 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "equity": 280.45,
   "totalPnl": -19.55,
+=======
+  "equity": 278.72,
+  "totalPnl": -21.28,
+>>>>>>> Stashed changes
 =======
   "equity": 278.72,
   "totalPnl": -21.28,
@@ -6106,7 +6111,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "book": 160735,
+=======
+        "book": 152667,
+>>>>>>> Stashed changes
 =======
         "book": 152667,
 >>>>>>> Stashed changes
@@ -10251,9 +10260,15 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "bid": 0.55,
       "value": 4.95,
       "pnl": -0.36,
+=======
+      "bid": 0.34,
+      "value": 3.06,
+      "pnl": -2.25,
+>>>>>>> Stashed changes
 =======
       "bid": 0.34,
       "value": 3.06,
@@ -16346,10 +16361,17 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "book": 21355,
         "wr": 48,
         "overallPnl": 528009,
         "posPnl": 216
+=======
+        "book": 13374,
+        "wr": 48,
+        "overallPnl": 528009,
+        "posPnl": -5315
+>>>>>>> Stashed changes
 =======
         "book": 13374,
         "wr": 48,
@@ -24475,7 +24497,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "book": 51730,
+=======
+      "book": 52097,
+>>>>>>> Stashed changes
 =======
       "book": 52097,
 >>>>>>> Stashed changes
@@ -28536,7 +28562,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "usd": 8946,
+=======
+          "usd": 8768,
+>>>>>>> Stashed changes
 =======
           "usd": 8768,
 >>>>>>> Stashed changes
@@ -32613,7 +32643,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "book": 317104,
+=======
+      "book": 283281,
+>>>>>>> Stashed changes
 =======
       "book": 283281,
 >>>>>>> Stashed changes
@@ -36674,6 +36708,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "usd": 21081,
           "cat": "Крипта"
         },
@@ -36688,6 +36723,8 @@
           "side": "NO",
           "usd": 13565,
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -39734,6 +39771,9 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -42783,7 +42823,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "book": 159784,
+=======
+      "book": 162972,
+>>>>>>> Stashed changes
 =======
       "book": 162972,
 >>>>>>> Stashed changes
@@ -46869,7 +46913,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "updated": "2026-07-24T13:23:49.039Z",
+=======
+  "updated": "2026-07-24T12:00:07.002Z",
+>>>>>>> Stashed changes
 =======
   "updated": "2026-07-24T12:00:07.002Z",
 >>>>>>> Stashed changes
@@ -51071,6 +51119,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "label": "top$173k",
       "addr": "0xd109…6fa0",
       "total": -2.5,
@@ -51081,6 +51130,12 @@
       "addr": "0x076d…8d4c",
       "total": -2.25,
       "realized": 0,
+=======
+      "label": "top$528k 🔥",
+      "addr": "0x076d…8d4c",
+      "total": -2.25,
+      "realized": 0,
+>>>>>>> Stashed changes
 =======
       "label": "top$528k 🔥",
       "addr": "0x076d…8d4c",
@@ -61029,9 +61084,15 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "t": "2026-07-24T13:23:41.935Z",
       "eq": 280.45,
       "pnl": -19.55,
+=======
+      "t": "2026-07-24T12:00:07.002Z",
+      "eq": 278.72,
+      "pnl": -21.28,
+>>>>>>> Stashed changes
 =======
       "t": "2026-07-24T12:00:07.002Z",
       "eq": 278.72,
